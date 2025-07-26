@@ -64,6 +64,7 @@ MIDDLEWARE = [
     "django.middleware.gzip.GZipMiddleware",
     "plane.middleware.logger.APITokenLogMiddleware",
     "plane.middleware.logger.RequestLoggerMiddleware",
+    "plane.app.middleware.cookie_authentication.CookieAuthMiddleware",
 ]
 
 # Rest Framework settings
