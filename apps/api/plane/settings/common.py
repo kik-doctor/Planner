@@ -70,6 +70,7 @@ MIDDLEWARE = [
     "plane.middleware.request_body_size.RequestBodySizeLimitMiddleware",
     "plane.middleware.logger.APITokenLogMiddleware",
     "plane.middleware.logger.RequestLoggerMiddleware",
+    "plane.app.middleware.cookie_authentication.CookieAuthMiddleware",
 ]
 
 # Rest Framework settings
