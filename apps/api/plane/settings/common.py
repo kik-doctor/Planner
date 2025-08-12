@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "plane.utils",
     "plane.web",
     "plane.middleware",
+    "plane.orchestra",
     "plane.license",
     "plane.api",
     "plane.authentication",
