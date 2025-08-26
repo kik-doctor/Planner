@@ -1,7 +1,5 @@
 """Production settings"""
 
-import os
-
 from .common import *  # noqa
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -11,7 +9,6 @@ DEBUG = int(os.environ.get("DEBUG", 0)) == 1
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 INSTALLED_APPS += ("scout_apm.django",)  # noqa
-
 
 # Scout Settings
 SCOUT_MONITOR = os.environ.get("SCOUT_MONITOR", False)
@@ -91,5 +88,10 @@ LOGGING = {
             "handlers": ["console"],
             "propagate": False,
         },
+        "plane.orchestra": {
+            "level": "DEBUG",
+            "handlers": ["console"],
+            "propagate": False,
+        }
     },
 }
