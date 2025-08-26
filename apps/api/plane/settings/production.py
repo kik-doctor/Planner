@@ -83,5 +83,10 @@ LOGGING = {
             "handlers": ["console"],
             "propagate": False,
         },
+        "plane.orchestra": {
+            "level": "DEBUG",
+            "handlers": ["console"],
+            "propagate": False,
+        }
     },
 }

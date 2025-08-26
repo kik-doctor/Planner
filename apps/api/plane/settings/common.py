@@ -22,6 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Secret Key
 SECRET_KEY = os.environ.get("SECRET_KEY", get_random_secret_key())
 
+# Planner Webhook Key
+PLANNER_WEBHOOK_KEY = os.environ.get("PLANNER_WEBHOOK_KEY", get_random_secret_key())
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get("DEBUG", "0"))
 
