@@ -10,14 +10,18 @@ User = get_user_model()
 
 class CookieAuthMiddleware(MiddlewareMixin):
     def process_request(self, request):
+        if "webhooks" in request.path.lower():
+            return
+
         token = request.COOKIES.get("owsauth")
         if not token:
             # No cookie → clear session and logout
-            logout(request)
+            if request.user.is_authenticated:
+                logout(request)
             return
 
         # Once authenticated, skip cookie check
-        if request.user.is_authenticated:
+        if token and request.user.is_authenticated:
             return
 
         try:
