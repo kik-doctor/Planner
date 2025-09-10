@@ -6,10 +6,11 @@
 from rest_framework.exceptions import ValidationError
 
 # Module imports
-from plane.orchestra.serializers.webhook import UserManagementEvent
+from plane.orchestra.serializers.webhook import WorkspaceManagementEvent
 
-def _as_event(value: str) -> UserManagementEvent:
+
+def _as_event(value: str) -> WorkspaceManagementEvent:
     try:
-        return UserManagementEvent(value)
+        return WorkspaceManagementEvent(value)
     except ValueError:
         raise ValidationError({"event_source": "Unknown event_source value."})
