@@ -1,13 +1,13 @@
 # Python imports
 import traceback
-
 import zoneinfo
+
+from django.conf import settings
+from django.core.exceptions import ObjectDoesNotExist, ValidationError
+from django.db import IntegrityError
 
 # Django imports
 from django.utils import timezone
-from django.conf import settings
-from django.db import IntegrityError
-from django.core.exceptions import ObjectDoesNotExist, ValidationError
 
 # Third part imports
 from rest_framework import status
@@ -41,7 +41,7 @@ class BaseAPIView(TimezoneMixin, ReadReplicaControlMixin, APIView):
 
     use_read_replica = False
 
-    authentication_classes = []   # disable auth
+    authentication_classes = []  # disable auth
 
     permission_classes = [AllowAny]
 
@@ -98,7 +98,8 @@ class BaseAPIView(TimezoneMixin, ReadReplicaControlMixin, APIView):
                 from django.db import connection
 
                 print(
-                    f"{request.method} - {request.get_full_path()} of Queries: {len(connection.queries)}"
+                    f"{request.method} -"
+                    f" {request.get_full_path()} of Queries: {len(connection.queries)}"
                 )
 
             return response

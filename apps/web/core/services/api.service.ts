@@ -22,8 +22,9 @@ export abstract class APIService {
         if (error.response && error.response.status === 401) {
           // const currentPath = window.location.pathname;
           // window.location.replace(`/${currentPath ? `?next_path=${currentPath}` : ``}`);
-            const redirectUrl = process.env.NEXT_PUBLIC_MAIN_BASE_URL || "/";
-            window.location.replace(redirectUrl);
+          // Redirect user to main app login
+          const redirectUrl = process.env.NEXT_PUBLIC_MAIN_BASE_URL || "/";
+          window.location.replace(redirectUrl);
         }
         return Promise.reject(error);
       }

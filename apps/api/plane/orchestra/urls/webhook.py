@@ -2,10 +2,12 @@
 from django.urls import path
 
 # Module imports
-from plane.orchestra.views import (
-    UserManagementWebhookEndpoint
-)
+from plane.orchestra.views import WorkspaceManagementWebhookEndpoint
 
 urlpatterns = [
-    path("webhooks/user-management/", UserManagementWebhookEndpoint.as_view(), name="webhooks"),
+    path(
+        "webhooks/workspace-management/",
+        WorkspaceManagementWebhookEndpoint.as_view(),
+        name="webhooks",
+    ),
 ]
