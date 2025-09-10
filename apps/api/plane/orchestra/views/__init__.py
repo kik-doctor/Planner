@@ -1,1 +1,1 @@
-from .webhook.user_management import UserManagementWebhookEndpoint
+from .webhook.workspace_management import WorkspaceManagementWebhookEndpoint

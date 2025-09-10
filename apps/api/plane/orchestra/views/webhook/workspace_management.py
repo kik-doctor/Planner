@@ -1,7 +1,8 @@
 # Python imports
 from __future__ import annotations
-import uuid
+
 import logging
+import uuid
 
 # Django imports
 from django.db import transaction
@@ -14,116 +15,107 @@ from rest_framework import status
 from rest_framework.exceptions import ValidationError
 from rest_framework.response import Response
 
+from plane.app.permissions import ROLE
+
 # Module imports
 from plane.app.serializers import (
     ProfileSerializer,
-    WorkSpaceSerializer,
     WorkSpaceMemberSerializer,
+    WorkSpaceSerializer,
 )
-from plane.app.permissions import ROLE
-from plane.authentication.adapter.error import AuthenticationException, AUTHENTICATION_ERROR_CODES
 from plane.bgtasks.workspace_seed_task import workspace_seed
 from plane.db.models import (
     Profile,
-    WorkspaceMember,
-    ProjectMember,
     Project,
-    User, Workspace,
+    ProjectMember,
+    User,
+    Workspace,
+    WorkspaceMember,
 )
-from plane.orchestra.serializers.webhook import PlannerUserEventDataSerializer, UserManagementEvent
+from plane.orchestra.serializers.webhook import (
+    PlannerWorkspaceEventDataSerializer,
+    WorkspaceManagementEvent,
+)
 from plane.orchestra.utils.webhook import _as_event
 from plane.orchestra.views.base import BaseAPIView, PlannerWebhookAuthentication
 
 logger = logging.getLogger(__name__)
 
+
 # ---- View ----
-class UserManagementWebhookEndpoint(BaseAPIView):
+class WorkspaceManagementWebhookEndpoint(BaseAPIView):
     """
     Webhook to handle user-related lifecycle:
-    - USER_CREATED: sign up user (+ optional invitation membership validation)
-    - ADMIN_USER_CREATED: sign up admin, create workspace, seed workspace
+    - POST: WORKSPACE_MEMBER_CREATED: sign up user (+ optional invitation validation)
+    - POST: WORKSPACE_CREATED: create workspace, seed workspace
     - PATCH/DELETE handled in separate methods for role updates and deletions
     """
 
     authentication_classes = [PlannerWebhookAuthentication]
 
-    # POST: USER_CREATED / ADMIN_USER_CREATED
+    # POST: WORKSPACE_CREATED / WORKSPACE_MEMBER_CREATED
     def post(self, request):
-        print("User Management Webhook", request.data)
-        logger.info(f"User Management Webhook: {request.data}")
-        payload = PlannerUserEventDataSerializer(data=request.data)
+        logger.info(f"Workspace Management Webhook Req Data: {request.data}")
+        payload = PlannerWorkspaceEventDataSerializer(data=request.data)
         payload.is_valid(raise_exception=True)
 
         event = _as_event(payload.validated_data["event"])
-        if event not in [UserManagementEvent.ADMIN_USER_CREATED, UserManagementEvent.USER_CREATED]:
-            return Response( {"error": f"Unsupported event: {event.value}"}, status=status.HTTP_400_BAD_REQUEST)
+        if event not in [
+            WorkspaceManagementEvent.WORKSPACE_CREATED,
+            WorkspaceManagementEvent.WORKSPACE_MEMBER_CREATED,
+        ]:
+            return Response(
+                {"error": f"Unsupported event: {event.value}"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
 
         data = payload.validated_data.get("data", {})
-        email = data.get('email')
-
-        if User.objects.filter(email=email).exists():
-            raise AuthenticationException(
-                error_message="USER_ALREADY_EXIST",
-                error_code=AUTHENTICATION_ERROR_CODES["USER_ALREADY_EXIST"],
-            )
+        email = data.get("email")
 
         # NOTE: all DB writes happen inside a single transaction
         with transaction.atomic():
-            user = User(email=email, username=uuid.uuid4().hex)
-            user.set_password(uuid.uuid4().hex)
-            user.is_password_autoset = True
-            user.is_email_verified = True
-            user.save()
-            print("User Created >>>>>>>>>>>", email)
-            logger.info(f"User Created >>>>>>>> {email}")
+            # Create new user if no existing user
+            user = User.objects.filter(email=email).first()
+            if not user:
+                user = User(email=email, username=uuid.uuid4().hex)
+                user.set_password(uuid.uuid4().hex)
+                user.is_password_autoset = True
+                user.is_email_verified = True
+                user.save()
+                logger.info(f"User Created >>>>>>>> {user}")
 
-            # Patch onboarding profile data
-            profile, _ = Profile.objects.get_or_create(user=user)
-            profile_data = {
-                "is_onboarded": True,
-                "onboarding_step": {
-                    "workspace_join": True,
-                    "profile_complete": True,
-                    "workspace_create": True,
-                    "workspace_invite": True
+                # Patch onboarding profile data
+                profile, _ = Profile.objects.get_or_create(user=user)
+                profile_data = {
+                    "is_onboarded": True,
+                    "onboarding_step": {
+                        "workspace_join": True,
+                        "profile_complete": True,
+                        "workspace_create": True,
+                        "workspace_invite": True,
+                    },
                 }
-            }
-            profile_serializer = ProfileSerializer(profile, data=profile_data, partial=True)
-            profile_serializer.is_valid(raise_exception=True)
-            profile_serializer.save()
-            print("Profile created >>>>>>>>>>", profile_serializer.data)
-            logger.info(f"Profile created >>>>>>>>>>, {profile_serializer.data}")
-
-            # Get workspaces for invited user - inviter(admin)s and create workspace members for that user
-            invitation_data = data.get("invitations", [])
-            if event == UserManagementEvent.USER_CREATED and invitation_data:
-                # invitation_data = [{slug: "", invitee_role: ""}, ...]
-                # Build mapping {slug: role}
-                role_map = {invite["slug"]: invite["invitee_role"] for invite in invitation_data}
-                slugs = list(role_map.keys())
-                # Add invited member to all inviters having workspaces
-                WorkspaceMember.objects.bulk_create(
-                    [
-                        WorkspaceMember(
-                        workspace=Workspace.objects.get(slug=slug),
-                        member=user,
-                        role=role_map[slug],
-                        ) for slug in slugs
-                    ]
+                profile_serializer = ProfileSerializer(
+                    profile, data=profile_data, partial=True
                 )
-                print("User Created: Workspace member created >>>>>>>>>>>>", user)
-                logger.info(f"User Created: Workspace member created >>>>>>>>>>>>, {user}")
+                profile_serializer.is_valid(raise_exception=True)
+                profile_serializer.save()
+                logger.info(f"Profile created >>>>>>>>>>, {profile_serializer.data}")
 
-
-            # Creates a default workspace for admin user
-            if event == UserManagementEvent.ADMIN_USER_CREATED:
-                slug = data.get('slug')
-                workspace_name = data.get('workspace_name')
+            # Creates a default workspace, workspace member for admin user
+            if event == WorkspaceManagementEvent.WORKSPACE_CREATED:
+                slug = data.get("slug")
+                workspace_name = data.get("workspace_name")
+                # Create workspace
                 if slug:
-                    ws_serializer = WorkSpaceSerializer(data={'slug': slug, 'name': workspace_name})
+                    ws_serializer = WorkSpaceSerializer(
+                        data={"slug": slug, "name": workspace_name}
+                    )
                     ws_serializer.is_valid(raise_exception=True)
                     ws = ws_serializer.save(owner=user)
-                    print("Admin user created: Workspace Created >>>>>>>>>>>>>>", ws)
+                    logger.info(
+                        f"WORKSPACE_CREATED: Workspace Created >>>>>>>>>>>>>>, {ws}"
+                    )
 
                 # Create member as ADMIN
                 WorkspaceMember.objects.create(
@@ -131,29 +123,41 @@ class UserManagementWebhookEndpoint(BaseAPIView):
                     member=user,
                     role=ROLE.ADMIN.value,
                 )
-                print("Admin user created: Workspace Member Created >>>>>>>>>>>>>>", user)
-                logger.info(f"Admin user created: Workspace Member Created >>>>>>>>>>>>>>, {user}")
+                logger.info(f"WORKSPACE_CREATED:Member Created>>>, {WorkspaceMember}")
 
                 # Seed asynchronously
                 workspace_seed.delay(ws.id)
+
+            # Add Workspace member for invitation
+            if event == WorkspaceManagementEvent.WORKSPACE_MEMBER_CREATED:
+                invitation_data = data.get("invitation", {})
+                # invitation_data = {slug: "", role: ""}
+                # Add invited member to all inviters having workspaces
+                WorkspaceMember.objects.create(
+                    workspace=Workspace.objects.get(slug=invitation_data["slug"]),
+                    member=user,
+                    role=invitation_data["role"],
+                )
+
+                logger.info(f"WORKSPACE_MEMBER_CREATED: member created >>>>>>, {user}")
 
         return Response(
             {"success": True, "source": event.value},
             status=status.HTTP_200_OK,
         )
 
-    # PATCH: USER_ROLE_UPDATED
+    # PATCH: WORKSPACE_MEMBER_ROLE_UPDATED
     # Body example: {"role": 15, "slug": "acme"}
     def patch(self, request):
-        payload = PlannerUserEventDataSerializer(data=request.data)
+        payload = PlannerWorkspaceEventDataSerializer(data=request.data)
         payload.is_valid(raise_exception=True)
 
         event = _as_event(payload.validated_data["event"])
-        if event != UserManagementEvent.USER_ROLE_UPDATED:
+        if event != WorkspaceManagementEvent.WORKSPACE_MEMBER_ROLE_UPDATED:
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
         data = payload.validated_data.get("data", {})
-        slug =data.get("slug")
+        slug = data.get("slug")
         member_email = data.get("email")
         member_user = get_object_or_404(User, email=member_email)
         member_id = member_user.id
@@ -175,7 +179,9 @@ class UserManagementWebhookEndpoint(BaseAPIView):
                 workspace__slug=slug, member_id=workspace_member.member_id
             ).update(role=ROLE.GUEST.value)
 
-        serializer = WorkSpaceMemberSerializer(workspace_member, data=data, partial=True)
+        serializer = WorkSpaceMemberSerializer(
+            workspace_member, data=data, partial=True
+        )
         serializer.is_valid(raise_exception=True)
         serializer.save()
 
@@ -184,15 +190,15 @@ class UserManagementWebhookEndpoint(BaseAPIView):
             status=status.HTTP_200_OK,
         )
 
-    # DELETE: USER_DELETED
+    # DELETE: WORKSPACE_MEMBER_DELETED
     # Body example: {"slug": "acme"}
     def delete(self, request):
-        payload = PlannerUserEventDataSerializer(data=request.data)
+        payload = PlannerWorkspaceEventDataSerializer(data=request.data)
         payload.is_valid(raise_exception=True)
 
         event = _as_event(payload.validated_data["event"])
 
-        if event != UserManagementEvent.USER_DELETED:
+        if event != WorkspaceManagementEvent.WORKSPACE_MEMBER_DELETED:
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
         data = payload.validated_data.get("data", {})
@@ -249,4 +255,6 @@ class UserManagementWebhookEndpoint(BaseAPIView):
             workspace_member.is_active = False
             workspace_member.save(update_fields=["is_active", "updated_at"])
 
-        return Response({"success": True, "source": event.value}, status=status.HTTP_204_NO_CONTENT)
+        return Response(
+            {"success": True, "source": event.value}, status=status.HTTP_204_NO_CONTENT
+        )
