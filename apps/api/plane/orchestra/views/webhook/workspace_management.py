@@ -43,10 +43,7 @@ logger = logging.getLogger(__name__)
 # ---- View ----
 class WorkspaceManagementWebhookEndpoint(BaseAPIView):
     """
-    Webhook to handle user-related lifecycle:
-    - POST: WORKSPACE_MEMBER_CREATED: sign up user (+ optional invitation validation)
-    - POST: WORKSPACE_CREATED: create workspace, seed workspace
-    - PATCH/DELETE handled in separate methods for role updates and deletions
+    Webhook to handle workspace-related lifecycle:
     """
 
     authentication_classes = [PlannerWebhookAuthentication]
