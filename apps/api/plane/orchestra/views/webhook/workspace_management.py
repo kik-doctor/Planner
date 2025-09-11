@@ -188,30 +188,47 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
                     is_active=True,
                 )
 
-                # Block deletion if user is the only ADMIN in any project of this workspace
-                only_admin_in_any_project = (
-                    Project.objects.annotate(
-                        total_members=Count("project_projectmember"),
-                        member_with_role=Count(
-                            "project_projectmember",
-                            filter=Q(
-                                project_projectmember__member_id=workspace_member.id,
-                                project_projectmember__role=ROLE.ADMIN.value,
-                            ),
+                # Find projects that the user to remove currently is the only admin in the project
+                projects = Project.objects.annotate(
+                    total_members=Count("project_projectmember"),
+                    member_with_role=Count(
+                        "project_projectmember",
+                        filter=Q(
+                            project_projectmember__member_id=workspace_member.id,
+                            project_projectmember__role=ROLE.ADMIN.value,
                         ),
-                    )
-                    .filter(
-                        total_members=1,
-                        member_with_role=1,
-                        workspace__slug=slug,
-                    )
-                    .exists()
+                    ),
+                ).filter(
+                    total_members=1,
+                    member_with_role=1,
+                    workspace__slug=slug,
                 )
+
+                # Assign the oldest workspace admin to project admin
+                # if user is the only ADMIN in any project of this workspace
+                only_admin_in_any_project = projects.exists()
                 if only_admin_in_any_project:
-                    raise ValidationError(
-                        "User is the only admin in one or more projects. "
-                        "They must leave the project or promote another user to admin first."
+                    # get workspace by slug
+                    workspace = get_object_or_404(Workspace, slug=slug)
+                    # get workspace admins
+                    admins_qs = (
+                        WorkspaceMember.objects
+                        .filter(workspace=workspace, role=ROLE.ADMIN.value, is_active=True)
+                        .order_by("created_at")
                     )
+                    # Pick the oldest admin
+                    oldest_admin = admins_qs.first()
+                    # assign the oldest workspace admin as project admin in those projects
+                    if oldest_admin:
+                        # Get the project you want to update
+                        for project in projects:
+                            # Either update an existing ProjectMember or create one
+                            ProjectMember.objects.update_or_create(
+                                project=project,
+                                workspace=workspace,
+                                member=oldest_admin.member,
+                                defaults={"role": ROLE.ADMIN.value, "is_active": True},
+                            )
 
                 with transaction.atomic():
                     # Deactivate in all projects in this workspace
