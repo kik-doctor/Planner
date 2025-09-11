@@ -190,12 +190,16 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
 
                 # Find projects that the user to remove currently is the only admin in the project
                 projects = Project.objects.annotate(
-                    total_members=Count("project_projectmember"),
+                    total_members=Count(
+                        "project_projectmember",
+                        filter=Q(project_projectmember__is_active=True),
+                    ),
                     member_with_role=Count(
                         "project_projectmember",
                         filter=Q(
                             project_projectmember__member_id=workspace_member.id,
                             project_projectmember__role=ROLE.ADMIN.value,
+                            project_projectmember__is_active=True
                         ),
                     ),
                 ).filter(
