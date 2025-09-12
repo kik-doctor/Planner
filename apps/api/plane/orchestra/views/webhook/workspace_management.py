@@ -7,6 +7,7 @@ import uuid
 # Django imports
 from django.db import transaction
 from django.db.models import Count, Q
+from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
 # Third party imports
@@ -30,11 +31,12 @@ from plane.db.models import (
     Workspace,
     WorkspaceMember,
 )
+from plane.db.models.orchestra import ProcessedWebhook
 from plane.orchestra.serializers.webhook import (
     PlannerWorkspaceEventDataSerializer,
     WorkspaceManagementEvent,
 )
-from plane.orchestra.utils.webhook import _as_event
+from plane.orchestra.utils.webhook import _as_event, get_idempotency_key
 from plane.orchestra.views.base import BaseAPIView, PlannerWebhookAuthentication
 
 logger = logging.getLogger(__name__)
@@ -71,6 +73,14 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
 
         # NOTE: all DB writes happen inside a single transaction
         with transaction.atomic():
+            # For idempotent webhook to prevent error when calling same webhook multiple times
+            key = get_idempotency_key(payload.validated_data)
+            # Fast exit if we already processed this webhook
+            _, first_time = ProcessedWebhook.objects.get_or_create(key=key)
+            if not first_time:
+                logger.info(f"Duplicate webhook ignored (key={key})")
+                return JsonResponse({"ok": True, "duplicate": True}, status=200)
+
             if event in [
                 WorkspaceManagementEvent.WORKSPACE_CREATED,
                 WorkspaceManagementEvent.WORKSPACE_MEMBER_CREATED
