@@ -15,11 +15,10 @@ type TProps = {
   workspace: IWorkspace;
   activeWorkspace: IWorkspace | null;
   handleItemClick: () => void;
-  handleWorkspaceNavigation: (workspace: IWorkspace) => void;
   handleClose: () => void;
 };
 const SidebarDropdownItem = observer(function SidebarDropdownItem(props: TProps) {
-  const { workspace, activeWorkspace, handleItemClick, handleWorkspaceNavigation, handleClose } = props;
+  const { workspace, activeWorkspace, handleItemClick, handleClose } = props;
   // router
   const { workspaceSlug } = useParams();
   // hooks
@@ -30,7 +29,6 @@ const SidebarDropdownItem = observer(function SidebarDropdownItem(props: TProps)
       key={workspace.id}
       href={`/${workspace.slug}`}
       onClick={() => {
-        handleWorkspaceNavigation(workspace);
         handleItemClick();
       }}
       className="w-full"

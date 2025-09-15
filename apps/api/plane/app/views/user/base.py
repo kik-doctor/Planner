@@ -5,19 +5,16 @@ import logging
 import secrets
 
 # Django imports
-from django.db.models import Case, Count, IntegerField, Q, When
 from django.contrib.auth import logout
+from django.db.models import Case, Count, IntegerField, Q, When
 from django.utils import timezone
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_control
 from django.views.decorators.vary import vary_on_cookie
-from django.core.validators import validate_email
-from django.core.cache import cache
-
 # Third party imports
 from rest_framework import status
-from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
+from rest_framework.response import Response
 
 # Module imports
 from plane.app.serializers import (
@@ -29,6 +26,8 @@ from plane.app.serializers import (
     UserSerializer,
 )
 from plane.app.views.base import BaseAPIView, BaseViewSet
+from plane.authentication.utils.host import user_ip
+from plane.bgtasks.user_deactivation_email_task import user_deactivation_email
 from plane.db.models import (
     Account,
     IssueActivity,
@@ -40,16 +39,12 @@ from plane.db.models import (
     Session,
 )
 from plane.license.models import Instance, InstanceAdmin
-from plane.utils.paginator import BasePaginator
-from plane.authentication.utils.host import user_ip
-from plane.bgtasks.user_deactivation_email_task import user_deactivation_email
 from plane.utils.host import base_host
 from plane.bgtasks.user_email_update_task import send_email_update_magic_code, send_email_update_confirmation
 from plane.authentication.rate_limit import EmailVerificationThrottle
-
+from plane.utils.paginator import BasePaginator
 
 logger = logging.getLogger("plane")
-
 
 class UserEndpoint(BaseViewSet):
     serializer_class = UserSerializer
@@ -76,8 +71,8 @@ class UserEndpoint(BaseViewSet):
     @method_decorator(cache_control(private=True, max_age=12))
     @method_decorator(vary_on_cookie)
     def retrieve_user_settings(self, request):
-        serialized_data = UserMeSettingsSerializer(request.user).data
-        return Response(serialized_data, status=status.HTTP_200_OK)
+        serializer = UserMeSettingsSerializer(request.user, context={"request": request})
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
     def retrieve_instance_admin(self, request):
         instance = Instance.objects.first()

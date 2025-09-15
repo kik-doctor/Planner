@@ -34,7 +34,7 @@ export const WorkspaceMenuRoot = observer(function WorkspaceMenuRoot(props: Work
   const { toggleSidebar, toggleAnySidebarDropdown } = useAppTheme();
   const { data: currentUser } = useUser();
   const { signOut } = useUser();
-  const { updateUserProfile } = useUserProfile();
+  // const { updateUserProfile } = useUserProfile();
   const { currentWorkspace: activeWorkspace, workspaces } = useWorkspace();
   // derived values
   const isWorkspaceCreationEnabled = getIsWorkspaceCreationDisabled() === false;
@@ -42,8 +42,6 @@ export const WorkspaceMenuRoot = observer(function WorkspaceMenuRoot(props: Work
   const { t } = useTranslation();
   // local state
   const [isWorkspaceMenuOpen, setIsWorkspaceMenuOpen] = useState(false);
-
-  const handleWorkspaceNavigation = (workspace: IWorkspace) => updateUserProfile({ last_workspace_id: workspace?.id });
 
   const handleSignOut = async () => {
     await signOut().catch(() =>
@@ -168,7 +166,6 @@ export const WorkspaceMenuRoot = observer(function WorkspaceMenuRoot(props: Work
                             workspace={workspace}
                             activeWorkspace={activeWorkspace}
                             handleItemClick={handleItemClick}
-                            handleWorkspaceNavigation={handleWorkspaceNavigation}
                             handleClose={close}
                           />
                         ))}

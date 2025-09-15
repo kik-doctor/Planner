@@ -50,7 +50,7 @@ export const AuthenticationWrapper = observer(function AuthenticationWrapper(pro
     false;
 
   const getWorkspaceRedirectionUrl = (): string => {
-    let redirectionRoute = "/create-workspace";
+    let redirectionRoute = "/404-not-found";
 
     // validating the nextPath from the router query
     if (nextPath && isValidURL(nextPath.toString())) {
