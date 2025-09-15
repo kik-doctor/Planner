@@ -52,7 +52,7 @@ export const AuthenticationWrapper: FC<TAuthenticationWrapper> = observer((props
     false;
 
   const getWorkspaceRedirectionUrl = (): string => {
-    let redirectionRoute = "/create-workspace";
+    let redirectionRoute = "/404-not-found";
 
     // validating the nextPath from the router query
     if (nextPath && isValidURL(nextPath.toString())) {
