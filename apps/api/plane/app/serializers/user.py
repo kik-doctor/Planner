@@ -1,10 +1,13 @@
 # Third party imports
+import jwt
+# Django imports
+from django.conf import settings
+# Third party imports
 from rest_framework import serializers
 
 # Module import
 from plane.db.models import Account, Profile, User, Workspace, WorkspaceMemberInvite
 from plane.utils.url import contains_url
-
 from .base import BaseSerializer
 
 
@@ -91,22 +94,36 @@ class UserMeSettingsSerializer(BaseSerializer):
         read_only_fields = fields
 
     def get_workspace(self, obj):
+        # Add active workspace slug to user settings data as a last visited workspace id
+        request = self.context.get("request")
+        payload = None
+        if request:
+            token = request.COOKIES.get("owsauth")
+            if token:
+                try:
+                    payload = jwt.decode(
+                        token,
+                        settings.SECRET_KEY,
+                        algorithms=["HS256"],
+                    )
+                except jwt.PyJWTError:
+                    payload = None
+
         workspace_invites = WorkspaceMemberInvite.objects.filter(
             email=obj.email
         ).count()
 
-        # profile
-        profile = Profile.objects.get(user=obj)
         if (
-            profile.last_workspace_id is not None
-            and Workspace.objects.filter(
-                pk=profile.last_workspace_id,
-                workspace_member__member=obj.id,
-                workspace_member__is_active=True,
-            ).exists()
+                payload is not None
+                and Workspace.objects.filter(
+            slug=payload['workspaceSlug'],
+            workspace_member__member=obj.id,
+            workspace_member__is_active=True,
+        ).exists()
         ):
+            workspace_slug = payload['workspaceSlug']
             workspace = Workspace.objects.filter(
-                pk=profile.last_workspace_id,
+                slug=workspace_slug,
                 workspace_member__member=obj.id,
                 workspace_member__is_active=True,
             ).first()
@@ -116,15 +133,15 @@ class UserMeSettingsSerializer(BaseSerializer):
                 else ""
             )
             return {
-                "last_workspace_id": profile.last_workspace_id,
+                "last_workspace_id": workspace.id,
                 "last_workspace_slug": (
                     workspace.slug if workspace is not None else ""
                 ),
                 "last_workspace_name": (
                     workspace.name if workspace is not None else ""
                 ),
-                "last_workspace_logo": (logo_asset_url),
-                "fallback_workspace_id": profile.last_workspace_id,
+                "last_workspace_logo": logo_asset_url,
+                "fallback_workspace_id": workspace.id,
                 "fallback_workspace_slug": (
                     workspace.slug if workspace is not None else ""
                 ),
