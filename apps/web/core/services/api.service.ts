@@ -24,7 +24,7 @@ export abstract class APIService {
           // const currentPath = window.location.pathname;
           // window.location.replace(`/${currentPath ? `?next_path=${currentPath}` : ``}`);
           // Redirect user to main app login
-          const redirectUrl = process.env.NEXT_PUBLIC_MAIN_BASE_URL || "/";
+          const redirectUrl = process.env.VITE_APP_BASE_URL || "/";
           window.location.replace(redirectUrl);
         }
         return Promise.reject(error);
