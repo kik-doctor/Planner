@@ -11,6 +11,7 @@ from plane.app.permissions import ROLE
 # ---- Webhook Event Enum ----
 class WorkspaceManagementEvent(str, Enum):
     WORKSPACE_CREATED = "WORKSPACE_CREATED"
+    WORKSPACE_DELETED = "WORKSPACE_DELETED"
     WORKSPACE_MEMBER_CREATED = "WORKSPACE_MEMBER_CREATED"
     WORKSPACE_MEMBER_ROLE_UPDATED = "WORKSPACE_MEMBER_ROLE_UPDATED"
     WORKSPACE_MEMBER_DELETED = "WORKSPACE_MEMBER_DELETED"
@@ -39,7 +40,7 @@ class InvitationDataSerializer(serializers.Serializer):
 
 
 class DataSerializer(serializers.Serializer):
-    email = serializers.EmailField()
+    email = serializers.EmailField(required=False)
     slug = serializers.CharField(required=False, allow_blank=True)
     workspace_name = serializers.CharField(required=False, allow_blank=True)
     role = serializers.ChoiceField(
