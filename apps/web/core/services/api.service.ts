@@ -20,11 +20,11 @@ export abstract class APIService {
       (response) => response,
       (error) => {
         if (error.response && error.response.status === 401) {
-          // const currentPath = window.location.pathname;
+          const currentPath = window.location.href;
           // window.location.replace(`/${currentPath ? `?next_path=${currentPath}` : ``}`);
-          // Redirect user to main app login
+          // Redirect user to main app login with redirectUri
           const redirectUrl = process.env.NEXT_PUBLIC_APP_BASE_URL || "/";
-          window.location.replace(redirectUrl);
+          window.location.replace(`${redirectUrl}/login?redirectUri=${currentPath}`);
         }
         return Promise.reject(error);
       }
