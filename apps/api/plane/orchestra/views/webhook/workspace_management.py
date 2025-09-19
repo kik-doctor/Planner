@@ -15,8 +15,8 @@ from rest_framework import status
 from rest_framework.exceptions import ValidationError
 from rest_framework.response import Response
 
-from plane.app.permissions import ROLE
 # Module imports
+from plane.app.permissions import ROLE
 from plane.app.serializers import (
     ProfileSerializer,
     WorkSpaceMemberSerializer,
@@ -59,6 +59,7 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
         event = _as_event(payload.validated_data["event"])
         if event not in [
             WorkspaceManagementEvent.WORKSPACE_CREATED,
+            WorkspaceManagementEvent.WORKSPACE_DELETED,
             WorkspaceManagementEvent.WORKSPACE_MEMBER_CREATED,
             WorkspaceManagementEvent.WORKSPACE_MEMBER_ROLE_UPDATED,
             WorkspaceManagementEvent.WORKSPACE_MEMBER_DELETED,
@@ -255,6 +256,15 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
                     # Deactivate workspace membership
                     workspace_member.is_active = False
                     workspace_member.save(update_fields=["is_active", "updated_at"])
+
+            # Delete workspace by slug
+            if event == WorkspaceManagementEvent.WORKSPACE_DELETED:
+                slug = data.get("slug")
+                if not slug:
+                    raise ValidationError({"slug": "This field is required."})
+                workspace = get_object_or_404(Workspace, slug=slug)
+                # call the model’s delete() → runs soft-delete + slug renaming
+                workspace.delete()  # soft=True by default
         return Response(
             {"success": True, "source": event.value},
             status=status.HTTP_200_OK,
