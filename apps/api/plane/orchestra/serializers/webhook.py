@@ -47,6 +47,7 @@ class DataSerializer(serializers.Serializer):
         required=False, allow_blank=True, choices=list(ROLE_MAPPING.keys())
     )
     invitation = InvitationDataSerializer(required=False)
+    created_at = serializers.CharField(required=False)
 
     def validate_role(self, value):
         """Convert incoming Main app role into Planner ROLE enum value"""
