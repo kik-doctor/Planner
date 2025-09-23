@@ -180,27 +180,27 @@ export const WorkspaceMenuRoot = observer(function WorkspaceMenuRoot(props: Work
                     )}
                   </div>
                   <div className="w-full flex flex-col items-start justify-start gap-2 px-4 py-2 text-sm">
-                    {isWorkspaceCreationEnabled && (
-                      <Link href="/create-workspace" className="w-full">
-                        <Menu.Item
-                          as="div"
-                          className="flex items-center gap-2 rounded px-2 py-1 text-sm font-medium text-custom-sidebar-text-200 hover:bg-custom-sidebar-background-80"
-                        >
-                          <CirclePlus className="size-4 flex-shrink-0" />
-                          {t("create_workspace")}
-                        </Menu.Item>
-                      </Link>
-                    )}
+                    {/*{isWorkspaceCreationEnabled && (*/}
+                    {/*  <Link href="/create-workspace" className="w-full">*/}
+                    {/*    <Menu.Item*/}
+                    {/*      as="div"*/}
+                    {/*      className="flex items-center gap-2 rounded px-2 py-1 text-sm font-medium text-custom-sidebar-text-200 hover:bg-custom-sidebar-background-80"*/}
+                    {/*    >*/}
+                    {/*      <CirclePlus className="size-4 flex-shrink-0" />*/}
+                    {/*      {t("create_workspace")}*/}
+                    {/*    </Menu.Item>*/}
+                    {/*  </Link>*/}
+                    {/*)}*/}
 
-                    <Link href="/invitations" className="w-full" onClick={handleItemClick}>
-                      <Menu.Item
-                        as="div"
-                        className="flex items-center gap-2 rounded px-2 py-1 text-sm font-medium text-custom-sidebar-text-200 hover:bg-custom-sidebar-background-80"
-                      >
-                        <Mails className="h-4 w-4 flex-shrink-0" />
-                        {t("workspace_invites")}
-                      </Menu.Item>
-                    </Link>
+                    {/*<Link href="/invitations" className="w-full" onClick={handleItemClick}>*/}
+                    {/*  <Menu.Item*/}
+                    {/*    as="div"*/}
+                    {/*    className="flex items-center gap-2 rounded px-2 py-1 text-sm font-medium text-custom-sidebar-text-200 hover:bg-custom-sidebar-background-80"*/}
+                    {/*  >*/}
+                    {/*    <Mails className="h-4 w-4 flex-shrink-0" />*/}
+                    {/*    {t("workspace_invites")}*/}
+                    {/*  </Menu.Item>*/}
+                    {/*</Link>*/}
 
                     <div className="w-full">
                       <Menu.Item

@@ -32,8 +32,8 @@ export const PROJECT_SETTINGS_CATEGORIES = [PROJECT_SETTINGS_CATEGORY.PROJECTS];
 export const GROUPED_WORKSPACE_SETTINGS = {
   [WORKSPACE_SETTINGS_CATEGORY.ADMINISTRATION]: [
     WORKSPACE_SETTINGS["general"],
-    WORKSPACE_SETTINGS["members"],
-    WORKSPACE_SETTINGS["billing-and-plans"],
+    // WORKSPACE_SETTINGS["members"],
+    // WORKSPACE_SETTINGS["billing-and-plans"],
     WORKSPACE_SETTINGS["export"],
   ],
   [WORKSPACE_SETTINGS_CATEGORY.FEATURES]: [],
@@ -45,7 +45,7 @@ export const GROUPED_PROFILE_SETTINGS = {
     PROFILE_SETTINGS["profile"],
     PROFILE_SETTINGS["preferences"],
     PROFILE_SETTINGS["notifications"],
-    PROFILE_SETTINGS["security"],
+    // PROFILE_SETTINGS["security"],
     PROFILE_SETTINGS["activity"],
   ],
   [PROFILE_SETTINGS_CATEGORY.DEVELOPER]: [PROFILE_SETTINGS["api-tokens"]],

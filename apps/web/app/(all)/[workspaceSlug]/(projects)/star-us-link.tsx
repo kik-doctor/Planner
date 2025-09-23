@@ -30,7 +30,7 @@ export function StarUsOnGitHubLink() {
         })
       }
       className="flex flex-shrink-0 items-center gap-1.5 rounded bg-custom-background-80 px-3 py-1.5"
-      href="https://github.com/makeplane/plane"
+      href="https://github.com/kik-doctor/Planner"
       target="_blank"
       rel="noopener noreferrer"
     >

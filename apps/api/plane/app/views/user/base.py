@@ -65,8 +65,8 @@ class UserEndpoint(BaseViewSet):
     @method_decorator(cache_control(private=True, max_age=12))
     @method_decorator(vary_on_cookie)
     def retrieve(self, request):
-        serialized_data = UserMeSerializer(request.user).data
-        return Response(serialized_data, status=status.HTTP_200_OK)
+        serializer = UserMeSerializer(request.user, context={"request": request})
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
     @method_decorator(cache_control(private=True, max_age=12))
     @method_decorator(vary_on_cookie)
