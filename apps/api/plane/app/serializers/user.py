@@ -84,6 +84,27 @@ class UserMeSerializer(BaseSerializer):
         ]
         read_only_fields = fields
 
+    # Modify first, last name using cookie data
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        request = self.context.get("request")
+        payload = None
+        if request:
+            token = request.COOKIES.get("owsauth")
+            if token:
+                try:
+                    payload = jwt.decode(
+                        token,
+                        settings.SECRET_KEY,
+                        algorithms=["HS256"],
+                    )
+                except jwt.PyJWTError:
+                    payload = None
+        if payload:
+            data["first_name"] = payload.get("firstName", data["first_name"])
+            data["last_name"] = payload.get("lastName", data["last_name"])
+        return data
+
 
 class UserMeSettingsSerializer(BaseSerializer):
     workspace = serializers.SerializerMethodField()

@@ -22,7 +22,7 @@ SPECTACULAR_SETTINGS = {
     "VERSION": "0.0.1",
     "LICENSE": {
         "name": "GNU AGPLv3",
-        "url": "https://github.com/makeplane/plane/blob/preview/LICENSE.txt",
+        "url": "https://github.com/kik-doctor/Planner/blob/preview/LICENSE.txt",
     },
     # ========================================================================
     # Schema Generation Settings

@@ -60,8 +60,8 @@ export const SidebarWrapper: FC<TSidebarWrapperProps> = observer((props) => {
         {children}
       </div>
       {/* Help Section */}
-      <div className="flex items-center justify-between p-3 border-t border-custom-border-200 bg-custom-sidebar-background-100 h-12">
-        <WorkspaceEditionBadge />
+      <div className="flex items-center justify-end p-3 border-t border-custom-border-200 bg-custom-sidebar-background-100 h-12">
+        {/*<WorkspaceEditionBadge />*/}
         <div className="flex items-center gap-2">
           {!shouldRenderAppRail && <HelpMenu />}
           {!isAppRailEnabled && <AppSidebarToggleButton />}
