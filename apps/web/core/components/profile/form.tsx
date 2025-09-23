@@ -258,9 +258,10 @@ export const ProfileForm = observer((props: TProfileFormProps) => {
                       ref={ref}
                       hasError={Boolean(errors.first_name)}
                       placeholder="Enter your first name"
-                      className={`w-full rounded-md ${errors.first_name ? "border-red-500" : ""}`}
+                      className={`w-full cursor-not-allowed rounded-md !bg-custom-background-90 ${errors.first_name ? "border-red-500" : ""}`}
                       maxLength={24}
                       autoComplete="on"
+                      disabled
                     />
                   )}
                 />
@@ -281,9 +282,10 @@ export const ProfileForm = observer((props: TProfileFormProps) => {
                       ref={ref}
                       hasError={Boolean(errors.last_name)}
                       placeholder="Enter your last name"
-                      className="w-full rounded-md"
+                      className="w-full cursor-not-allowed rounded-md !bg-custom-background-90"
                       maxLength={24}
                       autoComplete="on"
+                      disabled
                     />
                   )}
                 />
@@ -317,8 +319,9 @@ export const ProfileForm = observer((props: TProfileFormProps) => {
                       ref={ref}
                       hasError={Boolean(errors?.display_name)}
                       placeholder="Enter your display name"
-                      className={`w-full ${errors?.display_name ? "border-red-500" : ""}`}
+                      className={`w-full cursor-not-allowed rounded-md !bg-custom-background-90 ${errors?.display_name ? "border-red-500" : ""}`}
                       maxLength={24}
+                      disabled
                     />
                   )}
                 />
@@ -355,54 +358,54 @@ export const ProfileForm = observer((props: TProfileFormProps) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-1">
-            <div className="flex items-center justify-between pt-6 pb-8">
-              <Button
-                variant="primary"
-                type="submit"
-                loading={isLoading}
-                data-ph-element={PROFILE_SETTINGS_TRACKER_ELEMENTS.SAVE_CHANGES_BUTTON}
-              >
-                {isLoading ? t("saving") : t("save_changes")}
-              </Button>
-            </div>
-          </div>
+          {/*<div className="flex flex-col gap-1">*/}
+          {/*  <div className="flex items-center justify-between pt-6 pb-8">*/}
+          {/*    <Button*/}
+          {/*      variant="primary"*/}
+          {/*      type="submit"*/}
+          {/*      loading={isLoading}*/}
+          {/*      data-ph-element={PROFILE_SETTINGS_TRACKER_ELEMENTS.SAVE_CHANGES_BUTTON}*/}
+          {/*    >*/}
+          {/*      {isLoading ? t("saving") : t("save_changes")}*/}
+          {/*    </Button>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
       </form>
-      <Disclosure as="div" className="border-t border-custom-border-100 w-full">
-        {({ open }) => (
-          <>
-            <Disclosure.Button as="button" type="button" className="flex w-full items-center justify-between py-4">
-              <span className="text-lg font-medium tracking-tight">{t("deactivate_account")}</span>
-              <ChevronDown className={`h-5 w-5 transition-all ${open ? "rotate-180" : ""}`} />
-            </Disclosure.Button>
-            <Transition
-              show={open}
-              enter="transition duration-100 ease-out"
-              enterFrom="transform opacity-0"
-              enterTo="transform opacity-100"
-              leave="transition duration-75 ease-out"
-              leaveFrom="transform opacity-100"
-              leaveTo="transform opacity-0"
-            >
-              <Disclosure.Panel>
-                <div className="flex flex-col gap-8">
-                  <span className="text-sm tracking-tight">{t("deactivate_account_description")}</span>
-                  <div>
-                    <Button
-                      variant="danger"
-                      onClick={() => setDeactivateAccountModal(true)}
-                      data-ph-element={PROFILE_SETTINGS_TRACKER_ELEMENTS.DEACTIVATE_ACCOUNT_BUTTON}
-                    >
-                      {t("deactivate_account")}
-                    </Button>
-                  </div>
-                </div>
-              </Disclosure.Panel>
-            </Transition>
-          </>
-        )}
-      </Disclosure>
+      {/*<Disclosure as="div" className="border-t border-custom-border-100 w-full">*/}
+      {/*  {({ open }) => (*/}
+      {/*    <>*/}
+      {/*      <Disclosure.Button as="button" type="button" className="flex w-full items-center justify-between py-4">*/}
+      {/*        <span className="text-lg font-medium tracking-tight">{t("deactivate_account")}</span>*/}
+      {/*        <ChevronDown className={`h-5 w-5 transition-all ${open ? "rotate-180" : ""}`} />*/}
+      {/*      </Disclosure.Button>*/}
+      {/*      <Transition*/}
+      {/*        show={open}*/}
+      {/*        enter="transition duration-100 ease-out"*/}
+      {/*        enterFrom="transform opacity-0"*/}
+      {/*        enterTo="transform opacity-100"*/}
+      {/*        leave="transition duration-75 ease-out"*/}
+      {/*        leaveFrom="transform opacity-100"*/}
+      {/*        leaveTo="transform opacity-0"*/}
+      {/*      >*/}
+      {/*        <Disclosure.Panel>*/}
+      {/*          <div className="flex flex-col gap-8">*/}
+      {/*            <span className="text-sm tracking-tight">{t("deactivate_account_description")}</span>*/}
+      {/*            <div>*/}
+      {/*              <Button*/}
+      {/*                variant="danger"*/}
+      {/*                onClick={() => setDeactivateAccountModal(true)}*/}
+      {/*                data-ph-element={PROFILE_SETTINGS_TRACKER_ELEMENTS.DEACTIVATE_ACCOUNT_BUTTON}*/}
+      {/*              >*/}
+      {/*                {t("deactivate_account")}*/}
+      {/*              </Button>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*        </Disclosure.Panel>*/}
+      {/*      </Transition>*/}
+      {/*    </>*/}
+      {/*  )}*/}
+      {/*</Disclosure>*/}
     </>
   );
 });

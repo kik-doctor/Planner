@@ -70,7 +70,7 @@ export const HelpMenu: React.FC<WorkspaceHelpSectionProps> = observer(() => {
         >
           <CustomMenu.MenuItem>
             <a
-              href="https://go.plane.so/p-docs"
+              href="https://docs.oneworkspacex.com"
               target="_blank"
               className="flex items-center justify- gap-x-2 rounded text-xs hover:bg-custom-background-80"
             >
@@ -78,21 +78,21 @@ export const HelpMenu: React.FC<WorkspaceHelpSectionProps> = observer(() => {
               <span className="text-xs">{t("documentation")}</span>
             </a>
           </CustomMenu.MenuItem>
-          {config?.intercom_app_id && config?.is_intercom_enabled && (
-            <CustomMenu.MenuItem>
-              <button
-                type="button"
-                onClick={handleCrispWindowShow}
-                className="flex w-full items-center gap-x-2 rounded text-xs hover:bg-custom-background-80"
-              >
-                <MessagesSquare className="h-3.5 w-3.5 text-custom-text-200" />
-                <span className="text-xs">{t("message_support")}</span>
-              </button>
-            </CustomMenu.MenuItem>
-          )}
+          {/*{config?.intercom_app_id && config?.is_intercom_enabled && (*/}
+          {/*  <CustomMenu.MenuItem>*/}
+          {/*    <button*/}
+          {/*      type="button"*/}
+          {/*      onClick={handleCrispWindowShow}*/}
+          {/*      className="flex w-full items-center gap-x-2 rounded text-xs hover:bg-custom-background-80"*/}
+          {/*    >*/}
+          {/*      <MessagesSquare className="h-3.5 w-3.5 text-custom-text-200" />*/}
+          {/*      <span className="text-xs">{t("message_support")}</span>*/}
+          {/*    </button>*/}
+          {/*  </CustomMenu.MenuItem>*/}
+          {/*)}*/}
           <CustomMenu.MenuItem>
             <a
-              href="mailto:sales@plane.so"
+              href="mailto:sales@oneworkspacex.com"
               target="_blank"
               className="flex items-center justify- gap-x-2 rounded text-xs hover:bg-custom-background-80"
             >
@@ -125,27 +125,27 @@ export const HelpMenu: React.FC<WorkspaceHelpSectionProps> = observer(() => {
               <span className="text-xs">{t("keyboard_shortcuts")}</span>
             </button>
           </CustomMenu.MenuItem>
-          <CustomMenu.MenuItem>
-            <button
-              type="button"
-              onClick={() => setProductUpdatesModalOpen(true)}
-              className="flex w-full items-center justify-start text-xs hover:bg-custom-background-80"
-            >
-              <span className="text-xs">{t("whats_new")}</span>
-            </button>
-          </CustomMenu.MenuItem>
-          <CustomMenu.MenuItem>
-            <a
-              href="https://go.plane.so/p-discord"
-              target="_blank"
-              className="flex items-center justify- gap-x-2 rounded text-xs hover:bg-custom-background-80"
-            >
-              <span className="text-xs">Discord</span>
-            </a>
-          </CustomMenu.MenuItem>
-          <div className="px-1 pt-2 mt-1 text-xs text-custom-text-200 border-t border-custom-border-200">
-            <PlaneVersionNumber />
-          </div>
+          {/*<CustomMenu.MenuItem>*/}
+          {/*  <button*/}
+          {/*    type="button"*/}
+          {/*    onClick={() => setProductUpdatesModalOpen(true)}*/}
+          {/*    className="flex w-full items-center justify-start text-xs hover:bg-custom-background-80"*/}
+          {/*  >*/}
+          {/*    <span className="text-xs">{t("whats_new")}</span>*/}
+          {/*  </button>*/}
+          {/*</CustomMenu.MenuItem>*/}
+          {/*<CustomMenu.MenuItem>*/}
+          {/*  <a*/}
+          {/*    href="https://go.plane.so/p-discord"*/}
+          {/*    target="_blank"*/}
+          {/*    className="flex items-center justify- gap-x-2 rounded text-xs hover:bg-custom-background-80"*/}
+          {/*  >*/}
+          {/*    <span className="text-xs">Discord</span>*/}
+          {/*  </a>*/}
+          {/*</CustomMenu.MenuItem>*/}
+          {/*<div className="px-1 pt-2 mt-1 text-xs text-custom-text-200 border-t border-custom-border-200">*/}
+          {/*  <PlaneVersionNumber />*/}
+          {/*</div>*/}
         </CustomMenu>
       </div>
     </>

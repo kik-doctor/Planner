@@ -29,7 +29,7 @@ const helpOptions = [
   },
   {
     name: "Report a bug",
-    href: "https://github.com/makeplane/plane/issues/new/choose",
+    href: "https://github.com/kik-doctor/Planner/issues/new/choose",
     Icon: GithubIcon,
   },
 ];
