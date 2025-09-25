@@ -2,13 +2,11 @@
 import traceback
 import zoneinfo
 
+# Django imports
 from django.conf import settings
 from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from django.db import IntegrityError
-
-# Django imports
 from django.utils import timezone
-
 # Third part imports
 from rest_framework import status
 from rest_framework.authentication import BaseAuthentication
@@ -20,6 +18,7 @@ from rest_framework.views import APIView
 # Module imports
 from plane.utils.core import ReadReplicaControlMixin
 from plane.utils.exception_logger import log_exception
+from plane.utils.paginator import BasePaginator
 
 
 class TimezoneMixin:
@@ -36,7 +35,7 @@ class TimezoneMixin:
             timezone.deactivate()
 
 
-class BaseAPIView(TimezoneMixin, ReadReplicaControlMixin, APIView):
+class BaseAPIView(TimezoneMixin, ReadReplicaControlMixin, APIView, BasePaginator):
     model = None
 
     use_read_replica = False
@@ -106,6 +105,20 @@ class BaseAPIView(TimezoneMixin, ReadReplicaControlMixin, APIView):
         except Exception as exc:
             response = self.handle_exception(exc)
             return exc
+
+    @property
+    def fields(self):
+        fields = [
+            field for field in self.request.GET.get("fields", "").split(",") if field
+        ]
+        return fields if fields else None
+
+    @property
+    def expand(self):
+        expand = [
+            expand for expand in self.request.GET.get("expand", "").split(",") if expand
+        ]
+        return expand if expand else None
 
 
 class PlannerWebhookAuthentication(BaseAuthentication):
