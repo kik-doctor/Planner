@@ -1,6 +1,6 @@
-# Django imports
 # 3rd party imports
 import jwt
+# Django imports
 from django.conf import settings
 from django.db.models import Q, Exists, OuterRef, Func, F, Subquery, Prefetch
 
