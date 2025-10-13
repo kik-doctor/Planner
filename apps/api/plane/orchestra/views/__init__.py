@@ -1,1 +1,2 @@
+from .project.project import ProjectAPIEndpoint
 from .webhook.workspace_management import WorkspaceManagementWebhookEndpoint

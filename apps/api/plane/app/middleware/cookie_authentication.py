@@ -1,12 +1,12 @@
-# Django imports
-from django.utils.deprecation import MiddlewareMixin
-from django.conf import settings
-from django.contrib.auth import get_user_model, login, logout
-
 # Third party imports
 import jwt
+# Django imports
+from django.conf import settings
+from django.contrib.auth import get_user_model, login, logout
+from django.utils.deprecation import MiddlewareMixin
 
 User = get_user_model()
+
 
 class CookieAuthMiddleware(MiddlewareMixin):
     def process_request(self, request):
