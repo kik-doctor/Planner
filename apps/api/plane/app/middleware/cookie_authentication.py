@@ -25,17 +25,15 @@ class CookieAuthMiddleware(MiddlewareMixin):
                 logout(request)
             return
 
-        # Once authenticated, skip cookie check
-        if token and request.user.is_authenticated:
-            payload = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
-            email = payload.get("email")
-            req_email = request.user.email
-            if email == req_email:
-                return
-
         try:
             payload = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
             email = payload.get("email")
+
+            # Once authenticated, skip cookie check
+            if token and request.user.is_authenticated:
+                req_email = request.user.email
+                if email == req_email:
+                    return
             user = User.objects.get(email=email)
             user.backend = 'django.contrib.auth.backends.ModelBackend'  # Required for login()
             login(request, user)
