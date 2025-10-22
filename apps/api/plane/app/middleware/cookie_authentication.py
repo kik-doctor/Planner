@@ -30,10 +30,8 @@ class CookieAuthMiddleware(MiddlewareMixin):
             email = payload.get("email")
 
             # Once authenticated, skip cookie check
-            if request.user.is_authenticated:
-                req_email = request.user.email
-                if email == req_email:
-                    return
+            if request.user.is_authenticated and email == request.user.email:
+                return
                 # If logged-in user differs → force re-login
                 logout(request)
 
