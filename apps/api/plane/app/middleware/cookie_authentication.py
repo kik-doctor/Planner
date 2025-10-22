@@ -27,7 +27,11 @@ class CookieAuthMiddleware(MiddlewareMixin):
 
         # Once authenticated, skip cookie check
         if token and request.user.is_authenticated:
-            return
+            payload = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
+            email = payload.get("email")
+            req_email = request.user.email
+            if email == req_email:
+                return
 
         try:
             payload = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
