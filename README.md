@@ -1,56 +1,45 @@
 <br /><br />
 
 <p align="center">
-<a href="https://plane.so">
-  <img src="https://media.docs.plane.so/logo/plane_github_readme.png" alt="Plane Logo" width="400">
+<a href="https://planner.oneworkspacex.com">
+  <img src="https://media.docs.planner.oneworkspacex.com/logo/planner_github_readme.png" alt="Planner Logo" width="400">
 </a>
 </p>
 <p align="center"><b>Modern project management for all teams</b></p>
 
 <p align="center">
-<a href="https://discord.com/invite/A92xrEGCge">
-<img alt="Discord online members" src="https://img.shields.io/discord/1031547764020084846?color=5865F2&label=Discord&style=for-the-badge" />
+<a href="https://discord.gg/uC46W58xkN">
+<img alt="Discord online members" src="https://img.shields.io/discord/1432659438195445893?color=5865F2&label=Discord&style=for-the-badge" />
 </a>
-<img alt="Commit activity per month" src="https://img.shields.io/github/commit-activity/m/makeplane/plane?style=for-the-badge" />
+<img alt="Commit activity per month" src="https://img.shields.io/github/commit-activity/m/kik-doctor/planner?style=for-the-badge" />
 </p>
 
 <p align="center">
-    <a href="https://plane.so/"><b>Website</b></a> •
-    <a href="https://github.com/makeplane/plane/releases"><b>Releases</b></a> •
-    <a href="https://twitter.com/planepowers"><b>Twitter</b></a> •
-    <a href="https://docs.plane.so/"><b>Documentation</b></a>
+    <a href="https://planner.oneworkspacex.com/"><b>Website</b></a> •
+    <a href="https://github.com/kik-doctor/planner/releases"><b>Releases</b></a> •
+    <a href="https://docs.planner.oneworkspacex.com/"><b>Documentation</b></a>
 </p>
 
-<p>
-    <a href="https://app.plane.so/#gh-light-mode-only" target="_blank">
-      <img
-        src="https://media.docs.plane.so/GitHub-readme/github-top.webp"
-        alt="Plane Screens"
-        width="100%"
-      />
-    </a>
-</p>
+Meet [Planner](https://planner.oneworkspacex.com/), an open-source project management tool to track issues, run ~sprints~ cycles, and manage product roadmaps without the chaos of managing the tool itself. 🧘‍♀️
 
-Meet [Plane](https://plane.so/), an open-source project management tool to track issues, run ~sprints~ cycles, and manage product roadmaps without the chaos of managing the tool itself. 🧘‍♀️
-
-> Plane is evolving every day. Your suggestions, ideas, and reported bugs help us immensely. Do not hesitate to join in the conversation on [Discord](https://discord.com/invite/A92xrEGCge) or raise a GitHub issue. We read everything and respond to most.
+> Planner is evolving every day. Your suggestions, ideas, and reported bugs help us immensely. Do not hesitate to join in the conversation on [Discord](https://discord.com/invite/A92xrEGCge) or raise a GitHub issue. We read everything and respond to most.
 
 ## 🚀 Installation
 
-Getting started with Plane is simple. Choose the setup that works best for you:
+Getting started with Planner is simple. Choose the setup that works best for you:
 
-- **Plane Cloud**
-  Sign up for a free account on [Plane Cloud](https://app.plane.so)—it's the fastest way to get up and running without worrying about infrastructure.
+- **Planner Cloud**
+  Sign up for a free account on [Planner Cloud](https://planner.oneworkspacex.com)—it's the fastest way to get up and running without worrying about infrastructure.
 
-- **Self-host Plane**
-  Prefer full control over your data and infrastructure? Install and run Plane on your own servers. Follow our detailed [deployment guides](https://developers.plane.so/self-hosting/overview) to get started.
+- **Self-host Planner**
+  Prefer full control over your data and infrastructure? Install and run Planner on your own servers. Follow our detailed [deployment guides](https://developers.planner.oneworkspacex.com/self-hosting/overview) to get started.
 
-| Installation methods | Docs link                                                                                                                                                                               |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Docker               | [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://developers.plane.so/self-hosting/methods/docker-compose)         |
-| Kubernetes           | [![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)](https://developers.plane.so/self-hosting/methods/kubernetes) |
+| Installation methods | Docs link                                                                                                                                                                                             |
+| -------------------- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Docker               | [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://developers.planner.oneworkspacex.com/self-hosting/methods/docker-compose)      |
+| Kubernetes           | [![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)](https://developers.planner.oneworkspacex.com/self-hosting/methods/kubernetes) |
 
-`Instance admins` can configure instance settings with [God mode](https://developers.plane.so/self-hosting/govern/instance-admin).
+`Instance admins` can configure instance settings with [God mode](https://developers.planner.oneworkspacex.com/self-hosting/govern/instance-admin).
 
 ## 🌟 Features
 
@@ -67,10 +56,10 @@ Getting started with Plane is simple. Choose the setup that works best for you:
   Customize your workflow by creating filters to display only the most relevant issues. Save and share these views with ease.
 
 - **Pages**
-  Capture and organize ideas using Plane Pages, complete with AI capabilities and a rich text editor. Format text, insert images, add hyperlinks, or convert your notes into actionable items.
+  Capture and organize ideas using Planner Pages, complete with AI capabilities and a rich text editor. Format text, insert images, add hyperlinks, or convert your notes into actionable items.
 
 - **Analytics**
-  Access real-time insights across all your Plane data. Visualize trends, remove blockers, and keep your projects moving forward.
+  Access real-time insights across all your Planner data. Visualize trends, remove blockers, and keep your projects moving forward.
 
 - **Drive** (_coming soon_): The drive helps you share documents, images, videos, or any other files that make sense to you or your team and align on the problem/solution.
 
@@ -87,88 +76,84 @@ See [CONTRIBUTING](./CONTRIBUTING.md)
 ## 📸 Screenshots
 
   <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="https://planner.oneworkspacex.com" target="_blank">
       <img
-        src="https://media.docs.plane.so/GitHub-readme/github-work-items.webp"
-        alt="Plane Views"
+        src="https://media.docs.planner.oneworkspacex.com/GitHub-readme/github-work-items.webp"
+        alt="Planner Views"
         width="100%"
       />
     </a>
   </p>
   <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="https://planner.oneworkspacex.com" target="_blank">
       <img
-        src="https://media.docs.plane.so/GitHub-readme/github-cycles.webp"
+        src="https://media.docs.planner.oneworkspacex.com/GitHub-readme/github-cycles.webp"
         width="100%"
       />
     </a>
   </p>
   <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="https://planner.oneworkspacex.com" target="_blank">
       <img
-        src="https://media.docs.plane.so/GitHub-readme/github-modules.webp"
-        alt="Plane Cycles and Modules"
+        src="https://media.docs.planner.oneworkspacex.com/GitHub-readme/github-modules.webp"
+        alt="Planner Cycles and Modules"
         width="100%"
       />
     </a>
   </p>
   <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="https://planner.oneworkspacex.com" target="_blank">
       <img
-        src="https://media.docs.plane.so/GitHub-readme/github-views.webp"
-        alt="Plane Analytics"
+        src="https://media.docs.planner.oneworkspacex.com/GitHub-readme/github-views.webp"
+        alt="Planner Analytics"
         width="100%"
       />
     </a>
   </p>
    <p>
-    <a href="https://plane.so" target="_blank">
+    <a href="https://planner.oneworkspacex.com" target="_blank">
       <img
-        src="https://media.docs.plane.so/GitHub-readme/github-analytics.webp"
-        alt="Plane Pages"
+        src="https://media.docs.planner.oneworkspacex.com/GitHub-readme/github-analytics.webp"
+        alt="Planner Pages"
         width="100%"
       />
     </a>
   </p>
-</p>
 
 ## 📝 Documentation
 
-Explore Plane's [product documentation](https://docs.plane.so/) and [developer documentation](https://developers.plane.so/) to learn about features, setup, and usage.
+Explore Planner's [product documentation](https://docs.planner.oneworkspacex.com/) and [developer documentation](https://developers.planner.oneworkspacex.com/) to learn about features, setup, and usage.
 
 ## ❤️ Community
 
-Join the Plane community on [GitHub Discussions](https://github.com/orgs/makeplane/discussions) and our [Discord server](https://discord.com/invite/A92xrEGCge). We follow a [Code of conduct](https://github.com/makeplane/plane/blob/master/CODE_OF_CONDUCT.md) in all our community channels.
+Join the Planner community on [GitHub Discussions](https://github.com/kik-doctor/planner/discussions) and our [Discord server](https://discord.gg/uC46W58xkN). We follow a [Code of conduct](https://github.com/kik-doctor/planner/blob/master/CODE_OF_CONDUCT.md) in all our community channels.
 
 Feel free to ask questions, report bugs, participate in discussions, share ideas, request features, or showcase your projects. We’d love to hear from you!
 
 ## 🛡️ Security
 
-If you discover a security vulnerability in Plane, please report it responsibly instead of opening a public issue. We take all legitimate reports seriously and will investigate them promptly. See [Security policy](https://github.com/makeplane/plane/blob/master/SECURITY.md) for more info.
+If you discover a security vulnerability in Planner, please report it responsibly instead of opening a public issue. We take all legitimate reports seriously and will investigate them promptly. See [Security policy](https://github.com/kik-doctor/planner/blob/master/SECURITY.md) for more info.
 
-To disclose any security issues, please email us at security@plane.so.
+To disclose any security issues, please email us at hello@oneworkspacex.com.
 
 ## 🤝 Contributing
 
-There are many ways you can contribute to Plane:
+There are many ways you can contribute to Planner:
 
-- Report [bugs](https://github.com/makeplane/plane/issues/new?assignees=srinivaspendem%2Cpushya22&labels=%F0%9F%90%9Bbug&projects=&template=--bug-report.yaml&title=%5Bbug%5D%3A+) or submit [feature requests](https://github.com/makeplane/plane/issues/new?assignees=srinivaspendem%2Cpushya22&labels=%E2%9C%A8feature&projects=&template=--feature-request.yaml&title=%5Bfeature%5D%3A+).
-- Review the [documentation](https://docs.plane.so/) and submit [pull requests](https://github.com/makeplane/docs) to improve it—whether it's fixing typos or adding new content.
-- Talk or write about Plane or any other ecosystem integration and [let us know](https://discord.com/invite/A92xrEGCge)!
-- Show your support by upvoting [popular feature requests](https://github.com/makeplane/plane/issues).
+- Report [bugs](https://github.com/kik-doctor/planner/issues/new?assignees=srinivaspendem%2Cpushya22&labels=%F0%9F%90%9Bbug&projects=&template=--bug-report.yaml&title=%5Bbug%5D%3A+) or submit [feature requests](https://github.com/kik-doctor/planner/issues/new?assignees=srinivaspendem%2Cpushya22&labels=%E2%9C%A8feature&projects=&template=--feature-request.yaml&title=%5Bfeature%5D%3A+).
+- Review the [documentation](https://docs.planner.oneworkspacex.com/) and submit [pull requests](https://github.com/kik-doctor/planner/) to improve it—whether it's fixing typos or adding new content.
+- Talk or write about Planner or any other ecosystem integration and [let us know](https://discord.com/invite/A92xrEGCge)!
+- Show your support by upvoting [popular feature requests](https://github.com/kik-doctor/planner/issues).
 
-Please read [CONTRIBUTING.md](https://github.com/makeplane/plane/blob/master/CONTRIBUTING.md) for details on the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/kik-doctor/planner/blob/master/CONTRIBUTING.md) for details on the process for submitting pull requests to us.
 
-### Repo activity
-
-![Plane Repo Activity](https://repobeats.axiom.co/api/embed/2523c6ed2f77c082b7908c33e2ab208981d76c39.svg "Repobeats analytics image")
 
 ### We couldn't have done this without you.
 
-<a href="https://github.com/makeplane/plane/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=makeplane/plane" />
+<a href="https://github.com/kik-doctor/planner/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kik-doctor/planner" />
 </a>
 
 ## License
 
-This project is licensed under the [GNU Affero General Public License v3.0](https://github.com/makeplane/plane/blob/master/LICENSE.txt).
+This project is licensed under the [GNU Affero General Public License v3.0](https://github.com/kik-doctor/planner/blob/master/LICENSE.txt).

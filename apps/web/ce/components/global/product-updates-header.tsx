@@ -1,6 +1,6 @@
 import { observer } from "mobx-react";
 import { useTranslation } from "@plane/i18n";
-import { PlaneLogo } from "@plane/propel/icons";
+import { PlannerLogo } from "@plane/propel/icons";
 // helpers
 import { cn } from "@plane/utils";
 // package.json
@@ -21,7 +21,7 @@ export const ProductUpdatesHeader = observer(() => {
         </div>
       </div>
       <div className="flex flex-shrink-0 items-center gap-8">
-        <PlaneLogo className="h-6 w-auto text-custom-text-100" />
+        <PlannerLogo className="h-6 w-auto text-custom-text-100" />
       </div>
     </div>
   );

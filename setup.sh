@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Plane Project Setup Script
+# Planner Project Setup Script
 # This script prepares the local development environment by setting up all necessary .env files
-# https://github.com/makeplane/plane
+# https://github.com/kik-doctor/planner
 
 # Set colors for output messages
 GREEN='\033[0;32m'
@@ -14,7 +14,7 @@ NC='\033[0m' # No Color
 
 # Print header
 echo -e "${BOLD}${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${BOLD}${BLUE}                   Plane - Project Management Tool                    ${NC}"
+echo -e "${BOLD}${BLUE}                   Planner - Project Management Tool                    ${NC}"
 echo -e "${BOLD}${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${BOLD}Setting up your development environment...${NC}\n"
 

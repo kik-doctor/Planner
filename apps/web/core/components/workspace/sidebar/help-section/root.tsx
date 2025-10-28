@@ -79,7 +79,7 @@ export const HelpMenuRoot = observer(() => {
         )}
         <CustomMenu.MenuItem>
           <a
-            href="mailto:sales@plane.so"
+            href="mailto:hello@oneworkspacex.com"
             target="_blank"
             className="flex items-center justify- gap-x-2 rounded text-xs hover:bg-custom-background-80"
           >

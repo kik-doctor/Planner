@@ -1,7 +1,7 @@
 import { USER_TRACKER_ELEMENTS } from "@plane/constants";
 import { useTranslation } from "@plane/i18n";
 // ui
-import { PlaneLogo } from "@plane/propel/icons";
+import { PlannerLogo } from "@plane/propel/icons";
 import { getButtonStyling } from "@plane/ui";
 // helpers
 import { cn } from "@plane/utils";
@@ -58,7 +58,7 @@ export const ProductUpdatesFooter = () => {
           "flex gap-1.5 items-center text-center font-medium hover:underline underline-offset-2 outline-none"
         )}
       >
-        <PlaneLogo className="h-4 w-auto text-custom-text-100" />
+        <PlannerLogo className="h-4 w-auto text-custom-text-100" />
         {t("powered_by_plane_pages")}
       </a>
     </div>

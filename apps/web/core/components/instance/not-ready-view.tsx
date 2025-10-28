@@ -11,15 +11,14 @@ import { Button } from "@plane/ui";
 // assets
 import PlaneBackgroundPatternDark from "@/public/auth/background-pattern-dark.svg";
 import PlaneBackgroundPattern from "@/public/auth/background-pattern.svg";
-import BlackHorizontalLogo from "@/public/plane-logos/black-horizontal-with-blue-logo.png";
-import WhiteHorizontalLogo from "@/public/plane-logos/white-horizontal-with-blue-logo.png";
+import Logo from "@/public/plane-logos/logo.webp";
 import PlaneTakeOffImage from "@/public/plane-takeoff.png";
 
 export const InstanceNotReady: FC = () => {
   const { resolvedTheme } = useTheme();
   const patternBackground = resolvedTheme === "dark" ? PlaneBackgroundPatternDark : PlaneBackgroundPattern;
 
-  const logo = resolvedTheme === "light" ? BlackHorizontalLogo : WhiteHorizontalLogo;
+  const logo = Logo;
 
   return (
     <div className="relative">

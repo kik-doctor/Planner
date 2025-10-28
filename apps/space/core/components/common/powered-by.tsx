@@ -3,7 +3,7 @@
 import { FC } from "react";
 import { WEBSITE_URL } from "@plane/constants";
 // assets
-import { PlaneLogo } from "@plane/propel/icons";
+import { PlannerLogo } from "@plane/propel/icons";
 
 type TPoweredBy = {
   disabled?: boolean;
@@ -22,7 +22,7 @@ export const PoweredBy: FC<TPoweredBy> = (props) => {
       target="_blank"
       rel="noreferrer noopener"
     >
-      <PlaneLogo className="h-3 w-auto text-custom-text-100" />
+      <PlannerLogo className="h-3 w-auto text-custom-text-100" />
       <div className="text-xs">
         Powered by <span className="font-semibold">Plane Publish</span>
       </div>
