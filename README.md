@@ -22,7 +22,7 @@
 
 Meet [Planner](https://planner.oneworkspacex.com/), an open-source project management tool to track issues, run ~sprints~ cycles, and manage product roadmaps without the chaos of managing the tool itself. 🧘‍♀️
 
-> Planner is evolving every day. Your suggestions, ideas, and reported bugs help us immensely. Do not hesitate to join in the conversation on [Discord](https://discord.com/invite/A92xrEGCge) or raise a GitHub issue. We read everything and respond to most.
+> Planner is evolving every day. Your suggestions, ideas, and reported bugs help us immensely. Do not hesitate to join in the conversation on [Discord](https://discord.gg/uC46W58xkN) or raise a GitHub issue. We read everything and respond to most.
 
 ## 🚀 Installation
 
@@ -142,7 +142,7 @@ There are many ways you can contribute to Planner:
 
 - Report [bugs](https://github.com/kik-doctor/planner/issues/new?assignees=srinivaspendem%2Cpushya22&labels=%F0%9F%90%9Bbug&projects=&template=--bug-report.yaml&title=%5Bbug%5D%3A+) or submit [feature requests](https://github.com/kik-doctor/planner/issues/new?assignees=srinivaspendem%2Cpushya22&labels=%E2%9C%A8feature&projects=&template=--feature-request.yaml&title=%5Bfeature%5D%3A+).
 - Review the [documentation](https://docs.planner.oneworkspacex.com/) and submit [pull requests](https://github.com/kik-doctor/planner/) to improve it—whether it's fixing typos or adding new content.
-- Talk or write about Planner or any other ecosystem integration and [let us know](https://discord.com/invite/A92xrEGCge)!
+- Talk or write about Planner or any other ecosystem integration and [let us know](https://discord.gg/uC46W58xkN)!
 - Show your support by upvoting [popular feature requests](https://github.com/kik-doctor/planner/issues).
 
 Please read [CONTRIBUTING.md](https://github.com/kik-doctor/planner/blob/master/CONTRIBUTING.md) for details on the process for submitting pull requests to us.

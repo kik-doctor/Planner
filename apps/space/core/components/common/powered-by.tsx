@@ -24,7 +24,7 @@ export const PoweredBy: FC<TPoweredBy> = (props) => {
     >
       <PlannerLogo className="h-3 w-auto text-custom-text-100" />
       <div className="text-xs">
-        Powered by <span className="font-semibold">Plane Publish</span>
+        Powered by <span className="font-semibold">Planner Publish</span>
       </div>
     </a>
   );
