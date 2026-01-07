@@ -29,10 +29,10 @@ export const usePowerKHelpCommands = (): TPowerKCommandConfig[] => {
       closeOnSelect: true,
     },
     {
-      id: "open_plane_documentation",
+      id: "open_planner_documentation",
       type: "action",
       group: "help",
-      i18n_title: "power_k.help_actions.open_plane_documentation",
+      i18n_title: "power_k.help_actions.open_planner_documentation",
       icon: FileText,
       action: () => {
         window.open("https://docs.plane.so/", "_blank", "noopener,noreferrer");

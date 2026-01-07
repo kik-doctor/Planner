@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import { Outlet } from "react-router";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
-import { NewUserPopup } from "@/components/new-user-popup";
 // hooks
 import { useUser } from "@/hooks/store";
 // local components
@@ -40,7 +39,6 @@ function AdminLayout(_props: Route.ComponentProps) {
             <Outlet />
           </div>
         </main>
-        <NewUserPopup />
       </div>
     );
   }

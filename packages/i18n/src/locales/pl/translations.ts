@@ -82,7 +82,7 @@ export default {
       already_have_an_account: "Masz już konto?",
       login: "Zaloguj się",
       create_account: "Utwórz konto",
-      new_to_plane: "Nowy w Plane?",
+      new_to_planner: "Nowy w Planner?",
       back_to_sign_in: "Powrót do logowania",
       resend_in: "Wyślij ponownie za {seconds} sekund",
       sign_in_with_unique_code: "Zaloguj się za pomocą unikalnego kodu",
@@ -400,7 +400,7 @@ export default {
   full_changelog: "Pełny dziennik zmian",
   support: "Wsparcie",
   discord: "Discord",
-  powered_by_plane_pages: "Oparte na Plane Pages",
+  powered_by_planner_pages: "Oparte na Planner Pages",
   please_select_at_least_one_invitation: "Wybierz co najmniej jedno zaproszenie.",
   please_select_at_least_one_invitation_description:
     "Wybierz co najmniej jedno zaproszenie, aby dołączyć do przestrzeni roboczej.",
@@ -564,7 +564,7 @@ export default {
       not_right_now: "Nie teraz",
       create_project: {
         title: "Utwórz projekt",
-        description: "Większość rzeczy zaczyna się od projektu w Plane.",
+        description: "Większość rzeczy zaczyna się od projektu w Planner.",
         cta: "Zacznij",
       },
       invite_team: {
@@ -578,7 +578,7 @@ export default {
         cta: "Skonfiguruj tę przestrzeń",
       },
       personalize_account: {
-        title: "Spersonalizuj Plane.",
+        title: "Spersonalizuj Planner.",
         description: "Wybierz zdjęcie, kolory i inne.",
         cta: "Dostosuj teraz",
       },
@@ -611,8 +611,8 @@ export default {
         issues: "Elementy pracy",
       },
     },
-    new_at_plane: {
-      title: "Co nowego w Plane",
+    new_at_planner: {
+      title: "Co nowego w Planner",
     },
     quick_tutorial: {
       title: "Szybki samouczek",
@@ -2571,7 +2571,7 @@ export default {
     edited_by: "Edytowane przez",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    planner_didnt_start_up_this_could_be_because_one_or_more_planner_services_failed_to_start:
       "Plane nie uruchomił się. Może to być spowodowane tym, że jedna lub więcej usług Plane nie mogła się uruchomić.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Wybierz View Logs z setup.sh i logów Docker, aby mieć pewność.",

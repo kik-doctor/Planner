@@ -82,7 +82,7 @@ export default {
       already_have_an_account: "Вже маєте обліковий запис?",
       login: "Увійти",
       create_account: "Створити обліковий запис",
-      new_to_plane: "Вперше в Plane?",
+      new_to_planner: "Вперше в Plane?",
       back_to_sign_in: "Повернутися до входу",
       resend_in: "Надіслати повторно через {seconds} секунд",
       sign_in_with_unique_code: "Увійти за допомогою унікального коду",
@@ -403,7 +403,7 @@ export default {
   full_changelog: "Повний журнал змін",
   support: "Підтримка",
   discord: "Discord",
-  powered_by_plane_pages: "Працює на Plane Pages",
+  powered_by_planner_pages: "Працює на Plane Pages",
   please_select_at_least_one_invitation: "Виберіть принаймні одне запрошення.",
   please_select_at_least_one_invitation_description:
     "Виберіть принаймні одне запрошення, щоб приєднатися до робочого простору.",
@@ -614,7 +614,7 @@ export default {
         issues: "Робочі одиниці",
       },
     },
-    new_at_plane: {
+    new_at_planner: {
       title: "Новинки в Plane",
     },
     quick_tutorial: {
@@ -2576,7 +2576,7 @@ export default {
     edited_by: "Відредаговано",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    planner_didnt_start_up_this_could_be_because_one_or_more_planner_services_failed_to_start:
       "Plane не запустився. Це може бути через те, що один або декілька сервісів Plane не змогли запуститися.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Виберіть View Logs з setup.sh та логів Docker, щоб переконатися.",

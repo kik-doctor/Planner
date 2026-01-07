@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import useSWR from "swr";
 // plane imports
 import { SPACE_BASE_PATH } from "@plane/constants";
-import { PlaneLockup } from "@plane/propel/icons";
+import { PlannerLogo } from "@plane/propel/icons";
 // assets
 import PlaneBackgroundPatternDark from "@/app/assets/auth/background-pattern-dark.svg?url";
 import PlaneBackgroundPattern from "@/app/assets/auth/background-pattern.svg?url";
@@ -47,7 +47,7 @@ export const InstanceProvider = observer(function InstanceProvider({ children }:
           <div className="container h-[110px] flex-shrink-0 mx-auto px-5 lg:px-0 flex items-center justify-between gap-5 z-50">
             <div className="flex items-center gap-x-2 py-10">
               <Link href={`${SPACE_BASE_PATH}/`}>
-                <PlaneLockup className="h-7 w-auto text-custom-text-100" />
+                <PlannerLogo className="h-14 w-auto text-custom-text-100" />
               </Link>
             </div>
           </div>

@@ -27,7 +27,7 @@ class WorkspaceHomePreferenceViewSet(BaseAPIView):
         keys = [
             key
             for key, _ in WorkspaceHomePreference.HomeWidgetKeys.choices
-            if key not in ["quick_tutorial", "new_at_plane"]
+            if key not in ["quick_tutorial", "new_at_planner"]
         ]
 
         sort_order_counter = 1

@@ -42,10 +42,10 @@ export const HOME_WIDGETS_LIST: {
     fullWidth: false,
     title: "stickies.title",
   },
-  new_at_plane: {
+  new_at_planner: {
     component: null,
     fullWidth: false,
-    title: "home.new_at_plane.title",
+    title: "home.new_at_planner.title",
   },
   quick_tutorial: {
     component: null,

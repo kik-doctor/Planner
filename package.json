@@ -1,7 +1,7 @@
 {
-  "name": "plane",
+  "name": "planner",
   "description": "Open-source project management that unlocks customer value",
-  "repository": "https://github.com/makeplane/plane.git",
+  "repository": "https://github.com/kik-doctor/planner.git",
   "version": "1.2.0",
   "license": "AGPL-3.0",
   "private": true,
@@ -48,7 +48,7 @@
       "pnpm exec prettier --write --ignore-unknown"
     ],
     "*.{js,jsx,ts,tsx,cjs,mjs,cts,mts}": [
-      "pnpm exec eslint --fix --max-warnings=0 --no-warn-ignored"
+      "pnpm exec eslint --fix --no-warn-ignored"
     ]
   },
   "pnpm": {

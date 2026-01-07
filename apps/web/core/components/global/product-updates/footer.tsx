@@ -2,7 +2,7 @@ import { USER_TRACKER_ELEMENTS } from "@plane/constants";
 import { useTranslation } from "@plane/i18n";
 // ui
 import { getButtonStyling } from "@plane/propel/button";
-import { PlaneLogo } from "@plane/propel/icons";
+import { PlannerLogo } from "@plane/propel/icons";
 // helpers
 import { cn } from "@plane/utils";
 
@@ -63,8 +63,8 @@ export function ProductUpdatesFooter() {
         )}
         rel="noreferrer"
       >
-        <PlaneLogo className="h-4 w-auto text-custom-text-100" />
-        {t("powered_by_plane_pages")}
+        <PlannerLogo className="h-4 w-auto text-custom-text-100" />
+        {t("powered_by_planner_pages")}
       </a>
     </div>
   );

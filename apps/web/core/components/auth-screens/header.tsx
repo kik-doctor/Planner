@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { AUTH_TRACKER_ELEMENTS } from "@plane/constants";
 import { useTranslation } from "@plane/i18n";
-import { PlaneLockup } from "@plane/propel/icons";
+import { PlannerLogo } from "@plane/propel/icons";
 import { PageHead } from "@/components/core/page-title";
 import { EAuthModes } from "@/helpers/authentication.helper";
 import { useInstance } from "@/hooks/store/use-instance";
@@ -11,7 +11,7 @@ import { useInstance } from "@/hooks/store/use-instance";
 const authContentMap = {
   [EAuthModes.SIGN_IN]: {
     pageTitle: "Sign up",
-    text: "auth.common.new_to_plane",
+    text: "auth.common.new_to_planner",
     linkText: "Sign up",
     linkHref: "/sign-up",
   },
@@ -38,7 +38,7 @@ export const AuthHeader = observer(function AuthHeader({ type }: AuthHeaderProps
       <PageHead title={t(authContentMap[type].pageTitle) + " - Plane"} />
       <div className="flex items-center justify-between gap-6 w-full flex-shrink-0 sticky top-0">
         <Link href="/">
-          <PlaneLockup height={20} width={95} className="text-custom-text-100" />
+          <PlannerLogo height={95} width={95} className="text-custom-text-100" />
         </Link>
         {enableSignUpConfig && (
           <div className="flex flex-col items-end text-sm font-medium text-center sm:items-center sm:gap-2 sm:flex-row text-custom-text-300">

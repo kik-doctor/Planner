@@ -3,22 +3,20 @@ import * as Sentry from "@sentry/react-router";
 import { Links, Meta, Outlet, Scripts } from "react-router";
 import type { LinksFunction } from "react-router";
 import appleTouchIcon from "@/app/assets/favicon/apple-touch-icon.png?url";
-import favicon16 from "@/app/assets/favicon/favicon-16x16.png?url";
-import favicon32 from "@/app/assets/favicon/favicon-32x32.png?url";
+import favicon96 from "@/app/assets/favicon/favicon-96x96.png?url";
 import faviconIco from "@/app/assets/favicon/favicon.ico?url";
 import { LogoSpinner } from "@/components/common/logo-spinner";
 import globalStyles from "@/styles/globals.css?url";
 import type { Route } from "./+types/root";
 import { AppProviders } from "./providers";
 
-const APP_TITLE = "Plane | Simple, extensible, open-source project management tool.";
+const APP_TITLE = "Planner | Simple, extensible, open-source project management tool.";
 const APP_DESCRIPTION =
   "Open-source project management tool to manage work items, sprints, and product roadmaps with peace of mind.";
 
 export const links: LinksFunction = () => [
   { rel: "apple-touch-icon", sizes: "180x180", href: appleTouchIcon },
-  { rel: "icon", type: "image/png", sizes: "32x32", href: favicon32 },
-  { rel: "icon", type: "image/png", sizes: "16x16", href: favicon16 },
+  { rel: "icon", type: "image/png", sizes: "96x96", href: favicon96 },
   { rel: "shortcut icon", href: faviconIco },
   { rel: "manifest", href: `/site.webmanifest.json` },
   { rel: "stylesheet", href: globalStyles },

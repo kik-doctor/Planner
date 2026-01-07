@@ -1,5 +1,5 @@
 import { observer } from "mobx-react";
-import { PlaneLockup } from "@plane/propel/icons";
+import { PlannerLogo } from "@plane/propel/icons";
 // assets
 import UserLoggedInImage from "@/app/assets/user-logged-in.svg?url";
 // components
@@ -17,7 +17,7 @@ export const UserLoggedIn = observer(function UserLoggedIn() {
   return (
     <div className="flex flex-col h-screen w-screen">
       <div className="relative flex w-full items-center justify-between gap-4 border-b border-custom-border-200 px-6 py-5">
-        <PlaneLockup className="h-6 w-auto text-custom-text-100" />
+        <PlannerLogo className="h-12 w-auto text-custom-text-100" />
         <UserAvatar />
       </div>
 

@@ -32,7 +32,13 @@ export default defineConfig(() => ({
     dedupe: ["react", "react-dom", "@headlessui/react"],
   },
   server: {
-    host: "127.0.0.1",
+    host: true,
+    allowedHosts: ["planner.domain.com", "localhost", "127.0.0.1"],
+    hmr: {
+      protocol: "wss", // use 'ws' if not HTTPS
+      host: "planner.domain.com",
+      port: 3000,
+    },
   },
   // No SSR-specific overrides needed; alias resolves to ESM build
 }));

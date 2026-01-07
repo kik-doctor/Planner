@@ -82,7 +82,7 @@ export default {
       already_have_an_account: "Đã có tài khoản?",
       login: "Đăng nhập",
       create_account: "Tạo tài khoản",
-      new_to_plane: "Lần đầu sử dụng Plane?",
+      new_to_planner: "Lần đầu sử dụng Plane?",
       back_to_sign_in: "Quay lại đăng nhập",
       resend_in: "Gửi lại sau {seconds} giây",
       sign_in_with_unique_code: "Đăng nhập bằng mã duy nhất",
@@ -406,7 +406,7 @@ export default {
   full_changelog: "Nhật ký thay đổi đầy đủ",
   support: "Hỗ trợ",
   discord: "Discord",
-  powered_by_plane_pages: "Được hỗ trợ bởi Plane Pages",
+  powered_by_planner_pages: "Được hỗ trợ bởi Plane Pages",
   please_select_at_least_one_invitation: "Vui lòng chọn ít nhất một lời mời.",
   please_select_at_least_one_invitation_description:
     "Vui lòng chọn ít nhất một lời mời để tham gia không gian làm việc.",
@@ -619,7 +619,7 @@ export default {
         issues: "Mục công việc",
       },
     },
-    new_at_plane: {
+    new_at_planner: {
       title: "Tính năng mới của Plane",
     },
     quick_tutorial: {
@@ -2604,7 +2604,7 @@ export default {
     edited_by: "Được chỉnh sửa bởi",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    planner_didnt_start_up_this_could_be_because_one_or_more_planner_services_failed_to_start:
       "Plane không khởi động được. Điều này có thể do một hoặc nhiều dịch vụ Plane không khởi động được.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure: "Chọn View Logs từ setup.sh và log Docker để chắc chắn.",
   },

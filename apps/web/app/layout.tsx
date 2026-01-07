@@ -9,17 +9,16 @@ import { SITE_DESCRIPTION, SITE_NAME } from "@plane/constants";
 import { cn } from "@plane/utils";
 
 // assets
-import favicon16 from "@/app/assets/favicon/favicon-16x16.png?url";
-import favicon32 from "@/app/assets/favicon/favicon-32x32.png?url";
+import favicon96 from "@/app/assets/favicon/favicon-96x96.png?url";
 import faviconIco from "@/app/assets/favicon/favicon.ico?url";
-import icon180 from "@/app/assets/icons/icon-180x180.png?url";
+import icon192 from "@/app/assets/icons/icon-192x192.png?url";
 import icon512 from "@/app/assets/icons/icon-512x512.png?url";
 
 // local
 import { AppProvider } from "./provider";
 
 export const meta = () => [
-  { title: "Plane | Simple, extensible, open-source project management tool." },
+  { title: "Planner | Simple, extensible, open-source project management tool." },
   { name: "description", content: SITE_DESCRIPTION },
   {
     name: "keywords",
@@ -31,7 +30,7 @@ export const meta = () => [
     content:
       "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
   },
-  { property: "og:title", content: "Plane | Simple, extensible, open-source project management tool." },
+  { property: "og:title", content: "Planner | Simple, extensible, open-source project management tool." },
   {
     property: "og:description",
     content: "Open-source project management tool to manage work items, cycles, and product roadmaps easily",
@@ -56,8 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <meta name="theme-color" content="#fff" />
-        <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
-        <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
+        <link rel="icon" type="image/png" sizes="96x96" href={favicon96} />
         <link rel="manifest" href="/site.webmanifest.json" />
         <link rel="shortcut icon" href={faviconIco} />
         {/* Meta info for PWA */}
@@ -68,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <link rel="apple-touch-icon" href={icon512} />
-        <link rel="apple-touch-icon" sizes="180x180" href={icon180} />
+        <link rel="apple-touch-icon" sizes="192x192" href={icon192} />
         <link rel="apple-touch-icon" sizes="512x512" href={icon512} />
         <link rel="manifest" href="/manifest.json" />
       </head>

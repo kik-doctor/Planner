@@ -41,7 +41,6 @@ import { UserPropertyIcon } from "./properties/user-icon";
 import { UserSquarePropertyIcon } from "./properties/user-square-icon";
 import { WorkflowsPropertyIcon } from "./properties/workflows-icon";
 import { PiChatLogo } from "./sub-brand/pi-chat";
-import { PlaneNewIcon } from "./sub-brand/plane-icon";
 import { WikiIcon } from "./sub-brand/wiki-icon";
 import { AnalyticsIcon } from "./workspace/analytics-icon";
 import { ArchiveIcon } from "./workspace/archive-icon";
@@ -55,7 +54,6 @@ import { YourWorkIcon } from "./workspace/your-work-icon";
 
 export const ICON_REGISTRY = {
   // Sub-brand icons
-  "sub-brand.plane": PlaneNewIcon,
   "sub-brand.wiki": WikiIcon,
   "sub-brand.pi-chat": PiChatLogo,
 
