@@ -1,0 +1,14 @@
+Planner is a modified and redistributed work based on the open-source project
+Plane (https://github.com/makeplane/plane).
+
+Copyright © Plane Contributors
+
+This software is licensed under the GNU Affero General Public License v3.0
+(AGPL-3.0). Planner contains modifications made by OneWorkspaceX,
+including renaming, feature changes, and integrations for commercial use.
+
+In accordance with the AGPL-3.0 license, the complete corresponding source code,
+including all modifications, is made available to users of this software.
+
+“Plane” is a trademark of its respective owners. Planner is not affiliated with
+or endorsed by the original Plane project.

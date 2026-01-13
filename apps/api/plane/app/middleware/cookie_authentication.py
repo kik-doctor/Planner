@@ -21,6 +21,7 @@ class CookieAuthMiddleware(MiddlewareMixin):
         token = request.COOKIES.get("owsauth")
         if not token:
             # No cookie → clear session and logout
+            # On local dev(port 3001), there is no owsauth, and disable below code
             if request.user.is_authenticated:
                 logout(request)
             return
