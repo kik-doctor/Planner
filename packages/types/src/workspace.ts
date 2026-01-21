@@ -12,6 +12,12 @@ export enum EUserWorkspaceRoles {
   GUEST = 5,
 }
 
+export enum EWorkspacePlan {
+  FREE = "FREE",
+  BUSINESS = "BUSINESS",
+  ENTERPRISE = "ENTERPRISE",
+}
+
 export interface IWorkspace {
   readonly id: string;
   readonly owner: IUser;
@@ -20,6 +26,7 @@ export interface IWorkspace {
   name: string;
   url: string;
   logo_url: string | null;
+  plan: EWorkspacePlan;
   readonly total_members: number;
   readonly slug: string;
   readonly created_by: string;
