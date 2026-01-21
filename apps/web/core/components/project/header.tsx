@@ -12,7 +12,10 @@ import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useUserPermissions } from "@/hooks/store/user";
+import { useWorkspace } from "@/hooks/store/use-workspace";
 // plane web constants
+// plane types
+import { EWorkspacePlan } from "@plane/types";
 // components
 import HeaderFilters from "./filters";
 import { ProjectSearch } from "./search-projects";
@@ -23,6 +26,7 @@ export const ProjectsBaseHeader = observer(function ProjectsBaseHeader() {
   // store hooks
   const { toggleCreateProjectModal } = useCommandPalette();
   const { allowPermissions } = useUserPermissions();
+  const { currentWorkspace: activeWorkspace } = useWorkspace();
 
   const pathname = usePathname();
   // auth
@@ -31,6 +35,7 @@ export const ProjectsBaseHeader = observer(function ProjectsBaseHeader() {
     EUserPermissionsLevel.WORKSPACE
   );
   const isArchived = pathname.includes("/archives");
+  const isFreeWorkspace = activeWorkspace && activeWorkspace.plan == EWorkspacePlan.FREE;
 
   return (
     <Header>
@@ -52,7 +57,7 @@ export const ProjectsBaseHeader = observer(function ProjectsBaseHeader() {
         <div className="hidden md:flex">
           <HeaderFilters />
         </div>
-        {isAuthorizedUser && !isArchived ? (
+        {isAuthorizedUser && !isArchived && !isFreeWorkspace ? (
           <Button
             size="sm"
             onClick={() => {

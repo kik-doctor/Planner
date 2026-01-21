@@ -1,14 +1,13 @@
 # Python imports
 import json
 
-
 # Django imports
 from django.core.serializers.json import DjangoJSONEncoder
 from django.db.models import Exists, F, OuterRef, Prefetch, Q, Subquery
 from django.utils import timezone
-
 # Third Party imports
 from rest_framework import status
+from rest_framework.exceptions import PermissionDenied
 from rest_framework.response import Response
 
 # Module imports
@@ -35,6 +34,7 @@ from plane.db.models import (
     Workspace,
     WorkspaceMember,
 )
+from plane.db.models.workspace import WorkspacePlan
 from plane.utils.host import base_host
 
 
@@ -98,10 +98,10 @@ class ProjectViewSet(BaseViewSet):
         fields = [field for field in request.GET.get("fields", "").split(",") if field]
         projects = self.get_queryset().order_by("sort_order", "name")
         if WorkspaceMember.objects.filter(
-            member=request.user,
-            workspace__slug=slug,
-            is_active=True,
-            role=ROLE.GUEST.value,
+                member=request.user,
+                workspace__slug=slug,
+                is_active=True,
+                role=ROLE.GUEST.value,
         ).exists():
             projects = projects.filter(
                 project_projectmember__member=self.request.user,
@@ -109,10 +109,10 @@ class ProjectViewSet(BaseViewSet):
             )
 
         if WorkspaceMember.objects.filter(
-            member=request.user,
-            workspace__slug=slug,
-            is_active=True,
-            role=ROLE.MEMBER.value,
+                member=request.user,
+                workspace__slug=slug,
+                is_active=True,
+                role=ROLE.MEMBER.value,
         ).exists():
             projects = projects.filter(
                 Q(
@@ -179,10 +179,10 @@ class ProjectViewSet(BaseViewSet):
         )
 
         if WorkspaceMember.objects.filter(
-            member=request.user,
-            workspace__slug=slug,
-            is_active=True,
-            role=ROLE.GUEST.value,
+                member=request.user,
+                workspace__slug=slug,
+                is_active=True,
+                role=ROLE.GUEST.value,
         ).exists():
             projects = projects.filter(
                 project_projectmember__member=self.request.user,
@@ -190,10 +190,10 @@ class ProjectViewSet(BaseViewSet):
             )
 
         if WorkspaceMember.objects.filter(
-            member=request.user,
-            workspace__slug=slug,
-            is_active=True,
-            role=ROLE.MEMBER.value,
+                member=request.user,
+                workspace__slug=slug,
+                is_active=True,
+                role=ROLE.MEMBER.value,
         ).exists():
             projects = projects.filter(
                 Q(
@@ -239,7 +239,10 @@ class ProjectViewSet(BaseViewSet):
     @allow_permission([ROLE.ADMIN, ROLE.MEMBER], level="WORKSPACE")
     def create(self, request, slug):
         workspace = Workspace.objects.get(slug=slug)
+        is_free_workspace = workspace.plan == WorkspacePlan.FREE.value
 
+        if is_free_workspace:
+            raise PermissionDenied("Cannot create more than one project in a free workspace.")
         serializer = ProjectSerializer(data={**request.data}, context={"workspace_id": workspace.id})
         if serializer.is_valid():
             serializer.save()
@@ -254,7 +257,7 @@ class ProjectViewSet(BaseViewSet):
             _ = IssueUserProperty.objects.create(project_id=serializer.data["id"], user=request.user)
 
             if serializer.data["project_lead"] is not None and str(serializer.data["project_lead"]) != str(
-                request.user.id
+                    request.user.id
             ):
                 ProjectMember.objects.create(
                     project_id=serializer.data["id"],
@@ -370,19 +373,19 @@ class ProjectViewSet(BaseViewSet):
 
     def destroy(self, request, slug, pk):
         if (
-            WorkspaceMember.objects.filter(
-                member=request.user,
-                workspace__slug=slug,
-                is_active=True,
-                role=ROLE.ADMIN.value,
-            ).exists()
-            or ProjectMember.objects.filter(
-                member=request.user,
-                workspace__slug=slug,
-                project_id=pk,
-                role=ROLE.ADMIN.value,
-                is_active=True,
-            ).exists()
+                WorkspaceMember.objects.filter(
+                    member=request.user,
+                    workspace__slug=slug,
+                    is_active=True,
+                    role=ROLE.ADMIN.value,
+                ).exists()
+                or ProjectMember.objects.filter(
+            member=request.user,
+            workspace__slug=slug,
+            project_id=pk,
+            role=ROLE.ADMIN.value,
+            is_active=True,
+        ).exists()
         ):
             project = Project.objects.get(pk=pk, workspace__slug=slug)
             project.delete()

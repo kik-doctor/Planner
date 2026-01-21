@@ -6,6 +6,7 @@ from rest_framework import serializers
 
 # Module imports
 from plane.app.permissions import ROLE
+from plane.db.models.workspace import WorkspacePlan
 
 
 # ---- Webhook Event Enum ----
@@ -39,7 +40,7 @@ class InvitationDataSerializer(serializers.Serializer):
         return mapped_value
 
 
-class DataSerializer(serializers.Serializer):
+class WorkspaceDataSerializer(serializers.Serializer):
     email = serializers.EmailField(required=False)
     slug = serializers.CharField(required=False, allow_blank=True)
     workspace_name = serializers.CharField(required=False, allow_blank=True)
@@ -59,8 +60,19 @@ class DataSerializer(serializers.Serializer):
         return mapped_value
 
 
+# Workspace Management Event data serializer
 class PlannerWorkspaceEventDataSerializer(serializers.Serializer):
     event = serializers.ChoiceField(
         choices=[event.value for event in WorkspaceManagementEvent]
     )
-    data = DataSerializer(required=True)
+    data = WorkspaceDataSerializer(required=True)
+
+
+# Workspace Subscription Plan Update webhook serializer
+class PlannerWorkspacePlanDataSerializer(serializers.Serializer):
+    slug = serializers.CharField(required=True)
+    plan = serializers.ChoiceField(
+        choices=[p.value for p in WorkspacePlan],
+        required=False,
+        default=WorkspacePlan.FREE.value,
+    )

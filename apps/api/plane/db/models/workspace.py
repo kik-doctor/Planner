@@ -1,18 +1,26 @@
 # Python imports
-import pytz
+from enum import Enum
 from typing import Optional, Any
 
+import pytz
 # Django imports
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
 
 # Module imports
-from .base import BaseModel
-from plane.utils.constants import RESTRICTED_WORKSPACE_SLUGS
 from plane.utils.color import get_random_color
+from plane.utils.constants import RESTRICTED_WORKSPACE_SLUGS
+from .base import BaseModel
 
 ROLE_CHOICES = ((20, "Admin"), (15, "Member"), (5, "Guest"))
+
+
+# Workspace Plan Enum
+class WorkspacePlan(str, Enum):
+    FREE = "FREE"
+    BUSINESS = "BUSINESS"
+    ENTERPRISE = "ENTERPRISE"
 
 
 def get_default_props():
@@ -133,6 +141,11 @@ class Workspace(BaseModel):
     organization_size = models.CharField(max_length=20, blank=True, null=True)
     timezone = models.CharField(max_length=255, default="UTC", choices=TIMEZONE_CHOICES)
     background_color = models.CharField(max_length=255, default=get_random_color)
+    plan = models.CharField(
+        max_length=20,
+        choices=[(p.value, p.value) for p in WorkspacePlan],
+        default=WorkspacePlan.FREE.value,
+    )
 
     def __str__(self):
         """Return name of the Workspace"""
