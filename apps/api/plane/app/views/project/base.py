@@ -260,8 +260,10 @@ class ProjectViewSet(BaseViewSet):
     def create(self, request, slug):
         workspace = Workspace.objects.get(slug=slug)
         is_free_workspace = workspace.plan == WorkspacePlan.FREE.value
+        projects = Project.objects.filter(workspace=workspace)
 
-        if is_free_workspace:
+        # If free workspace, then allow only one project per workspace
+        if is_free_workspace and projects.count() >= 1:
             raise PermissionDenied(
                 "Cannot create more than one project in a free workspace."
             )
