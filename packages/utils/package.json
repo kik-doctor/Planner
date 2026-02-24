@@ -1,5 +1,5 @@
 {
-  "name": "@plane/utils",
+  "name": "@planner/utils",
   "version": "1.2.0",
   "description": "Helper functions shared across multiple apps internally",
   "license": "AGPL-3.0",
@@ -23,8 +23,8 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
-    "@plane/constants": "workspace:*",
-    "@plane/types": "workspace:*",
+    "@planner/constants": "workspace:*",
+    "@planner/types": "workspace:*",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "hast": "^1.0.0",
@@ -43,7 +43,7 @@
     "uuid": "catalog:"
   },
   "devDependencies": {
-    "@plane/typescript-config": "workspace:*",
+    "@planner/typescript-config": "workspace:*",
     "@types/hast": "^3.0.4",
     "@types/lodash-es": "catalog:",
     "@types/mdast": "^4.0.4",

@@ -2,12 +2,12 @@ import { unset, orderBy, set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import type { IEstimate as IEstimateType, IEstimateFormData, TEstimateSystemKeys } from "@plane/types";
-// plane web services
-import estimateService from "@/plane-web/services/project/estimate.service";
-// plane web store
-import type { IEstimate } from "@/plane-web/store/estimates/estimate";
-import { Estimate } from "@/plane-web/store/estimates/estimate";
+import type { IEstimate as IEstimateType, IEstimateFormData, TEstimateSystemKeys } from "@planner/types";
+// planner web services
+import estimateService from "@/planner-web/services/project/estimate.service";
+// planner web store
+import type { IEstimate } from "@/planner-web/store/estimates/estimate";
+import { Estimate } from "@/planner-web/store/estimates/estimate";
 // store
 import type { CoreRootStore } from "../root.store";
 

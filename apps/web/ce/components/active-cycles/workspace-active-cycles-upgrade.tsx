@@ -1,11 +1,11 @@
 import { observer } from "mobx-react";
 import { AlertOctagon, BarChart4, CircleDashed, Folder, Microscope, Search } from "lucide-react";
-// plane imports
-import { MARKETING_PRICING_PAGE_LINK } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { getButtonStyling } from "@plane/propel/button";
-import { ContentWrapper } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import { MARKETING_PRICING_PAGE_LINK } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { getButtonStyling } from "@planner/propel/button";
+import { ContentWrapper } from "@planner/ui";
+import { cn } from "@planner/utils";
 // assets
 import ctaL1Dark from "@/app/assets/workspace-active-cycles/cta-l-1-dark.webp?url";
 import ctaL1Light from "@/app/assets/workspace-active-cycles/cta-l-1-light.webp?url";

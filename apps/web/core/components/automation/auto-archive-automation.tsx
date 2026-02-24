@@ -9,11 +9,11 @@ import {
   EUserPermissionsLevel,
   PROJECT_SETTINGS_TRACKER_ELEMENTS,
   PROJECT_SETTINGS_TRACKER_EVENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IProject } from "@plane/types";
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { IProject } from "@planner/types";
 // ui
-import { CustomSelect, Loader, ToggleSwitch } from "@plane/ui";
+import { CustomSelect, Loader, ToggleSwitch } from "@planner/ui";
 // component
 import { SelectMonthModal } from "@/components/automation";
 // constants

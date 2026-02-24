@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Search } from "lucide-react";
-// plane imports
-import type { TModuleStatus } from "@plane/propel/icons";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TModuleDisplayFilters, TModuleFilters } from "@plane/types";
+// planner imports
+import type { TModuleStatus } from "@planner/propel/icons";
+import { CloseIcon } from "@planner/propel/icons";
+import type { TModuleDisplayFilters, TModuleFilters } from "@planner/types";
 // components
 import { FilterOption } from "@/components/issues/issue-layouts/filters";
 import { FilterLead, FilterMembers, FilterStartDate, FilterStatus, FilterTargetDate } from "@/components/modules";

@@ -8,10 +8,10 @@ import { mutate } from "swr";
 import { AlertTriangle } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 // services
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IImporterService } from "@plane/types";
-import { Input } from "@plane/ui";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IUser, IImporterService } from "@planner/types";
+import { Input } from "@planner/ui";
 import { IMPORTER_SERVICES_LIST } from "@/constants/fetch-keys";
 import { IntegrationService } from "@/services/integrations/integration.service";
 // ui

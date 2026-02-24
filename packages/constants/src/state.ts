@@ -1,4 +1,4 @@
-import type { TStateGroups } from "@plane/types";
+import type { TStateGroups } from "@planner/types";
 
 export type TDraggableData = {
   groupKey: TStateGroups;

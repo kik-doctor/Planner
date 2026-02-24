@@ -2,8 +2,8 @@
 import { useCallback, useMemo } from "react";
 // types
 import { useParams } from "next/navigation";
-import type { TSupportedFilterTypeForUpdate } from "@plane/constants";
-import { EDraftIssuePaginationType } from "@plane/constants";
+import type { TSupportedFilterTypeForUpdate } from "@planner/constants";
+import { EDraftIssuePaginationType } from "@planner/constants";
 import type {
   IIssueDisplayFilterOptions,
   IIssueDisplayProperties,
@@ -13,13 +13,13 @@ import type {
   TLoader,
   TProfileViews,
   TSupportedFilterForUpdate,
-} from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+} from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
 import {
   useTeamIssueActions,
   useTeamProjectWorkItemsActions,
   useTeamViewIssueActions,
-} from "@/plane-web/helpers/issue-action-helper";
+} from "@/planner-web/helpers/issue-action-helper";
 import { useIssues } from "./store/use-issues";
 
 export interface IssueActions {

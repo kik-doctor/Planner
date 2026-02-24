@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import tippy from "tippy.js";
 import type { Instance } from "tippy.js";
-// plane utils
-import { cn } from "@plane/utils";
+// planner utils
+import { cn } from "@planner/utils";
 // types
 import type { TAIHandler } from "@/types";
 

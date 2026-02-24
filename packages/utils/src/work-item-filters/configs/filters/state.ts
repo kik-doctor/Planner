@@ -1,7 +1,7 @@
-// plane imports
-import { STATE_GROUPS } from "@plane/constants";
-import type { IState, TFilterProperty, TStateGroups, TSupportedOperators } from "@plane/types";
-import { COLLECTION_OPERATOR, EQUALITY_OPERATOR } from "@plane/types";
+// planner imports
+import { STATE_GROUPS } from "@planner/constants";
+import type { IState, TFilterProperty, TStateGroups, TSupportedOperators } from "@planner/types";
+import { COLLECTION_OPERATOR, EQUALITY_OPERATOR } from "@planner/types";
 // local imports
 import type { IFilterIconConfig, TCreateFilterConfig, TCreateFilterConfigParams } from "../../../rich-filters";
 import { createFilterConfig, getMultiSelectConfig, createOperatorConfigEntry } from "../../../rich-filters";

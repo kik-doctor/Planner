@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import { PROJECT_SETTINGS_CATEGORIES, PROJECT_SETTINGS_CATEGORY } from "@plane/constants";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { getUserRole } from "@plane/utils";
+// planner imports
+import { PROJECT_SETTINGS_CATEGORIES, PROJECT_SETTINGS_CATEGORY } from "@planner/constants";
+import { Logo } from "@planner/propel/emoji-icon-picker";
+import { getUserRole } from "@planner/utils";
 // components
 // hooks
 import { useProject } from "@/hooks/store/use-project";

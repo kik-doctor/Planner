@@ -1,9 +1,9 @@
 import type { FC } from "react";
 import { ListFilter } from "lucide-react";
-import { getButtonStyling } from "@plane/propel/button";
-// plane imports
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+import { getButtonStyling } from "@planner/propel/button";
+// planner imports
+import { ChevronDownIcon } from "@planner/propel/icons";
+import { cn } from "@planner/utils";
 // components
 import { FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 // hooks

@@ -35,6 +35,6 @@ const ContentWrapper = React.forwardRef(function ContentWrapper(
   );
 });
 
-ContentWrapper.displayName = "plane-ui-wrapper";
+ContentWrapper.displayName = "planner-ui-wrapper";
 
 export { ContentWrapper };

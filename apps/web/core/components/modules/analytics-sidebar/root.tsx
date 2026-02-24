@@ -11,9 +11,9 @@ import {
   EEstimateSystem,
   MODULE_TRACKER_EVENTS,
   MODULE_TRACKER_ELEMENTS,
-} from "@plane/constants";
-// plane types
-import { useTranslation } from "@plane/i18n";
+} from "@planner/constants";
+// planner types
+import { useTranslation } from "@planner/i18n";
 import {
   MembersPropertyIcon,
   ModuleStatusIcon,
@@ -21,14 +21,14 @@ import {
   StartDatePropertyIcon,
   ChevronDownIcon,
   ChevronRightIcon,
-} from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { ILinkDetails, IModule, ModuleLink } from "@plane/types";
-// plane ui
-import { Loader, CustomSelect, TextArea } from "@plane/ui";
+} from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { ILinkDetails, IModule, ModuleLink } from "@planner/types";
+// planner ui
+import { Loader, CustomSelect, TextArea } from "@planner/ui";
 // components
 // helpers
-import { getDate, renderFormattedPayloadDate } from "@plane/utils";
+import { getDate, renderFormattedPayloadDate } from "@planner/utils";
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { MemberDropdown } from "@/components/dropdowns/member/dropdown";
 import { CreateUpdateModuleLinkModal, ModuleAnalyticsProgress, ModuleLinksList } from "@/components/modules";
@@ -37,7 +37,7 @@ import { captureElementAndEvent, captureSuccess, captureError } from "@/helpers/
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useModule } from "@/hooks/store/use-module";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web constants
+// planner web constants
 const defaultValues: Partial<IModule> = {
   lead_id: "",
   member_ids: [],

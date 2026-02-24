@@ -1,7 +1,7 @@
 import { set } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 // services
-import type { EIssueServiceType } from "@plane/types";
+import type { EIssueServiceType } from "@planner/types";
 import { IssueService } from "@/services/issue/issue.service";
 // types
 import type { IIssueDetail } from "./root.store";

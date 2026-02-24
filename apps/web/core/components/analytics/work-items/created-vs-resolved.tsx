@@ -2,17 +2,17 @@ import { useMemo } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane package imports
-import { useTranslation } from "@plane/i18n";
-import { AreaChart } from "@plane/propel/charts/area-chart";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { IChartResponse, TChartData } from "@plane/types";
-import { renderFormattedDate } from "@plane/utils";
+// planner package imports
+import { useTranslation } from "@planner/i18n";
+import { AreaChart } from "@planner/propel/charts/area-chart";
+import { EmptyStateCompact } from "@planner/propel/empty-state";
+import type { IChartResponse, TChartData } from "@planner/types";
+import { renderFormattedDate } from "@planner/utils";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 // services
 import { AnalyticsService } from "@/services/analytics.service";
-// plane web components
+// planner web components
 import AnalyticsSectionWrapper from "../analytics-section-wrapper";
 import { ChartLoader } from "../loaders";
 

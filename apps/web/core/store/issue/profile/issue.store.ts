@@ -8,7 +8,7 @@ import type {
   ViewFlags,
   TBulkOperationsPayload,
   TProfileViews,
-} from "@plane/types";
+} from "@planner/types";
 import { UserService } from "@/services/user.service";
 
 // services

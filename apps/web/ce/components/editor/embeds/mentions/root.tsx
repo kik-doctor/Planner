@@ -1,5 +1,5 @@
-// plane imports
-import type { TCallbackMentionComponentProps } from "@plane/editor";
+// planner imports
+import type { TCallbackMentionComponentProps } from "@planner/editor";
 
 export type TEditorMentionComponentProps = TCallbackMentionComponentProps;
 

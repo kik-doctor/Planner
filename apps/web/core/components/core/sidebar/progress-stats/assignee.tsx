@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { Avatar } from "@plane/ui";
-import { getFileURL } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { Avatar } from "@planner/ui";
+import { getFileURL } from "@planner/utils";
 // assets
 import emptyMembers from "@/app/assets/empty-state/empty_members.svg?url";
 import userImage from "@/app/assets/user.png?url";

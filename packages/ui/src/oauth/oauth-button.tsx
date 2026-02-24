@@ -30,6 +30,6 @@ const OAuthButton = React.forwardRef(function OAuthButton(
   );
 });
 
-OAuthButton.displayName = "plane-ui-oauth-button";
+OAuthButton.displayName = "planner-ui-oauth-button";
 
 export { OAuthButton };

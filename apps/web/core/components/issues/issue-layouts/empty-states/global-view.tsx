@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
-// plane imports
-import { EUserPermissionsLevel, WORK_ITEM_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
-import { EIssuesStoreType, EUserWorkspaceRoles } from "@plane/types";
+// planner imports
+import { EUserPermissionsLevel, WORK_ITEM_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { EmptyStateDetailed } from "@planner/propel/empty-state";
+import { EIssuesStoreType, EUserWorkspaceRoles } from "@planner/types";
 // hooks
 import { captureClick } from "@/helpers/event-tracker.helper";
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
@@ -11,7 +11,7 @@ import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
 
 export const GlobalViewEmptyState = observer(function GlobalViewEmptyState() {
-  // plane imports
+  // planner imports
   const { t } = useTranslation();
   // store hooks
   const { workspaceProjectIds } = useProject();

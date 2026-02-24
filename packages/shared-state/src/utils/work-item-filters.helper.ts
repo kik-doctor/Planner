@@ -1,11 +1,11 @@
-// plane imports
+// planner imports
 import type {
   TBuildFilterExpressionParams,
   TFilterConditionForBuild,
   TFilterValue,
   TWorkItemFilterExpression,
   TWorkItemFilterProperty,
-} from "@plane/types";
+} from "@planner/types";
 // local imports
 import { workItemFiltersAdapter } from "../store/work-item-filters/adapter";
 import { buildTempFilterExpressionFromConditions } from "./rich-filter.helper";

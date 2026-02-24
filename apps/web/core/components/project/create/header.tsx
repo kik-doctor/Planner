@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
-// plane imports
-import { ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@plane/propel/emoji-icon-picker";
-import { CloseIcon } from "@plane/propel/icons";
-// plane types
-import type { IProject } from "@plane/types";
-// plane ui
-import { getTabIndex } from "@plane/utils";
+// planner imports
+import { ETabIndices } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@planner/propel/emoji-icon-picker";
+import { CloseIcon } from "@planner/propel/icons";
+// planner types
+import type { IProject } from "@planner/types";
+// planner ui
+import { getTabIndex } from "@planner/utils";
 // components
 import { ImagePickerPopover } from "@/components/core/image-picker-popover";
 // helpers
 import { DEFAULT_COVER_IMAGE_URL, getCoverImageDisplayURL } from "@/helpers/cover-image.helper";
-// plane web imports
-import { ProjectTemplateSelect } from "@/plane-web/components/projects/create/template-select";
+// planner web imports
+import { ProjectTemplateSelect } from "@/planner-web/components/projects/create/template-select";
 
 type Props = {
   handleClose: () => void;

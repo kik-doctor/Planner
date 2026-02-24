@@ -3,11 +3,11 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Check, MessageSquare, MoreVertical } from "lucide-react";
 import { Menu, Transition } from "@headlessui/react";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TIssuePublicComment } from "@plane/types";
-import { getFileURL } from "@plane/utils";
+// planner imports
+import type { EditorRefApi } from "@planner/editor";
+import { CloseIcon } from "@planner/propel/icons";
+import type { TIssuePublicComment } from "@planner/types";
+import { getFileURL } from "@planner/utils";
 // components
 import { LiteTextEditor } from "@/components/editor/lite-text-editor";
 import { CommentReactions } from "@/components/issues/peek-overview/comment/comment-reactions";

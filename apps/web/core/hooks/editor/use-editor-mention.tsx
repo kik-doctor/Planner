@@ -1,14 +1,19 @@
 import { useCallback } from "react";
-// plane editor
-import type { TMentionSection, TMentionSuggestion } from "@plane/editor";
-// plane types
-import type { TSearchEntities, TSearchEntityRequestPayload, TSearchResponse, TUserSearchResponse } from "@plane/types";
-// plane ui
-import { Avatar } from "@plane/ui";
+// planner editor
+import type { TMentionSection, TMentionSuggestion } from "@planner/editor";
+// planner types
+import type {
+  TSearchEntities,
+  TSearchEntityRequestPayload,
+  TSearchResponse,
+  TUserSearchResponse,
+} from "@planner/types";
+// planner ui
+import { Avatar } from "@planner/ui";
 // helpers
-import { getFileURL } from "@plane/utils";
-// plane web hooks
-import { useAdditionalEditorMention } from "@/plane-web/hooks/use-additional-editor-mention";
+import { getFileURL } from "@planner/utils";
+// planner web hooks
+import { useAdditionalEditorMention } from "@/planner-web/hooks/use-additional-editor-mention";
 
 type TArgs = {
   enableAdvancedMentions?: boolean;

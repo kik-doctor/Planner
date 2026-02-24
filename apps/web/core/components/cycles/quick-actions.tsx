@@ -7,12 +7,12 @@ import {
   EUserPermissions,
   EUserPermissionsLevel,
   CYCLE_TRACKER_ELEMENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TContextMenuItem } from "@plane/ui";
-import { ContextMenu, CustomMenu } from "@plane/ui";
-import { copyUrlToClipboard, cn } from "@plane/utils";
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TContextMenuItem } from "@planner/ui";
+import { ContextMenu, CustomMenu } from "@planner/ui";
+import { copyUrlToClipboard, cn } from "@planner/utils";
 // helpers
 // hooks
 import { useCycleMenuItems } from "@/components/common/quick-actions-helper";

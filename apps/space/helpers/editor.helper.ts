@@ -1,8 +1,8 @@
-// plane imports
-import { MAX_FILE_SIZE } from "@plane/constants";
-import type { TFileHandler } from "@plane/editor";
-import { SitesFileService } from "@plane/services";
-import { getFileURL } from "@plane/utils";
+// planner imports
+import { MAX_FILE_SIZE } from "@planner/constants";
+import type { TFileHandler } from "@planner/editor";
+import { SitesFileService } from "@planner/services";
+import { getFileURL } from "@planner/utils";
 // services
 const sitesFileService = new SitesFileService();
 

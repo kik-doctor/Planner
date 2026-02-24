@@ -7,9 +7,9 @@ import type {
   TIssuesResponse,
   TLoader,
   ViewFlags,
-} from "@plane/types";
+} from "@planner/types";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 // types
 import type { IBaseIssuesStore } from "../helpers/base-issues.store";
 import { BaseIssuesStore } from "../helpers/base-issues.store";

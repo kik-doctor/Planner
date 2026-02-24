@@ -1,13 +1,13 @@
 import { observer } from "mobx-react";
 import { ExternalLink, LinkIcon } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
 // ui
-import type { TStaticViewTypes } from "@plane/types";
-import type { TContextMenuItem } from "@plane/ui";
-import { CustomMenu } from "@plane/ui";
-import { copyUrlToClipboard, cn } from "@plane/utils";
+import type { TStaticViewTypes } from "@planner/types";
+import type { TContextMenuItem } from "@planner/ui";
+import { CustomMenu } from "@planner/ui";
+import { copyUrlToClipboard, cn } from "@planner/utils";
 // helpers
 type Props = {
   workspaceSlug: string;

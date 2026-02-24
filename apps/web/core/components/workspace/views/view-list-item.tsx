@@ -3,10 +3,10 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { Pencil, Trash2 } from "lucide-react";
-// plane imports
-import { GLOBAL_VIEW_TRACKER_ELEMENTS } from "@plane/constants";
-import { CustomMenu } from "@plane/ui";
-import { truncateText } from "@plane/utils";
+// planner imports
+import { GLOBAL_VIEW_TRACKER_ELEMENTS } from "@planner/constants";
+import { CustomMenu } from "@planner/ui";
+import { truncateText } from "@planner/utils";
 // helpers
 import { captureClick } from "@/helpers/event-tracker.helper";
 // hooks

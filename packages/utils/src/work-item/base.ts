@@ -1,9 +1,9 @@
 import { differenceInCalendarDays } from "date-fns/differenceInCalendarDays";
 import { isEmpty } from "lodash-es";
 import { v4 as uuidv4 } from "uuid";
-// plane imports
-import type { TIssueFilterPriorityObject, TIssuePriorities } from "@plane/constants";
-import { ISSUE_DISPLAY_FILTERS_BY_PAGE, ISSUE_PRIORITY_FILTERS, STATE_GROUPS } from "@plane/constants";
+// planner imports
+import type { TIssueFilterPriorityObject, TIssuePriorities } from "@planner/constants";
+import { ISSUE_DISPLAY_FILTERS_BY_PAGE, ISSUE_PRIORITY_FILTERS, STATE_GROUPS } from "@planner/constants";
 import type {
   IGanttBlock,
   IIssueDisplayFilterOptions,
@@ -16,8 +16,8 @@ import type {
   TStateGroups,
   TSubGroupedIssues,
   TUnGroupedIssues,
-} from "@plane/types";
-import { EIssueLayoutTypes } from "@plane/types";
+} from "@planner/types";
+import { EIssueLayoutTypes } from "@planner/types";
 // local imports
 import { orderArrayBy } from "../array";
 import { getDate } from "../datetime";

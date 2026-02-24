@@ -2,11 +2,11 @@ import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
 import { Circle } from "lucide-react";
-import { ChevronDownIcon, ChevronUpIcon } from "@plane/propel/icons";
-// Plane
-import type { TIssueGroupByOptions, TIssueKanbanFilters } from "@plane/types";
-// Plane-web
-import { WorkFlowGroupTree } from "@/plane-web/components/workflow";
+import { ChevronDownIcon, ChevronUpIcon } from "@planner/propel/icons";
+// planner
+import type { TIssueGroupByOptions, TIssueKanbanFilters } from "@planner/types";
+// planner-web
+import { WorkFlowGroupTree } from "@/planner-web/components/workflow";
 // mobx
 
 interface IHeaderSubGroupByCard {

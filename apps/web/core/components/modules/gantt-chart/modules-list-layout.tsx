@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// PLane
-import { GANTT_TIMELINE_TYPE } from "@plane/types";
-import type { IBlockUpdateData, IBlockUpdateDependencyData, IModule } from "@plane/types";
+// planner
+import { GANTT_TIMELINE_TYPE } from "@planner/types";
+import type { IBlockUpdateData, IBlockUpdateDependencyData, IModule } from "@planner/types";
 // components
 import { GanttChartRoot, ModuleGanttSidebar } from "@/components/gantt-chart";
 import { TimeLineTypeContext } from "@/components/gantt-chart/contexts";

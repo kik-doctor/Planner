@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import React, { useEffect, useState, useCallback } from "react";
 import { observer } from "mobx-react";
-import type { TIssue, TIssueServiceType } from "@plane/types";
-import { EIssueServiceType, EIssuesStoreType } from "@plane/types";
+import type { TIssue, TIssueServiceType } from "@planner/types";
+import { EIssueServiceType, EIssuesStoreType } from "@planner/types";
 // components
 import { DeleteIssueModal } from "@/components/issues/delete-issue-modal";
 // hooks

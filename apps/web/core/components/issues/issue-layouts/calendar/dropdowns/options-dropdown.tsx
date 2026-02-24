@@ -7,18 +7,18 @@ import { Popover, Transition } from "@headlessui/react";
 // hooks
 // ui
 // icons
-import type { TSupportedFilterTypeForUpdate } from "@plane/constants";
-import { EIssueFilterType } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ChevronUpIcon } from "@plane/propel/icons";
-import type { TCalendarLayouts, TSupportedFilterForUpdate } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
+import type { TSupportedFilterTypeForUpdate } from "@planner/constants";
+import { EIssueFilterType } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { ChevronUpIcon } from "@planner/propel/icons";
+import type { TCalendarLayouts, TSupportedFilterForUpdate } from "@planner/types";
+import { ToggleSwitch } from "@planner/ui";
 // types
 // constants
 import { CALENDAR_LAYOUTS } from "@/constants/calendar";
 import { useCalendarView } from "@/hooks/store/use-calendar-view";
 import useSize from "@/hooks/use-window-size";
-import type { IProjectEpicsFilter } from "@/plane-web/store/issue/epic";
+import type { IProjectEpicsFilter } from "@/planner-web/store/issue/epic";
 import type { ICycleIssuesFilter } from "@/store/issue/cycle";
 import type { IModuleIssuesFilter } from "@/store/issue/module";
 import type { IProjectIssuesFilter } from "@/store/issue/project";

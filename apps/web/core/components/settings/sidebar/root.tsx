@@ -1,6 +1,6 @@
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { cn } from "@planner/utils";
 import { SettingsSidebarHeader } from "./header";
 import type { TSettingItem } from "./nav-item";
 import SettingsSidebarNavItem from "./nav-item";

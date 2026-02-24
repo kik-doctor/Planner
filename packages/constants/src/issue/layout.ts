@@ -1,4 +1,4 @@
-import { EIssueLayoutTypes } from "@plane/types";
+import { EIssueLayoutTypes } from "@planner/types";
 
 export type TIssueLayout = "list" | "kanban" | "calendar" | "spreadsheet" | "gantt";
 

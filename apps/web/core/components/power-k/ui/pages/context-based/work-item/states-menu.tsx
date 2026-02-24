@@ -1,13 +1,13 @@
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
-// plane types
+// planner types
 import { useParams } from "next/navigation";
-import type { TIssue } from "@plane/types";
-import { Spinner } from "@plane/ui";
+import type { TIssue } from "@planner/types";
+import { Spinner } from "@planner/ui";
 // hooks
 import { useProjectState } from "@/hooks/store/use-project-state";
 // local imports
-import { PowerKProjectStatesMenuItems } from "@/plane-web/components/command-palette/power-k/pages/context-based/work-item/state-menu-item";
+import { PowerKProjectStatesMenuItems } from "@/planner-web/components/command-palette/power-k/pages/context-based/work-item/state-menu-item";
 
 type Props = {
   handleSelect: (stateId: string) => void;

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { EXTENDED_SIDEBAR_WIDTH, SIDEBAR_WIDTH } from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { cn } from "@plane/utils";
+// planner imports
+import { EXTENDED_SIDEBAR_WIDTH, SIDEBAR_WIDTH } from "@planner/constants";
+import { useLocalStorage } from "@planner/hooks";
+import { cn } from "@planner/utils";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 // hooks

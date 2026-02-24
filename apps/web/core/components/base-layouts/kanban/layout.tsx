@@ -1,6 +1,6 @@
 import { observer } from "mobx-react";
-import type { IBaseLayoutsKanbanItem, IBaseLayoutsKanbanProps } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { IBaseLayoutsKanbanItem, IBaseLayoutsKanbanProps } from "@planner/types";
+import { cn } from "@planner/utils";
 import { useLayoutState } from "../hooks/use-layout-state";
 import { BaseKanbanGroup } from "./group";
 

@@ -1,5 +1,5 @@
 import { observer } from "mobx-react";
-import { ParentPropertyIcon } from "@plane/propel/icons";
+import { ParentPropertyIcon } from "@planner/propel/icons";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // components

@@ -1,11 +1,11 @@
 import { observer } from "mobx-react";
 import { Expand, Shrink } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-// plane
-import type { TGanttViews } from "@plane/types";
-import { Row } from "@plane/ui";
+import { useTranslation } from "@planner/i18n";
+// planner
+import type { TGanttViews } from "@planner/types";
+import { Row } from "@planner/ui";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import { VIEWS_LIST } from "@/components/gantt-chart/data";
 // helpers
 // hooks

@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { TIssue, TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-// Plane-web imports
-import type { TIssueRelationTypes } from "@/plane-web/types";
+// planner imports
+import type { TIssue, TIssueServiceType } from "@planner/types";
+import { EIssueServiceType } from "@planner/types";
+// planner-web imports
+import type { TIssueRelationTypes } from "@/planner-web/types";
 // local imports
 import { RelationIssueListItem } from "./issue-list-item";
 

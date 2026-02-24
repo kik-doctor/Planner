@@ -1,1 +1,1 @@
-module.exports = require("@plane/tailwind-config/postcss.config.js");
+module.exports = require("@planner/tailwind-config/postcss.config.js");

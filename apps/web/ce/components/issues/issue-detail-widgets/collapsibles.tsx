@@ -1,6 +1,6 @@
 import type { FC } from "react";
-// plane types
-import type { TIssueServiceType, TWorkItemWidgets } from "@plane/types";
+// planner types
+import type { TIssueServiceType, TWorkItemWidgets } from "@planner/types";
 
 export type TWorkItemAdditionalWidgetCollapsiblesProps = {
   disabled: boolean;

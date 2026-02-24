@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { Logo } from "@planner/propel/emoji-icon-picker";
+import { ChevronRightIcon } from "@planner/propel/icons";
 // icons
-import { Row } from "@plane/ui";
+import { Row } from "@planner/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import { useProject } from "@/hooks/store/use-project";
 
 type Props = {

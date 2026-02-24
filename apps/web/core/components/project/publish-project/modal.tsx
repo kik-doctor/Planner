@@ -4,14 +4,14 @@ import { useParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
 import { Check, ExternalLink, Globe2 } from "lucide-react";
 // types
-import { SPACE_BASE_PATH, SPACE_BASE_URL } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TProjectPublishLayouts, TProjectPublishSettings } from "@plane/types";
+import { SPACE_BASE_PATH, SPACE_BASE_URL } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TProjectPublishLayouts, TProjectPublishSettings } from "@planner/types";
 // ui
-import { Loader, ToggleSwitch, CustomSelect, ModalCore, EModalWidth } from "@plane/ui";
+import { Loader, ToggleSwitch, CustomSelect, ModalCore, EModalWidth } from "@planner/ui";
 // helpers
-import { copyTextToClipboard } from "@plane/utils";
+import { copyTextToClipboard } from "@planner/utils";
 // hooks
 import { useProjectPublish } from "@/hooks/store/use-project-publish";
 

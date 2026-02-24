@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import { Plus } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { cn } from "@planner/utils";
 
 type TInvitationModalActionsProps = {
   isInviteDisabled?: boolean;

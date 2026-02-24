@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { mutate } from "swr";
-// plane imports
-import { PROFILE_SETTINGS_TRACKER_EVENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { APITokenService } from "@plane/services";
-import type { IApiToken } from "@plane/types";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
-import { renderFormattedDate, csvDownload } from "@plane/utils";
+// planner imports
+import { PROFILE_SETTINGS_TRACKER_EVENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { APITokenService } from "@planner/services";
+import type { IApiToken } from "@planner/types";
+import { EModalPosition, EModalWidth, ModalCore } from "@planner/ui";
+import { renderFormattedDate, csvDownload } from "@planner/utils";
 // constants
 import { API_TOKENS_LIST } from "@/constants/fetch-keys";
 // helpers

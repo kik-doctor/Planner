@@ -1,4 +1,4 @@
-# ESLint in Plane - How It Works
+# ESLint in Planner - How It Works
 
 We've recently upgraded our ESLint setup to use **typed linting** with a **single root-level configuration**. This means faster lint runs and simpler config management across the entire monorepo.
 
@@ -96,7 +96,7 @@ If the commit fails due to lint errors, fix them before committing.
 
 ## Help Us Improve!
 
-If you have the time, please consider trying to put up PRs to turn the rules I've set to `warn` to `error`, or getting all of strict mode in TypeScript working for a package (e.g., `noUncheckedIndexAccess`, `strictNullChecks`). It'll help prevent bugs at Plane, and your co-workers will unknowingly thank you for it.
+If you have the time, please consider trying to put up PRs to turn the rules I've set to `warn` to `error`, or getting all of strict mode in TypeScript working for a package (e.g., `noUncheckedIndexAccess`, `strictNullChecks`). It'll help prevent bugs at Planner, and your co-workers will unknowingly thank you for it.
 
 If you do decide to tackle this, please feel free to reach out to [@lifeiscontent](https://github.com/lifeiscontent) for advice on issues you get stuck on.
 

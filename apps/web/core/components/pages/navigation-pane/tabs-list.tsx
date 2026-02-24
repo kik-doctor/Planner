@@ -1,8 +1,8 @@
 import { Tab } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-// plane web components
-import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/plane-web/components/pages/navigation-pane";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+// planner web components
+import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/planner-web/components/pages/navigation-pane";
 
 export function PageNavigationPaneTabsList() {
   // translation

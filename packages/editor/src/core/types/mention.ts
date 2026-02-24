@@ -1,5 +1,5 @@
-// plane types
-import type { TSearchEntities } from "@plane/types";
+// planner types
+import type { TSearchEntities } from "@planner/types";
 
 export type TMentionSuggestion = {
   entity_identifier: string;

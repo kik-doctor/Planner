@@ -1,5 +1,5 @@
-import type { TAnalyticsTabsBase } from "@plane/types";
-import { ChartXAxisProperty, ChartYAxisMetric } from "@plane/types";
+import type { TAnalyticsTabsBase } from "@planner/types";
+import { ChartXAxisProperty, ChartYAxisMetric } from "@planner/types";
 
 export interface IInsightField {
   key: string;

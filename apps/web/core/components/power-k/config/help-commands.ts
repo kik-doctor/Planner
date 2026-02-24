@@ -1,6 +1,6 @@
 import { FileText, GithubIcon, MessageSquare, Rocket } from "lucide-react";
-// plane imports
-import { DiscordIcon } from "@plane/propel/icons";
+// planner imports
+import { DiscordIcon } from "@planner/propel/icons";
 // components
 import type { TPowerKCommandConfig } from "@/components/power-k/core/types";
 // hooks
@@ -35,7 +35,7 @@ export const usePowerKHelpCommands = (): TPowerKCommandConfig[] => {
       i18n_title: "power_k.help_actions.open_planner_documentation",
       icon: FileText,
       action: () => {
-        window.open("https://docs.plane.so/", "_blank", "noopener,noreferrer");
+        window.open("https://docs.planner.oneworkspacex.com/", "_blank", "noopener,noreferrer");
       },
       isEnabled: () => true,
       isVisible: () => true,
@@ -48,7 +48,7 @@ export const usePowerKHelpCommands = (): TPowerKCommandConfig[] => {
       i18n_title: "power_k.help_actions.join_discord",
       icon: DiscordIcon,
       action: () => {
-        window.open("https://discord.com/invite/A92xrEGCge", "_blank", "noopener,noreferrer");
+        window.open("https://discord.com/invite/543UADxY", "_blank", "noopener,noreferrer");
       },
       isEnabled: () => true,
       isVisible: () => true,
@@ -61,7 +61,7 @@ export const usePowerKHelpCommands = (): TPowerKCommandConfig[] => {
       i18n_title: "power_k.help_actions.report_bug",
       icon: GithubIcon,
       action: () => {
-        window.open("https://github.com/makeplane/plane/issues/new/choose", "_blank", "noopener,noreferrer");
+        window.open("https://github.com/kik-doctor/planner/issues/new/choose", "_blank", "noopener,noreferrer");
       },
       isEnabled: () => true,
       isVisible: () => true,

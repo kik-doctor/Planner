@@ -1,7 +1,7 @@
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { cn, getFileURL } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { cn, getFileURL } from "@planner/utils";
 
 type Props = {
   logo: string | null | undefined;

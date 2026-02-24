@@ -2,10 +2,10 @@ import type { Dispatch, SetStateAction } from "react";
 import React, { useState } from "react";
 import { useParams } from "next/navigation";
 import { Pencil } from "lucide-react";
-import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@plane/constants";
-import { CloseIcon } from "@plane/propel/icons";
+import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@planner/constants";
+import { CloseIcon } from "@planner/propel/icons";
 // types
-import type { IIssueLabel } from "@plane/types";
+import type { IIssueLabel } from "@planner/types";
 // hooks
 import { captureClick } from "@/helpers/event-tracker.helper";
 import { useLabel } from "@/hooks/store/use-label";

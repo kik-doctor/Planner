@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { combine } from "@atlaskit/pragmatic-drag-and-drop/combine";
 import { autoScrollForElements } from "@atlaskit/pragmatic-drag-and-drop-auto-scroll/element";
 import { observer } from "mobx-react";
-// plane constants
-import type { TSupportedFilterTypeForUpdate } from "@plane/constants";
+// planner constants
+import type { TSupportedFilterTypeForUpdate } from "@planner/constants";
 // types
 import type {
   TGroupedIssues,
@@ -12,11 +12,11 @@ import type {
   TPaginationData,
   ICalendarWeek,
   TSupportedFilterForUpdate,
-} from "@plane/types";
-import { EIssuesStoreType, EIssueLayoutTypes } from "@plane/types";
+} from "@planner/types";
+import { EIssuesStoreType, EIssueLayoutTypes } from "@planner/types";
 // ui
-import { Spinner } from "@plane/ui";
-import { renderFormattedPayloadDate, cn } from "@plane/utils";
+import { Spinner } from "@planner/ui";
+import { renderFormattedPayloadDate, cn } from "@planner/utils";
 // constants
 import { MONTHS_LIST } from "@/constants/calendar";
 // helpers
@@ -24,7 +24,7 @@ import { MONTHS_LIST } from "@/constants/calendar";
 import { useIssues } from "@/hooks/store/use-issues";
 import useSize from "@/hooks/use-window-size";
 // store
-import type { IProjectEpicsFilter } from "@/plane-web/store/issue/epic";
+import type { IProjectEpicsFilter } from "@/planner-web/store/issue/epic";
 import type { ICycleIssuesFilter } from "@/store/issue/cycle";
 import type { ICalendarStore } from "@/store/issue/issue_calendar_view.store";
 import type { IModuleIssuesFilter } from "@/store/issue/module";

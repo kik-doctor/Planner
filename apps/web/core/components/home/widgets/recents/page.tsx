@@ -1,10 +1,10 @@
 import { useRouter } from "next/navigation";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { PageIcon } from "@plane/propel/icons";
-// plane import
-import type { TActivityEntityData, TPageEntityData } from "@plane/types";
-import { Avatar } from "@plane/ui";
-import { calculateTimeAgo, getFileURL, getPageName } from "@plane/utils";
+import { Logo } from "@planner/propel/emoji-icon-picker";
+import { PageIcon } from "@planner/propel/icons";
+// planner import
+import type { TActivityEntityData, TPageEntityData } from "@planner/types";
+import { Avatar } from "@planner/ui";
+import { calculateTimeAgo, getFileURL, getPageName } from "@planner/utils";
 import { ListItem } from "@/components/core/list";
 // hooks
 import { useMember } from "@/hooks/store/use-member";

@@ -1,10 +1,10 @@
-import { USER_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { USER_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // ui
-import { getButtonStyling } from "@plane/propel/button";
-import { PlannerLogo } from "@plane/propel/icons";
+import { getButtonStyling } from "@planner/propel/button";
+import { PlannerLogo } from "@planner/propel/icons";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 export function ProductUpdatesFooter() {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ export function ProductUpdatesFooter() {
     <div className="flex items-center justify-between flex-shrink-0 gap-4 m-6 mb-4">
       <div className="flex items-center gap-2">
         <a
-          href="https://go.plane.so/p-docs"
+          href="https://go.planner.oneworkspacex.com/p-docs"
           target="_blank"
           className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-none"
           rel="noreferrer"
@@ -24,7 +24,7 @@ export function ProductUpdatesFooter() {
         </svg>
         <a
           data-ph-element={USER_TRACKER_ELEMENTS.CHANGELOG_REDIRECTED}
-          href="https://go.plane.so/p-changelog"
+          href="https://go.planner.oneworkspacex.com/p-changelog"
           target="_blank"
           className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-none"
           rel="noreferrer"
@@ -35,7 +35,7 @@ export function ProductUpdatesFooter() {
           <circle cx={1} cy={1} r={1} />
         </svg>
         <a
-          href="mailto:support@plane.so"
+          href="mailto:hello@oneworkspacex.com"
           target="_blank"
           className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-none"
           rel="noreferrer"
@@ -46,7 +46,7 @@ export function ProductUpdatesFooter() {
           <circle cx={1} cy={1} r={1} />
         </svg>
         <a
-          href="https://go.plane.so/p-discord"
+          href="https://discord.com/invite/543UADxY"
           target="_blank"
           className="text-sm text-custom-text-200 hover:text-custom-text-100 hover:underline underline-offset-1 outline-none"
           rel="noreferrer"
@@ -55,7 +55,7 @@ export function ProductUpdatesFooter() {
         </a>
       </div>
       <a
-        href="https://plane.so/pages"
+        href="https://planner.oneworkspacex.com/pages"
         target="_blank"
         className={cn(
           getButtonStyling("accent-primary", "sm"),

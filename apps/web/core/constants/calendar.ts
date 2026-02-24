@@ -1,5 +1,5 @@
-import type { TCalendarLayouts } from "@plane/types";
-import { EStartOfTheWeek } from "@plane/types";
+import type { TCalendarLayouts } from "@planner/types";
+import { EStartOfTheWeek } from "@planner/types";
 
 export const MONTHS_LIST: {
   [monthNumber: number]: {

@@ -3,8 +3,8 @@ import { xor } from "lodash-es";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import type { TIssue } from "@plane/types";
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import type { TIssue } from "@planner/types";
 // components
 import { ModuleDropdown } from "@/components/dropdowns/module/dropdown";
 // constants

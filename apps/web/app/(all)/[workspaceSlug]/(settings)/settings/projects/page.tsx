@@ -1,10 +1,10 @@
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-// plane imports
-import { PROJECT_TRACKER_ELEMENTS } from "@plane/constants";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+// planner imports
+import { PROJECT_TRACKER_ELEMENTS } from "@planner/constants";
+import { Button, getButtonStyling } from "@planner/propel/button";
+import { cn } from "@planner/utils";
 // assets
 import ProjectDarkEmptyState from "@/app/assets/empty-state/project-settings/no-projects-dark.png?url";
 import ProjectLightEmptyState from "@/app/assets/empty-state/project-settings/no-projects-light.png?url";
@@ -26,7 +26,11 @@ function ProjectSettingsPage() {
         need to get things done.
       </div>
       <div className="flex gap-2">
-        <Link href="https://plane.so/" target="_blank" className={cn(getButtonStyling("neutral-primary", "sm"))}>
+        <Link
+          href="https://planner.oneworkspacex.com/"
+          target="_blank"
+          className={cn(getButtonStyling("neutral-primary", "sm"))}
+        >
           Learn more about projects
         </Link>
         <Button

@@ -3,15 +3,15 @@ import { observer } from "mobx-react";
 import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import { Sparkle } from "lucide-react";
-// plane imports
-import { ETabIndices } from "@plane/constants";
-import type { EditorRefApi } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue } from "@plane/types";
-import { EFileAssetType } from "@plane/types";
-import { Loader } from "@plane/ui";
-import { getDescriptionPlaceholderI18n, getTabIndex } from "@plane/utils";
+// planner imports
+import { ETabIndices } from "@planner/constants";
+import type { EditorRefApi } from "@planner/editor";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TIssue } from "@planner/types";
+import { EFileAssetType } from "@planner/types";
+import { Loader } from "@planner/ui";
+import { getDescriptionPlaceholderI18n, getTabIndex } from "@planner/utils";
 // components
 import { GptAssistantPopover } from "@/components/core/modals/gpt-assistant-popover";
 import { RichTextEditor } from "@/components/editor/rich-text";
@@ -22,8 +22,8 @@ import { useInstance } from "@/hooks/store/use-instance";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import useKeypress from "@/hooks/use-keypress";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web services
-import { WorkspaceService } from "@/plane-web/services";
+// planner web services
+import { WorkspaceService } from "@/planner-web/services";
 // services
 import { AIService } from "@/services/ai.service";
 const workspaceService = new WorkspaceService();

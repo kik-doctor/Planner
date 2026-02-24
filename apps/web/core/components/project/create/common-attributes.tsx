@@ -2,17 +2,17 @@ import type { ChangeEvent } from "react";
 import type { UseFormSetValue } from "react-hook-form";
 import { Controller, useFormContext } from "react-hook-form";
 import { Info } from "lucide-react";
-// plane imports
-import { ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import { ETabIndices } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // ui
-import { Tooltip } from "@plane/propel/tooltip";
-import { Input, TextArea } from "@plane/ui";
-import { cn, projectIdentifierSanitizer, getTabIndex } from "@plane/utils";
-// plane utils
+import { Tooltip } from "@planner/propel/tooltip";
+import { Input, TextArea } from "@planner/ui";
+import { cn, projectIdentifierSanitizer, getTabIndex } from "@planner/utils";
+// planner utils
 // helpers
-// plane-web types
-import type { TProject } from "@/plane-web/types/projects";
+// planner-web types
+import type { TProject } from "@/planner-web/types/projects";
 
 type Props = {
   setValue: UseFormSetValue<TProject>;

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Search } from "lucide-react";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
-import type { TCycleFilters, TCycleGroups } from "@plane/types";
+import { CloseIcon } from "@planner/propel/icons";
+// planner imports
+import type { TCycleFilters, TCycleGroups } from "@planner/types";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // local imports

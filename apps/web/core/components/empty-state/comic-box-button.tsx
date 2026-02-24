@@ -4,7 +4,7 @@ import { usePopper } from "react-popper";
 import { Popover } from "@headlessui/react";
 // popper
 // helper
-import { getButtonStyling } from "@plane/propel/button";
+import { getButtonStyling } from "@planner/propel/button";
 
 type Props = {
   label: string;

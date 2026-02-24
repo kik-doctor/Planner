@@ -1,10 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 import { Search } from "lucide-react";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { CloseIcon } from "@plane/propel/icons";
-// plane helpers
+import { useOutsideClickDetector } from "@planner/hooks";
+import { CloseIcon } from "@planner/propel/icons";
+// planner helpers
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 type Props = {
   searchQuery: string;

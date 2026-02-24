@@ -1,14 +1,14 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane constants
-import { ISSUE_DISPLAY_PROPERTIES } from "@plane/constants";
-// plane i18n
-import { useTranslation } from "@plane/i18n";
+// planner constants
+import { ISSUE_DISPLAY_PROPERTIES } from "@planner/constants";
+// planner i18n
+import { useTranslation } from "@planner/i18n";
 // types
-import type { IIssueDisplayProperties } from "@plane/types";
-// plane web helpers
-import { shouldRenderDisplayProperty } from "@/plane-web/helpers/issue-filter.helper";
+import type { IIssueDisplayProperties } from "@planner/types";
+// planner web helpers
+import { shouldRenderDisplayProperty } from "@/planner-web/helpers/issue-filter.helper";
 // components
 import { FilterHeader } from "../helpers/filter-header";
 

@@ -1,5 +1,5 @@
 // types
-import type { ILinkDetails, ModuleLink } from "@plane/types";
+import type { ILinkDetails, ModuleLink } from "@planner/types";
 // services
 import { APIService } from "../api.service";
 

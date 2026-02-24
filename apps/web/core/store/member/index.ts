@@ -1,11 +1,11 @@
 import { makeObservable, observable } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import type { IUserLite } from "@plane/types";
-// plane web imports
-import type { IProjectMemberStore } from "@/plane-web/store/member/project-member.store";
-import { ProjectMemberStore } from "@/plane-web/store/member/project-member.store";
-import type { RootStore } from "@/plane-web/store/root.store";
+// planner imports
+import type { IUserLite } from "@planner/types";
+// planner web imports
+import type { IProjectMemberStore } from "@/planner-web/store/member/project-member.store";
+import { ProjectMemberStore } from "@/planner-web/store/member/project-member.store";
+import type { RootStore } from "@/planner-web/store/root.store";
 // local imports
 import type { IWorkspaceMemberStore } from "./workspace/workspace-member.store";
 import { WorkspaceMemberStore } from "./workspace/workspace-member.store";

@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
-import { ETabIndices } from "@plane/constants";
+// planner imports
+import { ETabIndices } from "@planner/constants";
 // types
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import type { ICycle } from "@plane/types";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import type { ICycle } from "@planner/types";
 // ui
-import { Input, TextArea } from "@plane/ui";
-import { getDate, renderFormattedPayloadDate, getTabIndex } from "@plane/utils";
+import { Input, TextArea } from "@planner/ui";
+import { getDate, renderFormattedPayloadDate, getTabIndex } from "@planner/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ProjectDropdown } from "@/components/dropdowns/project/dropdown";
@@ -34,7 +34,7 @@ const defaultValues: Partial<ICycle> = {
 
 export function CycleForm(props: Props) {
   const { handleFormSubmit, handleClose, status, projectId, setActiveProject, data, isMobile = false } = props;
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { projectsWithCreatePermissions } = useUser();

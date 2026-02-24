@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { EIconSize } from "@plane/constants";
+import { EIconSize } from "@planner/constants";
 import type { IIntakeStateGroupIcon } from "./helper";
 import { INTAKE_STATE_GROUP_COLORS, STATE_GROUP_SIZES } from "./helper";
 import { TriageGroupIcon } from "./triage-group-icon";

@@ -4,20 +4,20 @@ import { observer } from "mobx-react";
 import { usePopper } from "react-popper";
 import { Search } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { StateGroupIcon, ChevronDownIcon } from "@plane/propel/icons";
-import type { IState } from "@plane/types";
-import { ComboDropDown, Spinner } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { StateGroupIcon, ChevronDownIcon } from "@planner/propel/icons";
+import type { IState } from "@planner/types";
+import { ComboDropDown, Spinner } from "@planner/ui";
+import { cn } from "@planner/utils";
 // components
 import { DropdownButton } from "@/components/dropdowns/buttons";
 import { BUTTON_VARIANTS_WITH_TEXT } from "@/components/dropdowns/constants";
 import type { TDropdownProps } from "@/components/dropdowns/types";
 // hooks
 import { useDropdown } from "@/hooks/use-dropdown";
-// plane web imports
-import { StateOption } from "@/plane-web/components/workflow";
+// planner web imports
+import { StateOption } from "@/planner-web/components/workflow";
 
 export type TWorkItemStateDropdownBaseProps = TDropdownProps & {
   alwaysAllowStateChange?: boolean;

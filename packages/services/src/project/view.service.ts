@@ -1,5 +1,5 @@
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
 // api services
 import { APIService } from "../api.service";
 

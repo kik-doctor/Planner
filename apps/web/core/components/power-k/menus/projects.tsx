@@ -1,8 +1,8 @@
 import React from "react";
 // components
-import { Logo } from "@plane/propel/emoji-icon-picker";
-// plane imports
-import type { TPartialProject } from "@/plane-web/types";
+import { Logo } from "@planner/propel/emoji-icon-picker";
+// planner imports
+import type { TPartialProject } from "@/planner-web/types";
 // local imports
 import { PowerKMenuBuilder } from "./builder";
 

@@ -2,14 +2,14 @@ import { range } from "lodash-es";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { usePathname, useParams } from "next/navigation";
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Loader } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { EUserPermissionsLevel } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Loader } from "@planner/ui";
+import { cn } from "@planner/utils";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions, useUserSettings } from "@/hooks/store/user";
-import { PROJECT_SETTINGS_LINKS } from "@/plane-web/constants/project";
-import { getProjectSettingsPageLabelI18nKey } from "@/plane-web/helpers/project-settings";
+import { PROJECT_SETTINGS_LINKS } from "@/planner-web/constants/project";
+import { getProjectSettingsPageLabelI18nKey } from "@/planner-web/helpers/project-settings";
 
 export const NavItemChildren = observer(function NavItemChildren(props: { projectId: string }) {
   const { projectId } = props;

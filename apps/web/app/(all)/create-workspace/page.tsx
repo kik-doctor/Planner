@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { PlannerLogo } from "@plane/propel/icons";
-import type { IWorkspace } from "@plane/types";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { Button, getButtonStyling } from "@planner/propel/button";
+import { PlannerLogo } from "@planner/propel/icons";
+import type { IWorkspace } from "@planner/types";
 // assets
 import WorkspaceCreationDisabled from "@/app/assets/workspace/workspace-creation-disabled.png?url";
 // components
@@ -15,8 +15,8 @@ import { useUser, useUserProfile } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 // wrappers
 import { AuthenticationWrapper } from "@/lib/wrappers/authentication-wrapper";
-// plane web helpers
-import { getIsWorkspaceCreationDisabled } from "@/plane-web/helpers/instance.helper";
+// planner web helpers
+import { getIsWorkspaceCreationDisabled } from "@/planner-web/helpers/instance.helper";
 
 const CreateWorkspacePage = observer(function CreateWorkspacePage() {
   const { t } = useTranslation();

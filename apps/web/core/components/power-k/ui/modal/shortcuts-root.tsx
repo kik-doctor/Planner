@@ -1,9 +1,9 @@
 import { useState, Fragment } from "react";
 import { Search } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
-// plane imports
-import { CloseIcon } from "@plane/propel/icons";
-import { Input } from "@plane/ui";
+// planner imports
+import { CloseIcon } from "@planner/propel/icons";
+import { Input } from "@planner/ui";
 // hooks
 import { usePowerK } from "@/hooks/store/use-power-k";
 // local imports

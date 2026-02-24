@@ -3,19 +3,19 @@ import React from "react";
 import { isEmpty } from "lodash-es";
 import { observer } from "mobx-react";
 import { SquareUser } from "lucide-react";
-// plane types
-import { EEstimateSystem } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { MembersPropertyIcon, WorkItemsIcon } from "@plane/propel/icons";
-import type { ICycle } from "@plane/types";
-// plane ui
-import { Avatar, AvatarGroup, TextArea } from "@plane/ui";
+// planner types
+import { EEstimateSystem } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { MembersPropertyIcon, WorkItemsIcon } from "@planner/propel/icons";
+import type { ICycle } from "@planner/types";
+// planner ui
+import { Avatar, AvatarGroup, TextArea } from "@planner/ui";
 // helpers
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@planner/utils";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useMember } from "@/hooks/store/use-member";
-// plane web constants
+// planner web constants
 
 type Props = {
   projectId: string;

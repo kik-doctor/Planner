@@ -1,4 +1,4 @@
-import type { TEpicAnalyticsGroup } from "@plane/types";
+import type { TEpicAnalyticsGroup } from "@planner/types";
 
 export const updateEpicAnalytics = () => {
   const updateAnalytics = (

@@ -1,5 +1,5 @@
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 // components
 import { PageHead } from "@/components/core/page-title";
 import { ProfileForm } from "@/components/profile/form";

@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
-// plane imports
-import { Toast } from "@plane/propel/toast";
-import { resolveGeneralTheme } from "@plane/utils";
+// planner imports
+import { Toast } from "@planner/propel/toast";
+import { resolveGeneralTheme } from "@planner/utils";
 
 export function ToastProvider({ children }: { children: React.ReactNode }) {
   // themes

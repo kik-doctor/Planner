@@ -1,15 +1,15 @@
 import { observer } from "mobx-react";
-// plane imports
-import type { E_SORT_ORDER, TActivityFilters } from "@plane/constants";
-import { EActivityFilterType, filterActivityOnSelectedFilters } from "@plane/constants";
-import type { TCommentsOperations } from "@plane/types";
+// planner imports
+import type { E_SORT_ORDER, TActivityFilters } from "@planner/constants";
+import { EActivityFilterType, filterActivityOnSelectedFilters } from "@planner/constants";
+import type { TCommentsOperations } from "@planner/types";
 // components
 import { CommentCard } from "@/components/comments/card/root";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web components
-import { IssueAdditionalPropertiesActivity } from "@/plane-web/components/issues/issue-details/issue-properties-activity";
-import { IssueActivityWorklog } from "@/plane-web/components/issues/worklog/activity/root";
+// planner web components
+import { IssueAdditionalPropertiesActivity } from "@/planner-web/components/issues/issue-details/issue-properties-activity";
+import { IssueActivityWorklog } from "@/planner-web/components/issues/worklog/activity/root";
 // local imports
 import { IssueActivityItem } from "./activity/activity-list";
 import { IssueActivityLoader } from "./loader";

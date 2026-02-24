@@ -1,15 +1,15 @@
 import { observer } from "mobx-react";
 import { Outlet } from "react-router";
-// plane imports
-import { Header, Row } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import { Header, Row } from "@planner/ui";
+import { cn } from "@planner/utils";
 // components
 import { TabNavigationRoot } from "@/components/navigation/tab-navigation-root";
 import { AppSidebarToggleButton } from "@/components/sidebar/sidebar-toggle-button";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useProjectNavigationPreferences } from "@/hooks/use-navigation-preferences";
-import { ProjectAuthWrapper } from "@/plane-web/layouts/project-wrapper";
+import { ProjectAuthWrapper } from "@/planner-web/layouts/project-wrapper";
 // local imports
 import type { Route } from "./+types/layout";
 

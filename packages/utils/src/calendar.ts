@@ -1,6 +1,6 @@
-// plane imports
-import type { ICalendarDate, ICalendarPayload } from "@plane/types";
-import { EStartOfTheWeek } from "@plane/types";
+// planner imports
+import type { ICalendarDate, ICalendarPayload } from "@planner/types";
+import { EStartOfTheWeek } from "@planner/types";
 // local imports
 import { getWeekNumberOfDate, renderFormattedPayloadDate } from "./datetime";
 

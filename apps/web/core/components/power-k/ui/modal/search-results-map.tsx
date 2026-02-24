@@ -1,19 +1,19 @@
 import { Briefcase, FileText, Layers, LayoutGrid } from "lucide-react";
-// plane imports
-import { ContrastIcon, DiceIcon } from "@plane/propel/icons";
+// planner imports
+import { ContrastIcon, DiceIcon } from "@planner/propel/icons";
 import type {
   IWorkspaceDefaultSearchResult,
   IWorkspaceIssueSearchResult,
   IWorkspacePageSearchResult,
   IWorkspaceProjectSearchResult,
   IWorkspaceSearchResult,
-} from "@plane/types";
-import { generateWorkItemLink } from "@plane/utils";
+} from "@planner/types";
+import { generateWorkItemLink } from "@planner/utils";
 // components
 import type { TPowerKSearchResultsKeys } from "@/components/power-k/core/types";
-// plane web imports
-import { SEARCH_RESULTS_GROUPS_MAP_EXTENDED } from "@/plane-web/components/command-palette/power-k/search/search-results-map";
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// planner web imports
+import { SEARCH_RESULTS_GROUPS_MAP_EXTENDED } from "@/planner-web/components/command-palette/power-k/search/search-results-map";
+import { IssueIdentifier } from "@/planner-web/components/issues/issue-details/issue-identifier";
 
 export type TPowerKSearchResultGroupDetails = {
   icon?: React.ComponentType<{ className?: string }>;

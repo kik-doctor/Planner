@@ -1,5 +1,5 @@
 import { TriangleAlert } from "lucide-react";
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 type Props = {
   className?: string;

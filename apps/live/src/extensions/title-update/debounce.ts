@@ -1,4 +1,4 @@
-import { logger } from "@plane/logger";
+import { logger } from "@planner/logger";
 
 /**
  * DebounceState - Tracks the state of a debounced function

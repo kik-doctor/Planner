@@ -3,14 +3,14 @@ import { observer } from "mobx-react";
 import { useParams, useRouter } from "next/navigation";
 import { MoreHorizontal, ArchiveIcon, Settings } from "lucide-react";
 import { Disclosure } from "@headlessui/react";
-// plane imports
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
-import { EUserWorkspaceRoles } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import { EUserPermissionsLevel } from "@planner/constants";
+import { useOutsideClickDetector } from "@planner/hooks";
+import { useTranslation } from "@planner/i18n";
+import { ChevronRightIcon } from "@planner/propel/icons";
+import { EUserWorkspaceRoles } from "@planner/types";
+import { CustomMenu } from "@planner/ui";
+import { cn } from "@planner/utils";
 // store hooks
 import { useUserPermissions } from "@/hooks/store/user";
 

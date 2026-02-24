@@ -1,10 +1,10 @@
 import { Fragment } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TCycleEstimateType } from "@plane/types";
-import { Loader } from "@plane/ui";
-import { getDate } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import type { TCycleEstimateType } from "@planner/types";
+import { Loader } from "@planner/ui";
+import { getDate } from "@planner/utils";
 // components
 import ProgressChart from "@/components/core/sidebar/progress-chart";
 import { validateCycleSnapshot } from "@/components/cycles/analytics-sidebar/issue-progress";

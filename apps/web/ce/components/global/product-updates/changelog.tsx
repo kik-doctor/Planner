@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { observer } from "mobx-react";
 // hooks
-import { Loader } from "@plane/ui";
+import { Loader } from "@planner/ui";
 import { ProductUpdatesFallback } from "@/components/global/product-updates/fallback";
 import { useInstance } from "@/hooks/store/use-instance";
 

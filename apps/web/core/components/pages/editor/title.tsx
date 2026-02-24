@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // editor
-import type { EditorRefApi } from "@plane/editor";
+import type { EditorRefApi } from "@planner/editor";
 // ui
-import { TextArea } from "@plane/ui";
-import { cn, getPageName } from "@plane/utils";
+import { TextArea } from "@planner/ui";
+import { cn, getPageName } from "@planner/utils";
 // helpers
 // hooks
 import { usePageFilters } from "@/hooks/use-page-filters";

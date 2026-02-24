@@ -1,15 +1,15 @@
 import { useContext } from "react";
 import { merge } from "lodash-es";
-import type { TIssueMap } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+import type { TIssueMap } from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
 import { StoreContext } from "@/lib/store-context";
-// plane web types
-import type { IProjectEpics, IProjectEpicsFilter } from "@/plane-web/store/issue/epic";
+// planner web types
+import type { IProjectEpics, IProjectEpicsFilter } from "@/planner-web/store/issue/epic";
 // types
-import type { ITeamIssues, ITeamIssuesFilter } from "@/plane-web/store/issue/team";
-import type { ITeamProjectWorkItemsFilter, ITeamProjectWorkItems } from "@/plane-web/store/issue/team-project";
-import type { ITeamViewIssues, ITeamViewIssuesFilter } from "@/plane-web/store/issue/team-views";
-import type { IWorkspaceIssues } from "@/plane-web/store/issue/workspace/issue.store";
+import type { ITeamIssues, ITeamIssuesFilter } from "@/planner-web/store/issue/team";
+import type { ITeamProjectWorkItemsFilter, ITeamProjectWorkItems } from "@/planner-web/store/issue/team-project";
+import type { ITeamViewIssues, ITeamViewIssuesFilter } from "@/planner-web/store/issue/team-views";
+import type { IWorkspaceIssues } from "@/planner-web/store/issue/workspace/issue.store";
 import type { IArchivedIssues, IArchivedIssuesFilter } from "@/store/issue/archived";
 import type { ICycleIssues, ICycleIssuesFilter } from "@/store/issue/cycle";
 import type { IModuleIssues, IModuleIssuesFilter } from "@/store/issue/module";

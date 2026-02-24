@@ -4,12 +4,12 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // icons
 import { ListFilter, Search } from "lucide-react";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { CloseIcon } from "@plane/propel/icons";
-// plane helpers
+import { useOutsideClickDetector } from "@planner/hooks";
+import { CloseIcon } from "@planner/propel/icons";
+// planner helpers
 // types
-import type { TModuleFilters } from "@plane/types";
-import { cn, calculateTotalFilters } from "@plane/utils";
+import type { TModuleFilters } from "@planner/types";
+import { cn, calculateTotalFilters } from "@planner/utils";
 // components
 import { ArchiveTabsList } from "@/components/archives";
 import { FiltersDropdown } from "@/components/issues/issue-layouts/filters";

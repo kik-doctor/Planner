@@ -1,7 +1,7 @@
 import { pull, concat, uniq, set, update } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// Plane Imports
+// planner Imports
 import type {
   TIssue,
   TIssueSubIssues,
@@ -10,7 +10,7 @@ import type {
   TSubIssuesStateDistribution,
   TIssueServiceType,
   TLoader,
-} from "@plane/types";
+} from "@planner/types";
 // services
 import { IssueService } from "@/services/issue";
 // store

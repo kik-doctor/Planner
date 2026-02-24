@@ -2,8 +2,8 @@ import { useState, Fragment } from "react";
 
 import { Transition, Dialog } from "@headlessui/react";
 // types
-import { Button } from "@plane/propel/button";
-import type { IProject } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import type { IProject } from "@planner/types";
 // ui
 // hooks
 import { useProject } from "@/hooks/store/use-project";

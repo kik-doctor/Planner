@@ -1,4 +1,4 @@
-// plane imports
+// planner imports
 import { isEmpty } from "lodash-es";
 import type {
   SingleOrArray,
@@ -10,9 +10,9 @@ import type {
   TWorkItemFilterExpression,
   TWorkItemFilterExpressionData,
   TWorkItemFilterProperty,
-} from "@plane/types";
-import { LOGICAL_OPERATOR, MULTI_VALUE_OPERATORS, WORK_ITEM_FILTER_PROPERTY_KEYS } from "@plane/types";
-import { createConditionNode, createAndGroupNode, isAndGroupNode, isConditionNode } from "@plane/utils";
+} from "@planner/types";
+import { LOGICAL_OPERATOR, MULTI_VALUE_OPERATORS, WORK_ITEM_FILTER_PROPERTY_KEYS } from "@planner/types";
+import { createConditionNode, createAndGroupNode, isAndGroupNode, isConditionNode } from "@planner/utils";
 // local imports
 import { FilterAdapter } from "../rich-filters/adapter";
 

@@ -3,13 +3,13 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { Plus, StickyNote as StickyIcon } from "lucide-react";
-// plane hooks
-import { useOutsideClickDetector } from "@plane/hooks";
-// plane ui
-import { RecentStickyIcon, StickyNoteIcon, CloseIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-// plane utils
-import { cn } from "@plane/utils";
+// planner hooks
+import { useOutsideClickDetector } from "@planner/hooks";
+// planner ui
+import { RecentStickyIcon, StickyNoteIcon, CloseIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+// planner utils
+import { cn } from "@planner/utils";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useSticky } from "@/hooks/use-stickies";

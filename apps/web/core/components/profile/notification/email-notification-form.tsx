@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import React, { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
-import { PROFILE_SETTINGS_TRACKER_ELEMENTS, PROFILE_SETTINGS_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUserEmailNotificationSettings } from "@plane/types";
+import { PROFILE_SETTINGS_TRACKER_ELEMENTS, PROFILE_SETTINGS_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IUserEmailNotificationSettings } from "@planner/types";
 // ui
-import { ToggleSwitch } from "@plane/ui";
+import { ToggleSwitch } from "@planner/ui";
 // services
 import { captureClick, captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { UserService } from "@/services/user.service";

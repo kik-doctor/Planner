@@ -1,6 +1,6 @@
 import React from "react";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 type Props = {
   children: React.ReactNode;

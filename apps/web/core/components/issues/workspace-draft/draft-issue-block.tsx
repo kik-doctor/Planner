@@ -3,19 +3,19 @@ import React, { useRef, useState } from "react";
 import { omit } from "lodash-es";
 import { observer } from "mobx-react";
 import { Copy, Pencil, SquareStackIcon, Trash2 } from "lucide-react";
-// plane utils
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TWorkspaceDraftIssue } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import type { TContextMenuItem } from "@plane/ui";
-import { Row } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner utils
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TWorkspaceDraftIssue } from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
+import type { TContextMenuItem } from "@planner/ui";
+import { Row } from "@planner/ui";
+import { cn } from "@planner/utils";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useProject } from "@/hooks/store/use-project";
 import { useWorkspaceDraftIssues } from "@/hooks/store/workspace-draft";
-// plane-web imports
-import { IdentifierText, IssueTypeIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// planner-web imports
+import { IdentifierText, IssueTypeIdentifier } from "@/planner-web/components/issues/issue-details/issue-identifier";
 // local imports
 import { CreateUpdateIssueModal } from "../issue-modal/modal";
 import { WorkspaceDraftIssueDeleteIssueModal } from "./delete-modal";

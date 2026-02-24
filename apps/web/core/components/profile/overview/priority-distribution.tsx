@@ -1,10 +1,10 @@
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { BarChart } from "@plane/propel/charts/bar-chart";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { IUserProfileData } from "@plane/types";
-import { Loader, Card } from "@plane/ui";
-import { capitalizeFirstLetter } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { BarChart } from "@planner/propel/charts/bar-chart";
+import { EmptyStateCompact } from "@planner/propel/empty-state";
+import type { IUserProfileData } from "@planner/types";
+import { Loader, Card } from "@planner/ui";
+import { capitalizeFirstLetter } from "@planner/utils";
 
 type Props = {
   userProfile: IUserProfileData | undefined;

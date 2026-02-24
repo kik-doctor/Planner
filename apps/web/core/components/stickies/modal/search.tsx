@@ -4,12 +4,12 @@ import { debounce } from "lodash-es";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Search } from "lucide-react";
-// plane hooks
-import { useOutsideClickDetector } from "@plane/hooks";
+// planner hooks
+import { useOutsideClickDetector } from "@planner/hooks";
 // helpers
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+import { cn } from "@planner/utils";
 import { useSticky } from "@/hooks/use-stickies";
 
 export const StickySearch = observer(function StickySearch() {

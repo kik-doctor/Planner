@@ -1,7 +1,7 @@
 import type { LucideIcon } from "lucide-react";
 import { Globe2, Lock } from "lucide-react";
-import { VIEW_ACCESS_SPECIFIERS as VIEW_ACCESS_SPECIFIERS_CONSTANTS } from "@plane/constants";
-import { EViewAccess } from "@plane/types";
+import { VIEW_ACCESS_SPECIFIERS as VIEW_ACCESS_SPECIFIERS_CONSTANTS } from "@planner/constants";
+import { EViewAccess } from "@planner/types";
 
 const VIEW_ACCESS_ICONS = {
   [EViewAccess.PUBLIC]: Globe2,

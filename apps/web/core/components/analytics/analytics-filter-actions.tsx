@@ -1,4 +1,4 @@
-// plane web components
+// planner web components
 import { observer } from "mobx-react";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";

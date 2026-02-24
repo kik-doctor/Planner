@@ -2,10 +2,10 @@ import type { FC } from "react";
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router";
 import { LinkIcon, LogOut, MoreHorizontal, Settings, Share2, ArchiveIcon } from "lucide-react";
-// plane imports
-import { MEMBER_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CustomMenu } from "@plane/ui";
+// planner imports
+import { MEMBER_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { CustomMenu } from "@planner/ui";
 
 type Props = {
   workspaceSlug: string;

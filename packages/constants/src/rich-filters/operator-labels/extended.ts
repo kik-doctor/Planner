@@ -1,4 +1,4 @@
-import type { TExtendedSupportedOperators } from "@plane/types";
+import type { TExtendedSupportedOperators } from "@planner/types";
 
 /**
  * Extended operator labels

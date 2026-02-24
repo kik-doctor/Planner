@@ -1,8 +1,8 @@
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-// plane imports
-import { SitesLabelService } from "@plane/services";
-import type { IIssueLabel } from "@plane/types";
+// planner imports
+import { SitesLabelService } from "@planner/services";
+import type { IIssueLabel } from "@planner/types";
 // store
 import type { CoreRootStore } from "./root.store";
 

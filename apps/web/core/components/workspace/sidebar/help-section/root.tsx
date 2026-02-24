@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
 import { HelpCircle, MessagesSquare, User } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { PageIcon } from "@plane/propel/icons";
+import { useTranslation } from "@planner/i18n";
+import { PageIcon } from "@planner/propel/icons";
 // ui
-import { CustomMenu } from "@plane/ui";
+import { CustomMenu } from "@planner/ui";
 // components
 import { ProductUpdatesModal } from "@/components/global";
 import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
 // hooks
 import { usePowerK } from "@/hooks/store/use-power-k";
 import { useChatSupport } from "@/hooks/use-chat-support";
-// plane web components
-import { PlaneVersionNumber } from "@/plane-web/components/global";
+// planner web components
+import { PlannerVersionNumber } from "@/planner-web/components/global";
 
 export const HelpMenuRoot = observer(function HelpMenuRoot() {
   // store hooks
@@ -44,7 +44,7 @@ export const HelpMenuRoot = observer(function HelpMenuRoot() {
         maxHeight="lg"
         closeOnSelect
       >
-        <CustomMenu.MenuItem onClick={() => window.open("https://go.plane.so/p-docs", "_blank")}>
+        <CustomMenu.MenuItem onClick={() => window.open("https://go.planner.oneworkspacex.com/p-docs", "_blank")}>
           <div className="flex items-center gap-x-2 rounded text-xs">
             <PageIcon className="h-3.5 w-3.5 text-custom-text-200" height={14} width={14} />
             <span className="text-xs">{t("documentation")}</span>
@@ -62,7 +62,7 @@ export const HelpMenuRoot = observer(function HelpMenuRoot() {
             </button>
           </CustomMenu.MenuItem>
         )}
-        <CustomMenu.MenuItem onClick={() => window.open("mailto:sales@plane.so", "_blank")}>
+        <CustomMenu.MenuItem onClick={() => window.open("mailto:hello@oneworkspacex.com", "_blank")}>
           <div className="flex items-center gap-x-2 rounded text-xs">
             <User className="h-3.5 w-3.5 text-custom-text-200" size={14} />
             <span className="text-xs">{t("contact_sales")}</span>
@@ -88,14 +88,14 @@ export const HelpMenuRoot = observer(function HelpMenuRoot() {
           </button>
         </CustomMenu.MenuItem>
         <CustomMenu.MenuItem
-          onClick={() => window.open("https://go.plane.so/p-discord", "_blank", "noopener,noreferrer")}
+          onClick={() => window.open("https://discord.com/invite/543UADxY", "_blank", "noopener,noreferrer")}
         >
           <div className="flex items-center gap-x-2 rounded text-xs">
             <span className="text-xs">Discord</span>
           </div>
         </CustomMenu.MenuItem>
         <div className="px-1 pt-2 mt-1 text-xs text-custom-text-200 border-t border-custom-border-200">
-          <PlaneVersionNumber />
+          <PlannerVersionNumber />
         </div>
       </CustomMenu>
     </>

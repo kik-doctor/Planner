@@ -1,6 +1,6 @@
 import { observer } from "mobx-react";
 // hooks
-import { StatePropertyIcon } from "@plane/propel/icons";
+import { StatePropertyIcon } from "@planner/propel/icons";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // components
 import { IssueActivityBlockComponent, IssueLink } from "./";

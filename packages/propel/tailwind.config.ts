@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import sharedConfig from "@plane/tailwind-config/tailwind.config";
+import sharedConfig from "@planner/tailwind-config/tailwind.config";
 
 export default {
   ...sharedConfig,

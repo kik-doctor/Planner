@@ -1,4 +1,4 @@
-ARG PLANE_VERSION=v0.27.1
+ARG planner_VERSION=v0.27.1
 FROM --platform=$BUILDPLATFORM tonistiigi/binfmt AS binfmt
 
 # **************************************************
@@ -6,12 +6,12 @@ FROM --platform=$BUILDPLATFORM tonistiigi/binfmt AS binfmt
 # **************************************************
 FROM node:22-alpine AS node
 
-FROM artifacts.plane.so/makeplane/plane-frontend:${PLANE_VERSION} AS web-img
-FROM artifacts.plane.so/makeplane/plane-backend:${PLANE_VERSION} AS backend-img
-FROM artifacts.plane.so/makeplane/plane-space:${PLANE_VERSION} AS space-img
-FROM artifacts.plane.so/makeplane/plane-admin:${PLANE_VERSION} AS admin-img
-FROM artifacts.plane.so/makeplane/plane-live:${PLANE_VERSION} AS live-img
-FROM artifacts.plane.so/makeplane/plane-proxy:${PLANE_VERSION} AS proxy-img
+FROM artifacts.planner.oneworkspacex.com/kik-doctor/planner-frontend:${PLANNER_VERSION} AS web-img
+FROM artifacts.planner.oneworkspacex.com/kik-doctor/planner-backend:${PLANNER_VERSION} AS backend-img
+FROM artifacts.planner.oneworkspacex.com/kik-doctor/planner-space:${PLANNER_VERSION} AS space-img
+FROM artifacts.planner.oneworkspacex.com/kik-doctor/planner-admin:${PLANNER_VERSION} AS admin-img
+FROM artifacts.planner.oneworkspacex.com/kik-doctor/planner-live:${PLANNER_VERSION} AS live-img
+FROM artifacts.planner.oneworkspacex.com/kik-doctor/planner-proxy:${PLANNER_VERSION} AS proxy-img
 
 # **************************************************
 #  STAGE 1: Runner
@@ -51,7 +51,7 @@ RUN pip install supervisor
 RUN mkdir -p /etc/supervisor/conf.d
 
 COPY start.sh /app/start.sh
-COPY dist/plane.env /app/plane.env
+COPY dist/planner.env /app/planner.env
 COPY supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 
 RUN mkdir -p /app/logs/access && \

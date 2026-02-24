@@ -2,12 +2,12 @@ import React from "react";
 
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-import { PROFILE_VIEWER_TAB, PROFILE_ADMINS_TAB } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { PROFILE_VIEWER_TAB, PROFILE_ADMINS_TAB } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 
 // components
 // constants
-import { Header, EHeaderVariant } from "@plane/ui";
+import { Header, EHeaderVariant } from "@planner/ui";
 
 type Props = {
   isAuthorized: boolean;

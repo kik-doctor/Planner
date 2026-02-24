@@ -8,10 +8,10 @@ import { usePopper } from "react-popper";
 import { Check, Search } from "lucide-react";
 import { Combobox } from "@headlessui/react";
 // i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 // icon
-import { CycleGroupIcon, CycleIcon } from "@plane/propel/icons";
-import type { TCycleGroups } from "@plane/types";
+import { CycleGroupIcon, CycleIcon } from "@planner/propel/icons";
+import type { TCycleGroups } from "@planner/types";
 // ui
 // store hooks
 import { useCycle } from "@/hooks/store/use-cycle";

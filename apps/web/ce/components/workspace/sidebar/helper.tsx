@@ -9,8 +9,8 @@ import {
   ProjectIcon,
   ViewsIcon,
   YourWorkIcon,
-} from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+} from "@planner/propel/icons";
+import { cn } from "@planner/utils";
 
 export const getSidebarNavigationItemIcon = (key: string, className: string = "") => {
   switch (key) {

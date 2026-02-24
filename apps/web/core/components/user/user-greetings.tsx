@@ -1,7 +1,7 @@
-// plane types
-import { useTranslation } from "@plane/i18n";
+// planner types
+import { useTranslation } from "@planner/i18n";
 // hooks
-import type { IUser } from "@plane/types";
+import type { IUser } from "@planner/types";
 import { useCurrentTime } from "@/hooks/use-current-time";
 // types
 

@@ -13,21 +13,21 @@ import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { usePopper } from "react-popper";
 import { Check, Plus, XCircle } from "lucide-react";
 import { Listbox } from "@headlessui/react";
-// plane imports
-import type { EUserPermissions } from "@plane/constants";
-import { ROLE, ROLE_DETAILS, MEMBER_TRACKER_EVENTS, MEMBER_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import type { EUserPermissions } from "@planner/constants";
+import { ROLE, ROLE_DETAILS, MEMBER_TRACKER_EVENTS, MEMBER_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // types
-import { Button } from "@plane/propel/button";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IWorkspace } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IUser, IWorkspace } from "@planner/types";
 // ui
-import { Input, Spinner } from "@plane/ui";
+import { Input, Spinner } from "@planner/ui";
 // helpers
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 // components
 import { SwitchAccountDropdown } from "./switch-account-dropdown";
 
@@ -352,7 +352,7 @@ export function InviteMembers(props: Props) {
           <div className="text-center space-y-1 py-4 mx-auto w-4/5">
             <h3 className="text-3xl font-bold text-custom-text-100">Invite your teammates</h3>
             <p className="font-medium text-custom-text-400">
-              Work in plane happens best with your team. Invite them now to use Plane to its potential.
+              Work in Planner happens best with your team. Invite them now to use planner to its potential.
             </p>
           </div>
           <form

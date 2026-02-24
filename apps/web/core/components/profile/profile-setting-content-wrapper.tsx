@@ -1,4 +1,4 @@
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import { SidebarHamburgerToggle } from "@/components/core/sidebar/sidebar-menu-hamburger-toggle";
 
 type Props = {

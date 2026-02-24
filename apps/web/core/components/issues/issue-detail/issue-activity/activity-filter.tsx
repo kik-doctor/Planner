@@ -1,12 +1,12 @@
 import { observer } from "mobx-react";
 import { Check, ListFilter } from "lucide-react";
-// plane imports
-import type { TActivityFilters, TActivityFilterOption } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { PopoverMenu } from "@plane/ui";
+// planner imports
+import type { TActivityFilters, TActivityFilterOption } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { PopoverMenu } from "@planner/ui";
 // helper
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // constants
 
 type TActivityFilter = {

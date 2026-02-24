@@ -1,6 +1,6 @@
 import { observer } from "mobx-react";
 import { Trash } from "lucide-react";
-import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@plane/constants";
+import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@planner/constants";
 
 type TEstimateListItem = {
   estimateId: string;

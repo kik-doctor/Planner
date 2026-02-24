@@ -1,6 +1,6 @@
-// plane imports
-import type { TFilterValue, TSupportedOperators, TBaseFilterFieldConfig } from "@plane/types";
-import { FILTER_FIELD_TYPE } from "@plane/types";
+// planner imports
+import type { TFilterValue, TSupportedOperators, TBaseFilterFieldConfig } from "@planner/types";
+import { FILTER_FIELD_TYPE } from "@planner/types";
 // local imports
 import type { IFilterIconConfig } from "./shared";
 import { createFilterFieldConfig } from "./shared";

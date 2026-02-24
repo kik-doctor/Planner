@@ -1,10 +1,10 @@
 import type { FC } from "react";
-// plane imports
-import type { I_THEME_OPTION } from "@plane/constants";
-import { THEME_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import type { I_THEME_OPTION } from "@planner/constants";
+import { THEME_OPTIONS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // constants
-import { CustomSelect } from "@plane/ui";
+import { CustomSelect } from "@planner/ui";
 // ui
 
 type Props = {

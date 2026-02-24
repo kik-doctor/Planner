@@ -3,20 +3,20 @@ import React, { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Earth, Lock } from "lucide-react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IProjectView } from "@plane/types";
-import { EViewAccess } from "@plane/types";
-import { FavoriteStar } from "@plane/ui";
-import { getPublishViewLink } from "@plane/utils";
+// planner imports
+import { EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@planner/constants";
+import { useLocalStorage } from "@planner/hooks";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IProjectView } from "@planner/types";
+import { EViewAccess } from "@planner/types";
+import { FavoriteStar } from "@planner/ui";
+import { getPublishViewLink } from "@planner/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useProjectView } from "@/hooks/store/use-project-view";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
-import { PublishViewModal } from "@/plane-web/components/views/publish";
+// planner web imports
+import { PublishViewModal } from "@/planner-web/components/views/publish";
 // local imports
 import { ButtonAvatars } from "../dropdowns/member/avatar";
 import { DeleteProjectViewModal } from "./delete-view-modal";

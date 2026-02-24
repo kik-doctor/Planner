@@ -2,14 +2,14 @@ import { unset, set } from "lodash-es";
 import { makeObservable, observable, runInAction, action, reaction, computed } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { EUserPermissions } from "@plane/constants";
-import type { TPage, TPageFilters, TPageNavigationTabs } from "@plane/types";
-import { EUserProjectRoles } from "@plane/types";
+import { EUserPermissions } from "@planner/constants";
+import type { TPage, TPageFilters, TPageNavigationTabs } from "@planner/types";
+import { EUserProjectRoles } from "@planner/types";
 // helpers
-import { filterPagesByPageType, getPageName, orderPages, shouldFilterPage } from "@plane/utils";
-// plane web constants
-// plane web store
-import type { RootStore } from "@/plane-web/store/root.store";
+import { filterPagesByPageType, getPageName, orderPages, shouldFilterPage } from "@planner/utils";
+// planner web constants
+// planner web store
+import type { RootStore } from "@/planner-web/store/root.store";
 // services
 import { ProjectPageService } from "@/services/page";
 // store

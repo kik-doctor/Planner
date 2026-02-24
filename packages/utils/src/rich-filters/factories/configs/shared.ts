@@ -11,7 +11,7 @@ import type {
   TSingleSelectFilterFieldConfig,
   TSupportedFilterFieldConfigs,
   TSupportedOperators,
-} from "@plane/types";
+} from "@planner/types";
 
 /**
  * Helper to create a type-safe filter config

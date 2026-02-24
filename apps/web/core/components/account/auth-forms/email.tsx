@@ -3,12 +3,12 @@ import { useMemo, useRef, useState } from "react";
 import { observer } from "mobx-react";
 // icons
 import { CircleAlert, XCircle } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import type { IEmailCheckData } from "@plane/types";
-import { Input, Spinner } from "@plane/ui";
-import { cn, checkEmailValidity } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import type { IEmailCheckData } from "@planner/types";
+import { Input, Spinner } from "@planner/ui";
+import { cn, checkEmailValidity } from "@planner/utils";
 // helpers
 type TAuthEmailForm = {
   defaultEmail: string;
@@ -20,7 +20,7 @@ export const AuthEmailForm = observer(function AuthEmailForm(props: TAuthEmailFo
   // states
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [email, setEmail] = useState(defaultEmail);
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   const emailError = useMemo(
     () => (email && !checkEmailValidity(email) ? { email: "auth.common.email.errors.invalid" } : undefined),

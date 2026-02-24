@@ -16,13 +16,13 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import { Search } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import { CloseIcon } from "@plane/propel/icons";
-// plane package imports
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@plane/propel/table";
-import { cn } from "@plane/utils";
-// plane web components
+import { useTranslation } from "@planner/i18n";
+import { EmptyStateCompact } from "@planner/propel/empty-state";
+import { CloseIcon } from "@planner/propel/icons";
+// planner package imports
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@planner/propel/table";
+import { cn } from "@planner/utils";
+// planner web components
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];

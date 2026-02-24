@@ -2,11 +2,11 @@ import type { RefObject } from "react";
 import React from "react";
 import { observer } from "mobx-react";
 // hooks
-import type { IGanttBlock } from "@plane/types";
+import type { IGanttBlock } from "@planner/types";
 // helpers
-import { cn } from "@plane/utils";
-//  Plane-web
-import { LeftDependencyDraggable, RightDependencyDraggable } from "@/plane-web/components/gantt-chart";
+import { cn } from "@planner/utils";
+//  planner-web
+import { LeftDependencyDraggable, RightDependencyDraggable } from "@/planner-web/components/gantt-chart";
 //
 import { LeftResizable } from "./blockResizables/left-resizable";
 import { RightResizable } from "./blockResizables/right-resizable";

@@ -1,5 +1,5 @@
 import React from "react";
-// plane imports
+// planner imports
 import { Card, ECardSpacing } from "../../card";
 
 interface TreeMapTooltipProps {

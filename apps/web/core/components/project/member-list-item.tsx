@@ -1,16 +1,16 @@
 import { observer } from "mobx-react";
-// plane imports
-import { MEMBER_TRACKER_EVENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Table } from "@plane/ui";
+// planner imports
+import { MEMBER_TRACKER_EVENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Table } from "@planner/ui";
 // helpers
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useUser, useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
-import { useProjectColumns } from "@/plane-web/components/projects/settings/useProjectColumns";
+// planner web imports
+import { useProjectColumns } from "@/planner-web/components/projects/settings/useProjectColumns";
 // store
 import type { IProjectMemberDetails } from "@/store/member/project/base-project-member.store";
 // local imports

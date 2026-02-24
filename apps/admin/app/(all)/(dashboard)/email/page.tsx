@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Loader, ToggleSwitch } from "@plane/ui";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Loader, ToggleSwitch } from "@planner/ui";
 // hooks
 import { useInstance } from "@/hooks/store";
 // components
@@ -55,7 +55,8 @@ const InstanceEmailPage = observer(function InstanceEmailPage(_props: Route.Comp
           <div className="py-4 space-y-1 flex-shrink-0">
             <div className="text-xl font-medium text-custom-text-100">Secure emails from your own instance</div>
             <div className="text-sm font-normal text-custom-text-300">
-              Plane can send useful emails to you and your users from your own instance without talking to the Internet.
+              Planner can send useful emails to you and your users from your own instance without talking to the
+              Internet.
               <div className="text-sm font-normal text-custom-text-300">
                 Set it up below and please test your settings before you save them.&nbsp;
                 <span className="text-red-400">Misconfigs can lead to email bounces and errors.</span>

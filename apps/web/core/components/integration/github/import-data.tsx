@@ -2,12 +2,12 @@ import type { FC } from "react";
 import { observer } from "mobx-react";
 import type { Control, UseFormWatch } from "react-hook-form";
 import { Controller } from "react-hook-form";
-import { Button } from "@plane/propel/button";
-import type { IWorkspaceIntegration } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import type { IWorkspaceIntegration } from "@planner/types";
 // hooks
 // components
-import { CustomSearchSelect, ToggleSwitch } from "@plane/ui";
-import { truncateText } from "@plane/utils";
+import { CustomSearchSelect, ToggleSwitch } from "@planner/ui";
+import { truncateText } from "@planner/utils";
 import type { TFormValues, TIntegrationSteps } from "@/components/integration";
 import { SelectRepository } from "@/components/integration";
 // ui

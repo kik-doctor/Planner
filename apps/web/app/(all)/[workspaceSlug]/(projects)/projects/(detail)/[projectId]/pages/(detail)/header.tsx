@@ -1,10 +1,10 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import { PageIcon } from "@plane/propel/icons";
-import type { ICustomSearchSelectOption } from "@plane/types";
-import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@plane/ui";
-import { getPageName } from "@plane/utils";
+// planner imports
+import { PageIcon } from "@planner/propel/icons";
+import type { ICustomSearchSelectOption } from "@planner/types";
+import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@planner/ui";
+import { getPageName } from "@planner/utils";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { PageAccessIcon } from "@/components/common/page-access-icon";
@@ -14,10 +14,10 @@ import { PageSyncingBadge } from "@/components/pages/header/syncing-badge";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
-import { CommonProjectBreadcrumbs } from "@/plane-web/components/breadcrumbs/common";
-import { PageDetailsHeaderExtraActions } from "@/plane-web/components/pages";
-import { EPageStoreType, usePage, usePageStore } from "@/plane-web/hooks/store";
+// planner web imports
+import { CommonProjectBreadcrumbs } from "@/planner-web/components/breadcrumbs/common";
+import { PageDetailsHeaderExtraActions } from "@/planner-web/components/pages";
+import { EPageStoreType, usePage, usePageStore } from "@/planner-web/hooks/store";
 
 export interface IPagesHeaderProps {
   showButton?: boolean;

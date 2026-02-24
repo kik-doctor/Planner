@@ -1,5 +1,5 @@
 // icons
-import { EUserPermissions } from "@plane/constants";
+import { EUserPermissions } from "@planner/constants";
 import { SettingIcon } from "@/components/icons/attachment";
 // types
 import type { Props } from "@/components/icons/types";

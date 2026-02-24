@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import { Controller, useFormContext } from "react-hook-form";
-// plane imports
-import { NETWORK_CHOICES, ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IProject } from "@plane/types";
-import { CustomSelect } from "@plane/ui";
-import { getTabIndex } from "@plane/utils";
+// planner imports
+import { NETWORK_CHOICES, ETabIndices } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { IProject } from "@planner/types";
+import { CustomSelect } from "@planner/ui";
+import { getTabIndex } from "@planner/utils";
 // components
 import { MemberDropdown } from "@/components/dropdowns/member/dropdown";
 import { ProjectNetworkIcon } from "@/components/project/project-network-icon";

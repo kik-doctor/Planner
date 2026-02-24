@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { Header, EHeaderVariant } from "@plane/ui";
+// planner imports
+import { Header, EHeaderVariant } from "@planner/ui";
 // hooks
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 // local imports

@@ -1,10 +1,10 @@
-import { API_BASE_URL } from "@plane/constants";
+import { API_BASE_URL } from "@planner/constants";
 import type {
   TUnreadNotificationsCount,
   TNotificationPaginatedInfo,
   TNotification,
   TNotificationPaginatedInfoQueryParams,
-} from "@plane/types";
+} from "@planner/types";
 // services
 import { APIService } from "../api.service";
 

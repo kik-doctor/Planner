@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import React from "react";
-import type { TIssue } from "@plane/types";
+import type { TIssue } from "@planner/types";
 
 export interface EpicModalProps {
   data?: Partial<TIssue>;

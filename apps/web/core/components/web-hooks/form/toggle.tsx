@@ -1,10 +1,10 @@
 import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
 // constants
-import { WORKSPACE_SETTINGS_TRACKER_ELEMENTS } from "@plane/constants";
-import type { IWebhook } from "@plane/types";
+import { WORKSPACE_SETTINGS_TRACKER_ELEMENTS } from "@planner/constants";
+import type { IWebhook } from "@planner/types";
 // ui
-import { ToggleSwitch } from "@plane/ui";
+import { ToggleSwitch } from "@planner/ui";
 // hooks
 import { captureClick } from "@/helpers/event-tracker.helper";
 

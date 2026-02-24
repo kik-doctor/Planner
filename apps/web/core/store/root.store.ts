@@ -1,18 +1,18 @@
 import { enableStaticRendering } from "mobx-react";
-// plane imports
-import { FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "@plane/i18n";
-import type { IWorkItemFilterStore } from "@plane/shared-state";
-import { WorkItemFilterStore } from "@plane/shared-state";
-// plane web store
-import type { IAnalyticsStore } from "@/plane-web/store/analytics.store";
-import { AnalyticsStore } from "@/plane-web/store/analytics.store";
-import type { ICommandPaletteStore } from "@/plane-web/store/command-palette.store";
-import { CommandPaletteStore } from "@/plane-web/store/command-palette.store";
-import { PowerKStore } from "@/plane-web/store/power-k.store";
-import type { IPowerKStore } from "@/plane-web/store/power-k.store";
-import type { RootStore } from "@/plane-web/store/root.store";
-import type { IStateStore } from "@/plane-web/store/state.store";
-import { StateStore } from "@/plane-web/store/state.store";
+// planner imports
+import { FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "@planner/i18n";
+import type { IWorkItemFilterStore } from "@planner/shared-state";
+import { WorkItemFilterStore } from "@planner/shared-state";
+// planner web store
+import type { IAnalyticsStore } from "@/planner-web/store/analytics.store";
+import { AnalyticsStore } from "@/planner-web/store/analytics.store";
+import type { ICommandPaletteStore } from "@/planner-web/store/command-palette.store";
+import { CommandPaletteStore } from "@/planner-web/store/command-palette.store";
+import { PowerKStore } from "@/planner-web/store/power-k.store";
+import type { IPowerKStore } from "@/planner-web/store/power-k.store";
+import type { RootStore } from "@/planner-web/store/root.store";
+import type { IStateStore } from "@/planner-web/store/state.store";
+import { StateStore } from "@/planner-web/store/state.store";
 // stores
 import type { ICycleStore } from "./cycle.store";
 import { CycleStore } from "./cycle.store";

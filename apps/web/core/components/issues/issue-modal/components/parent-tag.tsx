@@ -2,17 +2,17 @@ import React from "react";
 import { observer } from "mobx-react";
 import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
-import { ETabIndices } from "@plane/constants";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
+import { ETabIndices } from "@planner/constants";
+import { CloseIcon } from "@planner/propel/icons";
+// planner imports
 // types
-import type { ISearchIssueResponse, TIssue } from "@plane/types";
+import type { ISearchIssueResponse, TIssue } from "@planner/types";
 // helpers
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@planner/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// planner web components
+import { IssueIdentifier } from "@/planner-web/components/issues/issue-details/issue-identifier";
 
 type TIssueParentTagProps = {
   control: Control<TIssue>;

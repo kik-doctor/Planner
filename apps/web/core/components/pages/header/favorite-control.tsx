@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
 // constants
-import { PROJECT_PAGE_TRACKER_ELEMENTS } from "@plane/constants";
+import { PROJECT_PAGE_TRACKER_ELEMENTS } from "@planner/constants";
 // ui
-import { FavoriteStar } from "@plane/ui";
+import { FavoriteStar } from "@planner/ui";
 // helpers
 import { captureClick } from "@/helpers/event-tracker.helper";
 // hooks

@@ -1,6 +1,6 @@
 import { useTheme } from "next-themes";
-// plane imports
-import { Button } from "@plane/propel/button";
+// planner imports
+import { Button } from "@planner/propel/button";
 // assets
 import maintenanceModeDarkModeImage from "@/app/assets/instance/maintenance-mode-dark.svg?url";
 import maintenanceModeLightModeImage from "@/app/assets/instance/maintenance-mode-light.svg?url";
@@ -11,17 +11,17 @@ const linkMap = [
   {
     key: "mail_to",
     label: "Contact Support",
-    value: "mailto:support@plane.so",
+    value: "mailto:hello@oneworkspacex.com",
   },
   {
     key: "status",
     label: "Status Page",
-    value: "https://status.plane.so/",
+    value: "https://status.planner.oneworkspacex.com/",
   },
   {
     key: "twitter_handle",
-    label: "@planepowers",
-    value: "https://x.com/planepowers",
+    label: "@plannerpowers",
+    value: "https://x.com/plannerpowers",
   },
 ];
 

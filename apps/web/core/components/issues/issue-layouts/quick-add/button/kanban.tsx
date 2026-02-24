@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 import { PlusIcon } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 import type { TQuickAddIssueButton } from "../root";
 
 export const KanbanQuickAddIssueButton = observer(function KanbanQuickAddIssueButton(props: TQuickAddIssueButton) {

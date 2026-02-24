@@ -2,27 +2,27 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { CircleCheck } from "lucide-react";
-// plane imports
+// planner imports
 import {
   ORGANIZATION_SIZE,
   RESTRICTED_URLS,
   WORKSPACE_TRACKER_ELEMENTS,
   WORKSPACE_TRACKER_EVENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IWorkspace } from "@plane/types";
-import { Spinner } from "@plane/ui";
-import { cn } from "@plane/utils";
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IUser, IWorkspace } from "@planner/types";
+import { Spinner } from "@planner/ui";
+import { cn } from "@planner/utils";
 // helpers
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserProfile, useUserSettings } from "@/hooks/store/user";
-// plane-web imports
-import { getIsWorkspaceCreationDisabled } from "@/plane-web/helpers/instance.helper";
-import { WorkspaceService } from "@/plane-web/services";
+// planner-web imports
+import { getIsWorkspaceCreationDisabled } from "@/planner-web/helpers/instance.helper";
+import { WorkspaceService } from "@/planner-web/services";
 // local components
 import { CommonOnboardingHeader } from "../common";
 
@@ -44,7 +44,7 @@ export const WorkspaceCreateStep = observer(function WorkspaceCreateStep({
   // states
   const [slugError, setSlugError] = useState(false);
   const [invalidSlug, setInvalidSlug] = useState(false);
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { updateUserProfile } = useUserProfile();

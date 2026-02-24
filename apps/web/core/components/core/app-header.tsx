@@ -1,10 +1,10 @@
 import type { ReactNode } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { Row } from "@plane/ui";
+// planner imports
+import { Row } from "@planner/ui";
 // components
-import { cn } from "@plane/utils";
-import { ExtendedAppHeader } from "@/plane-web/components/common/extended-app-header";
+import { cn } from "@planner/utils";
+import { ExtendedAppHeader } from "@/planner-web/components/common/extended-app-header";
 
 export interface AppHeaderProps {
   header: ReactNode;

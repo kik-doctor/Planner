@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { Palette, Trash2 } from "lucide-react";
 // editor
-import type { EditorRefApi } from "@plane/editor";
+import type { EditorRefApi } from "@planner/editor";
 // ui
-import { useOutsideClickDetector } from "@plane/hooks";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TSticky } from "@plane/types";
+import { useOutsideClickDetector } from "@planner/hooks";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TSticky } from "@planner/types";
 // constants
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import type { ToolbarMenuItem } from "@/constants/editor";
 import { TOOLBAR_ITEMS } from "@/constants/editor";
 // helpers

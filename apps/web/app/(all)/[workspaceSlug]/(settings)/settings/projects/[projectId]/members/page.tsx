@@ -1,7 +1,7 @@
 import { observer } from "mobx-react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import { EUserPermissions, EUserPermissionsLevel } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // components
 import { NotAuthorizedView } from "@/components/auth-screens/not-authorized-view";
 import { PageHead } from "@/components/core/page-title";
@@ -12,15 +12,15 @@ import { SettingsContentWrapper } from "@/components/settings/content-wrapper";
 import { SettingsHeading } from "@/components/settings/heading";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
-import { ProjectTeamspaceList } from "@/plane-web/components/projects/teamspaces/teamspace-list";
-import { getProjectSettingsPageLabelI18nKey } from "@/plane-web/helpers/project-settings";
+// planner web imports
+import { ProjectTeamspaceList } from "@/planner-web/components/projects/teamspaces/teamspace-list";
+import { getProjectSettingsPageLabelI18nKey } from "@/planner-web/helpers/project-settings";
 import type { Route } from "./+types/page";
 
 function MembersSettingsPage({ params }: Route.ComponentProps) {
   // router
   const { workspaceSlug, projectId } = params;
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { currentProjectDetails } = useProject();

@@ -1,6 +1,6 @@
 import type { MutableRefObject } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// planner imports
 import type {
   GroupByColumnTypes,
   IGroupByColumn,
@@ -12,12 +12,12 @@ import type {
   TIssueKanbanFilters,
   TIssueGroupByOptions,
   TIssueOrderByOptions,
-} from "@plane/types";
-import { Row } from "@plane/ui";
+} from "@planner/types";
+import { Row } from "@planner/ui";
 // hooks
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
-// plane web imports
-import { useWorkFlowFDragNDrop } from "@/plane-web/components/workflow";
+// planner web imports
+import { useWorkFlowFDragNDrop } from "@/planner-web/components/workflow";
 // local imports
 import type { TRenderQuickActions } from "../list/list-view-types";
 import type { GroupDropLocation } from "../utils";

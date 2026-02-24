@@ -3,10 +3,10 @@ import { addDays } from "date-fns";
 import { observer } from "mobx-react";
 import { Plus } from "lucide-react";
 // ui
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IBlockUpdateData, IGanttBlock } from "@plane/types";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IBlockUpdateData, IGanttBlock } from "@planner/types";
 // helpers
-import { renderFormattedDate, renderFormattedPayloadDate } from "@plane/utils";
+import { renderFormattedDate, renderFormattedPayloadDate } from "@planner/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 import { useTimeLineChartStore } from "@/hooks/use-timeline-chart";

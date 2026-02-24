@@ -24,10 +24,10 @@ import {
   TextQuote,
   Underline,
 } from "lucide-react";
-// plane imports
-import type { TCommandExtraProps, TEditorCommands, TEditorFontStyle } from "@plane/editor";
-import { MonospaceIcon, SansSerifIcon, SerifIcon } from "@plane/propel/icons";
-import { convertRemToPixel } from "@plane/utils";
+// planner imports
+import type { TCommandExtraProps, TEditorCommands, TEditorFontStyle } from "@planner/editor";
+import { MonospaceIcon, SansSerifIcon, SerifIcon } from "@planner/propel/icons";
+import { convertRemToPixel } from "@planner/utils";
 
 type TEditorTypes = "lite" | "document" | "sticky";
 

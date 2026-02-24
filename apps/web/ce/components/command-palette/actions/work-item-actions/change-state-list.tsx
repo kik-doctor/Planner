@@ -1,10 +1,10 @@
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
 import { Check } from "lucide-react";
-// plane imports
-import { EIconSize } from "@plane/constants";
-import { StateGroupIcon } from "@plane/propel/icons";
-import { Spinner } from "@plane/ui";
+// planner imports
+import { EIconSize } from "@planner/constants";
+import { StateGroupIcon } from "@planner/propel/icons";
+import { Spinner } from "@planner/ui";
 // store hooks
 import { useProjectState } from "@/hooks/store/use-project-state";
 

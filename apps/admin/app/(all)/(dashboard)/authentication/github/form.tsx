@@ -3,13 +3,13 @@ import { isEmpty } from "lodash-es";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { Monitor } from "lucide-react";
-// plane internal packages
-import { API_BASE_URL } from "@plane/constants";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IFormattedInstanceConfiguration, TInstanceGithubAuthenticationConfigurationKeys } from "@plane/types";
+// planner internal packages
+import { API_BASE_URL } from "@planner/constants";
+import { Button, getButtonStyling } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IFormattedInstanceConfiguration, TInstanceGithubAuthenticationConfigurationKeys } from "@planner/types";
 
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // components
 import { CodeBlock } from "@/components/common/code-block";
 import { ConfirmDiscardModal } from "@/components/common/confirm-discard-modal";
@@ -185,7 +185,7 @@ export function InstanceGithubConfigForm(props: Props) {
       <div className="flex flex-col gap-8">
         <div className="grid grid-cols-2 gap-x-12 gap-y-8 w-full">
           <div className="flex flex-col gap-y-4 col-span-2 md:col-span-1 pt-1">
-            <div className="pt-2.5 text-xl font-medium">GitHub-provided details for Plane</div>
+            <div className="pt-2.5 text-xl font-medium">GitHub-provided details for planner</div>
             {GITHUB_FORM_FIELDS.map((field) => (
               <ControllerInput
                 key={field.key}
@@ -215,7 +215,7 @@ export function InstanceGithubConfigForm(props: Props) {
             </div>
           </div>
           <div className="col-span-2 md:col-span-1 flex flex-col gap-y-6">
-            <div className="pt-2 text-xl font-medium">Plane-provided details for GitHub</div>
+            <div className="pt-2 text-xl font-medium">Planner-provided details for GitHub</div>
 
             <div className="flex flex-col gap-y-4">
               {/* common service details */}

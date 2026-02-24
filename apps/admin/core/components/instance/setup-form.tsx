@@ -2,12 +2,12 @@ import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 // icons
 import { Eye, EyeOff } from "lucide-react";
-// plane internal packages
-import { API_BASE_URL, E_PASSWORD_STRENGTH } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { AuthService } from "@plane/services";
-import { Checkbox, Input, PasswordStrengthIndicator, Spinner } from "@plane/ui";
-import { getPasswordStrength } from "@plane/utils";
+// planner internal packages
+import { API_BASE_URL, E_PASSWORD_STRENGTH } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { AuthService } from "@planner/services";
+import { Checkbox, Input, PasswordStrengthIndicator, Spinner } from "@planner/ui";
+import { getPasswordStrength } from "@planner/utils";
 // components
 import { AuthHeader } from "@/app/(all)/(home)/auth-header";
 import { Banner } from "@/components/common/banner";
@@ -136,8 +136,8 @@ export function InstanceSetupForm() {
       <div className="flex flex-col justify-center items-center flex-grow w-full py-6 mt-10">
         <div className="relative flex flex-col gap-6 max-w-[22.5rem] w-full">
           <FormHeader
-            heading="Setup your Plane Instance"
-            subHeading="Post setup you will be able to manage this Plane instance."
+            heading="Setup your Planner Instance"
+            subHeading="Post setup you will be able to manage this Planner instance."
           />
           {errorData.type &&
             errorData?.message &&
@@ -325,10 +325,10 @@ export function InstanceSetupForm() {
                 />
               </div>
               <label className="text-sm text-custom-text-300 font-medium cursor-pointer" htmlFor="is_telemetry_enabled">
-                Allow Plane to anonymously collect usage events.{" "}
+                Allow planner to anonymously collect usage events.{" "}
                 <a
                   tabIndex={-1}
-                  href="https://developers.plane.so/self-hosting/telemetry"
+                  href="https://developers.planner.oneworkspacex.com/self-hosting/telemetry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-medium text-blue-500 hover:text-blue-600 flex-shrink-0"

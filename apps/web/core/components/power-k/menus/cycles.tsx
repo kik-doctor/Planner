@@ -1,8 +1,8 @@
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ContrastIcon } from "@plane/propel/icons";
-import type { ICycle } from "@plane/types";
+// planner imports
+import { ContrastIcon } from "@planner/propel/icons";
+import type { ICycle } from "@planner/types";
 // local imports
 import { PowerKMenuBuilder } from "./builder";
 

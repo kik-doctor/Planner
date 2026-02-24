@@ -35,8 +35,8 @@ import {
   setText,
   openEmojiPicker,
 } from "@/helpers/editor-commands";
-// plane editor extensions
-import { coreEditorAdditionalSlashCommandOptions } from "@/plane-editor/extensions";
+// planner editor extensions
+import { coreEditorAdditionalSlashCommandOptions } from "@/planner-editor/extensions";
 // types
 import type { CommandProps, ISlashCommandItem, TSlashCommandSectionKeys } from "@/types";
 // local types

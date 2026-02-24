@@ -3,8 +3,8 @@ import type {
   ILayoutDisplayFiltersOptions,
   TIssueActivityComment,
   TWorkItemFilterProperty,
-} from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+} from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
 import type { TIssueFilterPriorityObject } from "./common";
 import { ISSUE_DISPLAY_PROPERTIES_KEYS, SUB_ISSUES_DISPLAY_PROPERTIES_KEYS } from "./common";
 

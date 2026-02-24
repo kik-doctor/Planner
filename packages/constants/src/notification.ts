@@ -1,4 +1,4 @@
-import type { TUnreadNotificationsCount } from "@plane/types";
+import type { TUnreadNotificationsCount } from "@planner/types";
 
 export enum ENotificationTab {
   ALL = "all",

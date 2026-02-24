@@ -4,15 +4,20 @@ import Link from "next/link";
 
 import useSWR, { mutate } from "swr";
 import { CheckCircle2 } from "lucide-react";
-// plane imports
-import { ROLE, MEMBER_TRACKER_EVENTS, MEMBER_TRACKER_ELEMENTS, GROUP_WORKSPACE_TRACKER_EVENT } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import {
+  ROLE,
+  MEMBER_TRACKER_EVENTS,
+  MEMBER_TRACKER_ELEMENTS,
+  GROUP_WORKSPACE_TRACKER_EVENT,
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // types
-import { Button } from "@plane/propel/button";
-import { PlannerLogo } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceMemberInvitation } from "@plane/types";
-import { truncateText } from "@plane/utils";
+import { Button } from "@planner/propel/button";
+import { PlannerLogo } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IWorkspaceMemberInvitation } from "@planner/types";
+import { truncateText } from "@planner/utils";
 // assets
 import emptyInvitation from "@/app/assets/empty-state/invitation.svg?url";
 // components
@@ -27,8 +32,8 @@ import { useUser, useUserProfile } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 // services
 import { AuthenticationWrapper } from "@/lib/wrappers/authentication-wrapper";
-// plane web services
-import { WorkspaceService } from "@/plane-web/services";
+// planner web services
+import { WorkspaceService } from "@/planner-web/services";
 
 const workspaceService = new WorkspaceService();
 

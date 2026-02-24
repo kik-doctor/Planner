@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
-// plane imports
-import { SUPPORT_EMAIL } from "@plane/constants";
+// planner imports
+import { SUPPORT_EMAIL } from "@planner/constants";
 
 export enum EPageTypes {
   PUBLIC = "PUBLIC",

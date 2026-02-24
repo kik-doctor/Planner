@@ -1,7 +1,7 @@
-// plane imports
-import type { TDraggableData } from "@plane/constants";
-import { STATE_GROUPS } from "@plane/constants";
-import type { IState, IStateResponse } from "@plane/types";
+// planner imports
+import type { TDraggableData } from "@planner/constants";
+import { STATE_GROUPS } from "@planner/constants";
+import type { IState, IStateResponse } from "@planner/types";
 
 export const orderStateGroups = (unorderedStateGroups: IStateResponse | undefined): IStateResponse | undefined => {
   if (!unorderedStateGroups) return undefined;

@@ -5,8 +5,8 @@ import { Outlet } from "react-router";
 import { getProjectActivePath } from "@/components/settings/helper";
 import { SettingsMobileNav } from "@/components/settings/mobile";
 import { ProjectSettingsSidebar } from "@/components/settings/project/sidebar";
-// plane web imports
-import { ProjectAuthWrapper } from "@/plane-web/layouts/project-wrapper";
+// planner web imports
+import { ProjectAuthWrapper } from "@/planner-web/layouts/project-wrapper";
 // types
 import type { Route } from "./+types/layout";
 

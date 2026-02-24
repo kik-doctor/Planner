@@ -1,5 +1,5 @@
 import { Lock } from "lucide-react";
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@planner/propel/tooltip";
 
 export function LockedComponent(props: { toolTipContent?: string }) {
   const { toolTipContent } = props;

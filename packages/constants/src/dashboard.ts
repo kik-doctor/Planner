@@ -1,5 +1,5 @@
 // types
-import type { TIssuesListTypes } from "@plane/types";
+import type { TIssuesListTypes } from "@planner/types";
 
 export enum EDurationFilters {
   NONE = "none",

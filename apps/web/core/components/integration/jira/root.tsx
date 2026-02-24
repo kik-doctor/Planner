@@ -5,10 +5,10 @@ import { FormProvider, useForm } from "react-hook-form";
 import { mutate } from "swr";
 // icons
 import { ArrowLeft, Check, List, Settings } from "lucide-react";
-import { Button } from "@plane/propel/button";
-import { MembersPropertyIcon } from "@plane/propel/icons";
+import { Button } from "@planner/propel/button";
+import { MembersPropertyIcon } from "@planner/propel/icons";
 // types
-import type { IJiraImporterForm } from "@plane/types";
+import type { IJiraImporterForm } from "@planner/types";
 // assets
 import JiraLogo from "@/app/assets/services/jira.svg?url";
 // fetch keys

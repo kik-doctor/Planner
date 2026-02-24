@@ -1,8 +1,8 @@
 import { isEqual, concat, get, indexOf, isEmpty, orderBy, pull, set, uniq, update, clone } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane constants
-import { ALL_ISSUES, ISSUE_PRIORITIES } from "@plane/constants";
+// planner constants
+import { ALL_ISSUES, ISSUE_PRIORITIES } from "@planner/constants";
 // types
 import type {
   TIssue,
@@ -19,12 +19,12 @@ import type {
   TPaginationData,
   TBulkOperationsPayload,
   IBlockUpdateDependencyData,
-} from "@plane/types";
-import { EIssueServiceType, EIssueLayoutTypes } from "@plane/types";
+} from "@planner/types";
+import { EIssueServiceType, EIssueLayoutTypes } from "@planner/types";
 // helpers
-import { convertToISODateString } from "@plane/utils";
-// plane web imports
-import { workItemSortWithOrderByExtended } from "@/plane-web/store/issue/helpers/base-issue.store";
+import { convertToISODateString } from "@planner/utils";
+// planner web imports
+import { workItemSortWithOrderByExtended } from "@/planner-web/store/issue/helpers/base-issue.store";
 // services
 import { CycleService } from "@/services/cycle.service";
 import { IssueArchiveService, IssueService } from "@/services/issue";

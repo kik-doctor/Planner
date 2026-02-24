@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
 import { CircleUser, Activity, Bell, CircleUserRound, KeyRound, Settings2, Blocks, Lock } from "lucide-react";
-// plane imports
-import { GROUPED_PROFILE_SETTINGS, PROFILE_SETTINGS_CATEGORIES } from "@plane/constants";
-import { getFileURL } from "@plane/utils";
+// planner imports
+import { GROUPED_PROFILE_SETTINGS, PROFILE_SETTINGS_CATEGORIES } from "@planner/constants";
+import { getFileURL } from "@planner/utils";
 // components
 import { SettingsSidebar } from "@/components/settings/sidebar";
 // hooks

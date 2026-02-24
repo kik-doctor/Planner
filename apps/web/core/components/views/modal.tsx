@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 // types
-import { PROJECT_VIEW_TRACKER_EVENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IProjectView } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+import { PROJECT_VIEW_TRACKER_EVENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IProjectView } from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
 // ui
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { EModalPosition, EModalWidth, ModalCore } from "@planner/ui";
 // hooks
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useIssues } from "@/hooks/store/use-issues";

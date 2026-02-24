@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { useTheme } from "next-themes";
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import { SitesAuthService } from "@plane/services";
-import type { IEmailCheckData } from "@plane/types";
-import { OAuthOptions } from "@plane/ui";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
+import { SitesAuthService } from "@planner/services";
+import type { IEmailCheckData } from "@planner/types";
+import { OAuthOptions } from "@planner/ui";
 // assets
 import GiteaLogo from "@/app/assets/logos/gitea-logo.svg?url";
 import GithubLightLogo from "@/app/assets/logos/github-black.png?url";

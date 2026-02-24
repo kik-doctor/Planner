@@ -1,13 +1,13 @@
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
 // api service
-import type { TDuplicateAssetData, TDuplicateAssetResponse } from "@plane/types";
+import type { TDuplicateAssetData, TDuplicateAssetResponse } from "@planner/types";
 import { APIService } from "../api.service";
 // helpers
 import { getAssetIdFromUrl } from "./helper";
 
 /**
- * Service class for managing file operations within plane applications.
+ * Service class for managing file operations within planner applications.
  * Extends APIService to handle HTTP requests to the file-related endpoints.
  * @extends {APIService}
  */

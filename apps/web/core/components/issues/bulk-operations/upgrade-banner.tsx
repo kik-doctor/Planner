@@ -1,6 +1,6 @@
-import { MARKETING_PLANE_ONE_PAGE_LINK } from "@plane/constants";
-import { getButtonStyling } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+import { MARKETING_PLANNER_ONE_PAGE_LINK } from "@planner/constants";
+import { getButtonStyling } from "@planner/propel/button";
+import { cn } from "@planner/utils";
 
 type Props = {
   className?: string;
@@ -17,7 +17,7 @@ export function BulkOperationsUpgradeBanner(props: Props) {
           operation.
         </p>
         <a
-          href={MARKETING_PLANE_ONE_PAGE_LINK}
+          href={MARKETING_PLANNER_ONE_PAGE_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className={cn(getButtonStyling("primary", "sm"), "flex-shrink-0")}

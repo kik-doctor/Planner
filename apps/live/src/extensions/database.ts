@@ -3,9 +3,9 @@ import { Database as HocuspocusDatabase } from "@hocuspocus/extension-database";
 import {
   getAllDocumentFormatsFromDocumentEditorBinaryData,
   getBinaryDataFromDocumentEditorHTMLString,
-} from "@plane/editor";
+} from "@planner/editor";
 // logger
-import { logger } from "@plane/logger";
+import { logger } from "@planner/logger";
 import { AppError } from "@/lib/errors";
 // services
 import { getPageService } from "@/services/page/handler";

@@ -1,8 +1,8 @@
 import type { Extensions } from "@tiptap/core";
 import type { MutableRefObject } from "react";
 import { forwardRef, useMemo } from "react";
-// plane imports
-import { cn } from "@plane/utils";
+// planner imports
+import { cn } from "@planner/utils";
 // components
 import { PageRenderer } from "@/components/editors";
 // constants
@@ -13,8 +13,8 @@ import { HeadingListExtension, SideMenuExtension } from "@/extensions";
 import { getEditorClassNames } from "@/helpers/common";
 // hooks
 import { useEditor } from "@/hooks/use-editor";
-// plane editor extensions
-import { DocumentEditorAdditionalExtensions } from "@/plane-editor/extensions";
+// planner editor extensions
+import { DocumentEditorAdditionalExtensions } from "@/planner-editor/extensions";
 // types
 import type { EditorRefApi, IDocumentEditorProps } from "@/types";
 

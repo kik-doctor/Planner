@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TIssue } from "@plane/types";
-import { Input } from "@plane/ui";
+// planner imports
+import { ETabIndices } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { TIssue } from "@planner/types";
+import { Input } from "@planner/ui";
 // helpers
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@planner/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 

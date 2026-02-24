@@ -1,5 +1,5 @@
-// plane imports
-import { joinUrlPath } from "@plane/utils";
+// planner imports
+import { joinUrlPath } from "@planner/utils";
 // local imports
 import type { TPowerKContext } from "../core/types";
 

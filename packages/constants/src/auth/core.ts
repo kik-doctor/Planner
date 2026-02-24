@@ -1,4 +1,4 @@
-import type { TCoreLoginMediums } from "@plane/types";
+import type { TCoreLoginMediums } from "@planner/types";
 
 export const CORE_LOGIN_MEDIUM_LABELS: Record<TCoreLoginMediums, string> = {
   email: "Email",

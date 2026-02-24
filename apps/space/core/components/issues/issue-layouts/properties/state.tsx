@@ -1,10 +1,10 @@
 import { observer } from "mobx-react";
-// plane ui
-import { StateGroupIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TStateGroups } from "@plane/types";
-// plane utils
-import { cn } from "@plane/utils";
+// planner ui
+import { StateGroupIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TStateGroups } from "@planner/types";
+// planner utils
+import { cn } from "@planner/utils";
 //hooks
 import { useStates } from "@/hooks/store/use-state";
 

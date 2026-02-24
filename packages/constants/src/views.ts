@@ -1,4 +1,4 @@
-import { EViewAccess } from "@plane/types";
+import { EViewAccess } from "@planner/types";
 
 export const VIEW_ACCESS_SPECIFIERS: {
   key: EViewAccess;

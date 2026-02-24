@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 import { Globe2, Lock } from "lucide-react";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { useHashScroll } from "@plane/hooks";
-import { EIssueCommentAccessSpecifier } from "@plane/types";
-import type { TCommentsOperations, TIssueComment } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import type { EditorRefApi } from "@planner/editor";
+import { useHashScroll } from "@planner/hooks";
+import { EIssueCommentAccessSpecifier } from "@planner/types";
+import type { TCommentsOperations, TIssueComment } from "@planner/types";
+import { cn } from "@planner/utils";
 // components
 import { LiteTextEditor } from "@/components/editor/lite-text";
 // local imports

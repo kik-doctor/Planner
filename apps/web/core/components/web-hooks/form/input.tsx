@@ -1,5 +1,5 @@
-import { useTranslation } from "@plane/i18n";
-import { Input } from "@plane/ui";
+import { useTranslation } from "@planner/i18n";
+import { Input } from "@planner/ui";
 
 type Props = {
   value: string;

@@ -3,10 +3,10 @@ import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { useTheme } from "next-themes";
-import type { TLanguage } from "@plane/i18n";
-import { useTranslation } from "@plane/i18n";
+import type { TLanguage } from "@planner/i18n";
+import { useTranslation } from "@planner/i18n";
 // helpers
-import { applyTheme, unsetCustomCssVariables } from "@plane/utils";
+import { applyTheme, unsetCustomCssVariables } from "@planner/utils";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useRouterParams } from "@/hooks/store/use-router-params";

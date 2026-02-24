@@ -1,13 +1,13 @@
 import { Mail, MessageCircle } from "lucide-react";
-import { DiscordIcon } from "@plane/propel/icons";
-import { EProductSubscriptionEnum } from "@plane/types";
-// plane imports
-import { cn } from "@plane/utils";
+import { DiscordIcon } from "@planner/propel/icons";
+import { EProductSubscriptionEnum } from "@planner/types";
+// planner imports
+import { cn } from "@planner/utils";
 
 export type TPlanFeatureData = React.ReactNode | boolean | null;
 
 // TODO: we should change this type and use TProductSubscriptionType instead. Need changes in common constants.
-export type TPlanePlans = "free" | "one" | "pro" | "business" | "enterprise";
+export type TPlannerPlans = "free" | "one" | "pro" | "business" | "enterprise";
 
 export type TPlanDetail = {
   id: EProductSubscriptionEnum;
@@ -26,8 +26,8 @@ type TPlanFeatureDetails = {
   selfHostedDescription?: React.ReactNode;
   comingSoon?: boolean;
   selfHostedOnly?: boolean;
-  cloud: Record<TPlanePlans, TPlanFeatureData>;
-  "self-hosted"?: Record<TPlanePlans, TPlanFeatureData>;
+  cloud: Record<TPlannerPlans, TPlanFeatureData>;
+  "self-hosted"?: Record<TPlannerPlans, TPlanFeatureData>;
 };
 
 type TPlansComparisonDetails = {
@@ -39,9 +39,9 @@ type TPlansComparisonDetails = {
   features: TPlanFeatureDetails[];
 };
 
-type PlanePlans = {
-  planDetails: Record<TPlanePlans, TPlanDetail>;
-  planHighlights: Record<TPlanePlans, string[]>;
+type PlannerPlans = {
+  planDetails: Record<TPlannerPlans, TPlanDetail>;
+  planHighlights: Record<TPlannerPlans, string[]>;
   planComparison: TPlansComparisonDetails[];
 };
 
@@ -62,7 +62,7 @@ export function ComingSoonBadge({ className }: { className?: string }) {
   );
 }
 
-export const PLANS_LIST: TPlanePlans[] = ["free", "one", "pro", "business", "enterprise"];
+export const PLANS_LIST: TPlannerPlans[] = ["free", "one", "pro", "business", "enterprise"];
 
 export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   {
@@ -93,7 +93,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Comments",
-        description: "Respond to work items, @mention members, and brainstorm\ntogether without leaving Plane.",
+        description: "Respond to work items, @mention members, and brainstorm\ntogether without leaving Planner.",
         cloud: {
           free: true,
           one: true,
@@ -532,7 +532,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       {
         title: "Progress Charts",
         description:
-          "Track progress in cycles, modules, and overviews\nthroughout Plane without switching to dashboards\nor Analytics.",
+          "Track progress in cycles, modules, and overviews\nthroughout Planner without switching to dashboards\nor Analytics.",
         cloud: {
           free: false,
           one: false,
@@ -608,7 +608,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
     features: [
       {
         title: "Power K",
-        description: "Access a keyboard-first gateway to almost anything\nin Plane.",
+        description: "Access a keyboard-first gateway to almost anything\nin Planner.",
         cloud: {
           free: true,
           one: true,
@@ -652,7 +652,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       {
         title: "PQL",
         description:
-          "Write Plane Query Language in search with support\nfor Boolean operators. Soon, you can write natural\nlanguage queries.",
+          "Write Planner Query Language in search with support\nfor Boolean operators. Soon, you can write natural\nlanguage queries.",
         cloud: {
           free: false,
           one: false,
@@ -744,7 +744,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "API-enabled Audit Logs",
-        description: "See a full-workspace audit log and use APIs to flag\nPlane activity in compliance systems.",
+        description: "See a full-workspace audit log and use APIs to flag\nPlanner activity in compliance systems.",
         comingSoon: true,
         cloud: {
           free: false,
@@ -963,7 +963,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       {
         title: "GitHub",
         description:
-          "Sync Plane work items and states to GitHub work items and\nstates. Update GitHub automatically with activity\nfrom Plane and vice-versa.",
+          "Sync Planner work items and states to GitHub work items and\nstates. Update GitHub automatically with activity\nfrom Planner and vice-versa.",
         cloud: {
           free: false,
           one: false,
@@ -974,7 +974,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Slack",
-        description: "Get Plane activity in Slack and use / commands in\nSlack to make changes in Plane.",
+        description: "Get Planner activity in Slack and use / commands in\nSlack to make changes in Planner.",
         cloud: {
           free: false,
           one: false,
@@ -996,7 +996,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Zendesk",
-        description: "Create Plane work items from Zendesk tickets.",
+        description: "Create Planner work items from Zendesk tickets.",
         cloud: {
           free: false,
           one: false,
@@ -1007,7 +1007,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Freshdesk",
-        description: "Create Plane work items from Freshdesk tickets.",
+        description: "Create Planner work items from Freshdesk tickets.",
         cloud: {
           free: false,
           one: false,
@@ -1053,7 +1053,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
     features: [
       {
         title: "SAML",
-        description: "Get the officially supported SAML implementation\nand make Plane secure with any IdP.",
+        description: "Get the officially supported SAML implementation\nand make Planner secure with any IdP.",
         cloud: {
           free: false,
           one: true,
@@ -1064,7 +1064,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "OIDC",
-        description: "Get the officially supported OIDC implementation\nand make Plane secure with any IdP.",
+        description: "Get the officially supported OIDC implementation\nand make Planner secure with any IdP.",
         selfHostedOnly: true,
         cloud: {
           free: false,
@@ -1077,7 +1077,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       {
         title: "Domain Security",
         description:
-          "Choose other domains that can authenticate into\nyour Plane workspace or restrict all but one domain.",
+          "Choose other domains that can authenticate into\nyour Planner workspace or restrict all but one domain.",
         cloud: {
           free: false,
           one: false,
@@ -1088,7 +1088,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Two-factor authentication and passkeys",
-        description: "Secure your Plane workspace with device-\ndependent two-factor authentication and passkeys. ",
+        description: "Secure your Planner workspace with device-\ndependent two-factor authentication and passkeys. ",
         cloud: {
           free: false,
           one: false,
@@ -1110,7 +1110,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "LDAP",
-        description: "Get our official LDAP implementation and secure\nyour Plane workspace with your LDAP server.",
+        description: "Get our official LDAP implementation and secure\nyour Planner workspace with your LDAP server.",
         comingSoon: true,
         cloud: {
           free: false,
@@ -1129,7 +1129,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
     features: [
       {
         title: "God Mode",
-        description: "Manage your self-hosted Plane instance better with\nan instance admin interface.",
+        description: "Manage your self-hosted Planner instance better with\nan instance admin interface.",
         cloud: {
           free: true,
           one: true,
@@ -1140,7 +1140,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "One-click Deployment",
-        description: "Install and deploy your self-hosted Plane to any\nprivate cloud with a single-line command.",
+        description: "Install and deploy your self-hosted Planner to any\nprivate cloud with a single-line command.",
         cloud: {
           free: false,
           one: true,
@@ -1231,7 +1231,12 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         description: (
           <>
             Get business-friendly SLAs with higher plans. SLAs are by priority of work item and tiers{" "}
-            <a href="https://plane.so/talk-to-sales" target="_blank" rel="noopener noreferrer" className="underline">
+            <a
+              href="https://planner.oneworkspacex.com/talk-to-sales"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
               can be requested
             </a>
             .
@@ -1249,7 +1254,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
 ];
 
-export const PLANE_PLANS: PlanePlans = {
+export const PLANNER_PLANS: PlannerPlans = {
   planDetails: {
     free: {
       id: EProductSubscriptionEnum.FREE,

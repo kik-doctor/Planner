@@ -2,11 +2,11 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Telescope } from "lucide-react";
 // types
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IInstance, IInstanceAdmin } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IInstance, IInstanceAdmin } from "@planner/types";
 // ui
-import { Input, ToggleSwitch } from "@plane/ui";
+import { Input, ToggleSwitch } from "@planner/ui";
 // components
 import { ControllerInput } from "@/components/common/controller-input";
 import { useInstance } from "@/hooks/store";
@@ -117,13 +117,13 @@ export const GeneralConfigurationForm = observer(function GeneralConfigurationFo
             </div>
             <div className="grow">
               <div className="text-sm font-medium text-custom-text-100 leading-5">
-                Let Plane collect anonymous usage data
+                Let Planner collect anonymous usage data
               </div>
               <div className="text-xs font-normal text-custom-text-300 leading-5">
-                No PII is collected.This anonymized data is used to understand how you use Plane and build new features
-                in line with{" "}
+                No PII is collected.This anonymized data is used to understand how you use planner and build new
+                features in line with{" "}
                 <a
-                  href="https://developers.plane.so/self-hosting/telemetry"
+                  href="https://developers.planner.oneworkspacex.com/self-hosting/telemetry"
                   target="_blank"
                   className="text-custom-primary-100 hover:underline"
                   rel="noreferrer"

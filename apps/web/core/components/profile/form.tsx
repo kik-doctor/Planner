@@ -5,16 +5,16 @@ import { useParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
 import { CircleUserRound, InfoIcon } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
-import { PROFILE_SETTINGS_TRACKER_ELEMENTS, PROFILE_SETTINGS_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import { EFileAssetType } from "@plane/types";
-import type { IUser, TUserProfile } from "@plane/types";
-import { Input } from "@plane/ui";
-import { cn, getFileURL } from "@plane/utils";
+// planner imports
+import { PROFILE_SETTINGS_TRACKER_ELEMENTS, PROFILE_SETTINGS_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button, getButtonStyling } from "@planner/propel/button";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@planner/propel/toast";
+import { EFileAssetType } from "@planner/types";
+import type { IUser, TUserProfile } from "@planner/types";
+import { Input } from "@planner/ui";
+import { cn, getFileURL } from "@planner/utils";
 // components
 import { DeactivateAccountModal } from "@/components/account/deactivate-account-modal";
 import { ImagePickerPopover } from "@/components/core/image-picker-popover";

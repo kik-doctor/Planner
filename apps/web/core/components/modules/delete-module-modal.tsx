@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { MODULE_TRACKER_EVENTS, PROJECT_ERROR_MESSAGES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IModule } from "@plane/types";
+import { MODULE_TRACKER_EVENTS, PROJECT_ERROR_MESSAGES } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IModule } from "@planner/types";
 // ui
-import { AlertModalCore } from "@plane/ui";
+import { AlertModalCore } from "@planner/ui";
 // constants
 // helpers
 import { captureSuccess, captureError } from "@/helpers/event-tracker.helper";

@@ -1,9 +1,9 @@
 import React from "react";
-// plane constants
-import { ISSUE_LAYOUTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { EIssueLayoutTypes } from "@plane/types";
+// planner constants
+import { ISSUE_LAYOUTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { EIssueLayoutTypes } from "@planner/types";
 // ui
 // types
 import { IssueLayoutIcon } from "@/components/issues/issue-layouts/layout-icon";

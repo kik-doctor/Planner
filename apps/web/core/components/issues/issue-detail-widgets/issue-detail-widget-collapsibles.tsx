@@ -1,13 +1,13 @@
 import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { TIssueServiceType, TWorkItemWidgets } from "@plane/types";
+// planner imports
+import type { TIssueServiceType, TWorkItemWidgets } from "@planner/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// Plane-web
-import { WorkItemAdditionalWidgetCollapsibles } from "@/plane-web/components/issues/issue-detail-widgets/collapsibles";
-import { useTimeLineRelationOptions } from "@/plane-web/components/relations";
+// planner-web
+import { WorkItemAdditionalWidgetCollapsibles } from "@/planner-web/components/issues/issue-detail-widgets/collapsibles";
+import { useTimeLineRelationOptions } from "@/planner-web/components/relations";
 // local imports
 import { AttachmentsCollapsible } from "./attachments";
 import { LinksCollapsible } from "./links";

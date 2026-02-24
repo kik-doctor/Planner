@@ -1,6 +1,6 @@
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import type { IUser, TUserProfile } from "@plane/types";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
+import type { IUser, TUserProfile } from "@planner/types";
 // api service
 import { APIService } from "../api.service";
 

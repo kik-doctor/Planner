@@ -1,9 +1,9 @@
 import type { LucideIcon } from "lucide-react";
-// plane ui
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-// plane utils
-import { cn } from "@plane/utils";
+// planner ui
+import { useTranslation } from "@planner/i18n";
+import { Tooltip } from "@planner/propel/tooltip";
+// planner utils
+import { cn } from "@planner/utils";
 
 type Props = {
   onChange: (value: number) => void;

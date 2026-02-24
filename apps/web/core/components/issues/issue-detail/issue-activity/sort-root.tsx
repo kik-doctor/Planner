@@ -1,9 +1,9 @@
 import { memo } from "react";
 import { ArrowUpWideNarrow, ArrowDownWideNarrow } from "lucide-react";
-// plane package imports
-import type { E_SORT_ORDER } from "@plane/constants";
-import { getButtonStyling } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+// planner package imports
+import type { E_SORT_ORDER } from "@planner/constants";
+import { getButtonStyling } from "@planner/propel/button";
+import { cn } from "@planner/utils";
 
 export type TActivitySortRoot = {
   sortOrder: E_SORT_ORDER;

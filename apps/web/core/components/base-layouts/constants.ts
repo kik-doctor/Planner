@@ -1,5 +1,5 @@
-import { BoardLayoutIcon, ListLayoutIcon, TimelineLayoutIcon } from "@plane/propel/icons";
-import type { IBaseLayoutConfig } from "@plane/types";
+import { BoardLayoutIcon, ListLayoutIcon, TimelineLayoutIcon } from "@planner/propel/icons";
+import type { IBaseLayoutConfig } from "@planner/types";
 
 export const BASE_LAYOUTS: IBaseLayoutConfig[] = [
   {

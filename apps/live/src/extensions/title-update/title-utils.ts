@@ -1,4 +1,4 @@
-import { sanitizeHTML } from "@plane/utils";
+import { sanitizeHTML } from "@planner/utils";
 
 /**
  * Utility function to extract text from HTML content

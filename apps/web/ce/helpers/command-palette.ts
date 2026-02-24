@@ -6,8 +6,8 @@ import {
   PROJECT_TRACKER_ELEMENTS,
   PROJECT_VIEW_TRACKER_ELEMENTS,
   WORK_ITEM_TRACKER_ELEMENTS,
-} from "@plane/constants";
-import type { TCommandPaletteActionList, TCommandPaletteShortcut, TCommandPaletteShortcutList } from "@plane/types";
+} from "@planner/constants";
+import type { TCommandPaletteActionList, TCommandPaletteShortcut, TCommandPaletteShortcutList } from "@planner/types";
 // store
 import { captureClick } from "@/helpers/event-tracker.helper";
 import { store } from "@/lib/store-context";

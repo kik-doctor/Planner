@@ -1,6 +1,6 @@
-// plane imports
-import type { ETabIndices } from "@plane/constants";
-import { TAB_INDEX_MAP } from "@plane/constants";
+// planner imports
+import type { ETabIndices } from "@planner/constants";
+import { TAB_INDEX_MAP } from "@planner/constants";
 
 export const getTabIndex = (type?: ETabIndices, isMobile: boolean = false) => {
   const getIndex = (key: string) =>

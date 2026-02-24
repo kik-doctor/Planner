@@ -4,22 +4,22 @@ import { observer } from "mobx-react";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { Eye, ArrowRight, CalendarDays } from "lucide-react";
-// plane imports
+// planner imports
 import {
   CYCLE_TRACKER_EVENTS,
   EUserPermissions,
   EUserPermissionsLevel,
   IS_FAVORITE_MENU_OPEN,
   CYCLE_TRACKER_ELEMENTS,
-} from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { TransferIcon, WorkItemsIcon, MembersPropertyIcon } from "@plane/propel/icons";
-import { setPromiseToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { ICycle, TCycleGroups } from "@plane/types";
-import { Avatar, AvatarGroup, FavoriteStar } from "@plane/ui";
-import { getDate, getFileURL, generateQueryParams } from "@plane/utils";
+} from "@planner/constants";
+import { useLocalStorage } from "@planner/hooks";
+import { useTranslation } from "@planner/i18n";
+import { TransferIcon, WorkItemsIcon, MembersPropertyIcon } from "@planner/propel/icons";
+import { setPromiseToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { ICycle, TCycleGroups } from "@planner/types";
+import { Avatar, AvatarGroup, FavoriteStar } from "@planner/ui";
+import { getDate, getFileURL, generateQueryParams } from "@planner/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";
@@ -32,8 +32,8 @@ import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 import { useTimeZoneConverter } from "@/hooks/use-timezone-converter";
-// plane web components
-import { CycleAdditionalActions } from "@/plane-web/components/cycles";
+// planner web components
+import { CycleAdditionalActions } from "@/planner-web/components/cycles";
 // local imports
 import { CycleQuickActions } from "../quick-actions";
 import { TransferIssuesModal } from "../transfer-issues-modal";

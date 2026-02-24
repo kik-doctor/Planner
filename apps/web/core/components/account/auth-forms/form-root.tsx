@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
-import { EAuthModes, EAuthSteps } from "@plane/constants";
-import type { IEmailCheckData } from "@plane/types";
+import { EAuthModes, EAuthSteps } from "@planner/constants";
+import type { IEmailCheckData } from "@planner/types";
 // helpers
 import type { TAuthErrorInfo } from "@/helpers/authentication.helper";
 import { authErrorHandler } from "@/helpers/authentication.helper";

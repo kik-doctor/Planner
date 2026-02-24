@@ -2,11 +2,11 @@ import React, { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
 import { useParams, useSearchParams } from "next/navigation";
 import useSWR from "swr";
-// plane imports
-import { GLOBAL_VIEW_TRACKER_ELEMENTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@plane/constants";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
-import type { EIssueLayoutTypes } from "@plane/types";
-import { EIssuesStoreType, STATIC_VIEW_TYPES } from "@plane/types";
+// planner imports
+import { GLOBAL_VIEW_TRACKER_ELEMENTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@planner/constants";
+import { EmptyStateDetailed } from "@planner/propel/empty-state";
+import type { EIssueLayoutTypes } from "@planner/types";
+import { EIssuesStoreType, STATIC_VIEW_TYPES } from "@planner/types";
 // assets
 import emptyView from "@/app/assets/empty-state/view.svg?url";
 // components

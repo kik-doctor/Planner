@@ -1,6 +1,6 @@
-// plane imports
-import type { TFilterProperty } from "@plane/types";
-import { EQUALITY_OPERATOR, COLLECTION_OPERATOR } from "@plane/types";
+// planner imports
+import type { TFilterProperty } from "@planner/types";
+import { EQUALITY_OPERATOR, COLLECTION_OPERATOR } from "@planner/types";
 // local imports
 import type { TCreateFilterConfig, TCreateProjectFilterParams } from "../../../rich-filters";
 import { createFilterConfig, createOperatorConfigEntry, getProjectMultiSelectConfig } from "../../../rich-filters";

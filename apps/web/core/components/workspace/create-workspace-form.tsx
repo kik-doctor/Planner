@@ -7,19 +7,19 @@ import {
   RESTRICTED_URLS,
   WORKSPACE_TRACKER_ELEMENTS,
   WORKSPACE_TRACKER_EVENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspace } from "@plane/types";
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IWorkspace } from "@planner/types";
 // ui
-import { CustomSelect, Input } from "@plane/ui";
+import { CustomSelect, Input } from "@planner/ui";
 // hooks
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useAppRouter } from "@/hooks/use-app-router";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 
 type Props = {
   onSubmit?: (res: IWorkspace) => Promise<void>;

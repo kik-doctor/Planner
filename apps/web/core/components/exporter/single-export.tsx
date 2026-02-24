@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import { useState } from "react";
 // ui
-import { Button } from "@plane/propel/button";
-import type { IExportData } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import type { IExportData } from "@planner/types";
 // helpers
-import { getDate, renderFormattedDate } from "@plane/utils";
+import { getDate, renderFormattedDate } from "@planner/utils";
 // types
 
 type Props = {

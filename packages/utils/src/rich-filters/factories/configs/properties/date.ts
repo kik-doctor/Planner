@@ -1,5 +1,5 @@
-// plane imports
-import type { TFilterProperty } from "@plane/types";
+// planner imports
+import type { TFilterProperty } from "@planner/types";
 // local imports
 import type { TCreateDateFilterParams, TCreateFilterConfig } from "../shared";
 import { createFilterConfig } from "../shared";

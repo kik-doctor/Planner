@@ -7,7 +7,7 @@ import type {
   IssuePaginationOptions,
   TIssuesResponse,
   TBulkOperationsPayload,
-} from "@plane/types";
+} from "@planner/types";
 // services
 // types
 import type { IBaseIssuesStore } from "../helpers/base-issues.store";

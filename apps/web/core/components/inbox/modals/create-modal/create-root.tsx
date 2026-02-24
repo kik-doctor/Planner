@@ -1,15 +1,15 @@
 import type { FC, FormEvent } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ETabIndices, WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import type { EditorRefApi } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
-import { renderFormattedPayloadDate, getTabIndex } from "@plane/utils";
+// planner imports
+import { ETabIndices, WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import type { EditorRefApi } from "@planner/editor";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TIssue } from "@planner/types";
+import { ToggleSwitch } from "@planner/ui";
+import { renderFormattedPayloadDate, getTabIndex } from "@planner/utils";
 // helpers
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 // hooks
@@ -19,10 +19,10 @@ import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useAppRouter } from "@/hooks/use-app-router";
 import useKeypress from "@/hooks/use-keypress";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
-import { DeDupeButtonRoot } from "@/plane-web/components/de-dupe/de-dupe-button";
-import { DuplicateModalRoot } from "@/plane-web/components/de-dupe/duplicate-modal";
-import { useDebouncedDuplicateIssues } from "@/plane-web/hooks/use-debounced-duplicate-issues";
+// planner web imports
+import { DeDupeButtonRoot } from "@/planner-web/components/de-dupe/de-dupe-button";
+import { DuplicateModalRoot } from "@/planner-web/components/de-dupe/duplicate-modal";
+import { useDebouncedDuplicateIssues } from "@/planner-web/hooks/use-debounced-duplicate-issues";
 // services
 import { FileService } from "@/services/file.service";
 // local imports

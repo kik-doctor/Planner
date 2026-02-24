@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { useState } from "react";
-// plane imports
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+// planner imports
+import { EModalPosition, EModalWidth, ModalCore } from "@planner/ui";
 // hooks
 import useKeypress from "@/hooks/use-keypress";
 // local imports

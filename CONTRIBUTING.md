@@ -95,7 +95,7 @@ To ensure consistency throughout the source code, please keep these rules in min
 
 ## Ways to contribute
 
-- Try Plane Cloud and the self hosting platform and give feedback
+- Try Planner Cloud and the self hosting platform and give feedback
 - Add new integrations
 - Add or update translations
 - Help with open [issues](https://github.com/kik-doctor/Planner/issues) or [create your own](https://github.com/kik-doctor/Planner/issues/new/choose)
@@ -244,4 +244,4 @@ Happy translating! 🌍✨
 
 ## Need help? Questions and suggestions
 
-Questions, suggestions, and thoughts are most welcome. We can also be reached in our [Discord Server](https://discord.com/invite/A92xrEGCge).
+Questions, suggestions, and thoughts are most welcome. We can also be reached in our [Discord Server](https://discord.com/invite/543UADxY).

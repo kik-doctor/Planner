@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-import { ISSUE_ORDER_BY_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TIssueOrderByOptions } from "@plane/types";
+import { ISSUE_ORDER_BY_OPTIONS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { TIssueOrderByOptions } from "@planner/types";
 
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";

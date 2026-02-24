@@ -1,9 +1,9 @@
 // types
-import type { TTimelineTypeCore } from "@plane/types";
-import { GANTT_TIMELINE_TYPE } from "@plane/types";
-// Plane-web
+import type { TTimelineTypeCore } from "@planner/types";
+import { GANTT_TIMELINE_TYPE } from "@planner/types";
+// planner-web
 
-import type { IBaseTimelineStore } from "@/plane-web/store/timeline/base-timeline.store";
+import type { IBaseTimelineStore } from "@/planner-web/store/timeline/base-timeline.store";
 import type { ITimelineStore } from "../store/timeline";
 
 export const getTimelineStore = (

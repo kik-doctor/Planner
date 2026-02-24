@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
-import { MODULE_VIEW_LAYOUTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { CustomMenu, Row } from "@plane/ui";
+import { MODULE_VIEW_LAYOUTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import { CustomMenu, Row } from "@planner/ui";
 import { ModuleLayoutIcon } from "@/components/modules";
 import { useModuleFilter } from "@/hooks/store/use-module-filter";
 import { useProject } from "@/hooks/store/use-project";

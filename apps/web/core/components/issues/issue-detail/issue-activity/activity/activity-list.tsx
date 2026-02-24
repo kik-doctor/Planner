@@ -1,11 +1,11 @@
 import { observer } from "mobx-react";
 // helpers
-import { getValidKeysFromObject } from "@plane/utils";
+import { getValidKeysFromObject } from "@planner/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web components
-import { IssueTypeActivity, AdditionalActivityRoot } from "@/plane-web/components/issues/issue-details";
-import { useTimeLineRelationOptions } from "@/plane-web/components/relations";
+// planner web components
+import { IssueTypeActivity, AdditionalActivityRoot } from "@/planner-web/components/issues/issue-details";
+import { useTimeLineRelationOptions } from "@/planner-web/components/relations";
 // local components
 import {
   IssueDefaultActivity,

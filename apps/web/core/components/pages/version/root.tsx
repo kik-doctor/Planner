@@ -1,13 +1,13 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useRouter, useSearchParams } from "next/navigation";
-// plane imports
-import type { TPageVersion } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import type { TPageVersion } from "@planner/types";
+import { cn } from "@planner/utils";
 // hooks
 import { useQueryParams } from "@/hooks/use-query-params";
-// plane web imports
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+// planner web imports
+import type { EPageStoreType } from "@/planner-web/hooks/store";
 // local imports
 import { PAGE_NAVIGATION_PANE_VERSION_QUERY_PARAM, PAGE_NAVIGATION_PANE_WIDTH } from "../navigation-pane";
 import type { TVersionEditorProps } from "./editor";

@@ -1,14 +1,14 @@
-import { API_BASE_URL } from "@plane/constants";
+import { API_BASE_URL } from "@planner/constants";
 import type {
   GithubRepositoriesResponse,
   ISearchIssueResponse,
   TProjectAnalyticsCount,
   TProjectAnalyticsCountParams,
   TProjectIssuesSearchParams,
-} from "@plane/types";
+} from "@planner/types";
 // helpers
-// plane web types
-import type { TProject, TPartialProject } from "@/plane-web/types";
+// planner web types
+import type { TProject, TPartialProject } from "@/planner-web/types";
 // services
 import { APIService } from "@/services/api.service";
 

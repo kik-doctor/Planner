@@ -1,6 +1,6 @@
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import { EIssueServiceType } from "@plane/types";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
+import { EIssueServiceType } from "@planner/types";
 import type {
   TIssueParams,
   IIssueDisplayProperties,
@@ -11,7 +11,7 @@ import type {
   TIssueServiceType,
   TIssuesResponse,
   TIssueSubIssues,
-} from "@plane/types";
+} from "@planner/types";
 // services
 import { APIService } from "@/services/api.service";
 

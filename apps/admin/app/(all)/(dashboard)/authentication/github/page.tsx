@@ -2,10 +2,10 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
-// plane internal packages
-import { setPromiseToast } from "@plane/propel/toast";
-import { Loader, ToggleSwitch } from "@plane/ui";
-import { resolveGeneralTheme } from "@plane/utils";
+// planner internal packages
+import { setPromiseToast } from "@planner/propel/toast";
+import { Loader, ToggleSwitch } from "@planner/ui";
+import { resolveGeneralTheme } from "@planner/utils";
 // components
 import githubLightModeImage from "@/app/assets/logos/github-black.png?url";
 import githubDarkModeImage from "@/app/assets/logos/github-white.png?url";
@@ -70,7 +70,7 @@ const InstanceGithubAuthenticationPage = observer(function InstanceGithubAuthent
         <div className="border-b border-custom-border-100 mx-4 py-4 space-y-1 flex-shrink-0">
           <AuthenticationMethodCard
             name="GitHub"
-            description="Allow members to login or sign up to plane with their GitHub accounts."
+            description="Allow members to login or sign up to planner with their GitHub accounts."
             icon={
               <img
                 src={resolveGeneralTheme(resolvedTheme) === "dark" ? githubDarkModeImage : githubLightModeImage}

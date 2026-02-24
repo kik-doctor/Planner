@@ -2,9 +2,9 @@ import { FloatingOverlay } from "@floating-ui/react";
 import type { SuggestionProps } from "@tiptap/suggestion";
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-// plane utils
-import { useOutsideClickDetector } from "@plane/hooks";
-import { cn } from "@plane/utils";
+// planner utils
+import { useOutsideClickDetector } from "@planner/hooks";
+import { cn } from "@planner/utils";
 // helpers
 import { DROPDOWN_NAVIGATION_KEYS, getNextValidIndex } from "@/helpers/tippy";
 // types

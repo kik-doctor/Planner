@@ -4,14 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 // icons
 import { LogOut, MoveLeft, Activity, Bell, CircleUser, KeyRound, Settings2, CirclePlus, Mails } from "lucide-react";
-// plane imports
-import { PROFILE_ACTION_LINKS } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { ChevronLeftIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn, getFileURL } from "@plane/utils";
+// planner imports
+import { PROFILE_ACTION_LINKS } from "@planner/constants";
+import { useOutsideClickDetector } from "@planner/hooks";
+import { useTranslation } from "@planner/i18n";
+import { ChevronLeftIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import { cn, getFileURL } from "@planner/utils";
 // components
 import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
 // hooks

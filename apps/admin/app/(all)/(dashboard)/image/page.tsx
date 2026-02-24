@@ -1,6 +1,6 @@
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { Loader } from "@plane/ui";
+import { Loader } from "@planner/ui";
 // hooks
 import { useInstance } from "@/hooks/store";
 // local

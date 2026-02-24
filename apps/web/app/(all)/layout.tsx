@@ -6,7 +6,7 @@ import { PreloadResources } from "./layout.preload";
 // styles
 import "@/styles/power-k.css";
 import "@/styles/emoji.css";
-import "@plane/propel/styles/react-day-picker.css";
+import "@planner/propel/styles/react-day-picker.css";
 
 export const meta: Route.MetaFunction = () => [
   { name: "robots", content: "noindex, nofollow" },

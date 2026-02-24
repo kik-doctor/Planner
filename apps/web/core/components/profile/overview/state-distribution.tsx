@@ -1,11 +1,11 @@
-// plane imports
-import { STATE_GROUPS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { PieChart } from "@plane/propel/charts/pie-chart";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { IUserProfileData, IUserStateDistribution } from "@plane/types";
-import { Card } from "@plane/ui";
-import { capitalizeFirstLetter } from "@plane/utils";
+// planner imports
+import { STATE_GROUPS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { PieChart } from "@planner/propel/charts/pie-chart";
+import { EmptyStateCompact } from "@planner/propel/empty-state";
+import type { IUserProfileData, IUserStateDistribution } from "@planner/types";
+import { Card } from "@planner/ui";
+import { capitalizeFirstLetter } from "@planner/utils";
 
 type Props = {
   stateDistribution: IUserStateDistribution[];

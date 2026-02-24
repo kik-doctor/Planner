@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 // hooks
-import { CloseIcon } from "@plane/propel/icons";
-import { Tag } from "@plane/ui";
+import { CloseIcon } from "@planner/propel/icons";
+import { Tag } from "@planner/ui";
 import { useLabel } from "@/hooks/store/use-label";
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 

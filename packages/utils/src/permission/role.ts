@@ -1,6 +1,6 @@
-// plane imports
-import { EUserPermissions } from "@plane/constants";
-import type { EUserProjectRoles, EUserWorkspaceRoles } from "@plane/types";
+// planner imports
+import { EUserPermissions } from "@planner/constants";
+import type { EUserProjectRoles, EUserWorkspaceRoles } from "@planner/types";
 
 export const getUserRole = (role: EUserPermissions | EUserWorkspaceRoles | EUserProjectRoles) => {
   switch (role) {

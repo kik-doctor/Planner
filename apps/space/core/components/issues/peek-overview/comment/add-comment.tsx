@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useForm, Controller } from "react-hook-form";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { SitesFileService } from "@plane/services";
-import type { TIssuePublicComment } from "@plane/types";
+// planner imports
+import type { EditorRefApi } from "@planner/editor";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { SitesFileService } from "@planner/services";
+import type { TIssuePublicComment } from "@planner/types";
 // editor components
 import { LiteTextEditor } from "@/components/editor/lite-text-editor";
 // hooks

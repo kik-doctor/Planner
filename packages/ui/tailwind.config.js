@@ -1,4 +1,4 @@
-const config = require("@plane/tailwind-config/tailwind.config.js");
+const config = require("@planner/tailwind-config/tailwind.config.js");
 
 config.content.files = ["./src/**/*.{js,ts,jsx,tsx}"];
 

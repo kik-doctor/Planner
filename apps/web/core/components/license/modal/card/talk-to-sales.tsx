@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 // types
-// plane imports
-import { getButtonStyling } from "@plane/propel/button";
-import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@plane/types";
-import { getUpgradeButtonStyle, Loader } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import { getButtonStyling } from "@planner/propel/button";
+import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@planner/types";
+import { getUpgradeButtonStyle, Loader } from "@planner/ui";
+import { cn } from "@planner/utils";
 // local imports
 import { BasePaidPlanCard } from "./base-paid-plan-card";
 

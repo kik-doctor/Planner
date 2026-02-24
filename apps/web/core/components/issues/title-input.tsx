@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import type { TNameDescriptionLoader } from "@plane/types";
+import { useTranslation } from "@planner/i18n";
+import type { TNameDescriptionLoader } from "@planner/types";
 // components
-import { TextArea } from "@plane/ui";
+import { TextArea } from "@planner/ui";
 // types
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import useDebounce from "@/hooks/use-debounce";
 import type { TIssueOperations } from "./issue-detail";
 // hooks

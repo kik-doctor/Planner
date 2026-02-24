@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import type { TIssueComment, TCommentsOperations } from "@plane/types";
-// plane web imports
-import { CommentBlock } from "@/plane-web/components/comments";
+// planner imports
+import type { EditorRefApi } from "@planner/editor";
+import type { TIssueComment, TCommentsOperations } from "@planner/types";
+// planner web imports
+import { CommentBlock } from "@/planner-web/components/comments";
 // local imports
 import { CommentQuickActions } from "../quick-actions";
 import { CommentCardDisplay } from "./display";

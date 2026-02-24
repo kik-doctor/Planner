@@ -2,8 +2,8 @@ import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
 import { Plus } from "lucide-react";
-// plane imports
-import type { TIssueServiceType } from "@plane/types";
+// planner imports
+import type { TIssueServiceType } from "@planner/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 

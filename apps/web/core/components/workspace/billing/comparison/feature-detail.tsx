@@ -1,8 +1,8 @@
 import { CheckCircle2, Minus, MinusCircle } from "lucide-react";
-import type { EProductSubscriptionEnum } from "@plane/types";
-// plane imports
-import { getSubscriptionTextColor } from "@plane/ui";
-import { cn } from "@plane/utils";
+import type { EProductSubscriptionEnum } from "@planner/types";
+// planner imports
+import { getSubscriptionTextColor } from "@planner/ui";
+import { cn } from "@planner/utils";
 // constants
 import type { TPlanFeatureData } from "@/constants/plans";
 

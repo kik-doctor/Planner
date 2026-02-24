@@ -1,13 +1,13 @@
 import { useEffect, useState, useCallback } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
-// plane imports
-import type { I_THEME_OPTION } from "@plane/constants";
-import { THEME_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { setPromiseToast } from "@plane/propel/toast";
-import type { IUserTheme } from "@plane/types";
-import { applyTheme, unsetCustomCssVariables } from "@plane/utils";
+// planner imports
+import type { I_THEME_OPTION } from "@planner/constants";
+import { THEME_OPTIONS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { setPromiseToast } from "@planner/propel/toast";
+import type { IUserTheme } from "@planner/types";
+import { applyTheme, unsetCustomCssVariables } from "@planner/utils";
 // components
 import { CustomThemeSelector } from "@/components/core/theme/custom-theme-selector";
 import { ThemeSwitch } from "@/components/core/theme/theme-switch";

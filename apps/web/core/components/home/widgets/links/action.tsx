@@ -1,5 +1,5 @@
 import { PlusIcon } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 
 type TProps = {
   onClick: () => void;

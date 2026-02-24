@@ -1,10 +1,10 @@
 import { observer } from "mobx-react";
 import type { LucideIcon } from "lucide-react";
-import { MembersPropertyIcon } from "@plane/propel/icons";
-// plane ui
-import { Avatar, AvatarGroup } from "@plane/ui";
-import { cn, getFileURL } from "@plane/utils";
-// plane utils
+import { MembersPropertyIcon } from "@planner/propel/icons";
+// planner ui
+import { Avatar, AvatarGroup } from "@planner/ui";
+import { cn, getFileURL } from "@planner/utils";
+// planner utils
 // helpers
 // hooks
 import { useMember } from "@/hooks/store/use-member";

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Search } from "lucide-react";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
-import type { TProjectDisplayFilters, TProjectFilters } from "@plane/types";
+import { CloseIcon } from "@planner/propel/icons";
+// planner imports
+import type { TProjectDisplayFilters, TProjectFilters } from "@planner/types";
 // components
 import { FilterOption } from "@/components/issues/issue-layouts/filters";
 // hooks

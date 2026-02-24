@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
-// plane imports
-import { ENotificationFilterType, FILTER_TYPE_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import { Header, EHeaderVariant, Tag } from "@plane/ui";
+// planner imports
+import { ENotificationFilterType, FILTER_TYPE_OPTIONS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+import { Header, EHeaderVariant, Tag } from "@planner/ui";
 // hooks
 import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 

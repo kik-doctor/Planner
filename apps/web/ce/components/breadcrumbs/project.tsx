@@ -1,14 +1,14 @@
 import { observer } from "mobx-react";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ProjectIcon } from "@plane/propel/icons";
-// plane imports
-import type { ICustomSearchSelectOption } from "@plane/types";
-import { BreadcrumbNavigationSearchDropdown, Breadcrumbs } from "@plane/ui";
+import { Logo } from "@planner/propel/emoji-icon-picker";
+import { ProjectIcon } from "@planner/propel/icons";
+// planner imports
+import type { ICustomSearchSelectOption } from "@planner/types";
+import { BreadcrumbNavigationSearchDropdown, Breadcrumbs } from "@planner/ui";
 import { SwitcherLabel } from "@/components/common/switcher-label";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useAppRouter } from "@/hooks/use-app-router";
-import type { TProject } from "@/plane-web/types";
+import type { TProject } from "@/planner-web/types";
 
 type TProjectBreadcrumbProps = {
   workspaceSlug: string;

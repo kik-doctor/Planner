@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import { Info } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+// planner imports
 // helpers
 import type { TAuthErrorInfo } from "@/helpers/authentication.helper";
 

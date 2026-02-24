@@ -1,5 +1,5 @@
-// plane imports
-import type { IFilterAdapter, TExternalFilter, TFilterExpression, TFilterProperty } from "@plane/types";
+// planner imports
+import type { IFilterAdapter, TExternalFilter, TFilterExpression, TFilterProperty } from "@planner/types";
 
 /**
  * Abstract base class for converting between external filter formats and internal filter expressions.

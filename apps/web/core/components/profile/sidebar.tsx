@@ -6,17 +6,17 @@ import { useParams } from "next/navigation";
 import { Pencil } from "lucide-react";
 // headless ui
 import { Disclosure, Transition } from "@headlessui/react";
-// plane helpers
-import { useOutsideClickDetector } from "@plane/hooks";
+// planner helpers
+import { useOutsideClickDetector } from "@planner/hooks";
 // types
-import { useTranslation } from "@plane/i18n";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IUserProfileProjectSegregation } from "@plane/types";
-// plane ui
-import { Loader } from "@plane/ui";
-import { cn, renderFormattedDate, getFileURL } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { Logo } from "@planner/propel/emoji-icon-picker";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IUserProfileProjectSegregation } from "@planner/types";
+// planner ui
+import { Loader } from "@planner/ui";
+import { cn, renderFormattedDate, getFileURL } from "@planner/utils";
 // helpers
 import { getCoverImageDisplayURL } from "@/helpers/cover-image.helper";
 // hooks

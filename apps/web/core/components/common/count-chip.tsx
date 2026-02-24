@@ -1,6 +1,6 @@
 import type { FC } from "react";
 //
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 type TCountChip = {
   count: string | number;

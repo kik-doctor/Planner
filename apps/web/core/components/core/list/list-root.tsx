@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import React from "react";
-import { Row, ERowVariant } from "@plane/ui";
+import { Row, ERowVariant } from "@planner/ui";
 
 interface IListContainer {
   children: React.ReactNode;

@@ -4,11 +4,11 @@ import { observer } from "mobx-react";
 import { usePopper } from "react-popper";
 import { Check, Search } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { ModuleIcon } from "@plane/propel/icons";
-import type { IModule } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { ModuleIcon } from "@planner/propel/icons";
+import type { IModule } from "@planner/types";
+import { cn } from "@planner/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 
@@ -37,7 +37,7 @@ export const ModuleOptions = observer(function ModuleOptions(props: Props) {
   // states
   const [query, setQuery] = useState("");
   const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { isMobile } = usePlatformOS();

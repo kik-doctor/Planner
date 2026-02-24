@@ -1,17 +1,17 @@
 import { uniq, unset, set, update, sortBy } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import { EUserPermissions } from "@plane/constants";
+// planner imports
+import { EUserPermissions } from "@planner/constants";
 import type {
   EUserProjectRoles,
   IProjectBulkAddFormData,
   IProjectMemberNavigationPreferences,
   IUserLite,
   TProjectMembership,
-} from "@plane/types";
-// plane web imports
-import type { RootStore } from "@/plane-web/store/root.store";
+} from "@planner/types";
+// planner web imports
+import type { RootStore } from "@/planner-web/store/root.store";
 // services
 import { ProjectMemberService } from "@/services/project";
 // store

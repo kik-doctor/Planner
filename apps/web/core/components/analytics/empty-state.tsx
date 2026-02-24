@@ -1,6 +1,6 @@
 import { useTheme } from "next-themes";
-// plane package imports
-import { cn } from "@plane/utils";
+// planner package imports
+import { cn } from "@planner/utils";
 // assets
 import darkBackgroundAsset from "@/app/assets/empty-state/analytics/empty-grid-background-dark.webp?url";
 import lightBackgroundAsset from "@/app/assets/empty-state/analytics/empty-grid-background-light.webp?url";

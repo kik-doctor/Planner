@@ -7,16 +7,16 @@ import {
   E_PASSWORD_STRENGTH,
   ONBOARDING_TRACKER_ELEMENTS,
   USER_TRACKER_EVENTS,
-} from "@plane/constants";
+} from "@planner/constants";
 // types
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, TUserProfile, TOnboardingSteps } from "@plane/types";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IUser, TUserProfile, TOnboardingSteps } from "@planner/types";
 // ui
-import { Input, PasswordStrengthIndicator, Spinner } from "@plane/ui";
+import { Input, PasswordStrengthIndicator, Spinner } from "@planner/ui";
 // components
-import { cn, getFileURL, getPasswordStrength } from "@plane/utils";
+import { cn, getFileURL, getPasswordStrength } from "@planner/utils";
 import { UserImageUploadModal } from "@/components/core/modals/user-image-upload-modal";
 // constants
 // helpers
@@ -88,7 +88,7 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
     password: false,
     retypePassword: false,
   });
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { updateCurrentUser } = useUser();

@@ -1,23 +1,23 @@
 import { useParams, usePathname } from "next/navigation";
 import { ArrowUpToLine, Building, CreditCard, Users, Webhook } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-// plane imports
+// planner imports
 import {
   EUserPermissionsLevel,
   EUserPermissions,
   GROUPED_WORKSPACE_SETTINGS,
   WORKSPACE_SETTINGS_CATEGORIES,
   WORKSPACE_SETTINGS_CATEGORY,
-} from "@plane/constants";
-import type { WORKSPACE_SETTINGS } from "@plane/constants";
-import type { ISvgIcons } from "@plane/propel/icons";
-import type { EUserWorkspaceRoles } from "@plane/types";
+} from "@planner/constants";
+import type { WORKSPACE_SETTINGS } from "@planner/constants";
+import type { ISvgIcons } from "@planner/propel/icons";
+import type { EUserWorkspaceRoles } from "@planner/types";
 // components
 import { SettingsSidebar } from "@/components/settings/sidebar";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
-import { shouldRenderSettingLink } from "@/plane-web/helpers/workspace.helper";
+// planner web imports
+import { shouldRenderSettingLink } from "@/planner-web/helpers/workspace.helper";
 
 export const WORKSPACE_SETTINGS_ICONS: Record<keyof typeof WORKSPACE_SETTINGS, LucideIcon | React.FC<ISvgIcons>> = {
   general: Building,

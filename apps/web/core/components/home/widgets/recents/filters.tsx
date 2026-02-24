@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import type { TRecentActivityFilterKeys } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import type { TRecentActivityFilterKeys } from "@planner/types";
+import { CustomMenu } from "@planner/ui";
+import { cn } from "@planner/utils";
 
 export type TFiltersDropdown = {
   className?: string;

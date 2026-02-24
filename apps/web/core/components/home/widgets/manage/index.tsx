@@ -1,9 +1,9 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane types
-// plane ui
-import { useTranslation } from "@plane/i18n";
-import { EModalWidth, ModalCore } from "@plane/ui";
+// planner types
+// planner ui
+import { useTranslation } from "@planner/i18n";
+import { EModalWidth, ModalCore } from "@planner/ui";
 import { WidgetList } from "./widget-list";
 
 export type TProps = {

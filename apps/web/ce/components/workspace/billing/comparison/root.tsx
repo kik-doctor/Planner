@@ -1,11 +1,11 @@
 import { observer } from "mobx-react";
-// plane imports
-import type { EProductSubscriptionEnum, TBillingFrequency } from "@plane/types";
+// planner imports
+import type { EProductSubscriptionEnum, TBillingFrequency } from "@planner/types";
 // components
 import { PlansComparisonBase, shouldRenderPlanDetail } from "@/components/workspace/billing/comparison/base";
-import type { TPlanePlans } from "@/constants/plans";
-import { PLANE_PLANS } from "@/constants/plans";
-// plane web imports
+import type { TPlannerPlans } from "@/constants/plans";
+import { PLANNER_PLANS } from "@/constants/plans";
+// planner web imports
 import { PlanDetail } from "./plan-detail";
 
 type TPlansComparisonProps = {
@@ -23,12 +23,12 @@ export const PlansComparison = observer(function PlansComparison(props: TPlansCo
     setIsCompareAllFeaturesSectionOpen,
   } = props;
   // plan details
-  const { planDetails } = PLANE_PLANS;
+  const { planDetails } = PLANNER_PLANS;
 
   return (
     <PlansComparisonBase
-      planeDetails={Object.entries(planDetails).map(([planKey, plan]) => {
-        const currentPlanKey = planKey as TPlanePlans;
+      plannerDetails={Object.entries(planDetails).map(([planKey, plan]) => {
+        const currentPlanKey = planKey as TPlannerPlans;
         if (!shouldRenderPlanDetail(currentPlanKey)) return null;
         return (
           <PlanDetail

@@ -1,12 +1,12 @@
 import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
-import { WORKSPACE_SETTINGS_LINKS, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { WORKSPACE_SETTINGS_LINKS, EUserPermissionsLevel } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web helpers
-import { shouldRenderSettingLink } from "@/plane-web/helpers/workspace.helper";
+// planner web helpers
+import { shouldRenderSettingLink } from "@/planner-web/helpers/workspace.helper";
 
 export const MobileWorkspaceSettingsTabs = observer(function MobileWorkspaceSettingsTabs() {
   const router = useAppRouter();

@@ -1,13 +1,13 @@
 import { observer } from "mobx-react";
 // ui
-import { CustomMenu } from "@plane/ui";
+import { CustomMenu } from "@planner/ui";
 // helpers
-import { generateWorkItemLink } from "@plane/utils";
+import { generateWorkItemLink } from "@planner/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
-// plane web components
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// planner web components
+import { IssueIdentifier } from "@/planner-web/components/issues/issue-details/issue-identifier";
 
 type TIssueParentSiblingItem = {
   workspaceSlug: string;

@@ -2,8 +2,8 @@ import React, { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import type { TIssue } from "@plane/types";
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import type { TIssue } from "@planner/types";
 // components
 import { CycleDropdown } from "@/components/dropdowns/cycle";
 // hooks

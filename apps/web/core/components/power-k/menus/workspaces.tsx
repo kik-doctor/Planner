@@ -1,6 +1,6 @@
 import React from "react";
-// plane imports
-import type { IWorkspace } from "@plane/types";
+// planner imports
+import type { IWorkspace } from "@planner/types";
 // components
 import { WorkspaceLogo } from "@/components/workspace/logo";
 // local imports

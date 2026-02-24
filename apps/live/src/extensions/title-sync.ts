@@ -9,8 +9,8 @@ import {
   createRealtimeEvent,
   extractTextFromHTML,
   generateTitleProsemirrorJson,
-} from "@plane/editor";
-import { logger } from "@plane/logger";
+} from "@planner/editor";
+import { logger } from "@planner/logger";
 import { AppError } from "@/lib/errors";
 // helpers
 import { getPageService } from "@/services/page/handler";

@@ -1,14 +1,14 @@
 import { set, groupBy } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import { STATE_GROUPS } from "@plane/constants";
-import type { IIntakeState, IState } from "@plane/types";
+// planner imports
+import { STATE_GROUPS } from "@planner/constants";
+import type { IIntakeState, IState } from "@planner/types";
 // helpers
-import { sortStates } from "@plane/utils";
-// plane web
-import { ProjectStateService } from "@/plane-web/services/project/project-state.service";
-import type { RootStore } from "@/plane-web/store/root.store";
+import { sortStates } from "@planner/utils";
+// planner web
+import { ProjectStateService } from "@/planner-web/services/project/project-state.service";
+import type { RootStore } from "@/planner-web/store/root.store";
 
 export interface IStateStore {
   //Loaders

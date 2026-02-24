@@ -1,7 +1,7 @@
 import { setupSentry } from "./instrument";
 setupSentry();
 
-import { logger } from "@plane/logger";
+import { logger } from "@planner/logger";
 import { AppError } from "@/lib/errors";
 import { Server } from "./server";
 

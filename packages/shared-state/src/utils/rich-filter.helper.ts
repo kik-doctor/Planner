@@ -1,7 +1,7 @@
-// plane imports
-import type { TBuildFilterExpressionParams, TExternalFilter, TFilterProperty, TFilterValue } from "@plane/types";
-import { LOGICAL_OPERATOR } from "@plane/types";
-import { getOperatorForPayload } from "@plane/utils";
+// planner imports
+import type { TBuildFilterExpressionParams, TExternalFilter, TFilterProperty, TFilterValue } from "@planner/types";
+import { LOGICAL_OPERATOR } from "@planner/types";
+import { getOperatorForPayload } from "@planner/utils";
 // local imports
 import { FilterInstance } from "../store/rich-filters/filter";
 

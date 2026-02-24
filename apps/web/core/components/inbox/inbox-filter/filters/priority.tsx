@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
-import { ISSUE_PRIORITIES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { PriorityIcon } from "@plane/propel/icons";
-import type { TIssuePriorities } from "@plane/types";
-// plane constants
+import { ISSUE_PRIORITIES } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { PriorityIcon } from "@planner/propel/icons";
+import type { TIssuePriorities } from "@planner/types";
+// planner constants
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 // hooks

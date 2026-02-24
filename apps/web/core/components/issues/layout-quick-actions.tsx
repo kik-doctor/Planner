@@ -1,10 +1,10 @@
 "use client";
 
 import { observer } from "mobx-react";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TContextMenuItem } from "@plane/ui";
-import { CustomMenu } from "@plane/ui";
-import { copyUrlToClipboard, cn } from "@plane/utils";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TContextMenuItem } from "@planner/ui";
+import { CustomMenu } from "@planner/ui";
+import { copyUrlToClipboard, cn } from "@planner/utils";
 import { useLayoutMenuItems } from "@/components/common/quick-actions-helper";
 
 type Props = {

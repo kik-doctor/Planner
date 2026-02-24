@@ -1,7 +1,7 @@
 import { observer } from "mobx-react";
-// plane types
-import type { IPartialProject } from "@plane/types";
-import { Spinner } from "@plane/ui";
+// planner types
+import type { IPartialProject } from "@planner/types";
+import { Spinner } from "@planner/ui";
 // components
 import { PowerKProjectsMenu } from "@/components/power-k/menus/projects";
 // hooks

@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
-import { PROJECT_CREATED_AT_FILTER_OPTIONS } from "@plane/constants";
-import { CloseIcon } from "@plane/propel/icons";
+import { PROJECT_CREATED_AT_FILTER_OPTIONS } from "@planner/constants";
+import { CloseIcon } from "@planner/propel/icons";
 // helpers
-import { renderFormattedDate, capitalizeFirstLetter } from "@plane/utils";
+import { renderFormattedDate, capitalizeFirstLetter } from "@planner/utils";
 // constants
 
 type Props = {

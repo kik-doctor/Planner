@@ -1,6 +1,6 @@
-// plane package imports
-import type { ChartXAxisProperty } from "@plane/types";
-import { CustomSelect } from "@plane/ui";
+// planner package imports
+import type { ChartXAxisProperty } from "@planner/types";
+import { CustomSelect } from "@planner/ui";
 
 type Props = {
   value?: ChartXAxisProperty;

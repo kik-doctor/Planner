@@ -2,12 +2,12 @@ import type { FC } from "react";
 import { useMemo, useState } from "react";
 import { sortBy } from "lodash-es";
 import { observer } from "mobx-react";
-// plane types
-import type { TInboxIssueFilterMemberKeys } from "@plane/types";
-// plane ui
-import { Avatar, Loader } from "@plane/ui";
+// planner types
+import type { TInboxIssueFilterMemberKeys } from "@planner/types";
+// planner ui
+import { Avatar, Loader } from "@planner/ui";
 // components
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@planner/utils";
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 // helpers
 // hooks

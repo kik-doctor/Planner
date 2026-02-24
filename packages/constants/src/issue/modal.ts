@@ -1,5 +1,5 @@
-// plane imports
-import type { TIssue } from "@plane/types";
+// planner imports
+import type { TIssue } from "@planner/types";
 
 export const DEFAULT_WORK_ITEM_FORM_VALUES: Partial<TIssue> = {
   project_id: "",

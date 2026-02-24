@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useParams } from "next/navigation";
 // ui
-import { WORKSPACE_SETTINGS_TRACKER_EVENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { AlertModalCore } from "@plane/ui";
+import { WORKSPACE_SETTINGS_TRACKER_EVENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { AlertModalCore } from "@planner/ui";
 // hooks
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useWebhook } from "@/hooks/store/use-webhook";

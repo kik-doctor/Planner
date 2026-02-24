@@ -1,11 +1,11 @@
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
 import type {
   IAnalyticsResponse,
   TAnalyticsTabsBase,
   TAnalyticsGraphsBase,
   TAnalyticsFilterParams,
-} from "@plane/types";
+} from "@planner/types";
 // services
 import { APIService } from "./api.service";
 

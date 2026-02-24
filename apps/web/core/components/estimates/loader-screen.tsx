@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { Loader } from "@plane/ui";
+import { Loader } from "@planner/ui";
 
 export function EstimateLoaderScreen() {
   return (

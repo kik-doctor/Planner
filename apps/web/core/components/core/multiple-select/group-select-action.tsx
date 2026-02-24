@@ -1,7 +1,7 @@
 // ui
-import { Checkbox } from "@plane/ui";
+import { Checkbox } from "@planner/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // hooks
 import type { TSelectionHelper } from "@/hooks/use-multiple-select";
 

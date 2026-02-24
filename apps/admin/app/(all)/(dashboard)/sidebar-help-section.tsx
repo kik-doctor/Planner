@@ -3,11 +3,11 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { ExternalLink, HelpCircle, MoveLeft } from "lucide-react";
 import { Transition } from "@headlessui/react";
-// plane internal packages
-import { WEB_BASE_URL } from "@plane/constants";
-import { DiscordIcon, GithubIcon, PageIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
+// planner internal packages
+import { WEB_BASE_URL } from "@planner/constants";
+import { DiscordIcon, GithubIcon, PageIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import { cn } from "@planner/utils";
 // hooks
 import { useTheme } from "@/hooks/store";
 // assets
@@ -17,12 +17,12 @@ import packageJson from "package.json";
 const helpOptions = [
   {
     name: "Documentation",
-    href: "https://docs.plane.so/",
+    href: "https://docs.planner.oneworkspacex.com/",
     Icon: PageIcon,
   },
   {
     name: "Join our Discord",
-    href: "https://discord.com/invite/A92xrEGCge",
+    href: "https://discord.com/invite/543UADxY",
     Icon: DiscordIcon,
   },
   {
@@ -52,13 +52,13 @@ export const AdminSidebarHelpSection = observer(function AdminSidebarHelpSection
       )}
     >
       <div className={`flex items-center gap-1 ${isSidebarCollapsed ? "flex-col justify-center" : "w-full"}`}>
-        <Tooltip tooltipContent="Redirect to Plane" position="right" className="ml-4" disabled={!isSidebarCollapsed}>
+        <Tooltip tooltipContent="Redirect to Planner" position="right" className="ml-4" disabled={!isSidebarCollapsed}>
           <a
             href={redirectionLink}
             className={`relative px-2 py-1.5 flex items-center gap-2 font-medium rounded border border-custom-primary-100/20 bg-custom-primary-100/10 text-xs text-custom-primary-200 whitespace-nowrap`}
           >
             <ExternalLink size={14} />
-            {!isSidebarCollapsed && "Redirect to Plane"}
+            {!isSidebarCollapsed && "Redirect to Planner"}
           </a>
         </Tooltip>
         <Tooltip tooltipContent="Help" position={isSidebarCollapsed ? "right" : "top"} className="ml-4">

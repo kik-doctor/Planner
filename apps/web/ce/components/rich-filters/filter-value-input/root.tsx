@@ -1,7 +1,7 @@
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { TFilterValue, TFilterProperty } from "@plane/types";
+// planner imports
+import type { TFilterValue, TFilterProperty } from "@planner/types";
 // local imports
 import type { TFilterValueInputProps } from "@/components/rich-filters/shared";
 

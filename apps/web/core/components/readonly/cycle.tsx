@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { CycleIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { CycleIcon } from "@planner/propel/icons";
+import { cn } from "@planner/utils";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 

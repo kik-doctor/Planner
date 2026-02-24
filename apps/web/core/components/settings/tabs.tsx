@@ -1,7 +1,7 @@
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import { useProject } from "@/hooks/store/use-project";
 
 const TABS = {

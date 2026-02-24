@@ -1,13 +1,13 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 import { Trash } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import { useTranslation } from "@planner/i18n";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TIssueServiceType } from "@planner/types";
+import { EIssueServiceType } from "@planner/types";
 // ui
-import { CustomMenu } from "@plane/ui";
-import { convertBytesToSize, getFileExtension, getFileName, getFileURL, renderFormattedDate } from "@plane/utils";
+import { CustomMenu } from "@planner/ui";
+import { convertBytesToSize, getFileExtension, getFileName, getFileURL, renderFormattedDate } from "@planner/utils";
 // components
 //
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";

@@ -1,5 +1,5 @@
-import { API_BASE_URL } from "@plane/constants";
-import type { IWorkspace, TWorkspacePaginationInfo } from "@plane/types";
+import { API_BASE_URL } from "@planner/constants";
+import type { IWorkspace, TWorkspacePaginationInfo } from "@planner/types";
 import { APIService } from "../api.service";
 
 /**

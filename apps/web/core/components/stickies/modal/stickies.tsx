@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Plus } from "lucide-react";
-// plane ui
-import { RecentStickyIcon, CloseIcon } from "@plane/propel/icons";
+// planner ui
+import { RecentStickyIcon, CloseIcon } from "@planner/propel/icons";
 // hooks
 import { useSticky } from "@/hooks/use-stickies";
 // components

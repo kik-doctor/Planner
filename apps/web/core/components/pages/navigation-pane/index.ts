@@ -1,5 +1,5 @@
-// plane web imports
-import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/plane-web/components/pages/navigation-pane";
+// planner web imports
+import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/planner-web/components/pages/navigation-pane";
 
 export * from "./root";
 export * from "./types";

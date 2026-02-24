@@ -8,8 +8,8 @@ import type { UseFormSetValue } from "react-hook-form";
 import useSWR from "swr";
 // services
 // ui
-import { Button } from "@plane/propel/button";
-import { Loader } from "@plane/ui";
+import { Button } from "@planner/propel/button";
+import { Loader } from "@planner/ui";
 // types
 import type { IUserDetails, TFormValues, TIntegrationSteps } from "@/components/integration";
 // fetch-keys

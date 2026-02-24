@@ -1,12 +1,12 @@
 import { ArrowDownWideNarrow, ArrowUpWideNarrow, Check } from "lucide-react";
 // types
-import { VIEW_SORT_BY_OPTIONS, VIEW_SORTING_KEY_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { getButtonStyling } from "@plane/propel/button";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import type { TViewFiltersSortBy, TViewFiltersSortKey } from "@plane/types";
+import { VIEW_SORT_BY_OPTIONS, VIEW_SORTING_KEY_OPTIONS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { getButtonStyling } from "@planner/propel/button";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import type { TViewFiltersSortBy, TViewFiltersSortKey } from "@planner/types";
 // ui
-import { CustomMenu } from "@plane/ui";
+import { CustomMenu } from "@planner/ui";
 // constants
 
 type Props = {

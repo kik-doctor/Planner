@@ -1,11 +1,11 @@
-// plane package imports
+// planner package imports
 import type { ReactNode } from "react";
 import React from "react";
 import { Calendar } from "lucide-react";
-// plane package imports
-import { ANALYTICS_DURATION_FILTER_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CustomSearchSelect } from "@plane/ui";
+// planner package imports
+import { ANALYTICS_DURATION_FILTER_OPTIONS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { CustomSearchSelect } from "@planner/ui";
 // types
 import type { TDropdownProps } from "@/components/dropdowns/types";
 

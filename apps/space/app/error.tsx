@@ -1,5 +1,5 @@
 // ui
-import { Button } from "@plane/propel/button";
+import { Button } from "@planner/propel/button";
 
 function ErrorPage() {
   const handleRetry = () => {
@@ -12,14 +12,14 @@ function ErrorPage() {
         <div className="space-y-2">
           <h3 className="text-lg font-semibold">Yikes! That doesn{"'"}t look good.</h3>
           <p className="mx-auto md:w-1/2 text-sm text-custom-text-200">
-            That crashed Plane, pun intended. No worries, though. Our engineers have been notified. If you have more
+            That crashed Planner, pun intended. No worries, though. Our engineers have been notified. If you have more
             details, please write to{" "}
-            <a href="mailto:support@plane.so" className="text-custom-primary">
-              support@plane.so
+            <a href="mailto:hello@oneworkspacex.com" className="text-custom-primary">
+              hello@oneworkspacex.com
             </a>{" "}
             or on our{" "}
             <a
-              href="https://discord.com/invite/A92xrEGCge"
+              href="https://discord.com/invite/543UADxY"
               target="_blank"
               className="text-custom-primary"
               rel="noopener noreferrer"

@@ -1,12 +1,12 @@
 import { useState, useRef } from "react";
 import { observer } from "mobx-react";
 import { Plus } from "lucide-react";
-// plane imports
-import { EIconSize, STATE_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { StateGroupIcon, ChevronDownIcon } from "@plane/propel/icons";
-import type { IState, TStateGroups, TStateOperationsCallbacks } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import { EIconSize, STATE_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { StateGroupIcon, ChevronDownIcon } from "@planner/propel/icons";
+import type { IState, TStateGroups, TStateOperationsCallbacks } from "@planner/types";
+import { cn } from "@planner/utils";
 // components
 import { StateList, StateCreate } from "@/components/project-states";
 
@@ -40,7 +40,7 @@ export const GroupItem = observer(function GroupItem(props: TGroupItem) {
   } = props;
   // refs
   const dropElementRef = useRef<HTMLDivElement | null>(null);
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // state
   const [createState, setCreateState] = useState(false);

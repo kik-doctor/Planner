@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
 // components
-import { EUserPermissions, EUserPermissionsLevel, WORK_ITEM_TRACKER_ELEMENTS } from "@plane/constants";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
-import { EIssuesStoreType } from "@plane/types";
+import { EUserPermissions, EUserPermissionsLevel, WORK_ITEM_TRACKER_ELEMENTS } from "@planner/constants";
+import { EmptyStateDetailed } from "@planner/propel/empty-state";
+import { EIssuesStoreType } from "@planner/types";
 // components
 import { captureClick } from "@/helpers/event-tracker.helper";
 // hooks

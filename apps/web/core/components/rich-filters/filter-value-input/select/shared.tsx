@@ -1,6 +1,6 @@
-// plane imports
-import type { TSupportedFilterFieldConfigs, IFilterOption, TFilterValue } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import type { TSupportedFilterFieldConfigs, IFilterOption, TFilterValue } from "@planner/types";
+import { cn } from "@planner/utils";
 // local imports
 import { COMMON_FILTER_ITEM_BORDER_CLASSNAME } from "../../shared";
 

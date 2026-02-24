@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IProject } from "@plane/types";
+import { EUserPermissions, EUserPermissionsLevel } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IProject } from "@planner/types";
 // ui
 // components
 import { NotAuthorizedView } from "@/components/auth-screens/not-authorized-view";
@@ -13,8 +13,8 @@ import { SettingsContentWrapper } from "@/components/settings/content-wrapper";
 import { SettingsHeading } from "@/components/settings/heading";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
-import { CustomAutomationsRoot } from "@/plane-web/components/automations/root";
+// planner web imports
+import { CustomAutomationsRoot } from "@/planner-web/components/automations/root";
 import type { Route } from "./+types/page";
 
 function AutomationSettingsPage({ params }: Route.ComponentProps) {

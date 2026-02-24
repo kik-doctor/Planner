@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PlannerLogo } from "@plane/propel/icons";
+import { PlannerLogo } from "@planner/propel/icons";
 
 export function AuthHeader() {
   return (

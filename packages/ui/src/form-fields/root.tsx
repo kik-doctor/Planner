@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 // Reusable Label Component
 interface LabelProps {

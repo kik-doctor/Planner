@@ -5,12 +5,12 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { usePopper } from "react-popper";
 import { LogOut } from "lucide-react";
 import { Popover, Transition } from "@headlessui/react";
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { AuthService } from "@plane/services";
-import { Avatar } from "@plane/ui";
-import { getFileURL } from "@plane/utils";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { AuthService } from "@planner/services";
+import { Avatar } from "@planner/ui";
+import { getFileURL } from "@planner/utils";
 // helpers
 import { queryParamGenerator } from "@/helpers/query-param-generator";
 // hooks

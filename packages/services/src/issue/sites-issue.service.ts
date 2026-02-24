@@ -1,14 +1,14 @@
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import type { IPublicIssue, TIssuePublicComment, TPublicIssuesResponse } from "@plane/types";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
+import type { IPublicIssue, TIssuePublicComment, TPublicIssuesResponse } from "@planner/types";
 // api service
 import { APIService } from "../api.service";
 
 /**
- * Service class for managing issues within plane sites application
+ * Service class for managing issues within planner sites application
  * Extends the APIService class to handle HTTP requests to the issue-related endpoints
  * @extends {APIService}
- * @remarks This service is only available for plane sites
+ * @remarks This service is only available for planner sites
  */
 export class SitesIssueService extends APIService {
   constructor(BASE_URL?: string) {

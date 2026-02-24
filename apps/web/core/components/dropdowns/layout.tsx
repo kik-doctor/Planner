@@ -1,12 +1,12 @@
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
 import { Check } from "lucide-react";
-// plane imports
-import { ISSUE_LAYOUT_MAP } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EIssueLayoutTypes } from "@plane/types";
-import { Dropdown } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import { ISSUE_LAYOUT_MAP } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { EIssueLayoutTypes } from "@planner/types";
+import { Dropdown } from "@planner/ui";
+import { cn } from "@planner/utils";
 // components
 import { IssueLayoutIcon } from "@/components/issues/issue-layouts/layout-icon";
 
@@ -18,7 +18,7 @@ type TLayoutDropDown = {
 
 export const LayoutDropDown = observer(function LayoutDropDown(props: TLayoutDropDown) {
   const { onChange, value = EIssueLayoutTypes.LIST, disabledLayouts = [] } = props;
-  // plane i18n
+  // planner i18n
   const { t } = useTranslation();
   // derived values
   const availableLayouts = useMemo(

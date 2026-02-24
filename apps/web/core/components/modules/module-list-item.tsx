@@ -4,9 +4,9 @@ import { useParams, usePathname, useSearchParams } from "next/navigation";
 // icons
 import { Check, Info } from "lucide-react";
 // ui
-import { CircularProgressIndicator } from "@plane/ui";
+import { CircularProgressIndicator } from "@planner/ui";
 // components
-import { generateQueryParams } from "@plane/utils";
+import { generateQueryParams } from "@planner/utils";
 import { ListItem } from "@/components/core/list";
 import { ModuleListItemAction, ModuleQuickActions } from "@/components/modules";
 // helpers

@@ -1,10 +1,10 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { CircleCheck, CircleX, Clock, ExternalLink, FileStack, Link, Trash2, PanelLeft, MoveRight } from "lucide-react";
-import { ChevronDownIcon, ChevronUpIcon } from "@plane/propel/icons";
-import type { TNameDescriptionLoader } from "@plane/types";
-import { Header, CustomMenu, EHeaderVariant } from "@plane/ui";
-import { cn, findHowManyDaysLeft, generateWorkItemLink } from "@plane/utils";
+import { ChevronDownIcon, ChevronUpIcon } from "@planner/propel/icons";
+import type { TNameDescriptionLoader } from "@planner/types";
+import { Header, CustomMenu, EHeaderVariant } from "@planner/ui";
+import { cn, findHowManyDaysLeft, generateWorkItemLink } from "@planner/utils";
 // components
 import { NameDescriptionUpdateStatus } from "@/components/issues/issue-update-status";
 // hooks

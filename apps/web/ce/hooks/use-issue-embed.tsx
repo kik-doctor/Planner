@@ -1,9 +1,9 @@
 // editor
-import type { TEmbedConfig } from "@plane/editor";
-// plane types
-import type { TSearchEntityRequestPayload, TSearchResponse } from "@plane/types";
-// plane web components
-import { IssueEmbedUpgradeCard } from "@/plane-web/components/pages";
+import type { TEmbedConfig } from "@planner/editor";
+// planner types
+import type { TSearchEntityRequestPayload, TSearchResponse } from "@planner/types";
+// planner web components
+import { IssueEmbedUpgradeCard } from "@/planner-web/components/pages";
 
 export type TIssueEmbedHookProps = {
   fetchEmbedSuggestions?: (payload: TSearchEntityRequestPayload) => Promise<TSearchResponse>;

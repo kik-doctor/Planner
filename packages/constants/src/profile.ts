@@ -1,4 +1,4 @@
-import { EStartOfTheWeek } from "@plane/types";
+import { EStartOfTheWeek } from "@planner/types";
 
 export const PROFILE_SETTINGS = {
   profile: {

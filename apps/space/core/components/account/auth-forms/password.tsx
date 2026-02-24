@@ -1,12 +1,12 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { Eye, EyeOff, XCircle } from "lucide-react";
-// plane imports
-import { API_BASE_URL, E_PASSWORD_STRENGTH } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { AuthService } from "@plane/services";
-import { Input, Spinner, PasswordStrengthIndicator } from "@plane/ui";
-import { getPasswordStrength } from "@plane/utils";
+// planner imports
+import { API_BASE_URL, E_PASSWORD_STRENGTH } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { AuthService } from "@planner/services";
+import { Input, Spinner, PasswordStrengthIndicator } from "@planner/ui";
+import { getPasswordStrength } from "@planner/utils";
 // types
 import { EAuthModes, EAuthSteps } from "@/types/auth";
 

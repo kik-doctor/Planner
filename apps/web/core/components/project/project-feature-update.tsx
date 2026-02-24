@@ -1,15 +1,15 @@
 import { observer } from "mobx-react";
 import Link from "next/link";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 // ui
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { Row } from "@plane/ui";
+import { Button, getButtonStyling } from "@planner/propel/button";
+import { Logo } from "@planner/propel/emoji-icon-picker";
+import { Row } from "@planner/ui";
 // components
 // hooks
 import { useProject } from "@/hooks/store/use-project";
-// plane web imports
-import { ProjectFeaturesList } from "@/plane-web/components/projects/settings/features-list";
+// planner web imports
+import { ProjectFeaturesList } from "@/planner-web/components/projects/settings/features-list";
 
 type Props = {
   workspaceSlug: string;

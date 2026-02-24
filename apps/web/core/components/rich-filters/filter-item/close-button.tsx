@@ -1,9 +1,9 @@
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { CloseIcon } from "@plane/propel/icons";
-import type { IFilterInstance } from "@plane/shared-state";
-import type { TExternalFilter, TFilterProperty } from "@plane/types";
+// planner imports
+import { CloseIcon } from "@planner/propel/icons";
+import type { IFilterInstance } from "@planner/shared-state";
+import type { TExternalFilter, TFilterProperty } from "@planner/types";
 
 interface FilterItemCloseButtonProps<P extends TFilterProperty, E extends TExternalFilter> {
   conditionId: string;

@@ -4,7 +4,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { Info, SquareUser } from "lucide-react";
-// plane package imports
+// planner package imports
 import {
   MODULE_STATUS,
   PROGRESS_STATE_GROUPS_DETAILS,
@@ -13,14 +13,14 @@ import {
   IS_FAVORITE_MENU_OPEN,
   MODULE_TRACKER_EVENTS,
   MODULE_TRACKER_ELEMENTS,
-} from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { WorkItemsIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IModule } from "@plane/types";
-import { Card, FavoriteStar, LinearProgressIndicator } from "@plane/ui";
-import { getDate, renderFormattedPayloadDate, generateQueryParams } from "@plane/utils";
+} from "@planner/constants";
+import { useLocalStorage } from "@planner/hooks";
+import { WorkItemsIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IModule } from "@planner/types";
+import { Card, FavoriteStar, LinearProgressIndicator } from "@planner/ui";
+import { getDate, renderFormattedPayloadDate, generateQueryParams } from "@planner/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";

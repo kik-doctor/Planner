@@ -3,8 +3,8 @@ import { observer } from "mobx-react";
 import { AlertTriangle } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 // ui
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
 // hooks
 import { useUser } from "@/hooks/store/user";
 

@@ -3,12 +3,12 @@ import React from "react";
 // react-hook-form
 import type { Control, UseFormWatch } from "react-hook-form";
 import { Controller } from "react-hook-form";
-import { MODULE_STATUS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { StatePropertyIcon } from "@plane/propel/icons";
-import type { IModule } from "@plane/types";
+import { MODULE_STATUS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { StatePropertyIcon } from "@planner/propel/icons";
+import type { IModule } from "@planner/types";
 // ui
-import { CustomSelect } from "@plane/ui";
+import { CustomSelect } from "@planner/ui";
 // types
 // common
 // constants

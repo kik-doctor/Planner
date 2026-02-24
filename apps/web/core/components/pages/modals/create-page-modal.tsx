@@ -1,17 +1,17 @@
 import type { FC } from "react";
 import { useEffect, useState } from "react";
 // constants
-import type { EPageAccess } from "@plane/constants";
-import { PROJECT_PAGE_TRACKER_EVENTS } from "@plane/constants";
-import type { TPage } from "@plane/types";
+import type { EPageAccess } from "@planner/constants";
+import { PROJECT_PAGE_TRACKER_EVENTS } from "@planner/constants";
+import type { TPage } from "@planner/types";
 // ui
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { EModalPosition, EModalWidth, ModalCore } from "@planner/ui";
 // hooks
 import { captureSuccess, captureError } from "@/helpers/event-tracker.helper";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
-import { usePageStore } from "@/plane-web/hooks/store";
+// planner web hooks
+import type { EPageStoreType } from "@/planner-web/hooks/store";
+import { usePageStore } from "@/planner-web/hooks/store";
 // local imports
 import { PageForm } from "./page-form";
 

@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
-// plane imports
-import type { IFilterInstance } from "@plane/shared-state";
-import type { TExternalFilter, TFilterProperty } from "@plane/types";
-import { cn } from "@plane/ui";
+// planner imports
+import type { IFilterInstance } from "@planner/shared-state";
+import type { TExternalFilter, TFilterProperty } from "@planner/types";
+import { cn } from "@planner/ui";
 // components
 import { AddFilterButton } from "@/components/rich-filters/add-filters/button";
 

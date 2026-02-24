@@ -1,7 +1,7 @@
 import { Maximize } from "lucide-react";
 import { useEffect, useState } from "react";
-// plane imports
-import { Tooltip } from "@plane/ui";
+// planner imports
+import { Tooltip } from "@planner/ui";
 // local imports
 import { ImageFullScreenModal } from "./modal";
 

@@ -1,7 +1,7 @@
 import { AlertTriangle, CheckCircle2, Clock, Copy, XCircle } from "lucide-react";
-import type { TInboxIssueStatus } from "@plane/types";
-import { EInboxIssueStatus } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { TInboxIssueStatus } from "@planner/types";
+import { EInboxIssueStatus } from "@planner/types";
+import { cn } from "@planner/utils";
 
 export const ICON_PROPERTIES = {
   [EInboxIssueStatus.PENDING]: {

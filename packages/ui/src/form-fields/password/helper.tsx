@@ -1,4 +1,4 @@
-import { E_PASSWORD_STRENGTH } from "@plane/constants";
+import { E_PASSWORD_STRENGTH } from "@planner/constants";
 
 export interface StrengthInfo {
   message: string;

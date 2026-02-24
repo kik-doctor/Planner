@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import React, { useMemo } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import type { TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { CollapsibleButton } from "@plane/ui";
+import { useTranslation } from "@planner/i18n";
+import type { TIssueServiceType } from "@planner/types";
+import { EIssueServiceType } from "@planner/types";
+import { CollapsibleButton } from "@planner/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // local imports

@@ -1,6 +1,6 @@
 import { X } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import { useTranslation } from "@planner/i18n";
 // local imports
 import type { TPowerKContextType } from "../../core/types";
 import { useContextIndicator } from "../../hooks/use-context-indicator";

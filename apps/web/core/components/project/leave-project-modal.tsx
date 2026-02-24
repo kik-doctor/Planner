@@ -6,12 +6,12 @@ import { Controller, useForm } from "react-hook-form";
 import { AlertTriangleIcon } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
 // types
-import { MEMBER_TRACKER_EVENTS } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IProject } from "@plane/types";
+import { MEMBER_TRACKER_EVENTS } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IProject } from "@planner/types";
 // ui
-import { Input } from "@plane/ui";
+import { Input } from "@planner/ui";
 // constants
 // hooks
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";

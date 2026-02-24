@@ -1,4 +1,4 @@
-import type { TProjectBaseActivity } from "@plane/types";
+import type { TProjectBaseActivity } from "@planner/types";
 
 export type TProjectActivity = TProjectBaseActivity & {
   content: string;

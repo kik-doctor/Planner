@@ -3,13 +3,13 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { Check, Settings, UserPlus } from "lucide-react";
 import { Menu } from "@headlessui/react";
-// plane imports
-import { EUserPermissions } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IWorkspace } from "@plane/types";
-import { cn, getFileURL, getUserRole } from "@plane/utils";
-// plane web imports
-import { SubscriptionPill } from "@/plane-web/components/common/subscription/subscription-pill";
+// planner imports
+import { EUserPermissions } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { IWorkspace } from "@planner/types";
+import { cn, getFileURL, getUserRole } from "@planner/utils";
+// planner web imports
+import { SubscriptionPill } from "@/planner-web/components/common/subscription/subscription-pill";
 
 type TProps = {
   workspace: IWorkspace;

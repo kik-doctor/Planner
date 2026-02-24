@@ -1,6 +1,6 @@
-// plane imports
-import type { IMarking } from "@plane/editor";
-import { cn } from "@plane/utils";
+// planner imports
+import type { IMarking } from "@planner/editor";
+import { cn } from "@planner/utils";
 
 export type THeadingComponentProps = {
   marking: IMarking;
