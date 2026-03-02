@@ -1,10 +1,10 @@
 import { set, cloneDeep, isEqual } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import type { IWorkspaceView } from "@plane/types";
+// planner imports
+import type { IWorkspaceView } from "@planner/types";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 // store
 import type { CoreRootStore } from "./root.store";
 

@@ -2,10 +2,10 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Image, BrainCog, Cog, Lock, Mail } from "lucide-react";
-// plane internal packages
-import { WorkspaceIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
+// planner internal packages
+import { WorkspaceIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import { cn } from "@planner/utils";
 // hooks
 import { useTheme } from "@/hooks/store";
 
@@ -42,7 +42,7 @@ const INSTANCE_ADMIN_LINKS = [
   },
   {
     Icon: Image,
-    name: "Images in Plane",
+    name: "Images in planner",
     description: "Allow third-party image libraries.",
     href: `/image/`,
   },

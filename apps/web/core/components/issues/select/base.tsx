@@ -4,13 +4,13 @@ import { observer } from "mobx-react";
 import { usePopper } from "react-popper";
 import { Check, Component, Loader, Search } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-import { getRandomLabelColor } from "@plane/constants";
-// plane imports
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { LabelPropertyIcon } from "@plane/propel/icons";
-import type { IIssueLabel } from "@plane/types";
-import { cn } from "@plane/utils";
+import { getRandomLabelColor } from "@planner/constants";
+// planner imports
+import { useOutsideClickDetector } from "@planner/hooks";
+import { useTranslation } from "@planner/i18n";
+import { LabelPropertyIcon } from "@planner/propel/icons";
+import type { IIssueLabel } from "@planner/types";
+import { cn } from "@planner/utils";
 // components
 import { IssueLabelsList } from "@/components/ui/labels-list";
 // hooks
@@ -58,7 +58,7 @@ export const WorkItemLabelSelectBase = observer(function WorkItemLabelSelectBase
   const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [submitting, setSubmitting] = useState<boolean>(false);
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { isMobile } = usePlatformOS();

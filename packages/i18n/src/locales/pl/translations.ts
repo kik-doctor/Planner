@@ -1267,7 +1267,7 @@ export default {
   },
   workspace_creation: {
     heading: "Utwórz przestrzeń roboczą",
-    subheading: "Aby korzystać z Plane, musisz utworzyć lub dołączyć do przestrzeni roboczej.",
+    subheading: "Aby korzystać z Planner, musisz utworzyć lub dołączyć do przestrzeni roboczej.",
     form: {
       name: {
         label: "Nazwij swoją przestrzeń roboczą",
@@ -1321,11 +1321,11 @@ export default {
       general: {
         title: "Podgląd projektów, aktywności i metryk",
         description:
-          "Witaj w Plane, cieszymy się, że jesteś. Utwórz pierwszy projekt, śledź elementy pracy, a ta strona stanie się centrum Twojego postępu. Administratorzy zobaczą tu również elementy pomocne zespołowi.",
+          "Witaj w Planner, cieszymy się, że jesteś. Utwórz pierwszy projekt, śledź elementy pracy, a ta strona stanie się centrum Twojego postępu. Administratorzy zobaczą tu również elementy pomocne zespołowi.",
         primary_button: {
           text: "Utwórz pierwszy projekt",
           comic: {
-            title: "Wszystko zaczyna się od projektu w Plane",
+            title: "Wszystko zaczyna się od projektu w Planner",
             description:
               "Projektem może być harmonogram produktu, kampania marketingowa czy wprowadzenie nowego samochodu.",
           },
@@ -1459,7 +1459,7 @@ export default {
         primary_button: {
           text: "Rozpocznij pierwszy projekt",
           comic: {
-            title: "Wszystko zaczyna się od projektu w Plane",
+            title: "Wszystko zaczyna się od projektu w Planner",
             description:
               "Projekt może dotyczyć planu produktu, kampanii marketingowej lub uruchomienia nowego samochodu.",
           },
@@ -1471,7 +1471,7 @@ export default {
         primary_button: {
           text: "Rozpocznij pierwszy projekt",
           comic: {
-            title: "Wszystko zaczyna się od projektu w Plane",
+            title: "Wszystko zaczyna się od projektu w Planner",
             description:
               "Projekt może dotyczyć planu produktu, kampanii marketingowej lub uruchomienia nowego samochodu.",
           },
@@ -1571,7 +1571,7 @@ export default {
     page_label: "{workspace} - Ustawienia ogólne",
     key_created: "Klucz utworzony",
     copy_key:
-      "Skopiuj i zapisz ten klucz w Plane Pages. Po zamknięciu nie będzie widoczny ponownie. Plik CSV z kluczem został pobrany.",
+      "Skopiuj i zapisz ten klucz w Planner Pages. Po zamknięciu nie będzie widoczny ponownie. Plik CSV z kluczem został pobrany.",
     token_copied: "Token skopiowano do schowka.",
     settings: {
       general: {
@@ -1734,7 +1734,7 @@ export default {
     empty_state: {
       api_tokens: {
         title: "Brak tokenów API",
-        description: "Używaj API, aby zintegrować Plane z zewnętrznymi systemami.",
+        description: "Używaj API, aby zintegrować Planner z zewnętrznymi systemami.",
       },
       webhooks: {
         title: "Brak webhooków",
@@ -1948,12 +1948,12 @@ export default {
       label: "Automatyzacja",
       "auto-archive": {
         title: "Automatyczna archiwizacja zamkniętych elementów",
-        description: "Plane będzie automatycznie archiwizował elementy, które zostały ukończone lub anulowane.",
+        description: "Planner będzie automatycznie archiwizował elementy, które zostały ukończone lub anulowane.",
         duration: "Archiwizuj elementy zamknięte dłużej niż",
       },
       "auto-close": {
         title: "Automatyczne zamykanie elementów",
-        description: "Plane będzie automatycznie zamykał elementy, które nie zostały ukończone lub anulowane.",
+        description: "Planner będzie automatycznie zamykał elementy, które nie zostały ukończone lub anulowane.",
         duration: "Zamknij elementy nieaktywne dłużej niż",
         auto_close_status: "Status automatycznego zamknięcia",
       },
@@ -2572,7 +2572,7 @@ export default {
   },
   self_hosted_maintenance_message: {
     planner_didnt_start_up_this_could_be_because_one_or_more_planner_services_failed_to_start:
-      "Plane nie uruchomił się. Może to być spowodowane tym, że jedna lub więcej usług Plane nie mogła się uruchomić.",
+      "Planner nie uruchomił się. Może to być spowodowane tym, że jedna lub więcej usług Planner nie mogła się uruchomić.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Wybierz View Logs z setup.sh i logów Docker, aby mieć pewność.",
   },

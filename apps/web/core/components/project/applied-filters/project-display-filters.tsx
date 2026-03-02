@@ -1,10 +1,10 @@
 import { observer } from "mobx-react";
 // icons
 // types
-import { PROJECT_DISPLAY_FILTER_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TProjectAppliedDisplayFilterKeys } from "@plane/types";
+import { PROJECT_DISPLAY_FILTER_OPTIONS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+import type { TProjectAppliedDisplayFilterKeys } from "@planner/types";
 // constants
 
 type Props = {

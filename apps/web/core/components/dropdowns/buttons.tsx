@@ -1,7 +1,7 @@
 import React from "react";
 // helpers
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
+import { Tooltip } from "@planner/propel/tooltip";
+import { cn } from "@planner/utils";
 // types
 import { usePlatformOS } from "@/hooks/use-platform-os";
 import { BACKGROUND_BUTTON_VARIANTS, BORDER_BUTTON_VARIANTS } from "./constants";

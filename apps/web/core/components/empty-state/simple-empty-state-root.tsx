@@ -1,6 +1,6 @@
 import { observer } from "mobx-react";
 // utils
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 type EmptyStateSize = "sm" | "lg";
 

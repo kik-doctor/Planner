@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { Info, Lock } from "lucide-react";
-import { NETWORK_CHOICES, PROJECT_TRACKER_ELEMENTS, PROJECT_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-// plane imports
-import { Button } from "@plane/propel/button";
-import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@plane/propel/emoji-icon-picker";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import { EFileAssetType } from "@plane/types";
-import type { IProject, IWorkspace } from "@plane/types";
-import { CustomSelect, Input, TextArea } from "@plane/ui";
-import { renderFormattedDate } from "@plane/utils";
+import { NETWORK_CHOICES, PROJECT_TRACKER_ELEMENTS, PROJECT_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+// planner imports
+import { Button } from "@planner/propel/button";
+import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@planner/propel/emoji-icon-picker";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import { EFileAssetType } from "@planner/types";
+import type { IProject, IWorkspace } from "@planner/types";
+import { CustomSelect, Input, TextArea } from "@planner/ui";
+import { renderFormattedDate } from "@planner/utils";
 import { ImagePickerPopover } from "@/components/core/image-picker-popover";
 import { TimezoneSelect } from "@/components/global";
 // helpers

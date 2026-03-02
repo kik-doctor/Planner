@@ -1,10 +1,10 @@
 import { observer } from "mobx-react";
-// plane web components
-import { PageLockControl } from "@/plane-web/components/pages/header/lock-control";
-import { PageMoveControl } from "@/plane-web/components/pages/header/move-control";
-import { PageShareControl } from "@/plane-web/components/pages/header/share-control";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+// planner web components
+import { PageLockControl } from "@/planner-web/components/pages/header/lock-control";
+import { PageMoveControl } from "@/planner-web/components/pages/header/move-control";
+import { PageShareControl } from "@/planner-web/components/pages/header/share-control";
+// planner web hooks
+import type { EPageStoreType } from "@/planner-web/hooks/store";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports

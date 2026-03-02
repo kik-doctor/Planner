@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import { Check } from "lucide-react";
-// plane imports
-import type { ENotificationFilterType } from "@plane/constants";
+// planner imports
+import type { ENotificationFilterType } from "@planner/constants";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // hooks
 import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 

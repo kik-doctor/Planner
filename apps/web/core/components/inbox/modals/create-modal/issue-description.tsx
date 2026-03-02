@@ -1,13 +1,13 @@
 import type { FC, RefObject } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ETabIndices } from "@plane/constants";
-import type { EditorRefApi } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import type { TIssue } from "@plane/types";
-import { EFileAssetType } from "@plane/types";
-import { Loader } from "@plane/ui";
-import { getDescriptionPlaceholderI18n, getTabIndex } from "@plane/utils";
+// planner imports
+import { ETabIndices } from "@planner/constants";
+import type { EditorRefApi } from "@planner/editor";
+import { useTranslation } from "@planner/i18n";
+import type { TIssue } from "@planner/types";
+import { EFileAssetType } from "@planner/types";
+import { Loader } from "@planner/ui";
+import { getDescriptionPlaceholderI18n, getTabIndex } from "@planner/utils";
 // components
 import { RichTextEditor } from "@/components/editor/rich-text/editor";
 // hooks
@@ -15,7 +15,7 @@ import { useEditorAsset } from "@/hooks/store/use-editor-asset";
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 
 const workspaceService = new WorkspaceService();
 

@@ -3,10 +3,10 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { Disclosure } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { EUserWorkspaceRoles } from "@plane/types";
-import { cn, joinUrlPath } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import type { EUserWorkspaceRoles } from "@planner/types";
+import { cn, joinUrlPath } from "@planner/utils";
 // hooks
 import { useUserSettings } from "@/hooks/store/user";
 

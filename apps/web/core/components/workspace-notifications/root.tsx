@@ -1,10 +1,10 @@
 import { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
-import { ENotificationLoader, ENotificationQueryParamType } from "@plane/constants";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import { cn } from "@plane/utils";
+// planner imports
+import { ENotificationLoader, ENotificationQueryParamType } from "@planner/constants";
+import { EmptyStateCompact } from "@planner/propel/empty-state";
+import { cn } from "@planner/utils";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 // hooks
@@ -12,8 +12,8 @@ import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useWorkspaceIssueProperties } from "@/hooks/use-workspace-issue-properties";
-// plane web imports
-import { useNotificationPreview } from "@/plane-web/hooks/use-notification-preview";
+// planner web imports
+import { useNotificationPreview } from "@/planner-web/hooks/use-notification-preview";
 // local imports
 import { InboxContentRoot } from "../inbox/content";
 

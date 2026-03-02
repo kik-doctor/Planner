@@ -1,11 +1,11 @@
 import React from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 // types
-import { Button } from "@plane/propel/button";
-import { ChevronRightIcon, ChevronUpIcon } from "@plane/propel/icons";
-import type { IProject } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import { ChevronRightIcon, ChevronUpIcon } from "@planner/propel/icons";
+import type { IProject } from "@planner/types";
 // ui
-import { Loader } from "@plane/ui";
+import { Loader } from "@planner/ui";
 
 export interface IArchiveProject {
   projectDetails: IProject;

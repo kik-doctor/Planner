@@ -4,9 +4,9 @@ import {
   CalendarLayoutIcon,
   SheetLayoutIcon,
   TimelineLayoutIcon,
-} from "@plane/propel/icons";
-import type { ISvgIcons } from "@plane/propel/icons";
-import { EIssueLayoutTypes } from "@plane/types";
+} from "@planner/propel/icons";
+import type { ISvgIcons } from "@planner/propel/icons";
+import { EIssueLayoutTypes } from "@planner/types";
 
 export function IssueLayoutIcon({
   layout,

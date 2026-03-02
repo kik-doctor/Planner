@@ -1,5 +1,5 @@
-import type { ChartDataType, IGanttBlock } from "@plane/types";
-import { addDaysToDate, findTotalDaysInRange, getDate } from "@plane/utils";
+import type { ChartDataType, IGanttBlock } from "@planner/types";
+import { addDaysToDate, findTotalDaysInRange, getDate } from "@planner/utils";
 import { DEFAULT_BLOCK_WIDTH } from "../constants";
 
 /**

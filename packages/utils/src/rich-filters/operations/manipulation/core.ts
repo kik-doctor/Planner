@@ -1,11 +1,11 @@
-// plane imports
+// planner imports
 import type {
   TFilterConditionPayload,
   TFilterExpression,
   TFilterGroupNode,
   TFilterProperty,
   TFilterValue,
-} from "@plane/types";
+} from "@planner/types";
 // local imports
 import { createAndGroupNode } from "../../factories/nodes/core";
 import { getGroupChildren } from "../../types";

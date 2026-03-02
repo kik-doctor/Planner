@@ -3,12 +3,12 @@ import Link from "next/link";
 import { Controller, useForm } from "react-hook-form";
 import { CircleMinus } from "lucide-react";
 import { Disclosure } from "@headlessui/react";
-// plane imports
-import { ROLE, EUserPermissions, MEMBER_TRACKER_ELEMENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { EUserProjectRoles, IUser, IWorkspaceMember, TProjectMembership } from "@plane/types";
-import { CustomMenu, CustomSelect } from "@plane/ui";
-import { getFileURL } from "@plane/utils";
+// planner imports
+import { ROLE, EUserPermissions, MEMBER_TRACKER_ELEMENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { EUserProjectRoles, IUser, IWorkspaceMember, TProjectMembership } from "@planner/types";
+import { CustomMenu, CustomSelect } from "@planner/ui";
+import { getFileURL } from "@planner/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useUser, useUserPermissions } from "@/hooks/store/user";

@@ -4,13 +4,13 @@ import { observer } from "mobx-react";
 import type { FileRejection } from "react-dropzone";
 import { useDropzone } from "react-dropzone";
 import { Plus } from "lucide-react";
-// plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssueServiceType } from "@plane/types";
+// planner imports
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TIssueServiceType } from "@planner/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web hooks
-import { useFileSize } from "@/plane-web/hooks/use-file-size";
+// planner web hooks
+import { useFileSize } from "@/planner-web/hooks/use-file-size";
 // local imports
 import { useAttachmentOperations } from "./helper";
 

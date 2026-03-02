@@ -1,6 +1,6 @@
-// plane imports
-import type { IProject, TOperatorConfigMap, TSupportedOperators } from "@plane/types";
-import { COMPARISON_OPERATOR, EQUALITY_OPERATOR } from "@plane/types";
+// planner imports
+import type { IProject, TOperatorConfigMap, TSupportedOperators } from "@planner/types";
+import { COMPARISON_OPERATOR, EQUALITY_OPERATOR } from "@planner/types";
 // local imports
 import type { IFilterIconConfig, TCreateDateFilterParams, TCreateFilterConfigParams } from "../../../rich-filters";
 import {

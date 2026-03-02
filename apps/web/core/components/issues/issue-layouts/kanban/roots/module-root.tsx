@@ -1,8 +1,8 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import { EIssuesStoreType } from "@plane/types";
+// planner imports
+import { EIssuesStoreType } from "@planner/types";
 // hooks
 import { useIssues } from "@/hooks/store/use-issues";
 // local imports

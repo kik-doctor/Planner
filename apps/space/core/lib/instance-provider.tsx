@@ -2,12 +2,12 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
-// plane imports
-import { SPACE_BASE_PATH } from "@plane/constants";
-import { PlannerLogo } from "@plane/propel/icons";
+// planner imports
+import { SPACE_BASE_PATH } from "@planner/constants";
+import { PlannerLogo } from "@planner/propel/icons";
 // assets
-import PlaneBackgroundPatternDark from "@/app/assets/auth/background-pattern-dark.svg?url";
-import PlaneBackgroundPattern from "@/app/assets/auth/background-pattern.svg?url";
+import PlannerBackgroundPatternDark from "@/app/assets/auth/background-pattern-dark.svg?url";
+import PlannerBackgroundPattern from "@/app/assets/auth/background-pattern.svg?url";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 import { InstanceFailureView } from "@/components/instance/instance-failure-view";
@@ -20,7 +20,7 @@ export const InstanceProvider = observer(function InstanceProvider({ children }:
   const { fetchCurrentUser } = useUser();
   const { resolvedTheme } = useTheme();
 
-  const patternBackground = resolvedTheme === "dark" ? PlaneBackgroundPatternDark : PlaneBackgroundPattern;
+  const patternBackground = resolvedTheme === "dark" ? PlannerBackgroundPatternDark : PlannerBackgroundPattern;
 
   useSWR("INSTANCE_INFO", () => fetchInstanceInfo(), {
     revalidateOnFocus: false,
@@ -52,7 +52,7 @@ export const InstanceProvider = observer(function InstanceProvider({ children }:
             </div>
           </div>
           <div className="absolute inset-0 z-0">
-            <img src={patternBackground} className="w-screen h-full object-cover" alt="Plane background pattern" />
+            <img src={patternBackground} className="w-screen h-full object-cover" alt="planner background pattern" />
           </div>
           <div className="relative z-10 flex-grow">
             <div className="relative h-full w-full overflow-y-auto px-6 py-10 mx-auto flex justify-center items-center">

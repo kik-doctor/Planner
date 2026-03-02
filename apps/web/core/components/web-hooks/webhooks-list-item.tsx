@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { WORKSPACE_SETTINGS_TRACKER_ELEMENTS, WORKSPACE_SETTINGS_TRACKER_EVENTS } from "@plane/constants";
-import type { IWebhook } from "@plane/types";
+import { WORKSPACE_SETTINGS_TRACKER_ELEMENTS, WORKSPACE_SETTINGS_TRACKER_EVENTS } from "@planner/constants";
+import type { IWebhook } from "@planner/types";
 // hooks
-import { ToggleSwitch } from "@plane/ui";
+import { ToggleSwitch } from "@planner/ui";
 import { captureElementAndEvent } from "@/helpers/event-tracker.helper";
 import { useWebhook } from "@/hooks/store/use-webhook";
 // ui

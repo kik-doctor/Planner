@@ -1,10 +1,10 @@
 import { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@plane/types";
-import { calculateTotalFilters } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@planner/types";
+import { calculateTotalFilters } from "@planner/utils";
 // components
 import { PageHead } from "@/components/core/page-title";
 // hooks

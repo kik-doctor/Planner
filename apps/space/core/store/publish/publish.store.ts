@@ -6,7 +6,7 @@ import type {
   TPublishEntityType,
   TProjectPublishSettings,
   TProjectPublishViewProps,
-} from "@plane/types";
+} from "@planner/types";
 // store
 import type { CoreRootStore } from "../root.store";
 

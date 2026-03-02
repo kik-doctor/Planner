@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-import { PAST_DURATION_FILTER_OPTIONS } from "@plane/constants";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TInboxIssueFilterDateKeys } from "@plane/types";
+import { PAST_DURATION_FILTER_OPTIONS } from "@planner/constants";
+import { CloseIcon } from "@planner/propel/icons";
+import type { TInboxIssueFilterDateKeys } from "@planner/types";
 // helpers
-import { Tag } from "@plane/ui";
-import { renderFormattedDate } from "@plane/utils";
+import { Tag } from "@planner/ui";
+import { renderFormattedDate } from "@planner/utils";
 // constants
 // hooks
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";

@@ -9,13 +9,13 @@ import {
   EUserPermissionsLevel,
   WORKSPACE_TRACKER_EVENTS,
   WORKSPACE_TRACKER_ELEMENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspace } from "@plane/types";
-import { CustomSelect, Input } from "@plane/ui";
-import { copyUrlToClipboard, getFileURL } from "@plane/utils";
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IWorkspace } from "@planner/types";
+import { CustomSelect, Input } from "@planner/ui";
+import { copyUrlToClipboard, getFileURL } from "@planner/utils";
 // components
 import { WorkspaceImageUploadModal } from "@/components/core/modals/workspace-image-upload-modal";
 // helpers
@@ -23,8 +23,8 @@ import { TimezoneSelect } from "@/components/global/timezone-select";
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web components
-import { DeleteWorkspaceSection } from "@/plane-web/components/workspace/delete-workspace-section";
+// planner web components
+import { DeleteWorkspaceSection } from "@/planner-web/components/workspace/delete-workspace-section";
 
 const defaultValues: Partial<IWorkspace> = {
   name: "",

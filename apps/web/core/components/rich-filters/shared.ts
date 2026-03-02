@@ -4,7 +4,7 @@ import type {
   TFilterProperty,
   TFilterValue,
   TSupportedFilterFieldConfigs,
-} from "@plane/types";
+} from "@planner/types";
 
 export const COMMON_FILTER_ITEM_BORDER_CLASSNAME = "border-r border-custom-border-200";
 

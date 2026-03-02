@@ -1,5 +1,5 @@
-// plane ui
-import { Loader } from "@plane/ui";
+// planner ui
+import { Loader } from "@planner/ui";
 
 export function StickiesLoader() {
   return (

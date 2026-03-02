@@ -4,13 +4,13 @@ import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import { Search } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane ui
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { CloseIcon } from "@plane/propel/icons";
-import { Checkbox, EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner ui
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { Logo } from "@planner/propel/emoji-icon-picker";
+import { CloseIcon } from "@planner/propel/icons";
+import { Checkbox, EModalPosition, EModalWidth, ModalCore } from "@planner/ui";
+import { cn } from "@planner/utils";
 // assets
 import darkProjectAsset from "@/app/assets/empty-state/search/project-dark.webp?url";
 import lightProjectAsset from "@/app/assets/empty-state/search/project-light.webp?url";
@@ -37,7 +37,7 @@ export const ProjectMultiSelectModal = observer(function ProjectMultiSelectModal
   const moveButtonRef = useRef<HTMLButtonElement>(null);
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { getProjectById } = useProject();

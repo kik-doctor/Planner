@@ -2,13 +2,13 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Eye, EyeOff } from "lucide-react";
-// plane imports
-import { E_PASSWORD_STRENGTH } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Input, PasswordStrengthIndicator } from "@plane/ui";
-import { getPasswordStrength } from "@plane/utils";
+// planner imports
+import { E_PASSWORD_STRENGTH } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Input, PasswordStrengthIndicator } from "@planner/ui";
+import { getPasswordStrength } from "@planner/utils";
 // components
 import { PageHead } from "@/components/core/page-title";
 import { ProfileSettingContentHeader } from "@/components/profile/profile-setting-content-header";

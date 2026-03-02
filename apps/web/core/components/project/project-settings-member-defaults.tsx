@@ -3,12 +3,12 @@ import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import useSWR from "swr";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IProject, IUserLite, IWorkspace } from "@plane/types";
-import { Loader, ToggleSwitch } from "@plane/ui";
+// planner imports
+import { EUserPermissions, EUserPermissionsLevel } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IProject, IUserLite, IWorkspace } from "@planner/types";
+import { Loader, ToggleSwitch } from "@planner/ui";
 // constants
 import { PROJECT_DETAILS } from "@/constants/fetch-keys";
 // hooks
@@ -49,7 +49,7 @@ export const ProjectSettingsMemberDefaults = observer(function ProjectSettingsMe
   props: TProjectSettingsMemberDefaultsProps
 ) {
   const { workspaceSlug, projectId } = props;
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { allowPermissions } = useUserPermissions();

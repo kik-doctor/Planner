@@ -1,4 +1,4 @@
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 type TSidebarNavItem = {
   className?: string;

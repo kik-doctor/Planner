@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
-// plane imports
-import { WorkItemsIcon } from "@plane/propel/icons";
-import { EInboxIssueSource } from "@plane/types";
+// planner imports
+import { WorkItemsIcon } from "@planner/propel/icons";
+import { EInboxIssueSource } from "@planner/types";
 // hooks
-import { capitalizeFirstLetter } from "@plane/utils";
+import { capitalizeFirstLetter } from "@planner/utils";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // local imports
 import { IssueActivityBlockComponent } from "./";

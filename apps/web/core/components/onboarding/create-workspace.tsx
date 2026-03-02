@@ -7,20 +7,20 @@ import {
   RESTRICTED_URLS,
   WORKSPACE_TRACKER_EVENTS,
   WORKSPACE_TRACKER_ELEMENTS,
-} from "@plane/constants";
+} from "@planner/constants";
 // types
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IWorkspace, TOnboardingSteps } from "@plane/types";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IUser, IWorkspace, TOnboardingSteps } from "@planner/types";
 // ui
-import { CustomSelect, Input, Spinner } from "@plane/ui";
+import { CustomSelect, Input, Spinner } from "@planner/ui";
 // hooks
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserProfile, useUserSettings } from "@/hooks/store/user";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 
 type Props = {
   stepChange: (steps: Partial<TOnboardingSteps>) => Promise<void>;
@@ -37,7 +37,7 @@ export const CreateWorkspace = observer(function CreateWorkspace(props: Props) {
   // states
   const [slugError, setSlugError] = useState(false);
   const [invalidSlug, setInvalidSlug] = useState(false);
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { updateUserProfile } = useUserProfile();

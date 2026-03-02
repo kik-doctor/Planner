@@ -2,7 +2,7 @@ import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 import { Menu, Settings } from "lucide-react";
 // icons
-import { Breadcrumbs } from "@plane/ui";
+import { Breadcrumbs } from "@planner/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 // hooks

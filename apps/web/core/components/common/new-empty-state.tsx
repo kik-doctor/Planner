@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // ui
-import { Button } from "@plane/propel/button";
+import { Button } from "@planner/propel/button";
 
 type Props = {
   title: string;

@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import { CalendarDays, LayersIcon, Link2, Paperclip } from "lucide-react";
 // types
-import { ISSUE_GROUP_BY_OPTIONS } from "@plane/constants";
-import type { ISvgIcons } from "@plane/propel/icons";
+import { ISSUE_GROUP_BY_OPTIONS } from "@planner/constants";
+import type { ISvgIcons } from "@planner/propel/icons";
 import {
   CycleIcon,
   StatePropertyIcon,
@@ -13,14 +13,14 @@ import {
   LabelPropertyIcon,
   PriorityPropertyIcon,
   StartDatePropertyIcon,
-} from "@plane/propel/icons";
+} from "@planner/propel/icons";
 import type {
   IGroupByColumn,
   IIssueDisplayProperties,
   TGetColumns,
   TIssueGroupByOptions,
   TSpreadsheetColumn,
-} from "@plane/types";
+} from "@planner/types";
 // components
 import {
   SpreadsheetAssigneeColumn,

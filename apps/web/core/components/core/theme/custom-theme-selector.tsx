@@ -2,13 +2,13 @@ import { useMemo } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 // types
-import { PROFILE_SETTINGS_TRACKER_ELEMENTS, PROFILE_SETTINGS_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { setPromiseToast } from "@plane/propel/toast";
-import type { IUserTheme } from "@plane/types";
+import { PROFILE_SETTINGS_TRACKER_ELEMENTS, PROFILE_SETTINGS_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { setPromiseToast } from "@planner/propel/toast";
+import type { IUserTheme } from "@planner/types";
 // ui
-import { InputColorPicker } from "@plane/ui";
+import { InputColorPicker } from "@planner/ui";
 // hooks
 import { captureElementAndEvent } from "@/helpers/event-tracker.helper";
 import { useUserProfile } from "@/hooks/store/user";

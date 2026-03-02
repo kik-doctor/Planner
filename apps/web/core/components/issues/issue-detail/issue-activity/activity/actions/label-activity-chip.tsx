@@ -1,4 +1,4 @@
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@planner/propel/tooltip";
 
 type TIssueLabelPill = { name?: string; color?: string };
 

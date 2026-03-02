@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { ISearchIssueResponse, TIssue } from "@plane/types";
+// planner imports
+import type { ISearchIssueResponse, TIssue } from "@planner/types";
 // components
 import { IssueModalContext } from "@/components/issues/issue-modal/context";
 // hooks

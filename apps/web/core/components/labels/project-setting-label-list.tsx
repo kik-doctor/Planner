@@ -1,12 +1,12 @@
 import React, { useState, useRef } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel, PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { IIssueLabel } from "@plane/types";
-import { Loader } from "@plane/ui";
+// planner imports
+import { EUserPermissions, EUserPermissionsLevel, PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { EmptyStateCompact } from "@planner/propel/empty-state";
+import type { IIssueLabel } from "@planner/types";
+import { Loader } from "@planner/ui";
 import type { TLabelOperationsCallbacks } from "@/components/labels";
 import {
   CreateUpdateLabelInline,
@@ -30,7 +30,7 @@ export const ProjectSettingsLabelList = observer(function ProjectSettingsLabelLi
   const [showLabelForm, setLabelForm] = useState(false);
   const [isUpdating, setIsUpdating] = useState(false);
   const [selectDeleteLabel, setSelectDeleteLabel] = useState<IIssueLabel | null>(null);
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { projectLabels, updateLabelPosition, projectLabelsTree, createLabel, updateLabel } = useLabel();

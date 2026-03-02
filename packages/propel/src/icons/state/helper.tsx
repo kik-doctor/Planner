@@ -1,5 +1,5 @@
-import { EIconSize } from "@plane/constants";
-import type { TIntakeStateGroups } from "@plane/types";
+import { EIconSize } from "@planner/constants";
+import type { TIntakeStateGroups } from "@planner/types";
 
 export interface IStateGroupIcon {
   className?: string;

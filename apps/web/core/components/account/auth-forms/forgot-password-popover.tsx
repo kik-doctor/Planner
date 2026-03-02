@@ -1,9 +1,9 @@
 import { Fragment, useState } from "react";
 import { usePopper } from "react-popper";
 import { Popover } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
 
 export function ForgotPasswordPopover() {
   // popper-js refs
@@ -21,7 +21,7 @@ export function ForgotPasswordPopover() {
       },
     ],
   });
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
 
   return (

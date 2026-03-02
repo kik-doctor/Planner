@@ -1,5 +1,5 @@
-// plane imports
-import { Loader } from "@plane/ui";
+// planner imports
+import { Loader } from "@planner/ui";
 
 export function IssueActivityLoader() {
   return (

@@ -1,12 +1,12 @@
 import { observer } from "mobx-react";
 import { Copy, Pencil, Trash2 } from "lucide-react";
-// plane types
-import { MODULE_TRACKER_ELEMENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { ILinkDetails } from "@plane/types";
-// plane ui
-import { getIconForLink, copyTextToClipboard, calculateTimeAgo } from "@plane/utils";
+// planner types
+import { MODULE_TRACKER_ELEMENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { ILinkDetails } from "@planner/types";
+// planner ui
+import { getIconForLink, copyTextToClipboard, calculateTimeAgo } from "@planner/utils";
 // helpers
 //
 // hooks

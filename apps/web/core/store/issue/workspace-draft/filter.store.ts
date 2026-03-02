@@ -1,9 +1,9 @@
 import { isEmpty, set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// Plane Imports
-import type { TSupportedFilterTypeForUpdate } from "@plane/constants";
-import { EIssueFilterType } from "@plane/constants";
+// planner Imports
+import type { TSupportedFilterTypeForUpdate } from "@planner/constants";
+import { EIssueFilterType } from "@planner/constants";
 import type {
   IIssueDisplayFilterOptions,
   IIssueDisplayProperties,
@@ -13,9 +13,9 @@ import type {
   IssuePaginationOptions,
   TWorkItemFilterExpression,
   TSupportedFilterForUpdate,
-} from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { handleIssueQueryParamsByLayout } from "@plane/utils";
+} from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
+import { handleIssueQueryParamsByLayout } from "@planner/utils";
 // services
 import { IssueFiltersService } from "@/services/issue_filter.service";
 // helpers

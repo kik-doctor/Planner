@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel, GLOBAL_VIEW_TRACKER_ELEMENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceView } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
-import { copyUrlToClipboard, cn } from "@plane/utils";
+// planner imports
+import { EUserPermissions, EUserPermissionsLevel, GLOBAL_VIEW_TRACKER_ELEMENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IWorkspaceView } from "@planner/types";
+import { CustomMenu } from "@planner/ui";
+import { copyUrlToClipboard, cn } from "@planner/utils";
 // helpers
 import { useViewMenuItems } from "@/components/common/quick-actions-helper";
 import { captureClick } from "@/helpers/event-tracker.helper";

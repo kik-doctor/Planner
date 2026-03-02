@@ -2,10 +2,10 @@ import { observer } from "mobx-react";
 import { useRouter } from "next/navigation";
 import useSWR from "swr";
 // ui
-import { Banner } from "@plane/propel/banner";
-import { Button } from "@plane/propel/button";
-import { ArchiveIcon } from "@plane/propel/icons";
-import { Loader } from "@plane/ui";
+import { Banner } from "@planner/propel/banner";
+import { Button } from "@planner/propel/button";
+import { ArchiveIcon } from "@planner/propel/icons";
+import { Loader } from "@planner/ui";
 // components
 import { PageHead } from "@/components/core/page-title";
 import { IssueDetailRoot } from "@/components/issues/issue-detail";

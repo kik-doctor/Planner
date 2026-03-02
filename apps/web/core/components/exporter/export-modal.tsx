@@ -4,12 +4,12 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Dialog, Transition } from "@headlessui/react";
 // types
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IImporterService } from "@plane/types";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IUser, IImporterService } from "@planner/types";
 // ui
-import { CustomSearchSelect } from "@plane/ui";
+import { CustomSearchSelect } from "@planner/ui";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useUser } from "@/hooks/store/user";

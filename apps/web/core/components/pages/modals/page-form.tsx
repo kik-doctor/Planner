@@ -2,15 +2,15 @@ import type { FormEvent } from "react";
 import { useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import { Globe2, Lock } from "lucide-react";
-// plane imports
-import { ETabIndices, EPageAccess } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@plane/propel/emoji-icon-picker";
-import { PageIcon } from "@plane/propel/icons";
-import type { TPage } from "@plane/types";
-import { Input } from "@plane/ui";
-import { getTabIndex } from "@plane/utils";
+// planner imports
+import { ETabIndices, EPageAccess } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@planner/propel/emoji-icon-picker";
+import { PageIcon } from "@planner/propel/icons";
+import type { TPage } from "@planner/types";
+import { Input } from "@planner/ui";
+import { getTabIndex } from "@planner/utils";
 // components
 import { AccessField } from "@/components/common/access-field";
 // hooks

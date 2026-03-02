@@ -1,9 +1,9 @@
 import { Disclosure } from "@headlessui/react";
 import type { Editor } from "@tiptap/core";
 import { Ban, Palette } from "lucide-react";
-// plane imports
-import { ChevronRightIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+// planner imports
+import { ChevronRightIcon } from "@planner/propel/icons";
+import { cn } from "@planner/utils";
 // constants
 import { COLORS_LIST } from "@/constants/common";
 import { CORE_EXTENSIONS } from "@/constants/extension";

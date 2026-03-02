@@ -1,17 +1,17 @@
 import { observer } from "mobx-react";
 import { Earth, Info, Lock, Minus } from "lucide-react";
-// plane imports
-import { PROJECT_PAGE_TRACKER_ELEMENTS } from "@plane/constants";
-import { Tooltip } from "@plane/propel/tooltip";
-import { Avatar, FavoriteStar } from "@plane/ui";
-import { renderFormattedDate, getFileURL } from "@plane/utils";
+// planner imports
+import { PROJECT_PAGE_TRACKER_ELEMENTS } from "@planner/constants";
+import { Tooltip } from "@planner/propel/tooltip";
+import { Avatar, FavoriteStar } from "@planner/ui";
+import { renderFormattedDate, getFileURL } from "@planner/utils";
 // helpers
 import { captureClick } from "@/helpers/event-tracker.helper";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { usePageOperations } from "@/hooks/use-page-operations";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+// planner web hooks
+import type { EPageStoreType } from "@/planner-web/hooks/store";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports

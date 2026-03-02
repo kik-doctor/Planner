@@ -6,13 +6,13 @@ import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
 import useSWR from "swr";
 import { Tab, Popover } from "@headlessui/react";
-// plane imports
-import { ACCEPTED_COVER_IMAGE_MIME_TYPES_FOR_REACT_DROPZONE, MAX_FILE_SIZE } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { EFileAssetType } from "@plane/types";
-import { Input, Loader } from "@plane/ui";
+// planner imports
+import { ACCEPTED_COVER_IMAGE_MIME_TYPES_FOR_REACT_DROPZONE, MAX_FILE_SIZE } from "@planner/constants";
+import { useOutsideClickDetector } from "@planner/hooks";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { EFileAssetType } from "@planner/types";
+import { Input, Loader } from "@planner/ui";
 // helpers
 import { STATIC_COVER_IMAGES, getCoverImageDisplayURL } from "@/helpers/cover-image.helper";
 // hooks

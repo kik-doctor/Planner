@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import { useCallback, useEffect, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { USER_TRACKER_EVENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceMemberInvitation, TOnboardingStep, TOnboardingSteps, TUserProfile } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
+// planner imports
+import { USER_TRACKER_EVENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IWorkspaceMemberInvitation, TOnboardingStep, TOnboardingSteps, TUserProfile } from "@planner/types";
+import { EOnboardingSteps } from "@planner/types";
 // helpers
 import { captureSuccess } from "@/helpers/event-tracker.helper";
 // hooks

@@ -1,9 +1,9 @@
 import { Download, ExternalLink, Minus, Plus } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import ReactDOM from "react-dom";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
-import { cn } from "@plane/utils";
+import { CloseIcon } from "@planner/propel/icons";
+// planner imports
+import { cn } from "@planner/utils";
 
 const MIN_ZOOM = 0.5;
 const MAX_ZOOM = 2;

@@ -4,19 +4,19 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { UserRound } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ProjectIcon } from "@plane/propel/icons";
-// plane package imports
-import type { AnalyticsTableDataMap, WorkItemInsightColumns } from "@plane/types";
-// plane web components
-import { Avatar } from "@plane/ui";
-import { getFileURL } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { Logo } from "@planner/propel/emoji-icon-picker";
+import { ProjectIcon } from "@planner/propel/icons";
+// planner package imports
+import type { AnalyticsTableDataMap, WorkItemInsightColumns } from "@planner/types";
+// planner web components
+import { Avatar } from "@planner/ui";
+import { getFileURL } from "@planner/utils";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 import { useProject } from "@/hooks/store/use-project";
 import { AnalyticsService } from "@/services/analytics.service";
-// plane web components
+// planner web components
 import { exportCSV } from "../export";
 import { InsightTable } from "../insight-table";
 

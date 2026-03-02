@@ -1,13 +1,13 @@
 import { useRef } from "react";
 import { observer } from "mobx-react";
 // types
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import type { IIssueDisplayProperties, TIssue } from "@plane/types";
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import type { IIssueDisplayProperties, TIssue } from "@planner/types";
 // hooks
 import { captureSuccess } from "@/helpers/event-tracker.helper";
 // components
-import { SPREADSHEET_COLUMNS } from "@/plane-web/components/issues/issue-layouts/utils";
-import { shouldRenderColumn } from "@/plane-web/helpers/issue-filter.helper";
+import { SPREADSHEET_COLUMNS } from "@/planner-web/components/issues/issue-layouts/utils";
+import { shouldRenderColumn } from "@/planner-web/helpers/issue-filter.helper";
 import { WithDisplayPropertiesHOC } from "../properties/with-display-properties-HOC";
 
 type Props = {

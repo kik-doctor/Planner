@@ -2,12 +2,12 @@ import type { FC } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { CircleDashed } from "lucide-react";
-import { ALL_ISSUES } from "@plane/constants";
-import { ChevronRightIcon } from "@plane/propel/icons";
-import type { IGroupByColumn, TIssue, TIssueServiceType, TSubIssueOperations } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { Collapsible } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { ALL_ISSUES } from "@planner/constants";
+import { ChevronRightIcon } from "@planner/propel/icons";
+import type { IGroupByColumn, TIssue, TIssueServiceType, TSubIssueOperations } from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
+import { Collapsible } from "@planner/ui";
+import { cn } from "@planner/utils";
 import { SubIssuesListItem } from "./list-item";
 
 interface TSubIssuesListGroupProps {

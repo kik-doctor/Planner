@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { getButtonStyling } from "@plane/propel/button";
-import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@plane/types";
-import { getUpgradeButtonStyle, Loader } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import { getButtonStyling } from "@planner/propel/button";
+import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@planner/types";
+import { getUpgradeButtonStyle, Loader } from "@planner/ui";
+import { cn } from "@planner/utils";
 // local imports
 import { DiscountInfo } from "./discount-info";
 
@@ -15,7 +15,7 @@ export type TCheckoutParams = {
 };
 
 type Props = {
-  planeName: string;
+  plannerName: string;
   planVariant: EProductSubscriptionEnum;
   isLoading?: boolean;
   product: IPaymentProduct | undefined;
@@ -30,7 +30,7 @@ type Props = {
 
 export const PlanCheckoutButton = observer(function PlanCheckoutButton(props: Props) {
   const {
-    planeName,
+    plannerName,
     planVariant,
     isLoading,
     product,
@@ -91,7 +91,7 @@ export const PlanCheckoutButton = observer(function PlanCheckoutButton(props: Pr
             }}
             disabled={!!upgradeLoaderType}
           >
-            {upgradeLoaderType === planVariant ? "Redirecting to Stripe" : (upgradeCTA ?? `Upgrade to ${planeName}`)}
+            {upgradeLoaderType === planVariant ? "Redirecting to Stripe" : (upgradeCTA ?? `Upgrade to ${plannerName}`)}
           </button>
           {isTrialAllowed && !isSelfHosted && (
             <div className="mt-4 h-4 transition-all duration-300 animate-fade-in">

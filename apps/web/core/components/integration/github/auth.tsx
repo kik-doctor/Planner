@@ -1,7 +1,7 @@
 import { observer } from "mobx-react";
 // types
-import { Button } from "@plane/propel/button";
-import type { IWorkspaceIntegration } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import type { IWorkspaceIntegration } from "@planner/types";
 // ui
 // hooks
 import { useInstance } from "@/hooks/store/use-instance";

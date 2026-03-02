@@ -1,5 +1,5 @@
 import type { RefObject } from "react";
-import type { IGanttBlock } from "@plane/types";
+import type { IGanttBlock } from "@planner/types";
 
 type RightDependencyDraggableProps = {
   block: IGanttBlock;

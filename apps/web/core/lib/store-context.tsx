@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import { createContext } from "react";
-// plane web store
-import { RootStore } from "@/plane-web/store/root.store";
+// planner web store
+import { RootStore } from "@/planner-web/store/root.store";
 
 export let rootStore = new RootStore();
 

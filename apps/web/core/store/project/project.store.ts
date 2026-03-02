@@ -1,12 +1,12 @@
 import { sortBy, cloneDeep, update, set } from "lodash-es";
 import { observable, action, computed, makeObservable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import type { TFetchStatus, TLoader, TProjectAnalyticsCount, TProjectAnalyticsCountParams } from "@plane/types";
+// planner imports
+import type { TFetchStatus, TLoader, TProjectAnalyticsCount, TProjectAnalyticsCountParams } from "@planner/types";
 // helpers
-import { orderProjects, shouldFilterProject } from "@plane/utils";
+import { orderProjects, shouldFilterProject } from "@planner/utils";
 // services
-import type { TProject, TPartialProject } from "@/plane-web/types/projects";
+import type { TProject, TPartialProject } from "@/planner-web/types/projects";
 import { IssueLabelService, IssueService } from "@/services/issue";
 import { ProjectService, ProjectStateService, ProjectArchiveService } from "@/services/project";
 // store

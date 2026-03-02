@@ -6,7 +6,7 @@ import type {
   IIssueDisplayProperties,
   ILayoutDisplayFiltersOptions,
   TIssueGroupByOptions,
-} from "@plane/types";
+} from "@planner/types";
 // components
 import {
   FilterDisplayProperties,

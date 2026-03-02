@@ -5,8 +5,8 @@ import { AlertTriangle } from "lucide-react";
 // headless ui
 import { Dialog, Transition } from "@headlessui/react";
 // types
-import { Button } from "@plane/propel/button";
-import type { IUserLite } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import type { IUserLite } from "@planner/types";
 // ui
 // hooks
 import { useProject } from "@/hooks/store/use-project";

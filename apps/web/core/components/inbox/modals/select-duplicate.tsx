@@ -3,11 +3,11 @@ import { useParams } from "next/navigation";
 import { useTheme } from "next-themes";
 import { Search } from "lucide-react";
 import { Combobox, Dialog, Transition } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { ISearchIssueResponse } from "@plane/types";
-import { Loader } from "@plane/ui";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { ISearchIssueResponse } from "@planner/types";
+import { Loader } from "@planner/ui";
 // assets
 import darkIssuesAsset from "@/app/assets/empty-state/search/issues-dark.webp?url";
 import lightIssuesAsset from "@/app/assets/empty-state/search/issues-light.webp?url";

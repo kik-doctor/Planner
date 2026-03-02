@@ -1,5 +1,5 @@
-import { CloseIcon, PriorityIcon } from "@plane/propel/icons";
-import type { TIssuePriorities } from "@plane/propel/icons";
+import { CloseIcon, PriorityIcon } from "@planner/propel/icons";
+import type { TIssuePriorities } from "@planner/propel/icons";
 
 type Props = {
   handleRemove: (val: string) => void;

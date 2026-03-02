@@ -1,5 +1,5 @@
-// plane web imports
-import { PageNavigationPaneOutlineTabEmptyState } from "@/plane-web/components/pages/navigation-pane/tab-panels/empty-states/outline";
+// planner web imports
+import { PageNavigationPaneOutlineTabEmptyState } from "@/planner-web/components/pages/navigation-pane/tab-panels/empty-states/outline";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports

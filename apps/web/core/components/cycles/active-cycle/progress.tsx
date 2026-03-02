@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
-// plane imports
-import { PROGRESS_STATE_GROUPS_DETAILS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TWorkItemFilterCondition } from "@plane/shared-state";
-import type { ICycle } from "@plane/types";
-import { LinearProgressIndicator, Loader } from "@plane/ui";
+// planner imports
+import { PROGRESS_STATE_GROUPS_DETAILS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { TWorkItemFilterCondition } from "@planner/shared-state";
+import type { ICycle } from "@planner/types";
+import { LinearProgressIndicator, Loader } from "@planner/ui";
 // assets
 import darkProgressAsset from "@/app/assets/empty-state/active-cycle/progress-dark.webp?url";
 import lightProgressAsset from "@/app/assets/empty-state/active-cycle/progress-light.webp?url";
@@ -24,7 +24,7 @@ export const ActiveCycleProgress = observer(function ActiveCycleProgress(props: 
   const { handleFiltersUpdate, cycle } = props;
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // derived values
   const progressIndicatorData = PROGRESS_STATE_GROUPS_DETAILS.map((group, index) => ({

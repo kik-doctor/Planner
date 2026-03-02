@@ -2,8 +2,8 @@ import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
 // components
-import type { TIssuePriorities, TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import type { TIssuePriorities, TIssueServiceType } from "@planner/types";
+import { EIssueServiceType } from "@planner/types";
 import { MemberDropdown } from "@/components/dropdowns/member/dropdown";
 import { PriorityDropdown } from "@/components/dropdowns/priority";
 import { StateDropdown } from "@/components/dropdowns/state/dropdown";

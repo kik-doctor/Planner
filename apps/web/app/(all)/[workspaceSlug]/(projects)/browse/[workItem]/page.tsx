@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { EIssueServiceType } from "@plane/types";
-import { Loader } from "@plane/ui";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { EIssueServiceType } from "@planner/types";
+import { Loader } from "@planner/ui";
 // assets
 import emptyIssueDark from "@/app/assets/empty-state/search/issues-dark.webp?url";
 import emptyIssueLight from "@/app/assets/empty-state/search/issues-light.webp?url";
@@ -18,9 +18,9 @@ import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
-import { useWorkItemProperties } from "@/plane-web/hooks/use-issue-properties";
-import { ProjectAuthWrapper } from "@/plane-web/layouts/project-wrapper";
+// planner web imports
+import { useWorkItemProperties } from "@/planner-web/hooks/use-issue-properties";
+import { ProjectAuthWrapper } from "@/planner-web/layouts/project-wrapper";
 import type { Route } from "./+types/page";
 
 function IssueDetailsPage({ params }: Route.ComponentProps) {

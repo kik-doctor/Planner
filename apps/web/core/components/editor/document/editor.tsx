@@ -1,15 +1,15 @@
 import { forwardRef } from "react";
-// plane imports
-import { DocumentEditorWithRef } from "@plane/editor";
-import type { IEditorPropsExtended, EditorRefApi, IDocumentEditorProps, TFileHandler } from "@plane/editor";
-import type { MakeOptional, TSearchEntityRequestPayload, TSearchResponse } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import { DocumentEditorWithRef } from "@planner/editor";
+import type { IEditorPropsExtended, EditorRefApi, IDocumentEditorProps, TFileHandler } from "@planner/editor";
+import type { MakeOptional, TSearchEntityRequestPayload, TSearchResponse } from "@planner/types";
+import { cn } from "@planner/utils";
 // hooks
 import { useEditorConfig, useEditorMention } from "@/hooks/editor";
 import { useMember } from "@/hooks/store/use-member";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web hooks
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
+// planner web hooks
+import { useEditorFlagging } from "@/planner-web/hooks/use-editor-flagging";
 // local imports
 import { EditorMentionsRoot } from "../embeds/mentions";
 

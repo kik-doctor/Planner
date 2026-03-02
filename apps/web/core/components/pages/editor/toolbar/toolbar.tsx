@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { Check } from "lucide-react";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { CustomMenu } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import type { EditorRefApi } from "@planner/editor";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import { CustomMenu } from "@planner/ui";
+import { cn } from "@planner/utils";
 // constants
 import type { ToolbarMenuItem } from "@/constants/editor";
 import { TOOLBAR_ITEMS, TYPOGRAPHY_ITEMS } from "@/constants/editor";

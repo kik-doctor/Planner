@@ -1,5 +1,5 @@
 // components
-import { Loader } from "@plane/ui";
+import { Loader } from "@planner/ui";
 
 export function ProjectDetailsFormLoader() {
   return (

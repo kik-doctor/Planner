@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { setPromiseToast } from "@plane/propel/toast";
-import { Loader, ToggleSwitch } from "@plane/ui";
+import { setPromiseToast } from "@planner/propel/toast";
+import { Loader, ToggleSwitch } from "@planner/ui";
 // components
 import GoogleLogo from "@/app/assets/logos/google-logo.svg?url";
 import { AuthenticationMethodCard } from "@/components/authentication/authentication-method-card";
@@ -61,7 +61,7 @@ const InstanceGoogleAuthenticationPage = observer(function InstanceGoogleAuthent
         <div className="border-b border-custom-border-100 mx-4 py-4 space-y-1 flex-shrink-0">
           <AuthenticationMethodCard
             name="Google"
-            description="Allow members to login or sign up to plane with their Google
+            description="Allow members to login or sign up to planner with their Google
             accounts."
             icon={<img src={GoogleLogo} height={24} width={24} alt="Google Logo" />}
             config={

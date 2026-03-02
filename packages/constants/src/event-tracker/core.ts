@@ -1,4 +1,4 @@
-import type { EProductSubscriptionEnum } from "@plane/types";
+import type { EProductSubscriptionEnum } from "@planner/types";
 
 /**
  * ===========================================================================

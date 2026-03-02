@@ -1,5 +1,5 @@
-// plane imports
-import { MAX_FILE_SIZE } from "@plane/constants";
+// planner imports
+import { MAX_FILE_SIZE } from "@planner/constants";
 // hooks
 import { useInstance } from "@/hooks/store/use-instance";
 

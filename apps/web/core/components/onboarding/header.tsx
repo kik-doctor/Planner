@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { PlannerLogo, ChevronLeftIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TOnboardingStep } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import { PlannerLogo, ChevronLeftIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TOnboardingStep } from "@planner/types";
+import { EOnboardingSteps } from "@planner/types";
+import { cn } from "@planner/utils";
 // hooks
 import { useUser } from "@/hooks/store/user";
 // local imports

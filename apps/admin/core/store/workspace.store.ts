@@ -1,8 +1,8 @@
 import { set } from "lodash-es";
 import { action, observable, runInAction, makeObservable, computed } from "mobx";
-// plane imports
-import { InstanceWorkspaceService } from "@plane/services";
-import type { IWorkspace, TLoader, TPaginationInfo } from "@plane/types";
+// planner imports
+import { InstanceWorkspaceService } from "@planner/services";
+import type { IWorkspace, TLoader, TPaginationInfo } from "@planner/types";
 // root store
 import type { CoreRootStore } from "@/store/root.store";
 

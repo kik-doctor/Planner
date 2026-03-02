@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import React from "react";
 import { Link, Paperclip } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { ViewsIcon, RelationPropertyIcon } from "@plane/propel/icons";
-// plane imports
-import type { TIssueServiceType, TWorkItemWidgets } from "@plane/types";
-// plane web imports
-import { WorkItemAdditionalWidgetActionButtons } from "@/plane-web/components/issues/issue-detail-widgets/action-buttons";
+import { useTranslation } from "@planner/i18n";
+import { ViewsIcon, RelationPropertyIcon } from "@planner/propel/icons";
+// planner imports
+import type { TIssueServiceType, TWorkItemWidgets } from "@planner/types";
+// planner web imports
+import { WorkItemAdditionalWidgetActionButtons } from "@/planner-web/components/issues/issue-detail-widgets/action-buttons";
 // local imports
 import { IssueAttachmentActionButton } from "./attachments";
 import { IssueLinksActionButton } from "./links";

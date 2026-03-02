@@ -12,7 +12,7 @@ import type {
   TIssueOrderByOptions,
   TPaginationData,
   TLoader,
-} from "@plane/types";
+} from "@planner/types";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 import { useLabel } from "@/hooks/store/use-label";

@@ -5,11 +5,11 @@ import { Outlet } from "react-router";
 import { NotAuthorizedView } from "@/components/auth-screens/not-authorized-view";
 import { getWorkspaceActivePath, pathnameToAccessKey } from "@/components/settings/helper";
 import { SettingsMobileNav } from "@/components/settings/mobile";
-// plane imports
-import { WORKSPACE_SETTINGS_ACCESS } from "@plane/constants";
-import type { EUserWorkspaceRoles } from "@plane/types";
-// plane web components
-import { WorkspaceSettingsRightSidebar } from "@/plane-web/components/workspace/right-sidebar";
+// planner imports
+import { WORKSPACE_SETTINGS_ACCESS } from "@planner/constants";
+import type { EUserWorkspaceRoles } from "@planner/types";
+// planner web components
+import { WorkspaceSettingsRightSidebar } from "@/planner-web/components/workspace/right-sidebar";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
 // local components

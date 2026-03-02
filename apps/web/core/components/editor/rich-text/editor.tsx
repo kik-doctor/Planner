@@ -1,17 +1,17 @@
 import { forwardRef } from "react";
-// plane imports
-import { RichTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, IRichTextEditorProps, TFileHandler } from "@plane/editor";
-import type { MakeOptional, TSearchEntityRequestPayload, TSearchResponse } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import { RichTextEditorWithRef } from "@planner/editor";
+import type { EditorRefApi, IRichTextEditorProps, TFileHandler } from "@planner/editor";
+import type { MakeOptional, TSearchEntityRequestPayload, TSearchResponse } from "@planner/types";
+import { cn } from "@planner/utils";
 // components
 import { EditorMentionsRoot } from "@/components/editor/embeds/mentions";
 // hooks
 import { useEditorConfig, useEditorMention } from "@/hooks/editor";
 import { useMember } from "@/hooks/store/use-member";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web hooks
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
+// planner web hooks
+import { useEditorFlagging } from "@/planner-web/hooks/use-editor-flagging";
 
 type RichTextEditorWrapperProps = MakeOptional<
   Omit<IRichTextEditorProps, "fileHandler" | "mentionHandler" | "extendedEditorProps">,

@@ -1,4 +1,4 @@
-import { API_BASE_URL } from "@plane/constants";
+import { API_BASE_URL } from "@planner/constants";
 import type {
   IWorkspace,
   IWorkspaceMemberMe,
@@ -19,7 +19,7 @@ import type {
   TActivityEntityData,
   IWorkspaceSidebarNavigationItem,
   IWorkspaceSidebarNavigation,
-} from "@plane/types";
+} from "@planner/types";
 // services
 import { APIService } from "@/services/api.service";
 

@@ -1,6 +1,6 @@
 import { range } from "lodash-es";
 // ui
-import { Loader } from "@plane/ui";
+import { Loader } from "@planner/ui";
 
 export function HomeLoader() {
   return (

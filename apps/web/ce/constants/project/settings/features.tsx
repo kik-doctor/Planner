@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
-// plane imports
-import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon } from "@plane/propel/icons";
-import type { IProject } from "@plane/types";
+// planner imports
+import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon } from "@planner/propel/icons";
+import type { IProject } from "@planner/types";
 
 export type TProperties = {
   key: string;

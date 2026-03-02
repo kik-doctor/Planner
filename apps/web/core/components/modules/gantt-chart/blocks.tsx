@@ -2,9 +2,9 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 // ui
-import { MODULE_STATUS } from "@plane/constants";
-import { ModuleStatusIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
+import { MODULE_STATUS } from "@planner/constants";
+import { ModuleStatusIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
 // components
 import { SIDEBAR_WIDTH } from "@/components/gantt-chart/constants";
 import { getBlockViewDetails } from "@/components/issues/issue-layouts/utils";

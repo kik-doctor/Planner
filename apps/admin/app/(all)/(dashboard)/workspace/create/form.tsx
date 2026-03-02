@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
-import { WEB_BASE_URL, ORGANIZATION_SIZE, RESTRICTED_URLS } from "@plane/constants";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { InstanceWorkspaceService } from "@plane/services";
-import type { IWorkspace } from "@plane/types";
+// planner imports
+import { WEB_BASE_URL, ORGANIZATION_SIZE, RESTRICTED_URLS } from "@planner/constants";
+import { Button, getButtonStyling } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { InstanceWorkspaceService } from "@planner/services";
+import type { IWorkspace } from "@planner/types";
 // components
-import { CustomSelect, Input } from "@plane/ui";
+import { CustomSelect, Input } from "@planner/ui";
 // hooks
 import { useWorkspace } from "@/hooks/store";
 

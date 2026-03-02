@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import { MessageSquare } from "lucide-react";
-// plane imports
-import { NOTIFICATION_TRACKER_ELEMENTS, NOTIFICATION_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+// planner imports
+import { NOTIFICATION_TRACKER_ELEMENTS, NOTIFICATION_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
 // helpers
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 // hooks

@@ -3,16 +3,16 @@ import { useRef } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { Link2, MoveDiagonal, MoveRight } from "lucide-react";
-// plane imports
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CenterPanelIcon, FullScreenPanelIcon, SidePanelIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TNameDescriptionLoader } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { CustomSelect } from "@plane/ui";
-import { copyUrlToClipboard, generateWorkItemLink } from "@plane/utils";
+// planner imports
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { CenterPanelIcon, FullScreenPanelIcon, SidePanelIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TNameDescriptionLoader } from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
+import { CustomSelect } from "@planner/ui";
+import { copyUrlToClipboard, generateWorkItemLink } from "@planner/utils";
 // helpers
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";

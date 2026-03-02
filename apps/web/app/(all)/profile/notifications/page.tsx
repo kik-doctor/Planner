@@ -1,6 +1,6 @@
 import useSWR from "swr";
 // components
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 import { PageHead } from "@/components/core/page-title";
 import { EmailNotificationForm } from "@/components/profile/notification/email-notification-form";
 import { ProfileSettingContentHeader } from "@/components/profile/profile-setting-content-header";

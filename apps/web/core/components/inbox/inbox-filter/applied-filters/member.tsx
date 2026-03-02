@@ -1,13 +1,13 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 
-// plane types
-import { CloseIcon } from "@plane/propel/icons";
-import type { TInboxIssueFilterMemberKeys } from "@plane/types";
-// plane ui
-import { Avatar, Tag } from "@plane/ui";
+// planner types
+import { CloseIcon } from "@planner/propel/icons";
+import type { TInboxIssueFilterMemberKeys } from "@planner/types";
+// planner ui
+import { Avatar, Tag } from "@planner/ui";
 // helpers
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@planner/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";

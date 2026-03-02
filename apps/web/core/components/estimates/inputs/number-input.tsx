@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 type TEstimateNumberInputProps = {
   value?: number;
   handleEstimateInputValue: (value: string) => void;

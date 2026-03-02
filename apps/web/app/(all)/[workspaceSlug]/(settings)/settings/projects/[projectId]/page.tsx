@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
+// planner imports
+import { EUserPermissions, EUserPermissionsLevel } from "@planner/constants";
 // components
 import { PageHead } from "@/components/core/page-title";
 import { DeleteProjectModal } from "@/components/project/delete-project-modal";

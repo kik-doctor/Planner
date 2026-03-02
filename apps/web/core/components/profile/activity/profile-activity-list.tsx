@@ -4,7 +4,7 @@ import Link from "next/link";
 import useSWR from "swr";
 // icons
 import { History, MessageSquare } from "lucide-react";
-import { calculateTimeAgo, getFileURL } from "@plane/utils";
+import { calculateTimeAgo, getFileURL } from "@planner/utils";
 // hooks
 import { ActivityIcon, ActivityMessage } from "@/components/core/activity";
 import { RichTextEditor } from "@/components/editor/rich-text";
@@ -150,7 +150,7 @@ export const ProfileActivityListPage = observer(function ProfileActivityListPage
                         <div className="min-w-0 flex-1 border-b border-custom-border-100 py-4">
                           <div className="break-words text-sm text-custom-text-200">
                             {activityItem.field === "archived_at" && activityItem.new_value !== "restore" ? (
-                              <span className="text-gray font-medium">Plane</span>
+                              <span className="text-gray font-medium">Planner</span>
                             ) : activityItem.actor_detail.is_bot ? (
                               <span className="text-gray font-medium">{activityItem.actor_detail.first_name} Bot</span>
                             ) : (

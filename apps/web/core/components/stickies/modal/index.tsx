@@ -1,4 +1,4 @@
-import { EModalWidth, ModalCore } from "@plane/ui";
+import { EModalWidth, ModalCore } from "@planner/ui";
 import { Stickies } from "./stickies";
 
 type TProps = {

@@ -289,7 +289,7 @@ describe("function-declaration", () => {
     const result = await applyTransform(
       transformer,
       `
-      import type { TCallbackMentionComponentProps } from "@plane/editor";
+      import type { TCallbackMentionComponentProps } from "@planner/editor";
 
       export const EditorAdditionalMentionsRoot: React.FC<TCallbackMentionComponentProps> = () => null;
       `,
@@ -297,7 +297,7 @@ describe("function-declaration", () => {
     );
 
     expect(result).toMatchInlineSnapshot(`
-      "import type { TCallbackMentionComponentProps } from "@plane/editor";
+      "import type { TCallbackMentionComponentProps } from "@planner/editor";
 
             export function EditorAdditionalMentionsRoot(_props: TCallbackMentionComponentProps) {
                   return null;

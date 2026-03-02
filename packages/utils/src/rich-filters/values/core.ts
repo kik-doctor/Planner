@@ -1,4 +1,4 @@
-import type { SingleOrArray, TFilterValue } from "@plane/types";
+import type { SingleOrArray, TFilterValue } from "@planner/types";
 
 /**
  * Converts any value to a non-null array for UI components that expect arrays

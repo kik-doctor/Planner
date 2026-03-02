@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { EAuthModes } from "@plane/constants";
+import { EAuthModes } from "@planner/constants";
 
 interface TermsAndConditionsProps {
   authType?: EAuthModes;
@@ -8,8 +8,8 @@ interface TermsAndConditionsProps {
 
 // Constants for better maintainability
 const LEGAL_LINKS = {
-  termsOfService: "https://plane.so/legals/terms-and-conditions",
-  privacyPolicy: "https://plane.so/legals/privacy-policy",
+  termsOfService: "https://planner.oneworkspacex.com/legals/terms-and-conditions",
+  privacyPolicy: "https://planner.oneworkspacex.com/legals/privacy-policy",
 } as const;
 
 const MESSAGES = {

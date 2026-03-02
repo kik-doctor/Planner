@@ -407,7 +407,7 @@ export default {
   full_changelog: "Changelog completo",
   support: "Supporto",
   discord: "Discord",
-  powered_by_planner_pages: "Supportato da Plane Pages",
+  powered_by_planner_pages: "Supportato da Planner Pages",
   please_select_at_least_one_invitation: "Seleziona almeno un invito.",
   please_select_at_least_one_invitation_description: "Seleziona almeno un invito per unirti allo spazio di lavoro.",
   we_see_that_someone_has_invited_you_to_join_a_workspace:
@@ -571,7 +571,7 @@ export default {
       not_right_now: "Non ora",
       create_project: {
         title: "Crea un progetto",
-        description: "La maggior parte delle cose inizia con un progetto in Plane.",
+        description: "La maggior parte delle cose inizia con un progetto in Planner.",
         cta: "Inizia",
       },
       invite_team: {
@@ -585,7 +585,7 @@ export default {
         cta: "Configura questo spazio",
       },
       personalize_account: {
-        title: "Rendi Plane tuo.",
+        title: "Rendi Planner tuo.",
         description: "Scegli la tua immagine, i colori e altro.",
         cta: "Personalizza ora",
       },
@@ -619,7 +619,7 @@ export default {
       },
     },
     new_at_planner: {
-      title: "Novità su Plane",
+      title: "Novità su Planner",
     },
     quick_tutorial: {
       title: "Tutorial rapido",
@@ -1271,7 +1271,7 @@ export default {
   },
   workspace_creation: {
     heading: "Crea il tuo spazio di lavoro",
-    subheading: "Per iniziare a usare Plane, devi creare o unirti a uno spazio di lavoro.",
+    subheading: "Per iniziare a usare Planner, devi creare o unirti a uno spazio di lavoro.",
     form: {
       name: {
         label: "Dai un nome al tuo spazio di lavoro",
@@ -1327,11 +1327,11 @@ export default {
       general: {
         title: "Panoramica dei tuoi progetti, attività e metriche",
         description:
-          "Benvenuto in Plane, siamo entusiasti di averti qui. Crea il tuo primo progetto e traccia i tuoi elementi di lavoro, e questa pagina si trasformerà in uno spazio che ti aiuta a progredire. Gli amministratori vedranno anche elementi che aiutano il team a progredire.",
+          "Benvenuto in Planner, siamo entusiasti di averti qui. Crea il tuo primo progetto e traccia i tuoi elementi di lavoro, e questa pagina si trasformerà in uno spazio che ti aiuta a progredire. Gli amministratori vedranno anche elementi che aiutano il team a progredire.",
         primary_button: {
           text: "Crea il tuo primo progetto",
           comic: {
-            title: "Tutto inizia con un progetto in Plane",
+            title: "Tutto inizia con un progetto in Planner",
             description:
               "Un progetto può essere la roadmap di un prodotto, una campagna di marketing o il lancio di una nuova auto.",
           },
@@ -1466,7 +1466,7 @@ export default {
         primary_button: {
           text: "Inizia il tuo primo progetto",
           comic: {
-            title: "Tutto inizia con un progetto in Plane",
+            title: "Tutto inizia con un progetto in Planner",
             description:
               "Un progetto può essere la roadmap di un prodotto, una campagna di marketing o il lancio di una nuova auto.",
           },
@@ -1478,7 +1478,7 @@ export default {
         primary_button: {
           text: "Inizia il tuo primo progetto",
           comic: {
-            title: "Tutto inizia con un progetto in Plane",
+            title: "Tutto inizia con un progetto in Planner",
             description:
               "Un progetto può essere la roadmap di un prodotto, una campagna di marketing o il lancio di una nuova auto.",
           },
@@ -1580,7 +1580,7 @@ export default {
     page_label: "{workspace} - Impostazioni generali",
     key_created: "Chiave creata",
     copy_key:
-      "Copia e salva questa chiave segreta in Plane Pages. Non potrai vederla dopo aver cliccato Chiudi. È stato scaricato un file CSV contenente la chiave.",
+      "Copia e salva questa chiave segreta in Planner Pages. Non potrai vederla dopo aver cliccato Chiudi. È stato scaricato un file CSV contenente la chiave.",
     token_copied: "Token copiato negli appunti.",
     settings: {
       general: {
@@ -1732,7 +1732,7 @@ export default {
         delete: {
           title: "Elimina token API",
           description:
-            "Qualsiasi applicazione che utilizza questo token non avrà più accesso ai dati di Plane. Questa azione non può essere annullata.",
+            "Qualsiasi applicazione che utilizza questo token non avrà più accesso ai dati di Planner. Questa azione non può essere annullata.",
           success: {
             title: "Successo!",
             message: "Il token API è stato eliminato con successo",
@@ -1748,7 +1748,7 @@ export default {
       api_tokens: {
         title: "Nessun token API creato",
         description:
-          "Le API di Plane possono essere utilizzate per integrare i tuoi dati in Plane con qualsiasi sistema esterno. Crea un token per iniziare.",
+          "Le API di Planner possono essere utilizzate per integrare i tuoi dati in Planner con qualsiasi sistema esterno. Crea un token per iniziare.",
       },
       webhooks: {
         title: "Nessun webhook aggiunto",
@@ -1811,7 +1811,7 @@ export default {
       activity: {
         title: "Nessuna attività ancora",
         description:
-          "Inizia creando un nuovo elemento di lavoro! Aggiungi dettagli e proprietà ad esso. Esplora Plane per vedere la tua attività.",
+          "Inizia creando un nuovo elemento di lavoro! Aggiungi dettagli e proprietà ad esso. Esplora Planner per vedere la tua attività.",
       },
       assigned: {
         title: "Nessun elemento di lavoro assegnato a te",
@@ -1965,12 +1965,13 @@ export default {
       label: "Automatizzazioni",
       "auto-archive": {
         title: "Archivia automaticamente gli elementi di lavoro chiusi",
-        description: "Plane archiverà automaticamente gli elementi di lavoro che sono stati completati o annullati.",
+        description: "Planner archiverà automaticamente gli elementi di lavoro che sono stati completati o annullati.",
         duration: "Archivia automaticamente gli elementi di lavoro chiusi per",
       },
       "auto-close": {
         title: "Chiudi automaticamente gli elementi di lavoro",
-        description: "Plane chiuderà automaticamente gli elementi di lavoro che non sono stati completati o annullati.",
+        description:
+          "Planner chiuderà automaticamente gli elementi di lavoro che non sono stati completati o annullati.",
         duration: "Chiudi automaticamente gli elementi di lavoro inattivi per",
         auto_close_status: "Stato di chiusura automatica",
       },
@@ -2127,9 +2128,9 @@ export default {
         primary_button: {
           text: "Crea il tuo primo elemento di lavoro",
           comic: {
-            title: "Gli elementi di lavoro sono i mattoni fondamentali in Plane.",
+            title: "Gli elementi di lavoro sono i mattoni fondamentali in Planner.",
             description:
-              "Ridisegna l'interfaccia di Plane, rebranding dell'azienda o lancia il nuovo sistema di iniezione del carburante sono esempi di elementi di lavoro che probabilmente hanno sotto-elementi.",
+              "Ridisegna l'interfaccia di Planner, rebranding dell'azienda o lancia il nuovo sistema di iniezione del carburante sono esempi di elementi di lavoro che probabilmente hanno sotto-elementi.",
           },
         },
       },
@@ -2235,9 +2236,9 @@ export default {
     empty_state: {
       general: {
         title:
-          "Scrivi una nota, un documento o una vera e propria base di conoscenza. Fai partire Galileo, l'assistente AI di Plane, per aiutarti a iniziare",
+          "Scrivi una nota, un documento o una vera e propria base di conoscenza. Fai partire Galileo, l'assistente AI di Planner, per aiutarti a iniziare",
         description:
-          "Le pagine sono spazi per appunti in Plane. Prendi note durante le riunioni, formattale facilmente, inserisci elementi di lavoro, disponili usando una libreria di componenti e tienili tutti nel contesto del tuo progetto. Per velocizzare qualsiasi documento, invoca Galileo, l'IA di Plane, con una scorciatoia o con il clic di un pulsante.",
+          "Le pagine sono spazi per appunti in Planner. Prendi note durante le riunioni, formattale facilmente, inserisci elementi di lavoro, disponili usando una libreria di componenti e tienili tutti nel contesto del tuo progetto. Per velocizzare qualsiasi documento, invoca Galileo, l'IA di planner, con una scorciatoia o con il clic di un pulsante.",
         primary_button: {
           text: "Crea la tua prima pagina",
         },
@@ -2614,7 +2615,7 @@ export default {
   },
   self_hosted_maintenance_message: {
     planner_didnt_start_up_this_could_be_because_one_or_more_planner_services_failed_to_start:
-      "Plane non si è avviato. Questo potrebbe essere dovuto al fatto che uno o più servizi Plane non sono riusciti ad avviarsi.",
+      "Planner non si è avviato. Questo potrebbe essere dovuto al fatto che uno o più servizi Planner non sono riusciti ad avviarsi.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Scegli View Logs da setup.sh e dai log Docker per essere sicuro.",
   },

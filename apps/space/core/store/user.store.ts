@@ -1,9 +1,9 @@
 import { AxiosError } from "axios";
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-// plane imports
-import { UserService } from "@plane/services";
-import type { ActorDetail, IUser } from "@plane/types";
+// planner imports
+import { UserService } from "@planner/services";
+import type { ActorDetail, IUser } from "@planner/types";
 // store types
 import type { IProfileStore } from "@/store/profile.store";
 import { ProfileStore } from "@/store/profile.store";

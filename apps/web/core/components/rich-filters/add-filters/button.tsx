@@ -1,12 +1,12 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
-// plane imports
-import type { IFilterInstance } from "@plane/shared-state";
-import type { TExternalFilter, TFilterProperty, TSupportedOperators } from "@plane/types";
-import { LOGICAL_OPERATOR } from "@plane/types";
-import type { TButtonVariant } from "@plane/ui";
-import { cn, getButtonStyling } from "@plane/ui";
+// planner imports
+import type { IFilterInstance } from "@planner/shared-state";
+import type { TExternalFilter, TFilterProperty, TSupportedOperators } from "@planner/types";
+import { LOGICAL_OPERATOR } from "@planner/types";
+import type { TButtonVariant } from "@planner/ui";
+import { cn, getButtonStyling } from "@planner/ui";
 // local imports
 import { AddFilterDropdown } from "./dropdown";
 

@@ -2,22 +2,22 @@ import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
 import { Pencil, Trash, Link as LinkIcon } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIssue, TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { ControlLink, CustomMenu } from "@plane/ui";
-import { generateWorkItemLink } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+// planner imports
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TIssue, TIssueServiceType } from "@planner/types";
+import { EIssueServiceType } from "@planner/types";
+import { ControlLink, CustomMenu } from "@planner/ui";
+import { generateWorkItemLink } from "@planner/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
-import type { TIssueRelationTypes } from "@/plane-web/types";
+// planner web imports
+import { IssueIdentifier } from "@/planner-web/components/issues/issue-details/issue-identifier";
+import type { TIssueRelationTypes } from "@/planner-web/types";
 // local imports
 import { useRelationOperations } from "../issue-detail-widgets/relations/helper";
 import { RelationIssueProperty } from "./properties";

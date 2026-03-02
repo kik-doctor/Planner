@@ -1,5 +1,5 @@
 import { range } from "lodash-es";
-import { Loader } from "@plane/ui";
+import { Loader } from "@planner/ui";
 
 export function PageLoader() {
   return (

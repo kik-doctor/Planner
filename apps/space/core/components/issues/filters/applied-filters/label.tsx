@@ -1,4 +1,4 @@
-import { CloseIcon } from "@plane/propel/icons";
+import { CloseIcon } from "@planner/propel/icons";
 // types
 import type { IIssueLabel } from "@/types/issue";
 

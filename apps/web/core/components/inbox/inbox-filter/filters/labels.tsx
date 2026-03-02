@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
-import type { IIssueLabel } from "@plane/types";
-import { Loader } from "@plane/ui";
+import type { IIssueLabel } from "@planner/types";
+import { Loader } from "@planner/ui";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 // hooks

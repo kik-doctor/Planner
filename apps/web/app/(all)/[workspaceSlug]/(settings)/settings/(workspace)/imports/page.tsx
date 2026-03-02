@@ -1,6 +1,6 @@
 import { observer } from "mobx-react";
 // components
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
+import { EUserPermissions, EUserPermissionsLevel } from "@planner/constants";
 import { NotAuthorizedView } from "@/components/auth-screens/not-authorized-view";
 import { PageHead } from "@/components/core/page-title";
 import IntegrationGuide from "@/components/integration/guide";

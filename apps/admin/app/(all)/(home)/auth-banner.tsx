@@ -1,8 +1,8 @@
 import { Info } from "lucide-react";
-// plane constants
-import type { TAdminAuthErrorInfo } from "@plane/constants";
+// planner constants
+import type { TAdminAuthErrorInfo } from "@planner/constants";
 // icons
-import { CloseIcon } from "@plane/propel/icons";
+import { CloseIcon } from "@planner/propel/icons";
 
 type TAuthBanner = {
   bannerData: TAdminAuthErrorInfo | undefined;

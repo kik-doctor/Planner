@@ -1,14 +1,14 @@
 import { useMemo } from "react";
 import { Copy, ExternalLink, Link, Pencil, Trash2, XCircle, ArchiveRestoreIcon } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { ArchiveIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { EIssuesStoreType, TIssue } from "@plane/types";
-import type { TContextMenuItem } from "@plane/ui";
-import { copyUrlToClipboard, generateWorkItemLink } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { ArchiveIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { EIssuesStoreType, TIssue } from "@planner/types";
+import type { TContextMenuItem } from "@planner/ui";
+import { copyUrlToClipboard, generateWorkItemLink } from "@planner/utils";
 // types
-import { createCopyMenuWithDuplication } from "@/plane-web/components/issues/issue-layouts/quick-action-dropdowns";
+import { createCopyMenuWithDuplication } from "@/planner-web/components/issues/issue-layouts/quick-action-dropdowns";
 
 // Generic helper function to handle optional function calls gracefully
 // Overload for functions without parameters

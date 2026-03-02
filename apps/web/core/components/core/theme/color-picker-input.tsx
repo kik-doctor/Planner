@@ -17,8 +17,8 @@ import { Controller } from "react-hook-form";
 // component
 import { Palette } from "lucide-react";
 import { Popover, Transition } from "@headlessui/react";
-import type { IUserTheme } from "@plane/types";
-import { Input } from "@plane/ui";
+import type { IUserTheme } from "@planner/types";
+import { Input } from "@planner/ui";
 // icons
 // types
 

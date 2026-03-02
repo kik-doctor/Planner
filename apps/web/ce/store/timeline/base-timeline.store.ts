@@ -8,8 +8,8 @@ import type {
   IGanttBlock,
   TGanttViews,
   EGanttBlockType,
-} from "@plane/types";
-import { renderFormattedPayloadDate } from "@plane/utils";
+} from "@planner/types";
+import { renderFormattedPayloadDate } from "@planner/utils";
 import { currentViewDataWithView } from "@/components/gantt-chart/data";
 import {
   getDateFromPositionOnGantt,
@@ -18,7 +18,7 @@ import {
 } from "@/components/gantt-chart/views/helpers";
 // helpers
 // store
-import type { RootStore } from "@/plane-web/store/root.store";
+import type { RootStore } from "@/planner-web/store/root.store";
 
 // types
 type BlockData = {

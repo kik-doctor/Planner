@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { observer } from "mobx-react";
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 type TProps = {
   children: ReactNode;

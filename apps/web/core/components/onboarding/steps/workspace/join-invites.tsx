@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-// plane imports
-import { MEMBER_TRACKER_ELEMENTS, MEMBER_TRACKER_EVENTS, ROLE } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import type { IWorkspaceMemberInvitation } from "@plane/types";
-import { Checkbox, Spinner } from "@plane/ui";
-import { truncateText } from "@plane/utils";
+// planner imports
+import { MEMBER_TRACKER_ELEMENTS, MEMBER_TRACKER_EVENTS, ROLE } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import type { IWorkspaceMemberInvitation } from "@planner/types";
+import { Checkbox, Spinner } from "@planner/ui";
+import { truncateText } from "@planner/utils";
 // constants
 import { WorkspaceLogo } from "@/components/workspace/logo";
 // helpers
@@ -13,7 +13,7 @@ import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserSettings } from "@/hooks/store/user";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 // local components
 import { CommonOnboardingHeader } from "../common";
 

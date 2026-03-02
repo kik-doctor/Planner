@@ -1,14 +1,14 @@
 import { observer } from "mobx-react";
 // component
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
+import { EUserPermissions, EUserPermissionsLevel } from "@planner/constants";
 import { NotAuthorizedView } from "@/components/auth-screens/not-authorized-view";
 import { PageHead } from "@/components/core/page-title";
 // hooks
 import { SettingsContentWrapper } from "@/components/settings/content-wrapper";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web components
-import { BillingRoot } from "@/plane-web/components/workspace/billing";
+// planner web components
+import { BillingRoot } from "@/planner-web/components/workspace/billing";
 
 function BillingSettingsPage() {
   // store hooks

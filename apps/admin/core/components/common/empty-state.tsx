@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@plane/propel/button";
+import { Button } from "@planner/propel/button";
 
 type Props = {
   title: string;

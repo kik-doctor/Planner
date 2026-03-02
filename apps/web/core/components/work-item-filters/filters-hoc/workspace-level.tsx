@@ -1,11 +1,11 @@
 import { useCallback, useMemo, useState } from "react";
 import { isEqual, cloneDeep } from "lodash-es";
 import { observer } from "mobx-react";
-// plane imports
-import { DEFAULT_GLOBAL_VIEWS_LIST, EUserPermissionsLevel, GLOBAL_VIEW_TRACKER_EVENTS } from "@plane/constants";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import type { IWorkspaceView, TWorkItemFilterExpression } from "@plane/types";
-import { EUserProjectRoles, EViewAccess } from "@plane/types";
+// planner imports
+import { DEFAULT_GLOBAL_VIEWS_LIST, EUserPermissionsLevel, GLOBAL_VIEW_TRACKER_EVENTS } from "@planner/constants";
+import { setToast, TOAST_TYPE } from "@planner/propel/toast";
+import type { IWorkspaceView, TWorkItemFilterExpression } from "@planner/types";
+import { EUserProjectRoles, EViewAccess } from "@planner/types";
 // components
 import { removeNillKeys } from "@/components/issues/issue-layouts/utils";
 import { CreateUpdateWorkspaceViewModal } from "@/components/workspace/views/modal";

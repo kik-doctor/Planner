@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { CloudOff } from "lucide-react";
-import { Tooltip } from "@plane/ui";
+import { Tooltip } from "@planner/ui";
 
 type Props = {
   syncStatus: "syncing" | "synced" | "error";

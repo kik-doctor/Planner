@@ -1,4 +1,4 @@
-import type { TLoginMediums } from "@plane/types";
+import type { TLoginMediums } from "@planner/types";
 import { CORE_LOGIN_MEDIUM_LABELS } from "./core";
 import { EXTENDED_LOGIN_MEDIUM_LABELS } from "./extended";
 

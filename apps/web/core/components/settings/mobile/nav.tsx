@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import { observer } from "mobx-react";
 import { Menu } from "lucide-react";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { useOutsideClickDetector } from "@planner/hooks";
+import { useTranslation } from "@planner/i18n";
+import { ChevronRightIcon } from "@planner/propel/icons";
 import { useUserSettings } from "@/hooks/store/user";
 
 type Props = {

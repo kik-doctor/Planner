@@ -1,15 +1,15 @@
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
-// plane ui imports
-import type { ICustomSearchSelectOption } from "@plane/types";
-import { CustomSearchSelect } from "@plane/ui";
-// plane propel imports
-import { ProjectIcon } from "@plane/propel/icons";
+// planner ui imports
+import type { ICustomSearchSelectOption } from "@planner/types";
+import { CustomSearchSelect } from "@planner/ui";
+// planner propel imports
+import { ProjectIcon } from "@planner/propel/icons";
 // hooks
 import { useAppRouter } from "@/hooks/use-app-router";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
-import { useNavigationItems } from "@/plane-web/components/navigations";
+import { useNavigationItems } from "@/planner-web/components/navigations";
 // local components
 import { SwitcherLabel } from "../common/switcher-label";
 import { ProjectHeaderButton } from "./project-header-button";

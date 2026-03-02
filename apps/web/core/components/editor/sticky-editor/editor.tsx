@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-// plane constants
-import type { EIssueCommentAccessSpecifier } from "@plane/constants";
-// plane editor
-import { LiteTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@plane/editor";
+// planner constants
+import type { EIssueCommentAccessSpecifier } from "@planner/constants";
+// planner editor
+import { LiteTextEditorWithRef } from "@planner/editor";
+import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@planner/editor";
 // components
-import type { TSticky } from "@plane/types";
+import type { TSticky } from "@planner/types";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // hooks
 import { useEditorConfig } from "@/hooks/editor";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web hooks
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
+// planner web hooks
+import { useEditorFlagging } from "@/planner-web/hooks/use-editor-flagging";
 import { StickyEditorToolbar } from "./toolbar";
 
 interface StickyEditorWrapperProps extends Omit<

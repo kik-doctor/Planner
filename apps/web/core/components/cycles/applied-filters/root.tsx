@@ -1,11 +1,11 @@
 import { observer } from "mobx-react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TCycleFilters } from "@plane/types";
-import { Tag } from "@plane/ui";
-import { replaceUnderscoreIfSnakeCase } from "@plane/utils";
+// planner imports
+import { EUserPermissions, EUserPermissionsLevel } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+import type { TCycleFilters } from "@planner/types";
+import { Tag } from "@planner/ui";
+import { replaceUnderscoreIfSnakeCase } from "@planner/utils";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
 // local imports

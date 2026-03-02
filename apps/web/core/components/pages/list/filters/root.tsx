@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Search } from "lucide-react";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TPageFilterProps, TPageFilters } from "@plane/types";
+import { CloseIcon } from "@planner/propel/icons";
+import type { TPageFilterProps, TPageFilters } from "@planner/types";
 // components
 import { FilterCreatedDate } from "@/components/common/filters/created-at";
 import { FilterCreatedBy } from "@/components/common/filters/created-by";

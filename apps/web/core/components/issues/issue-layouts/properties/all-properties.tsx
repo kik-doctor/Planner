@@ -6,12 +6,12 @@ import { useParams } from "next/navigation";
 // icons
 import { Link, Paperclip } from "lucide-react";
 // types
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
 // i18n
-import { useTranslation } from "@plane/i18n";
-import { StartDatePropertyIcon, ViewsIcon, DueDatePropertyIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIssue, IIssueDisplayProperties, TIssuePriorities } from "@plane/types";
+import { useTranslation } from "@planner/i18n";
+import { StartDatePropertyIcon, ViewsIcon, DueDatePropertyIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TIssue, IIssueDisplayProperties, TIssuePriorities } from "@planner/types";
 // ui
 import {
   cn,
@@ -19,7 +19,7 @@ import {
   renderFormattedPayloadDate,
   generateWorkItemLink,
   shouldHighlightIssueDueDate,
-} from "@plane/utils";
+} from "@planner/utils";
 // components
 import { CycleDropdown } from "@/components/dropdowns/cycle";
 import { DateDropdown } from "@/components/dropdowns/date";
@@ -40,8 +40,8 @@ import { useProjectState } from "@/hooks/store/use-project-state";
 import { useAppRouter } from "@/hooks/use-app-router";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
-import { WorkItemLayoutAdditionalProperties } from "@/plane-web/components/issues/issue-layouts/additional-properties";
+// planner web components
+import { WorkItemLayoutAdditionalProperties } from "@/planner-web/components/issues/issue-layouts/additional-properties";
 // local components
 import { IssuePropertyLabels } from "./labels";
 import { WithDisplayPropertiesHOC } from "./with-display-properties-HOC";

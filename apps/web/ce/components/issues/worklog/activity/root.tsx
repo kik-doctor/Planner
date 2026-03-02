@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import type { TIssueActivityComment } from "@plane/types";
+import type { TIssueActivityComment } from "@planner/types";
 
 type TIssueActivityWorklog = {
   workspaceSlug: string;

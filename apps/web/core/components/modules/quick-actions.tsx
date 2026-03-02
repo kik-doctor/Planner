@@ -1,18 +1,18 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 
-// plane imports
+// planner imports
 import {
   EUserPermissions,
   EUserPermissionsLevel,
   MODULE_TRACKER_ELEMENTS,
   MODULE_TRACKER_EVENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TContextMenuItem } from "@plane/ui";
-import { ContextMenu, CustomMenu } from "@plane/ui";
-import { copyUrlToClipboard, cn } from "@plane/utils";
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TContextMenuItem } from "@planner/ui";
+import { ContextMenu, CustomMenu } from "@planner/ui";
+import { copyUrlToClipboard, cn } from "@planner/utils";
 // components
 import { useModuleMenuItems } from "@/components/common/quick-actions-helper";
 import { ArchiveModuleModal, CreateUpdateModuleModal, DeleteModuleModal } from "@/components/modules";
@@ -93,7 +93,7 @@ export const ModuleQuickActions = observer(function ModuleQuickActions(props: Pr
         });
       });
 
-  // Use unified menu hook from plane-web (resolves to CE or EE)
+  // Use unified menu hook from planner-web (resolves to CE or EE)
   const menuResult = useModuleMenuItems({
     moduleDetails: moduleDetails ?? undefined,
     workspaceSlug,

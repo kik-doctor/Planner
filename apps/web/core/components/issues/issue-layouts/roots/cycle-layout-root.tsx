@@ -3,9 +3,9 @@ import { isEmpty } from "lodash-es";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane constants
-import { ISSUE_DISPLAY_FILTERS_BY_PAGE, PROJECT_VIEW_TRACKER_ELEMENTS } from "@plane/constants";
-import { EIssuesStoreType, EIssueLayoutTypes } from "@plane/types";
+// planner constants
+import { ISSUE_DISPLAY_FILTERS_BY_PAGE, PROJECT_VIEW_TRACKER_ELEMENTS } from "@planner/constants";
+import { EIssuesStoreType, EIssueLayoutTypes } from "@planner/types";
 // components
 import { TransferIssues } from "@/components/cycles/transfer-issues";
 import { TransferIssuesModal } from "@/components/cycles/transfer-issues-modal";

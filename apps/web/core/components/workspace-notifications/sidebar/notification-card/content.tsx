@@ -1,12 +1,12 @@
-// plane imports
-import type { TNotification } from "@plane/types";
+// planner imports
+import type { TNotification } from "@planner/types";
 import {
   convertMinutesToHoursMinutesString,
   renderFormattedDate,
   sanitizeCommentForNotification,
   replaceUnderscoreIfSnakeCase,
   stripAndTruncateHTML,
-} from "@plane/utils";
+} from "@planner/utils";
 // components
 import { LiteTextEditor } from "@/components/editor/lite-text";
 

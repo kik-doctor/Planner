@@ -1,17 +1,17 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import type { TDisplayConfig } from "@plane/editor";
-import type { JSONContent, TPageVersion } from "@plane/types";
-import { Loader } from "@plane/ui";
-import { isJSONContentEmpty } from "@plane/utils";
+// planner imports
+import type { TDisplayConfig } from "@planner/editor";
+import type { JSONContent, TPageVersion } from "@planner/types";
+import { Loader } from "@planner/ui";
+import { isJSONContentEmpty } from "@planner/utils";
 // components
 import { DocumentEditor } from "@/components/editor/document/editor";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { usePageFilters } from "@/hooks/use-page-filters";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+// planner web hooks
+import type { EPageStoreType } from "@/planner-web/hooks/store";
 
 export type TVersionEditorProps = {
   activeVersion: string | null;

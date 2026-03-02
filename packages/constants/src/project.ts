@@ -1,5 +1,5 @@
-// plane imports
-import type { TProjectAppliedDisplayFilterKeys, TProjectOrderByOptions } from "@plane/types";
+// planner imports
+import type { TProjectAppliedDisplayFilterKeys, TProjectOrderByOptions } from "@planner/types";
 // local imports
 
 export type TNetworkChoiceIconKey = "Lock" | "Globe2";

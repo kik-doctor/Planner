@@ -3,7 +3,7 @@
 print_header(){
     clear
     echo "------------------------------------------------"
-    echo "Plane Community (All-In-One)"
+    echo "Planner Community (All-In-One)"
     echo "------------------------------------------------"
     echo ""
     echo "You are required to pass below environment variables to the script"
@@ -49,20 +49,20 @@ update_env_value(){
     local value="$2"
 
     # check if the file exists
-    if [ ! -f "plane.env" ]; then
-        echo "plane.env file not found"
+    if [ ! -f "planner.env" ]; then
+        echo "planner.env file not found"
         exit 1
     fi
 
     # check if the key exists and add it if it doesn't
-    if ! grep -q "^$key=.*" plane.env; then
-        echo "${key}=${value}" >> plane.env
+    if ! grep -q "^$key=.*" planner.env; then
+        echo "${key}=${value}" >> planner.env
         return 0
     fi
 
     # if key and value are not empty, update the value
     if [ -n "$key" ] && [ -n "$value" ]; then
-        sed -i "s|^$key=.*|$key=$value|" plane.env
+        sed -i "s|^$key=.*|$key=$value|" planner.env
         return 0
     fi
 
@@ -72,13 +72,13 @@ check_pre_requisites(){
     check_required_env
 
     # check if the file exists
-    if [ ! -f "plane.env" ]; then
-        echo "plane.env file not found"
+    if [ ! -f "planner.env" ]; then
+        echo "planner.env file not found"
         exit 1
     fi
     # add a new line to the end of the file
-    echo "" >> plane.env
-    echo "" >> plane.env
+    echo "" >> planner.env
+    echo "" >> planner.env
     echo "✅ Pre-requisites checked"
     echo ""
     
@@ -160,8 +160,8 @@ main(){
     check_pre_requisites
     update_env_file
 
-    # load plane.env as exported variables
-    export $(grep -v '^#' plane.env | xargs)
+    # load planner.env as exported variables
+    export $(grep -v '^#' planner.env | xargs)
 
     /usr/local/bin/supervisord -c /etc/supervisor/conf.d/supervisor.conf
 }

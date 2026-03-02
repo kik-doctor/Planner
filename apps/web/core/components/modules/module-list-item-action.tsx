@@ -12,16 +12,16 @@ import {
   IS_FAVORITE_MENU_OPEN,
   MODULE_TRACKER_EVENTS,
   MODULE_TRACKER_ELEMENTS,
-} from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IModule } from "@plane/types";
+} from "@planner/constants";
+import { useLocalStorage } from "@planner/hooks";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IModule } from "@planner/types";
 // ui
-import { FavoriteStar } from "@plane/ui";
+import { FavoriteStar } from "@planner/ui";
 // components
-import { renderFormattedPayloadDate, getDate } from "@plane/utils";
+import { renderFormattedPayloadDate, getDate } from "@planner/utils";
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ModuleQuickActions } from "@/components/modules";
 import { ModuleStatusDropdown } from "@/components/modules/module-status-dropdown";

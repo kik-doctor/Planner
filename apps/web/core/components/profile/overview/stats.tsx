@@ -2,10 +2,10 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 
 // ui
-import { useTranslation } from "@plane/i18n";
-import { UserCirclePropertyIcon, CreateIcon, LayerStackIcon } from "@plane/propel/icons";
-import type { IUserProfileData } from "@plane/types";
-import { Loader, Card, ECardSpacing, ECardDirection } from "@plane/ui";
+import { useTranslation } from "@planner/i18n";
+import { UserCirclePropertyIcon, CreateIcon, LayerStackIcon } from "@planner/propel/icons";
+import type { IUserProfileData } from "@planner/types";
+import { Loader, Card, ECardSpacing, ECardDirection } from "@planner/ui";
 // types
 
 type Props = {

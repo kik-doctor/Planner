@@ -1,5 +1,5 @@
-import { Button } from "@plane/propel/button";
-import { cn } from "@plane/ui";
+import { Button } from "@planner/propel/button";
+import { cn } from "@planner/ui";
 
 type Props = {
   title: string | React.ReactNode;

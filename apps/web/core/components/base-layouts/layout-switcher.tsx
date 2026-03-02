@@ -1,6 +1,6 @@
 import React from "react";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TBaseLayoutType } from "@plane/types";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TBaseLayoutType } from "@planner/types";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 import { BASE_LAYOUTS } from "./constants";
 

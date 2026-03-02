@@ -7,11 +7,11 @@ import {
   DueDatePropertyIcon,
   LabelPropertyIcon,
   DuplicatePropertyIcon,
-} from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TInboxDuplicateIssueDetails, TIssue } from "@plane/types";
-import { ControlLink } from "@plane/ui";
-import { getDate, renderFormattedPayloadDate, generateWorkItemLink } from "@plane/utils";
+} from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TInboxDuplicateIssueDetails, TIssue } from "@planner/types";
+import { ControlLink } from "@planner/ui";
+import { getDate, renderFormattedPayloadDate, generateWorkItemLink } from "@planner/utils";
 // components
 import { DateDropdown } from "@/components/dropdowns/date";
 import { IntakeStateDropdown } from "@/components/dropdowns/intake-state/dropdown";

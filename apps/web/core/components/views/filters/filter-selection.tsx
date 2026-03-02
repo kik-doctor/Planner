@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Search } from "lucide-react";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TViewFilterProps, TViewFilters } from "@plane/types";
-import { EViewAccess } from "@plane/types";
+import { CloseIcon } from "@planner/propel/icons";
+import type { TViewFilterProps, TViewFilters } from "@planner/types";
+import { EViewAccess } from "@planner/types";
 // components
 import { FilterCreatedDate } from "@/components/common/filters/created-at";
 import { FilterCreatedBy } from "@/components/common/filters/created-by";
@@ -11,8 +11,8 @@ import { FilterOption } from "@/components/issues/issue-layouts/filters";
 // constants
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
-import { FilterByAccess } from "@/plane-web/components/views/filters/access-filter";
+// planner web components
+import { FilterByAccess } from "@/planner-web/components/views/filters/access-filter";
 
 type Props = {
   filters: TViewFilters;

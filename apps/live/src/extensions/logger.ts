@@ -1,5 +1,5 @@
 import { Logger as HocuspocusLogger } from "@hocuspocus/extension-logger";
-import { logger } from "@plane/logger";
+import { logger } from "@planner/logger";
 
 export class Logger extends HocuspocusLogger {
   constructor() {

@@ -1,9 +1,9 @@
 import { useCallback, useMemo, useState } from "react";
 import { Plus } from "lucide-react";
-// plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssueLink } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+// planner imports
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TIssueLink } from "@planner/types";
+import { EIssueServiceType } from "@planner/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // local imports

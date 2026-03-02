@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { stringToEmoji } from "@plane/propel/emoji-icon-picker";
-import { EmojiReactionGroup, EmojiReactionPicker } from "@plane/propel/emoji-reaction";
-import type { EmojiReactionType } from "@plane/propel/emoji-reaction";
-import type { TCommentsOperations, TIssueComment } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import { stringToEmoji } from "@planner/propel/emoji-icon-picker";
+import { EmojiReactionGroup, EmojiReactionPicker } from "@planner/propel/emoji-reaction";
+import type { EmojiReactionType } from "@planner/propel/emoji-reaction";
+import type { TCommentsOperations, TIssueComment } from "@planner/types";
+import { cn } from "@planner/utils";
 // helpers
 // local imports
 

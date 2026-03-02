@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // types
-import { EUserPermissions, EUserPermissionsLevel, PROJECT_VIEW_TRACKER_ELEMENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IProjectView } from "@plane/types";
+import { EUserPermissions, EUserPermissionsLevel, PROJECT_VIEW_TRACKER_ELEMENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IProjectView } from "@planner/types";
 // ui
-import type { TContextMenuItem } from "@plane/ui";
-import { ContextMenu, CustomMenu } from "@plane/ui";
-import { copyUrlToClipboard, cn } from "@plane/utils";
+import type { TContextMenuItem } from "@planner/ui";
+import { ContextMenu, CustomMenu } from "@planner/ui";
+import { copyUrlToClipboard, cn } from "@planner/utils";
 // helpers
 import { useViewMenuItems } from "@/components/common/quick-actions-helper";
 import { captureClick } from "@/helpers/event-tracker.helper";
 // hooks
 import { useUser, useUserPermissions } from "@/hooks/store/user";
-import { PublishViewModal, useViewPublish } from "@/plane-web/components/views/publish";
+import { PublishViewModal, useViewPublish } from "@/planner-web/components/views/publish";
 // local imports
 import { DeleteProjectViewModal } from "./delete-view-modal";
 import { CreateUpdateProjectViewModal } from "./modal";

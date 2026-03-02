@@ -1,12 +1,12 @@
 // types
-import { API_BASE_URL } from "@plane/constants";
+import { API_BASE_URL } from "@planner/constants";
 import type {
   IProjectBulkAddFormData,
   IProjectMemberPreferencesFullResponse,
   IProjectMemberPreferencesResponse,
   IProjectMemberPreferencesUpdate,
   TProjectMembership,
-} from "@plane/types";
+} from "@planner/types";
 // services
 import { APIService } from "@/services/api.service";
 

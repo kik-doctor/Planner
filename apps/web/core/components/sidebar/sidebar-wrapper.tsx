@@ -1,16 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane helpers
-import { useOutsideClickDetector } from "@plane/hooks";
-import { PreferencesIcon } from "@plane/propel/icons";
-import { ScrollArea } from "@plane/propel/scrollarea";
+// planner helpers
+import { useOutsideClickDetector } from "@planner/hooks";
+import { PreferencesIcon } from "@planner/propel/icons";
+import { ScrollArea } from "@planner/propel/scrollarea";
 // components
 import { CustomizeNavigationDialog } from "@/components/navigation/customize-navigation-dialog";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
 import useSize from "@/hooks/use-window-size";
-// plane web components
-import { WorkspaceEditionBadge } from "@/plane-web/components/workspace/edition-badge";
+// planner web components
+import { WorkspaceEditionBadge } from "@/planner-web/components/workspace/edition-badge";
 import { AppSidebarToggleButton } from "./sidebar-toggle-button";
 
 type TSidebarWrapperProps = {

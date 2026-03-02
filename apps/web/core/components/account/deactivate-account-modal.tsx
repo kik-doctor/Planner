@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Trash2 } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
-import { PROFILE_SETTINGS_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { PROFILE_SETTINGS_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // ui
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
 // hooks
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useUser } from "@/hooks/store/user";

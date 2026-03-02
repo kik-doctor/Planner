@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { OctagonAlert } from "lucide-react";
-// plane imports
-import type { IWorkspaceMemberInvitation, TOnboardingSteps } from "@plane/types";
+// planner imports
+import type { IWorkspaceMemberInvitation, TOnboardingSteps } from "@planner/types";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 // hooks
 import { useUser } from "@/hooks/store/user";
-// plane web helpers
-import { getIsWorkspaceCreationDisabled } from "@/plane-web/helpers/instance.helper";
+// planner web helpers
+import { getIsWorkspaceCreationDisabled } from "@/planner-web/helpers/instance.helper";
 // local imports
 import { CreateWorkspace } from "./create-workspace";
 import { Invitations } from "./invitations";

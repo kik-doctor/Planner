@@ -6,8 +6,8 @@ import type {
   TGetBaseAuthenticationModeProps,
   TInstanceAuthenticationMethodKeys,
   TInstanceAuthenticationModes,
-} from "@plane/types";
-import { resolveGeneralTheme } from "@plane/utils";
+} from "@planner/types";
+import { resolveGeneralTheme } from "@planner/utils";
 // components
 import giteaLogo from "@/app/assets/logos/gitea-logo.svg?url";
 import githubLightModeImage from "@/app/assets/logos/github-black.png?url";
@@ -23,8 +23,8 @@ import { GithubConfiguration } from "@/components/authentication/github-config";
 import { GitlabConfiguration } from "@/components/authentication/gitlab-config";
 import { GoogleConfiguration } from "@/components/authentication/google-config";
 import { PasswordLoginConfiguration } from "@/components/authentication/password-config-switch";
-// plane admin components
-import { UpgradeButton } from "@/plane-admin/components/common";
+// planner admin components
+import { UpgradeButton } from "@/planner-admin/components/common";
 // assets
 
 export type TAuthenticationModeProps = {
@@ -42,7 +42,7 @@ export const getAuthenticationModes: (props: TGetBaseAuthenticationModeProps) =>
     key: "unique-codes",
     name: "Unique codes",
     description:
-      "Log in or sign up for Plane using codes sent via email. You need to have set up SMTP to use this method.",
+      "Log in or sign up for Planner using codes sent via email. You need to have set up SMTP to use this method.",
     icon: <Mails className="h-6 w-6 p-0.5 text-custom-text-300/80" />,
     config: <EmailCodesConfiguration disabled={disabled} updateConfig={updateConfig} />,
   },
@@ -56,14 +56,14 @@ export const getAuthenticationModes: (props: TGetBaseAuthenticationModeProps) =>
   {
     key: "google",
     name: "Google",
-    description: "Allow members to log in or sign up for Plane with their Google accounts.",
+    description: "Allow members to log in or sign up for Planner with their Google accounts.",
     icon: <img src={GoogleLogo} height={20} width={20} alt="Google Logo" />,
     config: <GoogleConfiguration disabled={disabled} updateConfig={updateConfig} />,
   },
   {
     key: "github",
     name: "GitHub",
-    description: "Allow members to log in or sign up for Plane with their GitHub accounts.",
+    description: "Allow members to log in or sign up for Planner with their GitHub accounts.",
     icon: (
       <img
         src={resolveGeneralTheme(resolvedTheme) === "dark" ? githubDarkModeImage : githubLightModeImage}
@@ -77,14 +77,14 @@ export const getAuthenticationModes: (props: TGetBaseAuthenticationModeProps) =>
   {
     key: "gitlab",
     name: "GitLab",
-    description: "Allow members to log in or sign up to plane with their GitLab accounts.",
+    description: "Allow members to log in or sign up to Planner with their GitLab accounts.",
     icon: <img src={GitlabLogo} height={20} width={20} alt="GitLab Logo" />,
     config: <GitlabConfiguration disabled={disabled} updateConfig={updateConfig} />,
   },
   {
     key: "gitea",
     name: "Gitea",
-    description: "Allow members to log in or sign up to plane with their Gitea accounts.",
+    description: "Allow members to log in or sign up to Planner with their Gitea accounts.",
     icon: <img src={giteaLogo} height={20} width={20} alt="Gitea Logo" />,
     config: <GiteaConfiguration disabled={disabled} updateConfig={updateConfig} />,
   },

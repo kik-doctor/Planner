@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
-// plane imports
-import { HEADER_GITHUB_ICON, GITHUB_REDIRECTED_TRACKER_EVENT } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import { HEADER_GITHUB_ICON, GITHUB_REDIRECTED_TRACKER_EVENT } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // assets
 import githubBlackImage from "@/app/assets/logos/github-black.png?url";
 import githubWhiteImage from "@/app/assets/logos/github-white.png?url";
@@ -9,7 +9,7 @@ import githubWhiteImage from "@/app/assets/logos/github-white.png?url";
 import { captureElementAndEvent } from "@/helpers/event-tracker.helper";
 
 export function StarUsOnGitHubLink() {
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // hooks
   const { resolvedTheme } = useTheme();

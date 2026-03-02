@@ -1,8 +1,8 @@
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { TDateRangeFilterFieldConfig, TFilterConditionNodeForDisplay, TFilterProperty } from "@plane/types";
-import { cn, isValidDate, renderFormattedPayloadDate, toFilterArray } from "@plane/utils";
+// planner imports
+import type { TDateRangeFilterFieldConfig, TFilterConditionNodeForDisplay, TFilterProperty } from "@planner/types";
+import { cn, isValidDate, renderFormattedPayloadDate, toFilterArray } from "@planner/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 // local imports

@@ -1,12 +1,12 @@
 import type { FC, ReactNode } from "react";
 import { Network } from "lucide-react";
-// plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import { renderFormattedTime, renderFormattedDate, calculateTimeAgo } from "@plane/utils";
+// planner imports
+import { Tooltip } from "@planner/propel/tooltip";
+import { renderFormattedTime, renderFormattedDate, calculateTimeAgo } from "@planner/utils";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
-import { IssueCreatorDisplay } from "@/plane-web/components/issues/issue-details/issue-creator";
+// planner web imports
+import { IssueCreatorDisplay } from "@/planner-web/components/issues/issue-details/issue-creator";
 // local imports
 import { IssueUser } from "../";
 

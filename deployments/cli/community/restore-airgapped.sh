@@ -6,13 +6,13 @@ clear
 
 cat <<"EOF"
 --------------------------------------------
- ____  _                          ///////// 
-|  _ \| | __ _ _ __   ___         ///////// 
-| |_) | |/ _` | '_ \ / _ \   /////    ///// 
-|  __/| | (_| | | | |  __/   /////    ///// 
-|_|   |_|\__,_|_| |_|\___|        ////      
-                                  ////      
---------------------------------------------
+██████╗ ██╗      █████╗ ███╗   ██╗███╗   ██╗███████╗██████╗
+██╔══██╗██║     ██╔══██╗████╗  ██║████╗  ██║██╔════╝██╔══██╗
+██████╔╝██║     ███████║██╔██╗ ██║██╔██╗ ██║█████╗  ██████╔╝
+██╔═══╝ ██║     ██╔══██║██║╚██╗██║██║╚██╗██║██╔══╝  ██╔══██╗
+██║     ███████╗██║  ██║██║ ╚████║██║ ╚████║███████╗██║  ██║
+╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
+---------------------------------------------------------------
 Project management tool from the future
 --------------------------------------------
 EOF
@@ -54,10 +54,10 @@ function restoreData() {
     echo ""
 
     # ask for current install path
-    AIRGAPPED_INSTALL_PATH="$HOME/planeairgapped"
+    AIRGAPPED_INSTALL_PATH="$HOME/plannerairgapped"
     read -p "Enter the airgapped instance install path [$AIRGAPPED_INSTALL_PATH]: " AIRGAPPED_INSTALL_PATH
     if [ -z "$AIRGAPPED_INSTALL_PATH" ]; then
-        AIRGAPPED_INSTALL_PATH="$HOME/planeairgapped"
+        AIRGAPPED_INSTALL_PATH="$HOME/plannerairgapped"
     fi
 
     # check if the airgapped instance install path exists
@@ -78,13 +78,13 @@ function restoreData() {
 
     local dockerServiceStatus
     if command -v jq &> /dev/null; then
-        dockerServiceStatus=$($COMPOSE_CMD ls --filter name=plane-airgapped --format=json | jq -r .[0].Status)
+        dockerServiceStatus=$($COMPOSE_CMD ls --filter name=planner-airgapped --format=json | jq -r .[0].Status)
     else
-        dockerServiceStatus=$($COMPOSE_CMD ls --filter name=plane-airgapped | grep -o "running" | head -n 1)
+        dockerServiceStatus=$($COMPOSE_CMD ls --filter name=planner-airgapped | grep -o "running" | head -n 1)
     fi
 
     if [[ $dockerServiceStatus == "running" ]]; then
-        echo "Plane Airgapped is running. Please STOP the Plane Airgapped before restoring data."
+        echo "Planner Airgapped is running. Please STOP the Planner Airgapped before restoring data."
         exit 1
     fi
 

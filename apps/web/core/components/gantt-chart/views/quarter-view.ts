@@ -1,5 +1,5 @@
 //
-import type { ChartDataType } from "@plane/types";
+import type { ChartDataType } from "@planner/types";
 import { quarters } from "../data";
 import { getNumberOfDaysBetweenTwoDates } from "./helpers";
 import type { IMonthBlock } from "./month-view";

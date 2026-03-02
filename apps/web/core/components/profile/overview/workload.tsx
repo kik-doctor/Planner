@@ -1,9 +1,9 @@
-// plane imports
-import { STATE_GROUPS } from "@plane/constants";
+// planner imports
+import { STATE_GROUPS } from "@planner/constants";
 // types
-import { useTranslation } from "@plane/i18n";
-import type { IUserStateDistribution } from "@plane/types";
-import { Card, ECardDirection, ECardSpacing } from "@plane/ui";
+import { useTranslation } from "@planner/i18n";
+import type { IUserStateDistribution } from "@planner/types";
+import { Card, ECardDirection, ECardSpacing } from "@planner/ui";
 // constants
 
 type Props = {

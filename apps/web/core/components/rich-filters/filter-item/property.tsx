@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
-// plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/propel/utils";
-import type { IFilterInstance } from "@plane/shared-state";
-import type { TExternalFilter, TFilterProperty, TSupportedOperators } from "@plane/types";
+// planner imports
+import { Tooltip } from "@planner/propel/tooltip";
+import { cn } from "@planner/propel/utils";
+import type { IFilterInstance } from "@planner/shared-state";
+import type { TExternalFilter, TFilterProperty, TSupportedOperators } from "@planner/types";
 // local imports
 import { AddFilterDropdown } from "../add-filters/dropdown";
 import { COMMON_FILTER_ITEM_BORDER_CLASSNAME } from "../shared";

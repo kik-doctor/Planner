@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import { observer } from "mobx-react";
 import { Pencil, Trash2 } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@plane/constants";
-import { ChevronDownIcon } from "@plane/propel/icons";
+import { PROJECT_SETTINGS_TRACKER_ELEMENTS } from "@planner/constants";
+import { ChevronDownIcon } from "@planner/propel/icons";
 // store
 // icons
 // types
-import type { IIssueLabel } from "@plane/types";
+import type { IIssueLabel } from "@planner/types";
 // components
 import { captureClick } from "@/helpers/event-tracker.helper";
 import type { TLabelOperationsCallbacks } from "./create-update-label-inline";

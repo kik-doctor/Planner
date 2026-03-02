@@ -3,11 +3,11 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { CheckCircle } from "lucide-react";
 import { Tab } from "@headlessui/react";
-// plane imports
+// planner imports
 // helpers
-import type { EProductSubscriptionEnum, TBillingFrequency, TSubscriptionPrice } from "@plane/types";
-import { getSubscriptionBackgroundColor, getUpgradeCardVariantStyle } from "@plane/ui";
-import { cn, getBaseSubscriptionName, getSubscriptionName } from "@plane/utils";
+import type { EProductSubscriptionEnum, TBillingFrequency, TSubscriptionPrice } from "@planner/types";
+import { getSubscriptionBackgroundColor, getUpgradeCardVariantStyle } from "@planner/ui";
+import { cn, getBaseSubscriptionName, getSubscriptionName } from "@planner/utils";
 
 export type TBasePaidPlanCardProps = {
   planVariant: EProductSubscriptionEnum;
@@ -34,8 +34,8 @@ export const BasePaidPlanCard = observer(function BasePaidPlanCard(props: TBaseP
   const [selectedPlan, setSelectedPlan] = useState<TBillingFrequency>("month");
   const basePlan = getBaseSubscriptionName(planVariant);
   const upgradeCardVariantStyle = getUpgradeCardVariantStyle(planVariant);
-  // Plane details
-  const planeName = getSubscriptionName(planVariant);
+  // Planner details
+  const plannerName = getSubscriptionName(planVariant);
 
   return (
     <div className={cn("flex flex-col py-6 px-3", upgradeCardVariantStyle)}>
@@ -66,7 +66,7 @@ export const BasePaidPlanCard = observer(function BasePaidPlanCard(props: TBaseP
           {prices.map((price: TSubscriptionPrice) => (
             <Tab.Panel key={price.key}>
               <div className="pt-6 text-center">
-                <div className="text-xl font-medium">Plane {planeName}</div>
+                <div className="text-xl font-medium">Planner {plannerName}</div>
                 {renderActionButton(price)}
               </div>
               <div className="px-2 pt-6 pb-2">

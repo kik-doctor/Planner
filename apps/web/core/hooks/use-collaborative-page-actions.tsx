@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
-import type { EditorRefApi, TDocumentEventsServer } from "@plane/editor";
-import type { TDocumentEventsClient } from "@plane/editor/lib";
-import { DocumentCollaborativeEvents, getServerEventName } from "@plane/editor/lib";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+import type { EditorRefApi, TDocumentEventsServer } from "@planner/editor";
+import type { TDocumentEventsClient } from "@planner/editor/lib";
+import { DocumentCollaborativeEvents, getServerEventName } from "@planner/editor/lib";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 

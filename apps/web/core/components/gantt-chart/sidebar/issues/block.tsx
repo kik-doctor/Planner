@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
-// plane imports
-import type { IGanttBlock } from "@plane/types";
-import { Row } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import type { IGanttBlock } from "@planner/types";
+import { Row } from "@planner/ui";
+import { cn } from "@planner/utils";
 // components
 import { MultipleSelectEntityAction } from "@/components/core/multiple-select";
 import { IssueGanttSidebarBlock } from "@/components/issues/issue-layouts/gantt/blocks";

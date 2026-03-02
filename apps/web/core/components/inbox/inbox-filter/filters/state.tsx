@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
-import { EIconSize } from "@plane/constants";
-import { StateGroupIcon } from "@plane/propel/icons";
-import type { IState } from "@plane/types";
-import { Loader } from "@plane/ui";
+import { EIconSize } from "@planner/constants";
+import { StateGroupIcon } from "@planner/propel/icons";
+import type { IState } from "@planner/types";
+import { Loader } from "@planner/ui";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 // hooks

@@ -1,8 +1,8 @@
 import { useMemo } from "react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssueLink, TIssueServiceType } from "@plane/types";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TIssueLink, TIssueServiceType } from "@planner/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // local imports

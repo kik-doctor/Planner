@@ -22,7 +22,7 @@ export function IssueCreatorDisplay(props: TIssueUser) {
   return (
     <>
       {customUserName ? (
-        <span className="text-custom-text-100 font-medium">{customUserName || "Plane"}</span>
+        <span className="text-custom-text-100 font-medium">{customUserName || "Planner"}</span>
       ) : (
         <Link
           href={`/${activity?.workspace_detail?.slug}/profile/${activity?.actor_detail?.id}`}

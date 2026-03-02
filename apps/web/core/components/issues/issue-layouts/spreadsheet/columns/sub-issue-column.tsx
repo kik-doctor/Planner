@@ -2,13 +2,13 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // types
-import type { TIssue } from "@plane/types";
+import type { TIssue } from "@planner/types";
 // helpers
-import { Row } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { Row } from "@planner/ui";
+import { cn } from "@planner/utils";
 // hooks
 import { useAppRouter } from "@/hooks/use-app-router";
-import { IssueStats } from "@/plane-web/components/issues/issue-layouts/issue-stats";
+import { IssueStats } from "@/planner-web/components/issues/issue-layouts/issue-stats";
 
 type Props = {
   issue: TIssue;

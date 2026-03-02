@@ -1,11 +1,11 @@
 import { useCallback, useMemo, useState } from "react";
 import { isEqual, cloneDeep } from "lodash-es";
 import { observer } from "mobx-react";
-// plane imports
-import { EUserPermissionsLevel, PROJECT_VIEW_TRACKER_EVENTS } from "@plane/constants";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import type { IProjectView, TWorkItemFilterExpression } from "@plane/types";
-import { EUserProjectRoles, EViewAccess } from "@plane/types";
+// planner imports
+import { EUserPermissionsLevel, PROJECT_VIEW_TRACKER_EVENTS } from "@planner/constants";
+import { setToast, TOAST_TYPE } from "@planner/propel/toast";
+import type { IProjectView, TWorkItemFilterExpression } from "@planner/types";
+import { EUserProjectRoles, EViewAccess } from "@planner/types";
 // components
 import { removeNillKeys } from "@/components/issues/issue-layouts/utils";
 import { CreateUpdateProjectViewModal } from "@/components/views/modal";
@@ -19,8 +19,8 @@ import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
 import { useProjectView } from "@/hooks/store/use-project-view";
 import { useUser, useUserPermissions } from "@/hooks/store/user";
-// plane web imports
-import { getAdditionalProjectLevelFiltersHOCProps } from "@/plane-web/helpers/work-item-filters/project-level";
+// planner web imports
+import { getAdditionalProjectLevelFiltersHOCProps } from "@/planner-web/helpers/work-item-filters/project-level";
 // local imports
 import { WorkItemFiltersHOC } from "./base";
 import type { TEnableSaveViewProps, TEnableUpdateViewProps, TSharedWorkItemFiltersHOCProps } from "./shared";

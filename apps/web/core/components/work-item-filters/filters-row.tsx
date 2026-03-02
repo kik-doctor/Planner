@@ -1,7 +1,7 @@
 import { observer } from "mobx-react";
-// plane imports
-import type { IWorkItemFilterInstance } from "@plane/shared-state";
-import type { TWorkItemFilterExpression, TWorkItemFilterProperty } from "@plane/types";
+// planner imports
+import type { IWorkItemFilterInstance } from "@planner/shared-state";
+import type { TWorkItemFilterExpression, TWorkItemFilterProperty } from "@planner/types";
 // components
 import type { TFiltersRowProps } from "@/components/rich-filters/filters-row";
 import { FiltersRow } from "@/components/rich-filters/filters-row";

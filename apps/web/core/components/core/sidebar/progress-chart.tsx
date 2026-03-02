@@ -1,8 +1,8 @@
 import React from "react";
-// plane imports
-import { AreaChart } from "@plane/propel/charts/area-chart";
-import type { TChartData, TModuleCompletionChartDistribution } from "@plane/types";
-import { renderFormattedDateWithoutYear } from "@plane/utils";
+// planner imports
+import { AreaChart } from "@planner/propel/charts/area-chart";
+import type { TChartData, TModuleCompletionChartDistribution } from "@planner/types";
+import { renderFormattedDateWithoutYear } from "@planner/utils";
 
 type Props = {
   distribution: TModuleCompletionChartDistribution;

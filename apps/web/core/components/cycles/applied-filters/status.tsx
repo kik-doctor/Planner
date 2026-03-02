@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
-import { CYCLE_STATUS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+import { CYCLE_STATUS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+import { cn } from "@planner/utils";
 
 type Props = {
   handleRemove: (val: string) => void;

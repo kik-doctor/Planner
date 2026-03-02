@@ -1,14 +1,14 @@
 import { Info } from "lucide-react";
-// plane imports
-import { EEstimateSystem, ESTIMATE_SYSTEMS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TEstimateSystemKeys } from "@plane/types";
+// planner imports
+import { EEstimateSystem, ESTIMATE_SYSTEMS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TEstimateSystemKeys } from "@planner/types";
 // components
-import { convertMinutesToHoursMinutesString } from "@plane/utils";
-// plane web imports
-import { isEstimateSystemEnabled } from "@/plane-web/components/estimates/helper";
-import { UpgradeBadge } from "@/plane-web/components/workspace/upgrade-badge";
+import { convertMinutesToHoursMinutesString } from "@planner/utils";
+// planner web imports
+import { isEstimateSystemEnabled } from "@/planner-web/components/estimates/helper";
+import { UpgradeBadge } from "@/planner-web/components/workspace/upgrade-badge";
 import { RadioInput } from "../radio-select";
 // local imports
 

@@ -6,8 +6,8 @@ import type {
   EInboxIssueSource,
   TIssue,
   TInboxDuplicateIssueDetails,
-} from "@plane/types";
-import { EInboxIssueStatus } from "@plane/types";
+} from "@planner/types";
+import { EInboxIssueStatus } from "@planner/types";
 // helpers
 // services
 import { InboxIssueService } from "@/services/inbox";

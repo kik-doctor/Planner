@@ -2,10 +2,10 @@ import { isEmpty, set } from "lodash-es";
 import { makeObservable, observable, action, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 import { v4 as uuidv4 } from "uuid";
-// plane imports
-import { SitesFileService, SitesIssueService } from "@plane/services";
-import type { TFileSignedURLResponse, TIssuePublicComment } from "@plane/types";
-import { EFileAssetType } from "@plane/types";
+// planner imports
+import { SitesFileService, SitesIssueService } from "@planner/services";
+import type { TFileSignedURLResponse, TIssuePublicComment } from "@planner/types";
+import { EFileAssetType } from "@planner/types";
 // store
 import type { CoreRootStore } from "@/store/root.store";
 // types

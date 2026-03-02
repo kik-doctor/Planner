@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-// plane imports
-// import { useTranslation } from "@plane/i18n";
-import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from "@plane/types";
-// import { generateWorkItemLink } from "@plane/utils";
+// planner imports
+// import { useTranslation } from "@planner/i18n";
+import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from "@planner/types";
+// import { generateWorkItemLink } from "@planner/utils";
 // components
 // import { CommandPaletteEntityList } from "@/components/command-palette";
 // import { SimpleEmptyState } from "@/components/empty-state/simple-empty-state-root";
@@ -10,9 +10,9 @@ import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from
 // import { useCommandPalette } from "@/hooks/store/use-command-palette";
 // import { usePowerK } from "@/hooks/store/use-power-k";
 // import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
-// import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
-import { WorkspaceService } from "@/plane-web/services";
+// planner web imports
+// import { IssueIdentifier } from "@/planner-web/components/issues/issue-details/issue-identifier";
+import { WorkspaceService } from "@/planner-web/services";
 
 const workspaceService = new WorkspaceService();
 
@@ -31,7 +31,7 @@ export function WorkItemSelectionPage(props: Props) {
   const { workspaceSlug, projectId, debouncedSearchTerm, isWorkspaceLevel = false } = props;
   // router
   // const router = useAppRouter();
-  // plane hooks
+  // planner hooks
   // const { t } = useTranslation();
   // store hooks
   // const { togglePowerKModal } = usePowerK();

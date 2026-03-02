@@ -1,4 +1,4 @@
-import type { IGroupHeaderProps } from "@plane/types";
+import type { IGroupHeaderProps } from "@planner/types";
 
 export function GroupHeader({ group, itemCount, onToggleGroup }: IGroupHeaderProps) {
   return (

@@ -1,9 +1,9 @@
-import { ISSUE_LAYOUTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import type { EIssueLayoutTypes } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+import { ISSUE_LAYOUTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import type { EIssueLayoutTypes } from "@planner/types";
+import { CustomMenu } from "@planner/ui";
 import { IssueLayoutIcon } from "../../layout-icon";
 
 export function MobileLayoutSelection({

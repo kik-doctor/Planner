@@ -1,6 +1,6 @@
 // types
-import { logger } from "@plane/logger";
-import type { IUser } from "@plane/types";
+import { logger } from "@planner/logger";
+import type { IUser } from "@planner/types";
 // services
 import { AppError } from "@/lib/errors";
 import { APIService } from "@/services/api.service";

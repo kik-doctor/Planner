@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
-import { PROFILE_SETTINGS_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import { PROFILE_SETTINGS_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // component
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import { APITokenService } from "@plane/services";
+import { EmptyStateCompact } from "@planner/propel/empty-state";
+import { APITokenService } from "@planner/services";
 import { CreateApiTokenModal } from "@/components/api-token/modal/create-token-modal";
 import { ApiTokenListItem } from "@/components/api-token/token-list-item";
 import { PageHead } from "@/components/core/page-title";
@@ -23,7 +23,7 @@ function ApiTokensPage() {
   // states
   const [isCreateTokenModalOpen, setIsCreateTokenModalOpen] = useState(false);
   // router
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { currentWorkspace } = useWorkspace();

@@ -6,12 +6,12 @@ import { useParams } from "next/navigation";
 // swr
 import { useFormContext, Controller } from "react-hook-form";
 import useSWR from "swr";
-import type { IJiraImporterForm, IJiraMetadata } from "@plane/types";
+import type { IJiraImporterForm, IJiraMetadata } from "@planner/types";
 
 // react hook form
 
 // services
-import { ToggleSwitch, Spinner } from "@plane/ui";
+import { ToggleSwitch, Spinner } from "@planner/ui";
 import { JIRA_IMPORTER_DETAIL } from "@/constants/fetch-keys";
 import { JiraImporterService } from "@/services/integrations";
 

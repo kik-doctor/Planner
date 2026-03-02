@@ -13,8 +13,8 @@ import {
 import type { Editor } from "@tiptap/core";
 import { Ellipsis } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
-// plane imports
-import { cn } from "@plane/utils";
+// planner imports
+import { cn } from "@planner/utils";
 // constants
 import { CORE_EXTENSIONS } from "@/constants/extension";
 // extensions

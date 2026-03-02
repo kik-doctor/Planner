@@ -2,13 +2,13 @@ import type { FC } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Check } from "lucide-react";
-// plane imports
-import { ONBOARDING_TRACKER_ELEMENTS, USER_TRACKER_EVENTS, USE_CASES } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TUserProfile } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import { ONBOARDING_TRACKER_ELEMENTS, USER_TRACKER_EVENTS, USE_CASES } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TUserProfile } from "@planner/types";
+import { EOnboardingSteps } from "@planner/types";
+import { cn } from "@planner/utils";
 // helpers
 import { captureError, captureSuccess, captureView } from "@/helpers/event-tracker.helper";
 // hooks
@@ -96,7 +96,7 @@ export const UseCaseSetupStep = observer(function UseCaseSetupStep({ handleStepC
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-10">
       {/* Header */}
-      <CommonOnboardingHeader title="What brings you to Plane?" description="Tell us your goals and team size." />
+      <CommonOnboardingHeader title="What brings you to Planner?" description="Tell us your goals and team size." />
 
       {/* Use Case Selection */}
       <div className="flex flex-col gap-3">

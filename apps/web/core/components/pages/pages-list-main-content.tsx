@@ -1,25 +1,25 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// planner imports
 import { useParams, useRouter } from "next/navigation";
 import {
   EUserPermissionsLevel,
   EPageAccess,
   PROJECT_PAGE_TRACKER_ELEMENTS,
   PROJECT_PAGE_TRACKER_EVENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TPage, TPageNavigationTabs } from "@plane/types";
-import { EUserProjectRoles } from "@plane/types";
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { EmptyStateDetailed } from "@planner/propel/empty-state";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TPage, TPageNavigationTabs } from "@planner/types";
+import { EUserProjectRoles } from "@planner/types";
 // components
 import { PageLoader } from "@/components/pages/loaders/page-loader";
 import { captureClick, captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web hooks
-import { EPageStoreType, usePageStore } from "@/plane-web/hooks/store";
+// planner web hooks
+import { EPageStoreType, usePageStore } from "@/planner-web/hooks/store";
 
 type Props = {
   children: React.ReactNode;
@@ -29,7 +29,7 @@ type Props = {
 
 export const PagesListMainContent = observer(function PagesListMainContent(props: Props) {
   const { children, pageType, storeType } = props;
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { currentProjectDetails } = useProject();

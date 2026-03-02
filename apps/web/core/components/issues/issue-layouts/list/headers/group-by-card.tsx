@@ -3,13 +3,13 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { CircleDashed, Plus } from "lucide-react";
 // types
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue, ISearchIssueResponse, TIssueGroupByOptions } from "@plane/types";
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TIssue, ISearchIssueResponse, TIssueGroupByOptions } from "@planner/types";
 // ui
-import { CustomMenu } from "@plane/ui";
+import { CustomMenu } from "@planner/ui";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import { ExistingIssuesListModal } from "@/components/core/modals/existing-issues-list-modal";
 import { MultipleSelectGroupAction } from "@/components/core/multiple-select";
 import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
@@ -17,10 +17,10 @@ import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
 import { captureClick } from "@/helpers/event-tracker.helper";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import type { TSelectionHelper } from "@/hooks/use-multiple-select";
-// plane-web
-import { CreateUpdateEpicModal } from "@/plane-web/components/epics/epic-modal";
-// Plane-web
-import { WorkFlowGroupTree } from "@/plane-web/components/workflow";
+// planner-web
+import { CreateUpdateEpicModal } from "@/planner-web/components/epics/epic-modal";
+// planner-web
+import { WorkFlowGroupTree } from "@/planner-web/components/workflow";
 
 interface IHeaderGroupByCard {
   groupID: string;

@@ -1,8 +1,8 @@
 import { useMemo } from "react";
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import { setPromiseToast, TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import { setPromiseToast, TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TIssueServiceType } from "@planner/types";
+import { EIssueServiceType } from "@planner/types";
 // hooks
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";

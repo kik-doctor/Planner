@@ -13,17 +13,17 @@ import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { usePopper } from "react-popper";
 import { Check, Plus, XCircle } from "lucide-react";
 import { Listbox } from "@headlessui/react";
-// plane imports
-import type { EUserPermissions } from "@plane/constants";
-import { ROLE, ROLE_DETAILS, MEMBER_TRACKER_EVENTS, MEMBER_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+// planner imports
+import type { EUserPermissions } from "@planner/constants";
+import { ROLE, ROLE_DETAILS, MEMBER_TRACKER_EVENTS, MEMBER_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
 // types
-import { EOnboardingSteps } from "@plane/types";
+import { EOnboardingSteps } from "@planner/types";
 // ui
-import { Input, Spinner } from "@plane/ui";
+import { Input, Spinner } from "@planner/ui";
 // constants
 // helpers
 
@@ -31,7 +31,7 @@ import { Input, Spinner } from "@plane/ui";
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 // components
 import { CommonOnboardingHeader } from "../common";
 
@@ -360,7 +360,7 @@ export const InviteTeamStep = observer(function InviteTeamStep(props: Props) {
     >
       <CommonOnboardingHeader
         title="Invite your teammates"
-        description="Work in plane happens best with your team. Invite them now to use Plane to its potential."
+        description="Work in Planner happens best with your team. Invite them now to use planner to its potential."
       />
       <div className="w-full text-sm py-4">
         <div className="group relative grid grid-cols-10 gap-4 mx-8 py-2">

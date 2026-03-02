@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { observer } from "mobx-react";
 import { usePathname, useSearchParams } from "next/navigation";
 // hooks
-import { generateQueryParams } from "@plane/utils";
+import { generateQueryParams } from "@planner/utils";
 import { useCycle } from "@/hooks/store/use-cycle";
 import { useAppRouter } from "@/hooks/use-app-router";
 // components

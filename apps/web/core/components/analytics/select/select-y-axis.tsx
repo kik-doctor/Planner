@@ -1,13 +1,13 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { EEstimateSystem } from "@plane/constants";
-import { ProjectIcon } from "@plane/propel/icons";
-import type { ChartYAxisMetric } from "@plane/types";
-// plane package imports
-import { CustomSelect } from "@plane/ui";
+import { EEstimateSystem } from "@planner/constants";
+import { ProjectIcon } from "@planner/propel/icons";
+import type { ChartYAxisMetric } from "@planner/types";
+// planner package imports
+import { CustomSelect } from "@planner/ui";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
-// plane web constants
+// planner web constants
 type Props = {
   value: ChartYAxisMetric;
   onChange: (val: ChartYAxisMetric | null) => void;

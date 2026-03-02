@@ -1,5 +1,5 @@
-import type { TInboxIssueStatus } from "@plane/types";
-import { EInboxIssueStatus } from "@plane/types";
+import type { TInboxIssueStatus } from "@planner/types";
+import { EInboxIssueStatus } from "@planner/types";
 
 export const INBOX_STATUS: {
   key: string;

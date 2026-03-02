@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { PROJECT_TRACKER_ELEMENTS } from "@plane/constants";
-import { EPillVariant, Pill, EPillSize } from "@plane/propel/pill";
-import { ToggleSwitch } from "@plane/ui";
-import { joinUrlPath } from "@plane/utils";
-import type { TProperties } from "@/plane-web/constants/project/settings/features";
+import { PROJECT_TRACKER_ELEMENTS } from "@planner/constants";
+import { EPillVariant, Pill, EPillSize } from "@planner/propel/pill";
+import { ToggleSwitch } from "@planner/ui";
+import { joinUrlPath } from "@planner/utils";
+import type { TProperties } from "@/planner-web/constants/project/settings/features";
 
 type Props = {
   workspaceSlug: string;

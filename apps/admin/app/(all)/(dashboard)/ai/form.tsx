@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form";
 import { Lightbulb } from "lucide-react";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IFormattedInstanceConfiguration, TInstanceAIConfigurationKeys } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IFormattedInstanceConfiguration, TInstanceAIConfigurationKeys } from "@planner/types";
 // components
 import type { TControllerInputFormField } from "@/components/common/controller-input";
 import { ControllerInput } from "@/components/common/controller-input";
@@ -123,7 +123,7 @@ export function InstanceAIForm(props: IInstanceAIForm) {
           <Lightbulb height="14" width="14" />
           <div>
             If you have a preferred AI models vendor, please get in{" "}
-            <a className="underline font-medium" href="https://plane.so/contact">
+            <a className="underline font-medium" href="https://planner.oneworkspacex.com/contact">
               touch with us.
             </a>
           </div>

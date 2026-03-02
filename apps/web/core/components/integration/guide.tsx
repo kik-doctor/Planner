@@ -5,12 +5,12 @@ import { useParams, useSearchParams } from "next/navigation";
 import useSWR, { mutate } from "swr";
 // icons
 import { RefreshCw } from "lucide-react";
-// plane imports
-import { IMPORTERS_LIST } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import { IMPORTERS_LIST } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // types
-import { Button } from "@plane/propel/button";
-import type { IImporterService } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import type { IImporterService } from "@planner/types";
 // assets
 import GithubLogo from "@/app/assets/services/github.png?url";
 import JiraLogo from "@/app/assets/services/jira.svg?url";
@@ -79,11 +79,11 @@ const IntegrationGuide = observer(function IntegrationGuide() {
                 <div className="text-lg font-medium">Relocation Guide</div>
                 <div className="text-sm">
                   You can now transfer all the work items that you{"'"}ve created in other tracking
-                  services. This tool will guide you to relocate the work item to Plane.
+                  services. This tool will guide you to relocate the work item to Planner.
                 </div>
               </div>
               <a
-                href="https://docs.plane.so/importers/github"
+                href="https://docs.planner.oneworkspacex.com/importers/github"
                 target="_blank"
                 rel="noopener noreferrer"
               >

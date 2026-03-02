@@ -14,25 +14,25 @@ import {
   Trash2,
 } from "lucide-react";
 // constants
-import { EPageAccess, PROJECT_PAGE_TRACKER_ELEMENTS } from "@plane/constants";
-// plane editor
-import type { EditorRefApi } from "@plane/editor";
-// plane ui
-import { ArchiveIcon } from "@plane/propel/icons";
-import type { TContextMenuItem } from "@plane/ui";
-import { ContextMenu, CustomMenu } from "@plane/ui";
+import { EPageAccess, PROJECT_PAGE_TRACKER_ELEMENTS } from "@planner/constants";
+// planner editor
+import type { EditorRefApi } from "@planner/editor";
+// planner ui
+import { ArchiveIcon } from "@planner/propel/icons";
+import type { TContextMenuItem } from "@planner/ui";
+import { ContextMenu, CustomMenu } from "@planner/ui";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import { DeletePageModal } from "@/components/pages/modals/delete-page-modal";
 // helpers
 // hooks
 import { captureClick } from "@/helpers/event-tracker.helper";
 import { usePageOperations } from "@/hooks/use-page-operations";
-// plane web components
-import { MovePageModal } from "@/plane-web/components/pages";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
-import { usePageFlag } from "@/plane-web/hooks/use-page-flag";
+// planner web components
+import { MovePageModal } from "@/planner-web/components/pages";
+// planner web hooks
+import type { EPageStoreType } from "@/planner-web/hooks/store";
+import { usePageFlag } from "@/planner-web/hooks/use-page-flag";
 // store types
 import type { TPageInstance } from "@/store/pages/base-page";
 

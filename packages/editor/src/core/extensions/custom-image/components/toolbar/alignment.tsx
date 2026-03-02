@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-// plane imports
-import { useOutsideClickDetector } from "@plane/hooks";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/ui";
+// planner imports
+import { useOutsideClickDetector } from "@planner/hooks";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/ui";
 // local imports
 import type { TCustomImageAlignment } from "../../types";
 import { IMAGE_ALIGNMENT_OPTIONS } from "../../utils";

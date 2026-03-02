@@ -1,14 +1,14 @@
 import { observer } from "mobx-react";
 import { Trash2 } from "lucide-react";
-// plane imports
-import { IMPORTERS_LIST } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IImporterService } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+// planner imports
+import { IMPORTERS_LIST } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { IImporterService } from "@planner/types";
+import { CustomMenu } from "@planner/ui";
 // icons
 // helpers
 
-import { renderFormattedDate } from "@plane/utils";
+import { renderFormattedDate } from "@planner/utils";
 // types
 // constants
 

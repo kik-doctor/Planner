@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "next/navigation";
 import useSWR, { mutate } from "swr";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceIntegration } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IWorkspaceIntegration } from "@planner/types";
 // assets
 import GithubLogo from "@/app/assets/logos/github-square.png?url";
 import SlackLogo from "@/app/assets/services/slack.png?url";

@@ -1,5 +1,5 @@
 import { uniq, orderBy, isEmpty, indexOf, groupBy, cloneDeep, set } from "lodash-es";
-import { ALL_ISSUES, EIssueFilterType, FILTER_TO_ISSUE_MAP, ISSUE_PRIORITIES } from "@plane/constants";
+import { ALL_ISSUES, EIssueFilterType, FILTER_TO_ISSUE_MAP, ISSUE_PRIORITIES } from "@planner/constants";
 import type {
   IIssueDisplayFilterOptions,
   IIssueDisplayProperties,
@@ -8,8 +8,8 @@ import type {
   TIssue,
   TIssueGroupByOptions,
   TIssueOrderByOptions,
-} from "@plane/types";
-import { checkDateCriteria, convertToISODateString, parseDateFilter } from "@plane/utils";
+} from "@planner/types";
+import { checkDateCriteria, convertToISODateString, parseDateFilter } from "@planner/utils";
 import { store } from "@/lib/store-context";
 import { EIssueGroupedAction, ISSUE_GROUP_BY_KEY } from "./base-issues.store";
 

@@ -2,10 +2,10 @@ import type { FC } from "react";
 import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { ListFilter, Search } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import type { IIssueFilterOptions, IState } from "@plane/types";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+import type { IIssueFilterOptions, IState } from "@planner/types";
+import { cn } from "@planner/utils";
 import {
   FilterAssignees,
   FilterDueDate,
@@ -17,7 +17,7 @@ import {
   FilterStateGroup,
 } from "@/components/issues/issue-layouts/filters";
 import { isFiltersApplied } from "@/components/issues/issue-layouts/utils";
-import { FilterIssueTypes } from "@/plane-web/components/issues/filters/issue-types";
+import { FilterIssueTypes } from "@/planner-web/components/issues/filters/issue-types";
 type TSubIssueFiltersProps = {
   handleFiltersUpdate: (key: keyof IIssueFilterOptions, value: string | string[]) => void;
   filters: IIssueFilterOptions;
@@ -28,7 +28,7 @@ type TSubIssueFiltersProps = {
 
 export const SubIssueFilters = observer(function SubIssueFilters(props: TSubIssueFiltersProps) {
   const { handleFiltersUpdate, filters, memberIds, states, availableFilters } = props;
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // states
   const [filtersSearchQuery, setFiltersSearchQuery] = useState("");

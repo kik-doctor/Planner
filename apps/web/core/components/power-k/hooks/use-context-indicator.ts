@@ -1,12 +1,12 @@
 import { useParams } from "next/navigation";
-// plane imports
-import { getPageName } from "@plane/utils";
+// planner imports
+import { getPageName } from "@planner/utils";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 import { useModule } from "@/hooks/store/use-module";
-// plane web imports
-import { useExtendedContextIndicator } from "@/plane-web/components/command-palette/power-k/hooks/use-extended-context-indicator";
-import { EPageStoreType, usePageStore } from "@/plane-web/hooks/store";
+// planner web imports
+import { useExtendedContextIndicator } from "@/planner-web/components/command-palette/power-k/hooks/use-extended-context-indicator";
+import { EPageStoreType, usePageStore } from "@/planner-web/hooks/store";
 // local imports
 import type { TPowerKContextType } from "../core/types";
 

@@ -3,13 +3,13 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import type { SubmitHandler } from "react-hook-form";
 import { Controller, useForm } from "react-hook-form";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-// plane helpers
-// plane ui
-import { FavoriteFolderIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Input } from "@plane/ui";
+import { useOutsideClickDetector } from "@planner/hooks";
+import { useTranslation } from "@planner/i18n";
+// planner helpers
+// planner ui
+import { FavoriteFolderIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Input } from "@planner/ui";
 // hooks
 import { useFavorite } from "@/hooks/store/use-favorite";
 

@@ -2,16 +2,16 @@ import type { FC } from "react";
 import React, { useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams, useLocation, Link, useNavigate } from "react-router";
-import { EUserPermissionsLevel, EUserPermissions } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TabNavigationList, TabNavigationItem } from "@plane/propel/tab-navigation";
-import type { EUserProjectRoles } from "@plane/types";
+import { EUserPermissionsLevel, EUserPermissions } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TabNavigationList, TabNavigationItem } from "@planner/propel/tab-navigation";
+import type { EUserProjectRoles } from "@planner/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
-import { useNavigationItems } from "@/plane-web/components/navigations";
+// planner web imports
+import { useNavigationItems } from "@/planner-web/components/navigations";
 // local imports
 import { LeaveProjectModal } from "../project/leave-project-modal";
 import { PublishProjectModal } from "../project/publish-project/modal";

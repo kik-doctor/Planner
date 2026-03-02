@@ -17,11 +17,11 @@ export const LIVE_URL = encodeURI(`${LIVE_BASE_URL}${LIVE_BASE_PATH}`);
 export const WEB_BASE_URL = process.env.VITE_WEB_BASE_URL || "";
 export const WEB_BASE_PATH = process.env.VITE_WEB_BASE_PATH || "";
 export const WEB_URL = encodeURI(`${WEB_BASE_URL}${WEB_BASE_PATH}`);
-// plane website url
-export const WEBSITE_URL = process.env.VITE_WEBSITE_URL || "https://plane.so";
+// planner website url
+export const WEBSITE_URL = process.env.VITE_WEBSITE_URL || "https://planner.oneworkspacex.com";
 // support email
-export const SUPPORT_EMAIL = process.env.VITE_SUPPORT_EMAIL || "support@plane.so";
+export const SUPPORT_EMAIL = process.env.VITE_SUPPORT_EMAIL || "hello@oneworkspacex.com";
 // marketing links
-export const MARKETING_PRICING_PAGE_LINK = "https://plane.so/pricing";
-export const MARKETING_CONTACT_US_PAGE_LINK = "https://plane.so/contact";
-export const MARKETING_PLANE_ONE_PAGE_LINK = "https://plane.so/one";
+export const MARKETING_PRICING_PAGE_LINK = "https://planner.oneworkspacex.com/pricing";
+export const MARKETING_CONTACT_US_PAGE_LINK = "https://planner.oneworkspacex.com/contact";
+export const MARKETING_PLANNER_ONE_PAGE_LINK = "https://planner.oneworkspacex.com/one";

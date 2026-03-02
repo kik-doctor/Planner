@@ -1,7 +1,7 @@
 import type { FC } from "react";
 // helpers
-import { useTranslation } from "@plane/i18n";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { cn } from "@planner/utils";
 
 type TUpgradeBadge = {
   className?: string;

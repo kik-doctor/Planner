@@ -1,5 +1,5 @@
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
+import { useTranslation } from "@planner/i18n";
+import { EmptyStateCompact } from "@planner/propel/empty-state";
 
 export function LinksEmptyState() {
   const { t } = useTranslation();

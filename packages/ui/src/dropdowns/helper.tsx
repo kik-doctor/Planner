@@ -1,5 +1,5 @@
 // FIXME: fix this!!!
-import type { ICustomSearchSelectOption } from "@plane/types";
+import type { ICustomSearchSelectOption } from "@planner/types";
 
 type Placement =
   | "top"

@@ -3,10 +3,10 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { RefreshCcw } from "lucide-react";
 // ui
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { Breadcrumbs, Header } from "@plane/ui";
+import { EUserPermissions, EUserPermissionsLevel } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { Breadcrumbs, Header } from "@planner/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { InboxIssueCreateModalRoot } from "@/components/inbox/modals/create-modal";
@@ -14,9 +14,9 @@ import { InboxIssueCreateModalRoot } from "@/components/inbox/modals/create-moda
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
-import { CommonProjectBreadcrumbs } from "@/plane-web/components/breadcrumbs/common";
-import { IntakeIcon } from "@plane/propel/icons";
+// planner web imports
+import { CommonProjectBreadcrumbs } from "@/planner-web/components/breadcrumbs/common";
+import { IntakeIcon } from "@planner/propel/icons";
 
 export const ProjectInboxHeader = observer(function ProjectInboxHeader() {
   // states

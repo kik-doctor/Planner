@@ -8,25 +8,25 @@ import type {
   IBlockUpdateDependencyData,
   IGanttBlock,
   TGanttViews,
-} from "@plane/types";
-import { cn, getDate } from "@plane/utils";
+} from "@planner/types";
+import { cn, getDate } from "@planner/utils";
 // components
 import { MultipleSelectGroup } from "@/components/core/multiple-select";
 import { GanttChartSidebar, MonthChartView, QuarterChartView, WeekChartView } from "@/components/gantt-chart";
 // helpers
 // hooks
 import { useTimeLineChartStore } from "@/hooks/use-timeline-chart";
-// plane web components
+// planner web components
 import {
   TimelineDependencyPaths,
   TimelineDraggablePath,
   GanttAdditionalLayers,
-} from "@/plane-web/components/gantt-chart";
-import { GanttChartRowList } from "@/plane-web/components/gantt-chart/blocks/block-row-list";
-import { GanttChartBlocksList } from "@/plane-web/components/gantt-chart/blocks/blocks-list";
-import { IssueBulkOperationsRoot } from "@/plane-web/components/issues/bulk-operations";
-// plane web hooks
-import { useBulkOperationStatus } from "@/plane-web/hooks/use-bulk-operation-status";
+} from "@/planner-web/components/gantt-chart";
+import { GanttChartRowList } from "@/planner-web/components/gantt-chart/blocks/block-row-list";
+import { GanttChartBlocksList } from "@/planner-web/components/gantt-chart/blocks/blocks-list";
+import { IssueBulkOperationsRoot } from "@/planner-web/components/issues/bulk-operations";
+// planner web hooks
+import { useBulkOperationStatus } from "@/planner-web/hooks/use-bulk-operation-status";
 //
 import { DEFAULT_BLOCK_WIDTH, GANTT_SELECT_GROUP, HEADER_HEIGHT } from "../constants";
 import { getItemPositionWidth } from "../views";
@@ -88,7 +88,7 @@ export const GanttChartMainContent = observer(function GanttChartMainContent(pro
   const ganttContainerRef = useRef<HTMLDivElement>(null);
   // chart hook
   const { currentView, currentViewData } = useTimeLineChartStore();
-  // plane web hooks
+  // planner web hooks
   const isBulkOperationsEnabled = useBulkOperationStatus();
 
   // Enable Auto Scroll for Ganttlist

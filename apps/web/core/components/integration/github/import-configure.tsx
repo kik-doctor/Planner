@@ -1,6 +1,6 @@
 // components
-import { Button } from "@plane/propel/button";
-import type { IAppIntegration, IWorkspaceIntegration } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import type { IAppIntegration, IWorkspaceIntegration } from "@planner/types";
 import type { TIntegrationSteps } from "@/components/integration";
 import { GithubAuth } from "@/components/integration";
 // types

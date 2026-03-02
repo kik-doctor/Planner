@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@plane/propel/button";
+import { Button } from "@planner/propel/button";
 
 export function InstanceNotReady() {
   return (

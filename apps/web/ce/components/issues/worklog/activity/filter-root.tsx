@@ -1,7 +1,7 @@
 import type { FC } from "react";
-// plane imports
-import type { TActivityFilters, TActivityFilterOption } from "@plane/constants";
-import { ACTIVITY_FILTER_TYPE_OPTIONS } from "@plane/constants";
+// planner imports
+import type { TActivityFilters, TActivityFilterOption } from "@planner/constants";
+import { ACTIVITY_FILTER_TYPE_OPTIONS } from "@planner/constants";
 // components
 import { ActivityFilter } from "@/components/issues/issue-detail/issue-activity";
 

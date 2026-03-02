@@ -1,6 +1,6 @@
 import { useContext } from "react";
-// plane imports
-import type { IWorkItemFilterStore } from "@plane/shared-state";
+// planner imports
+import type { IWorkItemFilterStore } from "@planner/shared-state";
 // context
 import { StoreContext } from "@/lib/store-context";
 

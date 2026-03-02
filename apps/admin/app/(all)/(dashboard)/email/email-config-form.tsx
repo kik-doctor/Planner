@@ -1,11 +1,11 @@
 import { useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 // types
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IFormattedInstanceConfiguration, TInstanceEmailConfigurationKeys } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IFormattedInstanceConfiguration, TInstanceEmailConfigurationKeys } from "@planner/types";
 // ui
-import { CustomSelect } from "@plane/ui";
+import { CustomSelect } from "@planner/ui";
 // components
 import type { TControllerInputFormField } from "@/components/common/controller-input";
 import { ControllerInput } from "@/components/common/controller-input";
@@ -76,7 +76,7 @@ export function InstanceEmailForm(props: IInstanceEmailForm) {
       label: "Sender's email address",
       description:
         "This is the email address your users will see when getting emails from this instance. You will need to verify this address.",
-      placeholder: "no-reply@projectplane.so",
+      placeholder: "no-reply@projectplanner.oneworkspacex.com",
       error: Boolean(errors.EMAIL_FROM),
       required: true,
     },
@@ -87,7 +87,7 @@ export function InstanceEmailForm(props: IInstanceEmailForm) {
       key: "EMAIL_HOST_USER",
       type: "text",
       label: "Username",
-      placeholder: "getitdone@projectplane.so",
+      placeholder: "getitdone@projectplanner.oneworkspacex.com",
       error: Boolean(errors.EMAIL_HOST_USER),
       required: false,
     },

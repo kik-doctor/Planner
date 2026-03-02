@@ -1,10 +1,10 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { ArchiveIcon, CycleIcon, ModuleIcon, WorkItemsIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { EIssuesStoreType } from "@plane/types";
+import { ArchiveIcon, CycleIcon, ModuleIcon, WorkItemsIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import { EIssuesStoreType } from "@planner/types";
 // ui
-import { Breadcrumbs, Header } from "@plane/ui";
+import { Breadcrumbs, Header } from "@planner/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 // hooks
@@ -12,8 +12,8 @@ import { useIssues } from "@/hooks/store/use-issues";
 import { useProject } from "@/hooks/store/use-project";
 import { useAppRouter } from "@/hooks/use-app-router";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
-import { CommonProjectBreadcrumbs } from "@/plane-web/components/breadcrumbs/common";
+// planner web imports
+import { CommonProjectBreadcrumbs } from "@/planner-web/components/breadcrumbs/common";
 
 type TProps = {
   activeTab: "issues" | "cycles" | "modules";

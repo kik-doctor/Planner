@@ -7,12 +7,12 @@ import {
   EUserPermissionsLevel,
   MEMBER_TRACKER_ELEMENTS,
   MEMBER_TRACKER_EVENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceBulkInviteFormData } from "@plane/types";
-import { cn } from "@plane/utils";
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IWorkspaceBulkInviteFormData } from "@planner/types";
+import { cn } from "@planner/utils";
 // components
 import { NotAuthorizedView } from "@/components/auth-screens/not-authorized-view";
 import { CountChip } from "@/components/common/count-chip";
@@ -26,9 +26,9 @@ import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useMember } from "@/hooks/store/use-member";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web components
-import { BillingActionsButton } from "@/plane-web/components/workspace/billing/billing-actions-button";
-import { SendWorkspaceInvitationModal, MembersActivityButton } from "@/plane-web/components/workspace/members";
+// planner web components
+import { BillingActionsButton } from "@/planner-web/components/workspace/billing/billing-actions-button";
+import { SendWorkspaceInvitationModal, MembersActivityButton } from "@/planner-web/components/workspace/members";
 import type { Route } from "./+types/page";
 
 const WorkspaceMembersSettingsPage = observer(function WorkspaceMembersSettingsPage({ params }: Route.ComponentProps) {

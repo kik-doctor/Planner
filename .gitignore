@@ -90,7 +90,7 @@ tmp/
 ## packages
 dist
 .temp/
-deploy/selfhost/plane-app/
+deploy/selfhost/planner-app/
 
 ## Storybook
 *storybook.log

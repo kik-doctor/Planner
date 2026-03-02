@@ -1,9 +1,9 @@
 import type { FC } from "react";
-// plane imports
+// planner imports
 import { observer } from "mobx-react";
-import type { EProductSubscriptionEnum, TBillingFrequency } from "@plane/types";
-import { getSubscriptionBackgroundColor, getDiscountPillStyle } from "@plane/ui";
-import { calculateYearlyDiscount, cn } from "@plane/utils";
+import type { EProductSubscriptionEnum, TBillingFrequency } from "@planner/types";
+import { getSubscriptionBackgroundColor, getDiscountPillStyle } from "@planner/ui";
+import { calculateYearlyDiscount, cn } from "@planner/utils";
 
 type TPlanFrequencyToggleProps = {
   subscriptionType: EProductSubscriptionEnum;

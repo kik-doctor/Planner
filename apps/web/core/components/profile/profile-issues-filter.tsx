@@ -1,13 +1,13 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane constants
-import { EIssueFilterType, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@plane/constants";
+// planner constants
+import { EIssueFilterType, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@planner/constants";
 // i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 // types
-import type { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@plane/types";
-import { EIssuesStoreType, EIssueLayoutTypes } from "@plane/types";
+import type { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@planner/types";
+import { EIssuesStoreType, EIssueLayoutTypes } from "@planner/types";
 // components
 import { DisplayFiltersSelection, FiltersDropdown, LayoutSelection } from "@/components/issues/issue-layouts/filters";
 import { WorkItemFiltersToggle } from "@/components/work-item-filters/filters-toggle";

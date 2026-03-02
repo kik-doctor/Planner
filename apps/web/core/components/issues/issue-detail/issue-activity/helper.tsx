@@ -1,9 +1,9 @@
 import { useMemo } from "react";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { EFileAssetType } from "@plane/types";
-import type { TCommentsOperations } from "@plane/types";
-import { copyUrlToClipboard, formatTextList, generateWorkItemLink } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { EFileAssetType } from "@planner/types";
+import type { TCommentsOperations } from "@planner/types";
+import { copyUrlToClipboard, formatTextList, generateWorkItemLink } from "@planner/utils";
 import { useEditorAsset } from "@/hooks/store/use-editor-asset";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useMember } from "@/hooks/store/use-member";

@@ -1,14 +1,14 @@
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import type { IState } from "@plane/types";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
+import type { IState } from "@planner/types";
 // api service
 import { APIService } from "../api.service";
 
 /**
- * Service class for managing states within plane sites application.
+ * Service class for managing states within planner sites application.
  * Extends APIService to handle HTTP requests to the state-related endpoints.
  * @extends {APIService}
- * @remarks This service is only available for plane sites
+ * @remarks This service is only available for planner sites
  */
 export class SitesStateService extends APIService {
   constructor(BASE_URL?: string) {

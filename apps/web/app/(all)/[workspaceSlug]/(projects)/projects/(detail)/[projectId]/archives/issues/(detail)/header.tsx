@@ -2,8 +2,8 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 // ui
-import { ArchiveIcon, WorkItemsIcon } from "@plane/propel/icons";
-import { Breadcrumbs, Header } from "@plane/ui";
+import { ArchiveIcon, WorkItemsIcon } from "@planner/propel/icons";
+import { Breadcrumbs, Header } from "@planner/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { IssueDetailQuickActions } from "@/components/issues/issue-detail/issue-detail-quick-actions";
@@ -11,8 +11,8 @@ import { IssueDetailQuickActions } from "@/components/issues/issue-detail/issue-
 import { ISSUE_DETAILS } from "@/constants/fetch-keys";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
-// plane web
-import { ProjectBreadcrumb } from "@/plane-web/components/breadcrumbs/project";
+// planner web
+import { ProjectBreadcrumb } from "@/planner-web/components/breadcrumbs/project";
 // services
 import { IssueService } from "@/services/issue";
 

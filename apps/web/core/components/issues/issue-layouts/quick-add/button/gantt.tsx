@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 import { PlusIcon } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { Row } from "@plane/ui";
+import { useTranslation } from "@planner/i18n";
+import { Row } from "@planner/ui";
 import type { TQuickAddIssueButton } from "../root";
 
 export const GanttQuickAddIssueButton = observer(function GanttQuickAddIssueButton(props: TQuickAddIssueButton) {

@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
-// Plane
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IBlockUpdateDependencyData, IGanttBlock } from "@plane/types";
+// planner
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IBlockUpdateDependencyData, IGanttBlock } from "@planner/types";
 // hooks
 import { useTimeLineChartStore } from "@/hooks/use-timeline-chart";
 //

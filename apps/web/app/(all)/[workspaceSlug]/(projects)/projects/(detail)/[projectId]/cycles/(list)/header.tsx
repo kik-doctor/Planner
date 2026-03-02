@@ -1,11 +1,11 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // ui
-import { EUserPermissions, EUserPermissionsLevel, CYCLE_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { CycleIcon } from "@plane/propel/icons";
-import { Breadcrumbs, Header } from "@plane/ui";
+import { EUserPermissions, EUserPermissionsLevel, CYCLE_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { CycleIcon } from "@planner/propel/icons";
+import { Breadcrumbs, Header } from "@planner/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { CyclesViewHeader } from "@/components/cycles/cycles-view-header";
@@ -14,8 +14,8 @@ import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
-import { CommonProjectBreadcrumbs } from "@/plane-web/components/breadcrumbs/common";
+// planner web imports
+import { CommonProjectBreadcrumbs } from "@/planner-web/components/breadcrumbs/common";
 
 export const CyclesListHeader = observer(function CyclesListHeader() {
   // router

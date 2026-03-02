@@ -1,13 +1,13 @@
 import { observer } from "mobx-react";
-// plane types
-import { EUserPermissionsLevel } from "@plane/constants";
+// planner types
+import { EUserPermissionsLevel } from "@planner/constants";
 // components
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 import type { TPowerKContext } from "@/components/power-k/core/types";
 import { PowerKSettingsMenu } from "@/components/power-k/menus/settings";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
-import { PROJECT_SETTINGS } from "@/plane-web/constants/project";
+import { PROJECT_SETTINGS } from "@/planner-web/constants/project";
 
 type Props = {
   context: TPowerKContext;
@@ -16,7 +16,7 @@ type Props = {
 
 export const PowerKOpenProjectSettingsMenu = observer(function PowerKOpenProjectSettingsMenu(props: Props) {
   const { context, handleSelect } = props;
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { allowPermissions } = useUserPermissions();

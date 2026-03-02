@@ -1,4 +1,4 @@
-import type { IJiraMetadata } from "@plane/types";
+import type { IJiraMetadata } from "@planner/types";
 
 const paramsToKey = (params: any) => {
   const {

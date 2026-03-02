@@ -5,14 +5,14 @@ import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import { useTranslation } from "@planner/i18n";
 // ui
-import type { DateRange, Matcher } from "@plane/propel/calendar";
-import { Calendar } from "@plane/propel/calendar";
-import { CloseIcon, DueDatePropertyIcon } from "@plane/propel/icons";
-import { ComboDropDown } from "@plane/ui";
-import { cn, renderFormattedDate } from "@plane/utils";
+import type { DateRange, Matcher } from "@planner/propel/calendar";
+import { Calendar } from "@planner/propel/calendar";
+import { CloseIcon, DueDatePropertyIcon } from "@planner/propel/icons";
+import { ComboDropDown } from "@planner/ui";
+import { cn, renderFormattedDate } from "@planner/utils";
 // helpers
 // hooks
 import { useUserProfile } from "@/hooks/store/user";

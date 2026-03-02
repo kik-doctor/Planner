@@ -1,5 +1,5 @@
-import type { IEditorPropsExtended } from "@plane/editor";
-import type { TSearchEntityRequestPayload, TSearchResponse } from "@plane/types";
+import type { IEditorPropsExtended } from "@planner/editor";
+import type { TSearchEntityRequestPayload, TSearchResponse } from "@planner/types";
 import type { TPageInstance } from "@/store/pages/base-page";
 import type { EPageStoreType } from "../store";
 

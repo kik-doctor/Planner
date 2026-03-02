@@ -1,9 +1,9 @@
 import { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
-import type { TDescriptionVersionDetails, TDescriptionVersionsListResponse } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import type { TDescriptionVersionDetails, TDescriptionVersionsListResponse } from "@planner/types";
+import { cn } from "@planner/utils";
 // local imports
 import { DescriptionVersionsDropdown } from "./dropdown";
 import { DescriptionVersionsModal } from "./modal";

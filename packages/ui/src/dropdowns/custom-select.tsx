@@ -3,9 +3,9 @@ import { Check } from "lucide-react";
 import React, { createContext, useCallback, useContext, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { ChevronDownIcon } from "@plane/propel/icons";
-// plane helpers
+import { useOutsideClickDetector } from "@planner/hooks";
+import { ChevronDownIcon } from "@planner/propel/icons";
+// planner helpers
 // hooks
 import { useDropdownKeyDown } from "../hooks/use-dropdown-key-down";
 // helpers

@@ -1,6 +1,6 @@
-// plane web imports
-import type { TEditorMentionComponentProps } from "@/plane-web/components/editor/embeds/mentions";
-import { EditorAdditionalMentionsRoot } from "@/plane-web/components/editor/embeds/mentions";
+// planner web imports
+import type { TEditorMentionComponentProps } from "@/planner-web/components/editor/embeds/mentions";
+import { EditorAdditionalMentionsRoot } from "@/planner-web/components/editor/embeds/mentions";
 // local imports
 import { EditorUserMention } from "./user";
 

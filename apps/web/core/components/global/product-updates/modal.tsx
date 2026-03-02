@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 import { observer } from "mobx-react";
-import { USER_TRACKER_ELEMENTS } from "@plane/constants";
+import { USER_TRACKER_ELEMENTS } from "@planner/constants";
 // ui
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { EModalPosition, EModalWidth, ModalCore } from "@planner/ui";
 // components
 import { ProductUpdatesFooter } from "@/components/global";
 // helpers
 import { captureView } from "@/helpers/event-tracker.helper";
-// plane web components
-import { ProductUpdatesChangelog } from "@/plane-web/components/global/product-updates/changelog";
-import { ProductUpdatesHeader } from "@/plane-web/components/global/product-updates/header";
+// planner web components
+import { ProductUpdatesChangelog } from "@/planner-web/components/global/product-updates/changelog";
+import { ProductUpdatesHeader } from "@/planner-web/components/global/product-updates/header";
 
 export type ProductUpdatesModalProps = {
   isOpen: boolean;

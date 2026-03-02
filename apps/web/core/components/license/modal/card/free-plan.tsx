@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import { CircleX } from "lucide-react";
-// plane constants
-import { FREE_PLAN_UPGRADE_FEATURES } from "@plane/constants";
+// planner constants
+import { FREE_PLAN_UPGRADE_FEATURES } from "@planner/constants";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 type FreePlanCardProps = {
   isOnFreePlan: boolean;

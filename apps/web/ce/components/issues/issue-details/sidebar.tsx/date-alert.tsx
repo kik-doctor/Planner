@@ -1,4 +1,4 @@
-import type { TIssue } from "@plane/types";
+import type { TIssue } from "@planner/types";
 
 export type TDateAlertProps = {
   date: string;

@@ -1,6 +1,6 @@
 import React from "react";
 // ui
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@planner/propel/tooltip";
 // helpers
 import { cn } from "../utils";
 // types

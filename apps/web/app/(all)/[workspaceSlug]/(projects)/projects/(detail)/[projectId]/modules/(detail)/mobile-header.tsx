@@ -1,13 +1,13 @@
 import { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import { EIssueFilterType, ISSUE_LAYOUTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CalendarLayoutIcon, BoardLayoutIcon, ListLayoutIcon, ChevronDownIcon } from "@plane/propel/icons";
-import type { IIssueDisplayFilterOptions, IIssueDisplayProperties, EIssueLayoutTypes } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+// planner imports
+import { EIssueFilterType, ISSUE_LAYOUTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { CalendarLayoutIcon, BoardLayoutIcon, ListLayoutIcon, ChevronDownIcon } from "@planner/propel/icons";
+import type { IIssueDisplayFilterOptions, IIssueDisplayProperties, EIssueLayoutTypes } from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
+import { CustomMenu } from "@planner/ui";
 // components
 import { WorkItemsModal } from "@/components/analytics/work-items/modal";
 import { DisplayFiltersSelection, FiltersDropdown } from "@/components/issues/issue-layouts/filters";
@@ -28,7 +28,7 @@ export const ModuleIssuesMobileHeader = observer(function ModuleIssuesMobileHead
   const { workspaceSlug, projectId, moduleId } = useParams();
   // states
   const [analyticsModal, setAnalyticsModal] = useState(false);
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { currentProjectDetails } = useProject();

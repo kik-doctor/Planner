@@ -1,6 +1,6 @@
 // ui
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IIssueLabel } from "@plane/types";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IIssueLabel } from "@planner/types";
 // types
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // hooks

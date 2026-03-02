@@ -1,13 +1,13 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-import { EEstimateSystem } from "@plane/constants";
-import { convertMinutesToHoursMinutesString, cn } from "@plane/utils";
+import { EEstimateSystem } from "@planner/constants";
+import { convertMinutesToHoursMinutesString, cn } from "@planner/utils";
 // helpers
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useEstimate } from "@/hooks/store/estimates/use-estimate";
-// plane web components
-import { EstimateListItemButtons } from "@/plane-web/components/estimates";
+// planner web components
+import { EstimateListItemButtons } from "@/planner-web/components/estimates";
 
 type TEstimateListItem = {
   estimateId: string;

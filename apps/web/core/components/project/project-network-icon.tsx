@@ -1,7 +1,7 @@
 import { Lock, Globe2 } from "lucide-react";
-// plane imports
-import type { TNetworkChoiceIconKey } from "@plane/constants";
-import { cn } from "@plane/utils";
+// planner imports
+import type { TNetworkChoiceIconKey } from "@planner/constants";
+import { cn } from "@planner/utils";
 
 type Props = {
   iconKey: TNetworkChoiceIconKey;

@@ -1,11 +1,11 @@
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-// plane imports
-import { EUserPermissionsLevel, SIDEBAR_TRACKER_ELEMENTS } from "@plane/constants";
+// planner imports
+import { EUserPermissionsLevel, SIDEBAR_TRACKER_ELEMENTS } from "@planner/constants";
 
-import { useTranslation } from "@plane/i18n";
-import type { EUserWorkspaceRoles } from "@plane/types";
+import { useTranslation } from "@planner/i18n";
+import type { EUserWorkspaceRoles } from "@planner/types";
 // components
 import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
 import { NotificationAppSidebarOption } from "@/components/workspace-notifications/notification-app-sidebar-option";

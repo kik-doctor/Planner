@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { useParams } from "next/navigation";
 // types
-import { WORKSPACE_SETTINGS_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWebhook, IWorkspace, TWebhookEventTypes } from "@plane/types";
+import { WORKSPACE_SETTINGS_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IWebhook, IWorkspace, TWebhookEventTypes } from "@planner/types";
 // ui
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { EModalPosition, EModalWidth, ModalCore } from "@planner/ui";
 // helpers
-import { csvDownload } from "@plane/utils";
+import { csvDownload } from "@planner/utils";
 // hooks
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import useKeypress from "@/hooks/use-keypress";

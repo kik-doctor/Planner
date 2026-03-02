@@ -1,12 +1,12 @@
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
 import { Pencil, ExternalLink, Link, Trash2 } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TContextMenuItem } from "@plane/ui";
-import { LinkItemBlock } from "@plane/ui";
-// plane utils
-import { copyTextToClipboard } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TContextMenuItem } from "@planner/ui";
+import { LinkItemBlock } from "@planner/ui";
+// planner utils
+import { copyTextToClipboard } from "@planner/utils";
 // hooks
 import { useHome } from "@/hooks/store/use-home";
 // types

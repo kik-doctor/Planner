@@ -1,5 +1,5 @@
-// plane imports
-import { EAuthModes } from "@plane/constants";
+// planner imports
+import { EAuthModes } from "@planner/constants";
 // components
 import { ResetPasswordForm } from "@/components/account/auth-forms/reset-password";
 import { AuthHeader } from "@/components/auth-screens/header";

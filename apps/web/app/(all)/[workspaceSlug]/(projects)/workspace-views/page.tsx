@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
 import { Search } from "lucide-react";
-// plane imports
-import { DEFAULT_GLOBAL_VIEWS_LIST } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Input } from "@plane/ui";
+// planner imports
+import { DEFAULT_GLOBAL_VIEWS_LIST } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Input } from "@planner/ui";
 // components
 import { PageHead } from "@/components/core/page-title";
 import { GlobalDefaultViewListItem } from "@/components/workspace/views/default-view-list-item";

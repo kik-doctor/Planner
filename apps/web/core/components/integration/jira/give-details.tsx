@@ -3,13 +3,13 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useFormContext, Controller } from "react-hook-form";
 import { Plus } from "lucide-react";
-import { PROJECT_TRACKER_ELEMENTS } from "@plane/constants";
-import type { IJiraImporterForm } from "@plane/types";
+import { PROJECT_TRACKER_ELEMENTS } from "@planner/constants";
+import type { IJiraImporterForm } from "@planner/types";
 // hooks
 // components
-import { CustomSelect, Input } from "@plane/ui";
+import { CustomSelect, Input } from "@planner/ui";
 // helpers
-import { checkEmailValidity } from "@plane/utils";
+import { checkEmailValidity } from "@planner/utils";
 import { captureClick } from "@/helpers/event-tracker.helper";
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useProject } from "@/hooks/store/use-project";

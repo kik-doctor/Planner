@@ -2,13 +2,13 @@ import type { FC } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Box, Check, PenTool, Rocket, Monitor, RefreshCw } from "lucide-react";
-// plane imports
-import { ONBOARDING_TRACKER_ELEMENTS, USER_TRACKER_EVENTS } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { ViewsIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TUserProfile } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
+// planner imports
+import { ONBOARDING_TRACKER_ELEMENTS, USER_TRACKER_EVENTS } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { ViewsIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TUserProfile } from "@planner/types";
+import { EOnboardingSteps } from "@planner/types";
 // helpers
 import { captureError, captureSuccess, captureView } from "@/helpers/event-tracker.helper";
 // hooks
@@ -104,7 +104,7 @@ export const RoleSetupStep = observer(function RoleSetupStep({ handleStepChange 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-10">
       {/* Header */}
-      <CommonOnboardingHeader title="What's your role?" description="Let's set up Plane for how you work." />
+      <CommonOnboardingHeader title="What's your role?" description="Let's set up Planner for how you work." />
       {/* Role Selection */}
       <div className="flex flex-col gap-3">
         <p className="text-sm font-medium text-custom-text-400">Select one</p>

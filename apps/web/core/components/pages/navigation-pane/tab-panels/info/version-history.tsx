@@ -3,11 +3,11 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import useSWR from "swr";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TPageVersion } from "@plane/types";
-import { Avatar } from "@plane/ui";
-import { cn, getFileURL, renderFormattedDate, renderFormattedTime } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import type { TPageVersion } from "@planner/types";
+import { Avatar } from "@planner/ui";
+import { cn, getFileURL, renderFormattedDate, renderFormattedTime } from "@planner/utils";
 // components
 import type { TPageRootHandlers } from "@/components/pages/editor/page-root";
 // hooks

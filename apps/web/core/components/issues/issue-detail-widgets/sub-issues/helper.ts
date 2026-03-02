@@ -1,18 +1,18 @@
 import { useMemo } from "react";
 import { useParams } from "next/navigation";
-// plane imports
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssueServiceType, TSubIssueOperations } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { copyUrlToClipboard } from "@plane/utils";
+// planner imports
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TIssueServiceType, TSubIssueOperations } from "@planner/types";
+import { EIssueServiceType } from "@planner/types";
+import { copyUrlToClipboard } from "@planner/utils";
 // hooks
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane web helpers
-import { updateEpicAnalytics } from "@/plane-web/helpers/epic-analytics";
+// planner web helpers
+import { updateEpicAnalytics } from "@/planner-web/helpers/epic-analytics";
 
 export const useSubIssueOperations = (issueServiceType: TIssueServiceType): TSubIssueOperations => {
   // router

@@ -1,6 +1,6 @@
 import { cloneDeep, uniqBy } from "lodash-es";
-// plane imports
-import type { ChartDataType } from "@plane/types";
+// planner imports
+import type { ChartDataType } from "@planner/types";
 // local imports
 import { months } from "../data";
 import { getNumberOfDaysBetweenTwoDates, getNumberOfDaysInMonth } from "./helpers";

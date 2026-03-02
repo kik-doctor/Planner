@@ -1,13 +1,13 @@
 import { observer } from "mobx-react";
-// plane types
-import { EUserPermissionsLevel, WORKSPACE_SETTINGS } from "@plane/constants";
+// planner types
+import { EUserPermissionsLevel, WORKSPACE_SETTINGS } from "@planner/constants";
 // components
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 import type { TPowerKContext } from "@/components/power-k/core/types";
 import { PowerKSettingsMenu } from "@/components/power-k/menus/settings";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
-import { shouldRenderSettingLink } from "@/plane-web/helpers/workspace.helper";
+import { shouldRenderSettingLink } from "@/planner-web/helpers/workspace.helper";
 import { WORKSPACE_SETTINGS_ICONS } from "app/(all)/[workspaceSlug]/(settings)/settings/(workspace)/sidebar";
 
 type Props = {
@@ -17,7 +17,7 @@ type Props = {
 
 export const PowerKOpenWorkspaceSettingsMenu = observer(function PowerKOpenWorkspaceSettingsMenu(props: Props) {
   const { context, handleSelect } = props;
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { allowPermissions } = useUserPermissions();

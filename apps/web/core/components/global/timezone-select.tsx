@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-import { CustomSearchSelect } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { CustomSearchSelect } from "@planner/ui";
+import { cn } from "@planner/utils";
 // hooks
 import useTimezone from "@/hooks/use-timezone";
 

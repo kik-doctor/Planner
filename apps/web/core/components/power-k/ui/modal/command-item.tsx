@@ -1,8 +1,8 @@
 import React from "react";
 import { Command } from "cmdk";
 import { Check } from "lucide-react";
-// plane imports
-import { cn } from "@plane/utils";
+// planner imports
+import { cn } from "@planner/utils";
 // local imports
 import { KeySequenceBadge, ShortcutBadge } from "./command-item-shortcut-badge";
 

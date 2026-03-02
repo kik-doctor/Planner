@@ -1,6 +1,6 @@
 import type { ReactNode, MutableRefObject } from "react";
 import React, { useState, useRef, useEffect } from "react";
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 type Props = {
   defaultHeight?: string;

@@ -1,4 +1,4 @@
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
+import { EmptyStateDetailed } from "@planner/propel/empty-state";
 
 type TProductUpdatesFallbackProps = {
   description: string;
@@ -10,8 +10,8 @@ export function ProductUpdatesFallback(props: TProductUpdatesFallbackProps) {
   // derived values
   const changelogUrl =
     variant === "cloud"
-      ? "https://plane.so/changelog?category=cloud"
-      : "https://plane.so/changelog?category=self-hosted";
+      ? "https://planner.oneworkspacex.com/changelog?category=cloud"
+      : "https://planner.oneworkspacex.com/changelog?category=self-hosted";
 
   return (
     <div className="py-8">

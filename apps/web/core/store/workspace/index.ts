@@ -2,9 +2,9 @@ import { clone, set } from "lodash-es";
 import { action, computed, observable, makeObservable, runInAction } from "mobx";
 // types
 import { computedFn } from "mobx-utils";
-import type { IWorkspaceSidebarNavigationItem, IWorkspace, IWorkspaceSidebarNavigation } from "@plane/types";
+import type { IWorkspaceSidebarNavigationItem, IWorkspace, IWorkspaceSidebarNavigation } from "@planner/types";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 // store
 import type { CoreRootStore } from "@/store/root.store";
 // sub-stores

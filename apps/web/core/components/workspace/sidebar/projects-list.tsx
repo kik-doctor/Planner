@@ -5,14 +5,14 @@ import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
 import { Plus, Ellipsis } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel, PROJECT_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import { Loader } from "@plane/ui";
-import { copyUrlToClipboard, cn, orderJoinedProjects } from "@plane/utils";
+// planner imports
+import { EUserPermissions, EUserPermissionsLevel, PROJECT_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { ChevronRightIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import { Loader } from "@planner/ui";
+import { copyUrlToClipboard, cn, orderJoinedProjects } from "@planner/utils";
 // components
 import { CreateProjectModal } from "@/components/project/create-project-modal";
 import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
@@ -22,8 +22,8 @@ import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useProjectNavigationPreferences } from "@/hooks/use-navigation-preferences";
-// plane web imports
-import type { TProject } from "@/plane-web/types";
+// planner web imports
+import type { TProject } from "@/planner-web/types";
 // local imports
 import { SidebarProjectsListItem } from "./projects-list-item";
 

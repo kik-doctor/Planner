@@ -1,13 +1,13 @@
 import type { Dispatch, SetStateAction } from "react";
 import { useEffect, useMemo, useRef } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import type { EditorRefApi } from "@plane/editor";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue, TNameDescriptionLoader } from "@plane/types";
-import { EFileAssetType, EInboxIssueSource, EInboxIssueStatus } from "@plane/types";
-import { getTextContent } from "@plane/utils";
+// planner imports
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import type { EditorRefApi } from "@planner/editor";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TIssue, TNameDescriptionLoader } from "@planner/types";
+import { EFileAssetType, EInboxIssueSource, EInboxIssueStatus } from "@planner/types";
+import { getTextContent } from "@planner/utils";
 // components
 import { DescriptionVersionsRoot } from "@/components/core/description-versions";
 import { DescriptionInput } from "@/components/editor/rich-text/description-input";
@@ -27,8 +27,8 @@ import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 import { useUser } from "@/hooks/store/user";
 import useReloadConfirmations from "@/hooks/use-reload-confirmation";
 // store types
-import { DeDupeIssuePopoverRoot } from "@/plane-web/components/de-dupe/duplicate-popover";
-import { useDebouncedDuplicateIssues } from "@/plane-web/hooks/use-debounced-duplicate-issues";
+import { DeDupeIssuePopoverRoot } from "@/planner-web/components/de-dupe/duplicate-popover";
+import { useDebouncedDuplicateIssues } from "@/planner-web/hooks/use-debounced-duplicate-issues";
 // services
 import { IntakeWorkItemVersionService } from "@/services/inbox";
 // stores

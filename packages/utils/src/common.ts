@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import type { ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import type { CompleteOrEmpty } from "@plane/types";
+import type { CompleteOrEmpty } from "@planner/types";
 
 // Support email can be configured by the application
 export const getSupportEmail = (defaultEmail: string = ""): string => defaultEmail;

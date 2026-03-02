@@ -1,5 +1,5 @@
 import { observer } from "mobx-react";
-import { PlannerLogo } from "@plane/propel/icons";
+import { PlannerLogo } from "@planner/propel/icons";
 // assets
 import UserLoggedInImage from "@/app/assets/user-logged-in.svg?url";
 // components

@@ -151,7 +151,7 @@ import {
   Search,
   User,
 } from "lucide-react";
-import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon } from "@plane/propel/icons";
+import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon } from "@planner/propel/icons";
 
 export const MATERIAL_ICONS_LIST = [
   {

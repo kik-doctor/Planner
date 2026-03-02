@@ -1,8 +1,8 @@
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import { EMPTY_OPERATOR_LABEL } from "@plane/constants";
+// planner imports
+import { EMPTY_OPERATOR_LABEL } from "@planner/constants";
 import type {
   TSupportedOperators,
   TFilterConfig,
@@ -10,15 +10,15 @@ import type {
   TFilterValue,
   TOperatorSpecificConfigs,
   TAllAvailableOperatorsForDisplay,
-} from "@plane/types";
-import { FILTER_FIELD_TYPE } from "@plane/types";
+} from "@planner/types";
+import { FILTER_FIELD_TYPE } from "@planner/types";
 import {
   getOperatorLabel,
   isDateFilterType,
   getDateOperatorLabel,
   isDateFilterOperator,
   getOperatorForPayload,
-} from "@plane/utils";
+} from "@planner/utils";
 
 type TOperatorOptionForDisplay = {
   value: TAllAvailableOperatorsForDisplay;

@@ -3,17 +3,17 @@ import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { MoreHorizontal } from "lucide-react";
-import { SPREADSHEET_SELECT_GROUP } from "@plane/constants";
-// plane helpers
-import { useOutsideClickDetector } from "@plane/hooks";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { SPREADSHEET_SELECT_GROUP } from "@planner/constants";
+// planner helpers
+import { useOutsideClickDetector } from "@planner/hooks";
+import { ChevronRightIcon } from "@planner/propel/icons";
 // types
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IIssueDisplayProperties, TIssue } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IIssueDisplayProperties, TIssue } from "@planner/types";
+import { EIssueServiceType } from "@planner/types";
 // ui
-import { ControlLink, Row } from "@plane/ui";
-import { cn, generateWorkItemLink } from "@plane/utils";
+import { ControlLink, Row } from "@planner/ui";
+import { cn, generateWorkItemLink } from "@planner/utils";
 // components
 import { MultipleSelectEntityAction } from "@/components/core/multiple-select";
 import RenderIfVisible from "@/components/core/render-if-visible-HOC";
@@ -25,8 +25,8 @@ import { useProject } from "@/hooks/store/use-project";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import type { TSelectionHelper } from "@/hooks/use-multiple-select";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// planner web components
+import { IssueIdentifier } from "@/planner-web/components/issues/issue-details/issue-identifier";
 // local components
 import type { TRenderQuickActions } from "../list/list-view-types";
 import { isIssueNew } from "../utils";

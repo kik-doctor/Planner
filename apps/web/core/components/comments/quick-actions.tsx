@@ -1,13 +1,13 @@
 import { useMemo } from "react";
 import { observer } from "mobx-react";
 import { Globe2, Link, Lock, Pencil, Trash2 } from "lucide-react";
-// plane imports
-import { EIssueCommentAccessSpecifier } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TIssueComment, TCommentsOperations } from "@plane/types";
-import type { TContextMenuItem } from "@plane/ui";
-import { CustomMenu } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import { EIssueCommentAccessSpecifier } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { TIssueComment, TCommentsOperations } from "@planner/types";
+import type { TContextMenuItem } from "@planner/ui";
+import { CustomMenu } from "@planner/ui";
+import { cn } from "@planner/utils";
 // hooks
 import { useUser } from "@/hooks/store/user";
 

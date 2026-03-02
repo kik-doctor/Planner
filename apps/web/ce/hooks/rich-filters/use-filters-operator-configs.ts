@@ -1,5 +1,5 @@
-import type { TSupportedOperators } from "@plane/types";
-import { CORE_OPERATORS } from "@plane/types";
+import type { TSupportedOperators } from "@planner/types";
+import { CORE_OPERATORS } from "@planner/types";
 
 export type TFiltersOperatorConfigs = {
   allowedOperators: Set<TSupportedOperators>;

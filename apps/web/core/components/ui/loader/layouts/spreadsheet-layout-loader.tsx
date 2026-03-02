@@ -1,5 +1,5 @@
 import { range } from "lodash-es";
-import { Row } from "@plane/ui";
+import { Row } from "@planner/ui";
 import { getRandomLength } from "../utils";
 
 export function SpreadsheetIssueRowLoader(props: { columnCount: number }) {

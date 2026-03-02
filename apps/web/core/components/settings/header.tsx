@@ -2,10 +2,10 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { ChevronLeftIcon } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { getButtonStyling } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { getButtonStyling } from "@planner/propel/button";
+import { cn } from "@planner/utils";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserSettings } from "@/hooks/store/user";

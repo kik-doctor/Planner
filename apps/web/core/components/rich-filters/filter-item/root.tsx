@@ -1,7 +1,7 @@
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { IFilterInstance } from "@plane/shared-state";
+// planner imports
+import type { IFilterInstance } from "@planner/shared-state";
 import type {
   SingleOrArray,
   TExternalFilter,
@@ -9,9 +9,9 @@ import type {
   TFilterValue,
   TFilterConditionNodeForDisplay,
   TAllAvailableOperatorsForDisplay,
-} from "@plane/types";
-import { CustomSearchSelect } from "@plane/ui";
-import { cn, getOperatorForPayload } from "@plane/utils";
+} from "@planner/types";
+import { CustomSearchSelect } from "@planner/ui";
+import { cn, getOperatorForPayload } from "@planner/utils";
 // local imports
 import { FilterValueInput } from "../filter-value-input/root";
 import { COMMON_FILTER_ITEM_BORDER_CLASSNAME } from "../shared";

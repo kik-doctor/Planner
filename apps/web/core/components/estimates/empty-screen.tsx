@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import { useTheme } from "next-themes";
-import { PROJECT_SETTINGS_TRACKER_ELEMENTS, PROJECT_SETTINGS_TRACKER_EVENTS } from "@plane/constants";
-// plane imports
-import { useTranslation } from "@plane/i18n";
+import { PROJECT_SETTINGS_TRACKER_ELEMENTS, PROJECT_SETTINGS_TRACKER_EVENTS } from "@planner/constants";
+// planner imports
+import { useTranslation } from "@planner/i18n";
 // components
 import { DetailedEmptyState } from "@/components/empty-state/detailed-empty-state-root";
 // helpers

@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-import { INBOX_STATUS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TInboxIssueStatus } from "@plane/types";
+import { INBOX_STATUS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+import type { TInboxIssueStatus } from "@planner/types";
 // constants
-import { Tag } from "@plane/ui";
+import { Tag } from "@planner/ui";
 // hooks
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 import { InboxStatusIcon } from "../../inbox-status-icon";

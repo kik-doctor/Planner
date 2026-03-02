@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { useTheme } from "next-themes";
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import { OAuthOptions } from "@plane/ui";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
+import { OAuthOptions } from "@planner/ui";
 // assets
 import GithubLightLogo from "@/app/assets/logos/github-black.png?url";
 import GithubDarkLogo from "@/app/assets/logos/github-dark.svg?url";

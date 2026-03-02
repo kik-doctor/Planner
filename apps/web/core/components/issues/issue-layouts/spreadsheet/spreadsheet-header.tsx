@@ -1,11 +1,11 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // constants
-import { SPREADSHEET_SELECT_GROUP } from "@plane/constants";
+import { SPREADSHEET_SELECT_GROUP } from "@planner/constants";
 // ui
-import type { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@plane/types";
+import type { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@planner/types";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import { MultipleSelectGroupAction } from "@/components/core/multiple-select";
 // hooks
 import type { TSelectionHelper } from "@/hooks/use-multiple-select";

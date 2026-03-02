@@ -1,4 +1,4 @@
-import type { ChartDataType, IBlockUpdateData, IGanttBlock } from "@plane/types";
+import type { ChartDataType, IBlockUpdateData, IGanttBlock } from "@planner/types";
 
 export const handleOrderChange = (
   draggingBlockId: string | undefined,

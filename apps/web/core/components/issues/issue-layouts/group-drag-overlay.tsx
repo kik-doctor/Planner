@@ -1,13 +1,13 @@
 import { useRef } from "react";
 import { AlertCircle } from "lucide-react";
-// plane imports
-import { ISSUE_ORDER_BY_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TIssueOrderByOptions } from "@plane/types";
+// planner imports
+import { ISSUE_ORDER_BY_OPTIONS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { TIssueOrderByOptions } from "@planner/types";
 // helpers
-import { cn } from "@plane/utils";
-// plane web imports
-import { WorkFlowDisabledOverlay } from "@/plane-web/components/workflow";
+import { cn } from "@planner/utils";
+// planner web imports
+import { WorkFlowDisabledOverlay } from "@/planner-web/components/workflow";
 
 type Props = {
   dragColumnOrientation: "justify-start" | "justify-center" | "justify-end";

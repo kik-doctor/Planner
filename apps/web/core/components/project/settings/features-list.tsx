@@ -1,10 +1,10 @@
 import { observer } from "mobx-react";
-// plane imports
-import { PROJECT_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { setPromiseToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IProject } from "@plane/types";
+// planner imports
+import { PROJECT_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { setPromiseToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IProject } from "@planner/types";
 // components
 import { SettingsHeading } from "@/components/settings/heading";
 // helpers
@@ -12,9 +12,9 @@ import { captureSuccess } from "@/helpers/event-tracker.helper";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useUser } from "@/hooks/store/user";
-// plane web imports
-import { UpgradeBadge } from "@/plane-web/components/workspace/upgrade-badge";
-import { PROJECT_FEATURES_LIST } from "@/plane-web/constants/project/settings";
+// planner web imports
+import { UpgradeBadge } from "@/planner-web/components/workspace/upgrade-badge";
+import { PROJECT_FEATURES_LIST } from "@/planner-web/constants/project/settings";
 import { ProjectFeatureToggle } from "./helper";
 
 type Props = {

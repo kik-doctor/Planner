@@ -1,11 +1,11 @@
 import { observer } from "mobx-react";
 // types
-import type { TPageNavigationTabs } from "@plane/types";
+import type { TPageNavigationTabs } from "@planner/types";
 // components
 import { ListLayout } from "@/components/core/list";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
-import { usePageStore } from "@/plane-web/hooks/store";
+// planner web hooks
+import type { EPageStoreType } from "@/planner-web/hooks/store";
+import { usePageStore } from "@/planner-web/hooks/store";
 // local imports
 import { PageListBlock } from "./block";
 

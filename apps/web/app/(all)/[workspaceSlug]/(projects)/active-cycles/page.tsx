@@ -3,8 +3,8 @@ import { observer } from "mobx-react";
 import { PageHead } from "@/components/core/page-title";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
-// plane web components
-import { WorkspaceActiveCyclesRoot } from "@/plane-web/components/active-cycles";
+// planner web components
+import { WorkspaceActiveCyclesRoot } from "@/planner-web/components/active-cycles";
 
 function WorkspaceActiveCyclesPage() {
   const { currentWorkspace } = useWorkspace();

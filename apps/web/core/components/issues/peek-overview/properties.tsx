@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 // i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 // ui icons
 import {
   CycleIcon,
@@ -15,8 +15,8 @@ import {
   UserCirclePropertyIcon,
   EstimatePropertyIcon,
   ParentPropertyIcon,
-} from "@plane/propel/icons";
-import { cn, getDate, renderFormattedPayloadDate, shouldHighlightIssueDueDate } from "@plane/utils";
+} from "@planner/propel/icons";
+import { cn, getDate, renderFormattedPayloadDate, shouldHighlightIssueDueDate } from "@planner/utils";
 // components
 import { DateDropdown } from "@/components/dropdowns/date";
 import { EstimateDropdown } from "@/components/dropdowns/estimate";
@@ -29,12 +29,12 @@ import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useMember } from "@/hooks/store/use-member";
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane web components
-import { WorkItemAdditionalSidebarProperties } from "@/plane-web/components/issues/issue-details/additional-properties";
-import { IssueParentSelectRoot } from "@/plane-web/components/issues/issue-details/parent-select-root";
-import { TransferHopInfo } from "@/plane-web/components/issues/issue-details/sidebar/transfer-hop-info";
-import { DateAlert } from "@/plane-web/components/issues/issue-details/sidebar.tsx/date-alert";
-import { IssueWorklogProperty } from "@/plane-web/components/issues/worklog/property";
+// planner web components
+import { WorkItemAdditionalSidebarProperties } from "@/planner-web/components/issues/issue-details/additional-properties";
+import { IssueParentSelectRoot } from "@/planner-web/components/issues/issue-details/parent-select-root";
+import { TransferHopInfo } from "@/planner-web/components/issues/issue-details/sidebar/transfer-hop-info";
+import { DateAlert } from "@/planner-web/components/issues/issue-details/sidebar.tsx/date-alert";
+import { IssueWorklogProperty } from "@/planner-web/components/issues/worklog/property";
 import type { TIssueOperations } from "../issue-detail";
 import { IssueCycleSelect } from "../issue-detail/cycle-select";
 import { IssueLabel } from "../issue-detail/label";
@@ -150,7 +150,7 @@ export const PeekOverviewProperties = observer(function PeekOverviewProperties(p
                 userIds={createdByDetails?.display_name.includes("-intake") ? null : createdByDetails?.id}
               />
               <span className="flex-grow truncate  leading-5">
-                {createdByDetails?.display_name.includes("-intake") ? "Plane" : createdByDetails?.display_name}
+                {createdByDetails?.display_name.includes("-intake") ? "planner" : createdByDetails?.display_name}
               </span>
             </div>
           </div>

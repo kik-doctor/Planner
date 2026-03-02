@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { PRODUCT_TOUR_TRACKER_ELEMENTS } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { CloseIcon, PlannerLogo } from "@plane/propel/icons";
+// planner imports
+import { PRODUCT_TOUR_TRACKER_ELEMENTS } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { CloseIcon, PlannerLogo } from "@planner/propel/icons";
 // assets
 import CyclesTour from "@/app/assets/onboarding/cycles.webp?url";
 import IssuesTour from "@/app/assets/onboarding/issues.webp?url";
@@ -36,7 +36,7 @@ const TOUR_STEPS: {
     key: "work-items",
     title: "Plan with work items",
     description:
-      "The work item is the building block of the Plane. Most concepts in Plane are either associated with work items and their properties.",
+      "The work item is the building block of the planner. Most concepts in planner are either associated with work items and their properties.",
     image: IssuesTour,
     nextStep: "cycles",
   },
@@ -99,7 +99,7 @@ export const TourRoot = observer(function TourRoot(props: TOnboardingTourProps) 
                 Welcome to Planner, {currentUser?.first_name} {currentUser?.last_name}
               </h3>
               <p className="mt-3 text-sm text-custom-text-200">
-                We{"'"}re glad that you decided to try out Plane. You can now manage your projects with ease. Get
+                We{"'"}re glad that you decided to try out Planner. You can now manage your projects with ease. Get
                 started by creating a project.
               </p>
               <div className="flex h-full items-end">

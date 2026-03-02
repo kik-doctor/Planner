@@ -2,15 +2,15 @@ import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
 import { Plus } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TIssueServiceType } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import type { TIssueServiceType } from "@planner/types";
+import { CustomMenu } from "@planner/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// Plane-web
-import { useTimeLineRelationOptions } from "@/plane-web/components/relations";
-import type { TIssueRelationTypes } from "@/plane-web/types";
+// planner-web
+import { useTimeLineRelationOptions } from "@/planner-web/components/relations";
+import type { TIssueRelationTypes } from "@/planner-web/types";
 
 type Props = {
   issueId: string;

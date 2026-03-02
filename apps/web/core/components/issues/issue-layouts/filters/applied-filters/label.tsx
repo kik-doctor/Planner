@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
 
 // icons
-import { CloseIcon } from "@plane/propel/icons";
-import type { IIssueLabel } from "@plane/types";
+import { CloseIcon } from "@planner/propel/icons";
+import type { IIssueLabel } from "@planner/types";
 // types
 
 type Props = {

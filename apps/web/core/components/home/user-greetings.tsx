@@ -1,8 +1,8 @@
 import type { FC } from "react";
-// plane types
-import { useTranslation } from "@plane/i18n";
-import type { IUser } from "@plane/types";
-// plane ui
+// planner types
+import { useTranslation } from "@planner/i18n";
+import type { IUser } from "@planner/types";
+// planner ui
 // hooks
 import { useCurrentTime } from "@/hooks/use-current-time";
 

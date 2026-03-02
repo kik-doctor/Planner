@@ -1,7 +1,7 @@
-// plane imports
+// planner imports
 import type { IncomingHttpHeaders } from "http";
-import type { TUserDetails } from "@plane/editor";
-import { logger } from "@plane/logger";
+import type { TUserDetails } from "@planner/editor";
+import { logger } from "@planner/logger";
 import { AppError } from "@/lib/errors";
 // services
 import { UserService } from "@/services/user.service";

@@ -1,8 +1,8 @@
 import { useCallback } from "react";
 import { LogOut, Mails } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { setToast, TOAST_TYPE } from "@planner/propel/toast";
 // components
 import type { TPowerKCommandConfig } from "@/components/power-k/core/types";
 // hooks

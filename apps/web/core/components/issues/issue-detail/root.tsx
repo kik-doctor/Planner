@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import { useMemo } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel, WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import type { TIssue } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+// planner imports
+import { EUserPermissions, EUserPermissionsLevel, WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@planner/propel/toast";
+import type { TIssue } from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
 // assets
 import emptyIssue from "@/app/assets/empty-state/issue.svg?url";
 // components

@@ -15,15 +15,15 @@ import { useParams } from "next/navigation";
 import { createRoot } from "react-dom/client";
 import { Star, MoreHorizontal, GripVertical } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { DraftIcon, FavoriteFolderIcon, ChevronRightIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IFavorite, InstructionType } from "@plane/types";
-import { CustomMenu, DropIndicator, DragHandle } from "@plane/ui";
+// planner imports
+import { useOutsideClickDetector } from "@planner/hooks";
+import { useTranslation } from "@planner/i18n";
+import { DraftIcon, FavoriteFolderIcon, ChevronRightIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IFavorite, InstructionType } from "@planner/types";
+import { CustomMenu, DropIndicator, DragHandle } from "@planner/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // hooks
 import { useFavorite } from "@/hooks/store/use-favorite";
 import { usePlatformOS } from "@/hooks/use-platform-os";

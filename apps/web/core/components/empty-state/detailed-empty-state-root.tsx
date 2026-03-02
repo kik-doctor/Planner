@@ -1,9 +1,9 @@
 import React from "react";
 import { observer } from "mobx-react";
 // ui
-import { Button } from "@plane/propel/button";
+import { Button } from "@planner/propel/button";
 // utils
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 type EmptyStateSize = "sm" | "md" | "lg";
 

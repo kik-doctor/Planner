@@ -1,8 +1,8 @@
 import React from "react";
 import { observer } from "mobx-react";
 // hooks
-import type { TInstanceAuthenticationMethodKeys } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
+import type { TInstanceAuthenticationMethodKeys } from "@planner/types";
+import { ToggleSwitch } from "@planner/ui";
 import { useInstance } from "@/hooks/store";
 // ui
 // types

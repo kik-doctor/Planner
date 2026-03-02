@@ -1,15 +1,15 @@
 import { useEffect, useMemo } from "react";
 import { observer } from "mobx-react";
 import { v4 as uuidv4 } from "uuid";
-// plane imports
-import type { TSaveViewOptions, TUpdateViewOptions } from "@plane/constants";
-import type { IWorkItemFilterInstance } from "@plane/shared-state";
-import type { IIssueFilters, TWorkItemFilterExpression } from "@plane/types";
+// planner imports
+import type { TSaveViewOptions, TUpdateViewOptions } from "@planner/constants";
+import type { IWorkItemFilterInstance } from "@planner/shared-state";
+import type { IIssueFilters, TWorkItemFilterExpression } from "@planner/types";
 // store hooks
 import { useWorkItemFilters } from "@/hooks/store/work-item-filters/use-work-item-filters";
-// plane web imports
-import type { TWorkItemFiltersEntityProps } from "@/plane-web/hooks/work-item-filters/use-work-item-filters-config";
-import { useWorkItemFiltersConfig } from "@/plane-web/hooks/work-item-filters/use-work-item-filters-config";
+// planner web imports
+import type { TWorkItemFiltersEntityProps } from "@/planner-web/hooks/work-item-filters/use-work-item-filters-config";
+import { useWorkItemFiltersConfig } from "@/planner-web/hooks/work-item-filters/use-work-item-filters-config";
 // local imports
 import type { TSharedWorkItemFiltersHOCProps, TSharedWorkItemFiltersProps } from "./shared";
 

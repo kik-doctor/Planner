@@ -1,16 +1,16 @@
 import React, { useEffect, useState, useCallback } from "react";
 import type { LucideIcon } from "lucide-react";
 import { Globe2, Lock } from "lucide-react";
-import { EIssueCommentAccessSpecifier } from "@plane/constants";
+import { EIssueCommentAccessSpecifier } from "@planner/constants";
 // editor
-import type { EditorRefApi } from "@plane/editor";
+import type { EditorRefApi } from "@planner/editor";
 // i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 // ui
-import { Button } from "@plane/propel/button";
-import { Tooltip } from "@plane/propel/tooltip";
+import { Button } from "@planner/propel/button";
+import { Tooltip } from "@planner/propel/tooltip";
 // constants
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import type { ToolbarMenuItem } from "@/constants/editor";
 import { TOOLBAR_ITEMS } from "@/constants/editor";
 // helpers

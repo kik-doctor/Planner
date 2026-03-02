@@ -2,13 +2,13 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 // icons
 import { ListFilter, Search } from "lucide-react";
-// plane helpers
-import { useOutsideClickDetector } from "@plane/hooks";
+// planner helpers
+import { useOutsideClickDetector } from "@planner/hooks";
 // types
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TCycleFilters } from "@plane/types";
-import { cn, calculateTotalFilters } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+import type { TCycleFilters } from "@planner/types";
+import { cn, calculateTotalFilters } from "@planner/utils";
 // components
 import { FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 // hooks

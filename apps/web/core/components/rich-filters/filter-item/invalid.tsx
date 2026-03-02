@@ -1,8 +1,8 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { CircleAlert } from "lucide-react";
-// plane imports
-import type { TExternalFilter, TFilterProperty } from "@plane/types";
+// planner imports
+import type { TExternalFilter, TFilterProperty } from "@planner/types";
 // local imports
 import { FilterItemCloseButton } from "./close-button";
 import { FilterItemContainer } from "./container";

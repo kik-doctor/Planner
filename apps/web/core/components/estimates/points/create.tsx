@@ -2,19 +2,19 @@ import type { FC, FormEvent } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Check, Info } from "lucide-react";
-import { EEstimateSystem, MAX_ESTIMATE_POINT_INPUT_LENGTH } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@plane/types";
-import { Spinner } from "@plane/ui";
-import { cn, isEstimatePointValuesRepeated } from "@plane/utils";
+import { EEstimateSystem, MAX_ESTIMATE_POINT_INPUT_LENGTH } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@planner/types";
+import { Spinner } from "@planner/ui";
+import { cn, isEstimatePointValuesRepeated } from "@planner/utils";
 import { EstimateInputRoot } from "@/components/estimates/inputs/root";
 // helpers
 // hooks
 import { useEstimate } from "@/hooks/store/estimates/use-estimate";
-// plane web constants
+// planner web constants
 
 type TEstimatePointCreate = {
   workspaceSlug: string;

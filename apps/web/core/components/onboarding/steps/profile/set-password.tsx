@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useMemo } from "react";
 import { Lock } from "lucide-react";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { PasswordInput, PasswordStrengthIndicator } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import { PasswordInput, PasswordStrengthIndicator } from "@planner/ui";
+import { cn } from "@planner/utils";
 
 interface PasswordState {
   password: string;

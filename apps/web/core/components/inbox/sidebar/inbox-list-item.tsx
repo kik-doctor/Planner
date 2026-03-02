@@ -2,11 +2,11 @@ import type { FC, MouseEvent } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-// plane imports
-import { PriorityIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { Row, Avatar } from "@plane/ui";
-import { cn, renderFormattedDate, getFileURL } from "@plane/utils";
+// planner imports
+import { PriorityIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import { Row, Avatar } from "@planner/ui";
+import { cn, renderFormattedDate, getFileURL } from "@planner/utils";
 // components
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";
 // hooks
@@ -14,8 +14,8 @@ import { useLabel } from "@/hooks/store/use-label";
 import { useMember } from "@/hooks/store/use-member";
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
-import { InboxSourcePill } from "@/plane-web/components/inbox/source-pill";
+// planner web imports
+import { InboxSourcePill } from "@/planner-web/components/inbox/source-pill";
 // local imports
 import { InboxIssueStatus } from "../inbox-issue-status";
 
@@ -123,8 +123,8 @@ export const InboxIssueListItem = observer(function InboxIssueListItem(props: In
               )}
             </div>
             {/* created by */}
-            {createdByDetails && createdByDetails.email?.includes("intake@plane.so") ? (
-              <Avatar src={getFileURL("")} name={"Plane"} size="md" showTooltip />
+            {createdByDetails && createdByDetails.email?.includes("intake@planner.oneworkspacex.com") ? (
+              <Avatar src={getFileURL("")} name={"Planner"} size="md" showTooltip />
             ) : createdByDetails ? (
               <ButtonAvatars showTooltip={false} userIds={createdByDetails?.id} />
             ) : null}

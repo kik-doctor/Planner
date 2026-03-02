@@ -1,6 +1,6 @@
 import { useTheme } from "next-themes";
-// plane imports
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import { useTranslation } from "@planner/i18n";
 // assets
 import darkOutlineAsset from "@/app/assets/empty-state/wiki/navigation-pane/outline-dark.webp?url";
 import lightOutlineAsset from "@/app/assets/empty-state/wiki/navigation-pane/outline-light.webp?url";

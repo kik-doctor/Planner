@@ -1,15 +1,15 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 import { ArrowDownWideNarrow, ArrowUpWideNarrow, Check } from "lucide-react";
-import { INBOX_ISSUE_ORDER_BY_OPTIONS, INBOX_ISSUE_SORT_BY_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { getButtonStyling } from "@plane/propel/button";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import type { TInboxIssueSortingOrderByKeys, TInboxIssueSortingSortByKeys } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+import { INBOX_ISSUE_ORDER_BY_OPTIONS, INBOX_ISSUE_SORT_BY_OPTIONS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { getButtonStyling } from "@planner/propel/button";
+import { ChevronDownIcon } from "@planner/propel/icons";
+import type { TInboxIssueSortingOrderByKeys, TInboxIssueSortingSortByKeys } from "@planner/types";
+import { CustomMenu } from "@planner/ui";
 // constants
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // hooks
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 import useSize from "@/hooks/use-window-size";

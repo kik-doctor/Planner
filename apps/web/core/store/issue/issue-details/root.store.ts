@@ -9,16 +9,16 @@ import type {
   TIssueReaction,
   TIssueServiceType,
   TWorkItemWidgets,
-} from "@plane/types";
-// plane web store
-import { IssueActivityStore } from "@/plane-web/store/issue/issue-details/activity.store";
+} from "@planner/types";
+// planner web store
+import { IssueActivityStore } from "@/planner-web/store/issue/issue-details/activity.store";
 import type {
   IIssueActivityStore,
   IIssueActivityStoreActions,
   TActivityLoader,
-} from "@/plane-web/store/issue/issue-details/activity.store";
-import type { RootStore } from "@/plane-web/store/root.store";
-import type { TIssueRelationTypes } from "@/plane-web/types";
+} from "@/planner-web/store/issue/issue-details/activity.store";
+import type { RootStore } from "@/planner-web/store/root.store";
+import type { TIssueRelationTypes } from "@/planner-web/types";
 import type { IIssueRootStore } from "../root.store";
 import { IssueAttachmentStore } from "./attachment.store";
 import type { IIssueAttachmentStore, IIssueAttachmentStoreActions } from "./attachment.store";

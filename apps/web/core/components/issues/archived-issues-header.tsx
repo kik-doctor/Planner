@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import { EIssueFilterType, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { EHeaderVariant, Header } from "@plane/ui";
+// planner imports
+import { EIssueFilterType, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
+import { EHeaderVariant, Header } from "@planner/ui";
 // components
 import { ArchiveTabsList } from "@/components/archives";
 import { DisplayFiltersSelection, FiltersDropdown } from "@/components/issues/issue-layouts/filters";

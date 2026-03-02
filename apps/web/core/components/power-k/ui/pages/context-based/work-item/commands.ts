@@ -14,14 +14,14 @@ import {
   UserPlus2,
   Users,
 } from "lucide-react";
-// plane imports
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ContrastIcon, DiceIcon, DoubleCircleIcon } from "@plane/propel/icons";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import type { ICycle, IIssueLabel, IModule, TIssue, TIssuePriorities } from "@plane/types";
-import { EIssueServiceType, EUserPermissions } from "@plane/types";
-import { copyTextToClipboard } from "@plane/utils";
+// planner imports
+import { EUserPermissionsLevel } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { ContrastIcon, DiceIcon, DoubleCircleIcon } from "@planner/propel/icons";
+import { setToast, TOAST_TYPE } from "@planner/propel/toast";
+import type { ICycle, IIssueLabel, IModule, TIssue, TIssuePriorities } from "@planner/types";
+import { EIssueServiceType, EUserPermissions } from "@planner/types";
+import { copyTextToClipboard } from "@planner/utils";
 // components
 import type { TPowerKCommandConfig } from "@/components/power-k/core/types";
 // hooks

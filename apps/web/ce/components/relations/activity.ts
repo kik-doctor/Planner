@@ -1,4 +1,4 @@
-import type { TIssueActivity } from "@plane/types";
+import type { TIssueActivity } from "@planner/types";
 
 export const getRelationActivityContent = (activity: TIssueActivity | undefined): string | undefined => {
   if (!activity) return;

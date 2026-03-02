@@ -3,15 +3,15 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { AlertTriangle } from "lucide-react";
 // types
-import { WORKSPACE_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspace } from "@plane/types";
+import { WORKSPACE_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IWorkspace } from "@planner/types";
 // ui
-import { Input } from "@plane/ui";
+import { Input } from "@planner/ui";
 // hooks
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserSettings } from "@/hooks/store/user";

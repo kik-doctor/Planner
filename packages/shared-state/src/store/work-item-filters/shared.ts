@@ -1,5 +1,5 @@
-// plane imports
-import type { EIssuesStoreType, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@plane/types";
+// planner imports
+import type { EIssuesStoreType, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@planner/types";
 // local imports
 import type { IFilterInstance } from "../rich-filters";
 

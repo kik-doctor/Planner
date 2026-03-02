@@ -1,6 +1,6 @@
-// plane imports
-import type { IUserLite, TFilterProperty } from "@plane/types";
-import { EQUALITY_OPERATOR } from "@plane/types";
+// planner imports
+import type { IUserLite, TFilterProperty } from "@planner/types";
+import { EQUALITY_OPERATOR } from "@planner/types";
 // local imports
 import type { TCreateFilterConfig } from "../shared";
 import { createFilterConfig, createOperatorConfigEntry } from "../shared";

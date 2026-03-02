@@ -3,15 +3,15 @@ import { observer } from "mobx-react";
 import { useForm, Controller, useFieldArray } from "react-hook-form";
 import { Plus } from "lucide-react";
 import { Dialog, Transition } from "@headlessui/react";
-// plane imports
-import { ROLE, EUserPermissions, MEMBER_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { CloseIcon, ChevronDownIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Avatar, CustomSelect, CustomSearchSelect } from "@plane/ui";
+// planner imports
+import { ROLE, EUserPermissions, MEMBER_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { CloseIcon, ChevronDownIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Avatar, CustomSelect, CustomSearchSelect } from "@planner/ui";
 // helpers
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@planner/utils";
 // hooks
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useMember } from "@/hooks/store/use-member";
@@ -45,7 +45,7 @@ const defaultValues: FormValues = {
 
 export const SendProjectInvitationModal = observer(function SendProjectInvitationModal(props: Props) {
   const { isOpen, onClose, onSuccess, projectId, workspaceSlug } = props;
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // store hooks
   const { getProjectRoleByWorkspaceSlugAndProjectId } = useUserPermissions();

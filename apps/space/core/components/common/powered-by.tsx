@@ -1,6 +1,6 @@
-import { WEBSITE_URL } from "@plane/constants";
+import { WEBSITE_URL } from "@planner/constants";
 // assets
-import { PlannerLogo } from "@plane/propel/icons";
+import { PlannerLogo } from "@planner/propel/icons";
 
 type TPoweredBy = {
   disabled?: boolean;
@@ -21,7 +21,7 @@ export function PoweredBy(props: TPoweredBy) {
     >
       <PlannerLogo className="h-3 w-auto text-custom-text-100" />
       <div className="text-xs">
-        Powered by <span className="font-semibold">Plane Publish</span>
+        Powered by <span className="font-semibold">Planner Publish</span>
       </div>
     </a>
   );

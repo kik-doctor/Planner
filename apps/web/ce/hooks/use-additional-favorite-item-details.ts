@@ -1,5 +1,5 @@
-// plane imports
-import type { IFavorite } from "@plane/types";
+// planner imports
+import type { IFavorite } from "@planner/types";
 // components
 import { getFavoriteItemIcon } from "@/components/workspace/sidebar/favorites/favorite-items/common";
 

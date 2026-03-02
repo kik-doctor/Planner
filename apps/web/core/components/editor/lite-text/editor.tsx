@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-// plane constants
-import type { EIssueCommentAccessSpecifier } from "@plane/constants";
-// plane imports
-import { LiteTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import type { MakeOptional } from "@plane/types";
-import { cn, isCommentEmpty } from "@plane/utils";
+// planner constants
+import type { EIssueCommentAccessSpecifier } from "@planner/constants";
+// planner imports
+import { LiteTextEditorWithRef } from "@planner/editor";
+import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@planner/editor";
+import { useTranslation } from "@planner/i18n";
+import type { MakeOptional } from "@planner/types";
+import { cn, isCommentEmpty } from "@planner/utils";
 // components
 import { EditorMentionsRoot } from "@/components/editor/embeds/mentions";
 import { IssueCommentToolbar } from "@/components/editor/lite-text/toolbar";
@@ -14,10 +14,10 @@ import { IssueCommentToolbar } from "@/components/editor/lite-text/toolbar";
 import { useEditorConfig, useEditorMention } from "@/hooks/editor";
 import { useMember } from "@/hooks/store/use-member";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web hooks
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
-// plane web service
-import { WorkspaceService } from "@/plane-web/services";
+// planner web hooks
+import { useEditorFlagging } from "@/planner-web/hooks/use-editor-flagging";
+// planner web service
+import { WorkspaceService } from "@/planner-web/services";
 import { LiteToolbar } from "./lite-toolbar";
 const workspaceService = new WorkspaceService();
 

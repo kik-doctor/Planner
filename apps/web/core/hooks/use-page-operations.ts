@@ -1,10 +1,10 @@
 import { useMemo } from "react";
-// plane imports
-import { IS_FAVORITE_MENU_OPEN, PROJECT_PAGE_TRACKER_EVENTS } from "@plane/constants";
-import type { EditorRefApi } from "@plane/editor";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { EPageAccess } from "@plane/types";
-import { copyUrlToClipboard } from "@plane/utils";
+// planner imports
+import { IS_FAVORITE_MENU_OPEN, PROJECT_PAGE_TRACKER_EVENTS } from "@planner/constants";
+import type { EditorRefApi } from "@planner/editor";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { EPageAccess } from "@planner/types";
+import { copyUrlToClipboard } from "@planner/utils";
 // helpers
 import { captureSuccess, captureError } from "@/helpers/event-tracker.helper";
 // hooks

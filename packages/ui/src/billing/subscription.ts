@@ -1,6 +1,6 @@
-// plane imports
-import { EProductSubscriptionEnum } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import { EProductSubscriptionEnum } from "@planner/types";
+import { cn } from "@planner/utils";
 
 export const getSubscriptionTextColor = (
   planVariant: EProductSubscriptionEnum,

@@ -3,14 +3,14 @@ import { observer } from "mobx-react";
 import { usePopper } from "react-popper";
 import { Check, Loader, Search } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane imports
-import { EUserPermissionsLevel, getRandomLabelColor } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { LabelPropertyIcon } from "@plane/propel/icons";
-import type { IIssueLabel } from "@plane/types";
-import { EUserProjectRoles } from "@plane/types";
+// planner imports
+import { EUserPermissionsLevel, getRandomLabelColor } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { LabelPropertyIcon } from "@planner/propel/icons";
+import type { IIssueLabel } from "@planner/types";
+import { EUserProjectRoles } from "@planner/types";
 // helpers
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@planner/utils";
 // hooks
 import { useLabel } from "@/hooks/store/use-label";
 import { useUserPermissions } from "@/hooks/store/user";

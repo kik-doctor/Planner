@@ -1,16 +1,16 @@
 import type { FC } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { GOD_MODE_URL } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { PlannerLogo } from "@plane/propel/icons";
+import { GOD_MODE_URL } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { PlannerLogo } from "@planner/propel/icons";
 // assets
-import PlaneBackgroundPatternDark from "@/app/assets/auth/background-pattern-dark.svg?url";
-import PlaneBackgroundPattern from "@/app/assets/auth/background-pattern.svg?url";
+import PlannerBackgroundPatternDark from "@/app/assets/auth/background-pattern-dark.svg?url";
+import PlannerBackgroundPattern from "@/app/assets/auth/background-pattern.svg?url";
 
 export function InstanceNotReady() {
   const { resolvedTheme } = useTheme();
-  const patternBackground = resolvedTheme === "dark" ? PlaneBackgroundPatternDark : PlaneBackgroundPattern;
+  const patternBackground = resolvedTheme === "dark" ? PlannerBackgroundPatternDark : PlannerBackgroundPattern;
 
   return (
     <div className="relative">
@@ -24,7 +24,7 @@ export function InstanceNotReady() {
         </div>
 
         <div className="absolute inset-0 z-0">
-          <img src={patternBackground} className="w-full h-full object-cover" alt="Plane background pattern" />
+          <img src={patternBackground} className="w-full h-full object-cover" alt="Planner background pattern" />
         </div>
 
         <div className="relative z-10 mb-[110px] flex-grow">

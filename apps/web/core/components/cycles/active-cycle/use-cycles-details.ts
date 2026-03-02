@@ -1,9 +1,9 @@
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import useSWR from "swr";
-// plane imports
-import type { TWorkItemFilterCondition } from "@plane/shared-state";
-import { EIssuesStoreType } from "@plane/types";
+// planner imports
+import type { TWorkItemFilterCondition } from "@planner/shared-state";
+import { EIssuesStoreType } from "@planner/types";
 // constants
 import { CYCLE_ISSUES_WITH_PARAMS } from "@/constants/fetch-keys";
 // hooks

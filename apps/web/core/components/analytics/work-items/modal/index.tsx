@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
-// plane package imports
-import { ModalPortal, EPortalWidth, EPortalPosition } from "@plane/propel/portal";
-import type { ICycle, IModule, IProject } from "@plane/types";
+// planner package imports
+import { ModalPortal, EPortalWidth, EPortalPosition } from "@planner/propel/portal";
+import type { ICycle, IModule, IProject } from "@planner/types";
 import { useAnalytics } from "@/hooks/store/use-analytics";
-// plane web components
+// planner web components
 import { WorkItemsModalMainContent } from "./content";
 import { WorkItemsModalHeader } from "./header";
 

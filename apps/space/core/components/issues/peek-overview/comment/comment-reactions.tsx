@@ -1,10 +1,10 @@
 import React, { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-// plane imports
-import { stringToEmoji } from "@plane/propel/emoji-icon-picker";
-import { EmojiReactionGroup, EmojiReactionPicker } from "@plane/propel/emoji-reaction";
-import type { EmojiReactionType } from "@plane/propel/emoji-reaction";
+// planner imports
+import { stringToEmoji } from "@planner/propel/emoji-icon-picker";
+import { EmojiReactionGroup, EmojiReactionPicker } from "@planner/propel/emoji-reaction";
+import type { EmojiReactionType } from "@planner/propel/emoji-reaction";
 // helpers
 import { groupReactions } from "@/helpers/emoji.helper";
 import { queryParamGenerator } from "@/helpers/query-param-generator";

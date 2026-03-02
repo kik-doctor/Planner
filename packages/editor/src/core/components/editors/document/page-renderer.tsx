@@ -1,7 +1,7 @@
 import type { HocuspocusProvider } from "@hocuspocus/provider";
 import type { Editor } from "@tiptap/react";
-// plane imports
-import { cn } from "@plane/utils";
+// planner imports
+import { cn } from "@planner/utils";
 // components
 import { DocumentContentLoader, EditorContainer, EditorContentWrapper } from "@/components/editors";
 import { BlockMenu, EditorBubbleMenu } from "@/components/menus";

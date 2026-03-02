@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import React from "react";
-// plane imports
+// planner imports
 
 export type TWorkItemAdditionalSidebarProperties = {
   workItemId: string;

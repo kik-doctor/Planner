@@ -1,6 +1,6 @@
 // type
-import { API_BASE_URL } from "@plane/constants";
-import type { ICycle } from "@plane/types";
+import { API_BASE_URL } from "@planner/constants";
+import type { ICycle } from "@planner/types";
 // helpers
 // services
 import { APIService } from "@/services/api.service";

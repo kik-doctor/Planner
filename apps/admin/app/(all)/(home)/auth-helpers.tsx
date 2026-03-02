@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { KeyRound, Mails } from "lucide-react";
-// plane packages
-import type { TAdminAuthErrorInfo } from "@plane/constants";
-import { SUPPORT_EMAIL, EAdminAuthErrorCodes } from "@plane/constants";
-import type { TGetBaseAuthenticationModeProps, TInstanceAuthenticationModes } from "@plane/types";
-import { resolveGeneralTheme } from "@plane/utils";
+// planner packages
+import type { TAdminAuthErrorInfo } from "@planner/constants";
+import { SUPPORT_EMAIL, EAdminAuthErrorCodes } from "@planner/constants";
+import type { TGetBaseAuthenticationModeProps, TInstanceAuthenticationModes } from "@planner/types";
+import { resolveGeneralTheme } from "@planner/utils";
 // components
 import githubLightModeImage from "@/app/assets/logos/github-black.png?url";
 import githubDarkModeImage from "@/app/assets/logos/github-white.png?url";
@@ -116,7 +116,7 @@ export const getBaseAuthenticationModes: (props: TGetBaseAuthenticationModeProps
     key: "unique-codes",
     name: "Unique codes",
     description:
-      "Log in or sign up for Plane using codes sent via email. You need to have set up SMTP to use this method.",
+      "Log in or sign up for Planner using codes sent via email. You need to have set up SMTP to use this method.",
     icon: <Mails className="h-6 w-6 p-0.5 text-custom-text-300/80" />,
     config: <EmailCodesConfiguration disabled={disabled} updateConfig={updateConfig} />,
   },
@@ -130,14 +130,14 @@ export const getBaseAuthenticationModes: (props: TGetBaseAuthenticationModeProps
   {
     key: "google",
     name: "Google",
-    description: "Allow members to log in or sign up for Plane with their Google accounts.",
+    description: "Allow members to log in or sign up for Planner with their Google accounts.",
     icon: <img src={GoogleLogo} height={20} width={20} alt="Google Logo" />,
     config: <GoogleConfiguration disabled={disabled} updateConfig={updateConfig} />,
   },
   {
     key: "github",
     name: "GitHub",
-    description: "Allow members to log in or sign up for Plane with their GitHub accounts.",
+    description: "Allow members to log in or sign up for Planner with their GitHub accounts.",
     icon: (
       <img
         src={resolveGeneralTheme(resolvedTheme) === "dark" ? githubDarkModeImage : githubLightModeImage}
@@ -151,7 +151,7 @@ export const getBaseAuthenticationModes: (props: TGetBaseAuthenticationModeProps
   {
     key: "gitlab",
     name: "GitLab",
-    description: "Allow members to log in or sign up to plane with their GitLab accounts.",
+    description: "Allow members to log in or sign up to Planner with their GitLab accounts.",
     icon: <img src={GitlabLogo} height={20} width={20} alt="GitLab Logo" />,
     config: <GitlabConfiguration disabled={disabled} updateConfig={updateConfig} />,
   },

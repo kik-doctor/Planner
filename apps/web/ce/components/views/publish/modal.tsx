@@ -1,4 +1,4 @@
-import type { IProjectView } from "@plane/types";
+import type { IProjectView } from "@planner/types";
 
 type Props = {
   isOpen: boolean;

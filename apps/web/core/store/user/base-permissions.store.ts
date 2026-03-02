@@ -1,18 +1,18 @@
 import { unset, set } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import type { TUserPermissions, TUserPermissionsLevel } from "@plane/constants";
+// planner imports
+import type { TUserPermissions, TUserPermissionsLevel } from "@planner/constants";
 import {
   EUserPermissions,
   EUserPermissionsLevel,
   WORKSPACE_SIDEBAR_DYNAMIC_NAVIGATION_ITEMS_LINKS,
-} from "@plane/constants";
-import type { EUserProjectRoles, IUserProjectsRole, IWorkspaceMemberMe, TProjectMembership } from "@plane/types";
-import { EUserWorkspaceRoles } from "@plane/types";
-// plane web imports
-import { WorkspaceService } from "@/plane-web/services";
-import type { RootStore } from "@/plane-web/store/root.store";
+} from "@planner/constants";
+import type { EUserProjectRoles, IUserProjectsRole, IWorkspaceMemberMe, TProjectMembership } from "@planner/types";
+import { EUserWorkspaceRoles } from "@planner/types";
+// planner web imports
+import { WorkspaceService } from "@/planner-web/services";
+import type { RootStore } from "@/planner-web/store/root.store";
 // services
 import projectMemberService from "@/services/project/project-member.service";
 import userService from "@/services/user.service";
@@ -20,7 +20,7 @@ import userService from "@/services/user.service";
 // derived services
 const workspaceService = new WorkspaceService();
 
-type ETempUserRole = TUserPermissions | EUserWorkspaceRoles | EUserProjectRoles; // TODO: Remove this once we have migrated user permissions to enums to plane constants package
+type ETempUserRole = TUserPermissions | EUserWorkspaceRoles | EUserProjectRoles; // TODO: Remove this once we have migrated user permissions to enums to planner constants package
 
 export interface IBaseUserPermissionStore {
   loader: boolean;

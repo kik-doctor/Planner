@@ -1,23 +1,23 @@
 import { useMemo } from "react";
 import uniq from "lodash-es/uniq";
 import { observer } from "mobx-react";
-// plane package imports
-import type { TActivityFilters } from "@plane/constants";
-import { E_SORT_ORDER, defaultActivityFilters, EUserPermissions } from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
+// planner package imports
+import type { TActivityFilters } from "@planner/constants";
+import { E_SORT_ORDER, defaultActivityFilters, EUserPermissions } from "@planner/constants";
+import { useLocalStorage } from "@planner/hooks";
 // i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 //types
-import type { TFileSignedURLResponse, TIssueComment } from "@plane/types";
+import type { TFileSignedURLResponse, TIssueComment } from "@planner/types";
 // components
 import { CommentCreate } from "@/components/comments/comment-create";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import { useUser, useUserPermissions } from "@/hooks/store/user";
-// plane web components
-import { ActivityFilterRoot } from "@/plane-web/components/issues/worklog/activity/filter-root";
-import { IssueActivityWorklogCreateButton } from "@/plane-web/components/issues/worklog/activity/worklog-create-button";
+// planner web components
+import { ActivityFilterRoot } from "@/planner-web/components/issues/worklog/activity/filter-root";
+import { IssueActivityWorklogCreateButton } from "@/planner-web/components/issues/worklog/activity/worklog-create-button";
 import { IssueActivityCommentRoot } from "./activity-comment-root";
 import { useCommentOperations } from "./helper";
 import { ActivitySortRoot } from "./sort-root";

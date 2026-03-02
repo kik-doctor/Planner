@@ -1,10 +1,10 @@
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 // ui
-import type { TContextMenuItem } from "@plane/ui";
-import { ContextMenu, CustomMenu } from "@plane/ui";
+import type { TContextMenuItem } from "@planner/ui";
+import { ContextMenu, CustomMenu } from "@planner/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 
 export interface Props {
   parentRef: React.RefObject<HTMLElement>;

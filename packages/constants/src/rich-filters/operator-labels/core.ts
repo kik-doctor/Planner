@@ -1,5 +1,5 @@
-import type { TCoreSupportedOperators, TCoreSupportedDateFilterOperators } from "@plane/types";
-import { CORE_EQUALITY_OPERATOR, CORE_COLLECTION_OPERATOR, CORE_COMPARISON_OPERATOR } from "@plane/types";
+import type { TCoreSupportedOperators, TCoreSupportedDateFilterOperators } from "@planner/types";
+import { CORE_EQUALITY_OPERATOR, CORE_COLLECTION_OPERATOR, CORE_COMPARISON_OPERATOR } from "@planner/types";
 
 /**
  * Core operator labels

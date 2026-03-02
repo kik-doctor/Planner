@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { TALK_TO_SALES_URL } from "@plane/constants";
-import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@plane/types";
-import { getDiscountPillStyle } from "@plane/ui";
-import { calculateYearlyDiscount, cn, getSubscriptionName, getSubscriptionPriceDetails } from "@plane/utils";
+// planner imports
+import { TALK_TO_SALES_URL } from "@planner/constants";
+import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@planner/types";
+import { getDiscountPillStyle } from "@planner/ui";
+import { calculateYearlyDiscount, cn, getSubscriptionName, getSubscriptionPriceDetails } from "@planner/utils";
 // components
 import { BasePaidPlanCard, TalkToSalesCard } from "@/components/license";
 // local components
@@ -42,7 +42,7 @@ export const PlanUpgradeCard = observer(function PlanUpgradeCard(props: PlanUpgr
     isTrialAllowed,
   } = props;
   // price details
-  const planeName = getSubscriptionName(planVariant);
+  const plannerName = getSubscriptionName(planVariant);
   const { monthlyPriceDetails, yearlyPriceDetails } = getSubscriptionPriceDetails(product);
   const yearlyDiscount = calculateYearlyDiscount(monthlyPriceDetails.price, yearlyPriceDetails.price);
   const prices = [monthlyPriceDetails, yearlyPriceDetails];
@@ -93,7 +93,7 @@ export const PlanUpgradeCard = observer(function PlanUpgradeCard(props: PlanUpgr
       renderPriceContent={renderPriceContent}
       renderActionButton={(price) => (
         <PlanCheckoutButton
-          planeName={planeName}
+          plannerName={plannerName}
           planVariant={planVariant}
           isLoading={isLoading}
           product={product}

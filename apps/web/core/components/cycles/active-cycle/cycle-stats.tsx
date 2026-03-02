@@ -6,16 +6,16 @@ import { useTheme } from "next-themes";
 import { CalendarCheck } from "lucide-react";
 // headless ui
 import { Tab } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { PriorityIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TWorkItemFilterCondition } from "@plane/shared-state";
-import type { ICycle } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { PriorityIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TWorkItemFilterCondition } from "@planner/shared-state";
+import type { ICycle } from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
 // ui
-import { Loader, Avatar } from "@plane/ui";
-import { cn, renderFormattedDate, renderFormattedDateWithoutYear, getFileURL } from "@plane/utils";
+import { Loader, Avatar } from "@planner/ui";
+import { cn, renderFormattedDate, renderFormattedDateWithoutYear, getFileURL } from "@planner/utils";
 // assets
 import darkAssigneeAsset from "@/app/assets/empty-state/active-cycle/assignee-dark.webp?url";
 import lightAssigneeAsset from "@/app/assets/empty-state/active-cycle/assignee-light.webp?url";
@@ -33,8 +33,8 @@ import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useIssues } from "@/hooks/store/use-issues";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import useLocalStorage from "@/hooks/use-local-storage";
-// plane web components
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// planner web components
+import { IssueIdentifier } from "@/planner-web/components/issues/issue-details/issue-identifier";
 // store
 import type { ActiveCycleIssueDetails } from "@/store/issue/cycle";
 
@@ -57,7 +57,7 @@ export const ActiveCycleStats = observer(function ActiveCycleStats(props: Active
   const [issuesLoaderElement, setIssueLoaderElement] = useState<HTMLDivElement | null>(null);
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // derived values
   const priorityResolvedPath = resolvedTheme === "light" ? lightPriorityAsset : darkPriorityAsset;

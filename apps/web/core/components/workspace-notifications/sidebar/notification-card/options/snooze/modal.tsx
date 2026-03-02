@@ -2,13 +2,13 @@ import { Fragment } from "react";
 import { useParams } from "next/navigation";
 import { useForm, Controller } from "react-hook-form";
 import { Transition, Dialog } from "@headlessui/react";
-// plane imports
-import { allTimeIn30MinutesInterval12HoursFormat } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { CloseIcon } from "@plane/propel/icons";
-import { CustomSelect } from "@plane/ui";
+// planner imports
+import { allTimeIn30MinutesInterval12HoursFormat } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { CloseIcon } from "@planner/propel/icons";
+import { CustomSelect } from "@planner/ui";
 // components
-import { getDate } from "@plane/utils";
+import { getDate } from "@planner/utils";
 import { DateDropdown } from "@/components/dropdowns/date";
 // helpers
 

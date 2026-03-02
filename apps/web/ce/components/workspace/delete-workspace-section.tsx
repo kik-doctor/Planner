@@ -2,13 +2,13 @@ import type { FC } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
 // types
-import { WORKSPACE_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { ChevronDownIcon, ChevronUpIcon } from "@plane/propel/icons";
-import type { IWorkspace } from "@plane/types";
+import { WORKSPACE_TRACKER_ELEMENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { ChevronDownIcon, ChevronUpIcon } from "@planner/propel/icons";
+import type { IWorkspace } from "@planner/types";
 // ui
-import { Collapsible } from "@plane/ui";
+import { Collapsible } from "@planner/ui";
 import { DeleteWorkspaceModal } from "./delete-workspace-modal";
 // components
 

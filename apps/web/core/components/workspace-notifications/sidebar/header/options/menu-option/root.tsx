@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
 import { observer } from "mobx-react";
 import { Check, CheckCircle, Clock } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { ArchiveIcon } from "@plane/propel/icons";
-import type { TNotificationFilter } from "@plane/types";
-import { PopoverMenu } from "@plane/ui";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { ArchiveIcon } from "@planner/propel/icons";
+import type { TNotificationFilter } from "@planner/types";
+import { PopoverMenu } from "@planner/ui";
 // hooks
 import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 // local imports

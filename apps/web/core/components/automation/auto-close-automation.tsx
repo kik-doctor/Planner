@@ -11,12 +11,12 @@ import {
   EIconSize,
   PROJECT_SETTINGS_TRACKER_ELEMENTS,
   PROJECT_SETTINGS_TRACKER_EVENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { StateGroupIcon, StatePropertyIcon } from "@plane/propel/icons";
-import type { IProject } from "@plane/types";
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { StateGroupIcon, StatePropertyIcon } from "@planner/propel/icons";
+import type { IProject } from "@planner/types";
 // ui
-import { CustomSelect, CustomSearchSelect, ToggleSwitch, Loader } from "@plane/ui";
+import { CustomSelect, CustomSearchSelect, ToggleSwitch, Loader } from "@planner/ui";
 // component
 import { SelectMonthModal } from "@/components/automation";
 // constants

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 // ui
-import { Button } from "@plane/propel/button";
+import { Button } from "@planner/propel/button";
 // assets
 import darkActivityAsset from "@/app/assets/empty-state/profile/activity-dark.webp?url";
 import lightActivityAsset from "@/app/assets/empty-state/profile/activity-light.webp?url";
@@ -24,7 +24,7 @@ function ProfileActivityPage() {
   const [isEmpty, setIsEmpty] = useState(false);
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // derived values
   const resolvedPath = resolvedTheme === "light" ? lightActivityAsset : darkActivityAsset;

@@ -1,8 +1,8 @@
 import React from "react";
 import { Command } from "cmdk";
 import { X, Search } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
+// planner imports
+import { useTranslation } from "@planner/i18n";
 // local imports
 import type { TPowerKContext, TPowerKPageType } from "../../core/types";
 import { POWER_K_MODAL_PAGE_DETAILS } from "./constants";

@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
-import { ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import type { IModule } from "@plane/types";
+// planner imports
+import { ETabIndices } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import type { IModule } from "@planner/types";
 // ui
-import { Input, TextArea } from "@plane/ui";
-import { getDate, renderFormattedPayloadDate, getTabIndex } from "@plane/utils";
+import { Input, TextArea } from "@planner/ui";
+import { getDate, renderFormattedPayloadDate, getTabIndex } from "@planner/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { MemberDropdown } from "@/components/dropdowns/member/dropdown";

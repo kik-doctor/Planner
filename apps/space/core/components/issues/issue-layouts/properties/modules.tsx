@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
-// plane ui
-import { ModuleIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-// plane utils
-import { cn } from "@plane/utils";
+// planner ui
+import { ModuleIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+// planner utils
+import { cn } from "@planner/utils";
 // hooks
 import { useModule } from "@/hooks/store/use-module";
 

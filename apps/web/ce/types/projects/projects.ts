@@ -1,4 +1,4 @@
-import type { IPartialProject, IProject } from "@plane/types";
+import type { IPartialProject, IProject } from "@planner/types";
 
 export type TPartialProject = IPartialProject;
 

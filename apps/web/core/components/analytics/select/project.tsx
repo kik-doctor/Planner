@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
-// plane package imports
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ProjectIcon } from "@plane/propel/icons";
-import { CustomSearchSelect } from "@plane/ui";
+// planner package imports
+import { Logo } from "@planner/propel/emoji-icon-picker";
+import { ProjectIcon } from "@planner/propel/icons";
+import { CustomSearchSelect } from "@planner/ui";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 

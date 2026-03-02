@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useParams } from "next/navigation";
-import { EUserPermissions, EUserPermissionsLevel, LOGIN_MEDIUM_LABELS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { renderFormattedDate } from "@plane/utils";
+import { EUserPermissions, EUserPermissionsLevel, LOGIN_MEDIUM_LABELS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { renderFormattedDate } from "@planner/utils";
 import { MemberHeaderColumn } from "@/components/project/member-header-column";
 import type { RowData } from "@/components/workspace/settings/member-columns";
 import { AccountTypeColumn, NameColumn } from "@/components/workspace/settings/member-columns";

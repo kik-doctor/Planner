@@ -1,7 +1,7 @@
 import { CircleCheck } from "lucide-react";
 import React from "react";
-import { E_PASSWORD_STRENGTH } from "@plane/constants";
-import { cn, getPasswordStrength, getPasswordCriteria } from "@plane/utils";
+import { E_PASSWORD_STRENGTH } from "@planner/constants";
+import { cn, getPasswordStrength, getPasswordCriteria } from "@planner/utils";
 import { getStrengthInfo, getFragmentColor } from "./helper";
 
 export interface PasswordStrengthIndicatorProps {

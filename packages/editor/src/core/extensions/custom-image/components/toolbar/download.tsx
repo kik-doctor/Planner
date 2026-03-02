@@ -1,6 +1,6 @@
 import { Download } from "lucide-react";
-// plane imports
-import { Tooltip } from "@plane/ui";
+// planner imports
+import { Tooltip } from "@planner/ui";
 
 type Props = {
   src: string;

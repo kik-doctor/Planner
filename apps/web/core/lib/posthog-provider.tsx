@@ -5,9 +5,9 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import posthog from "posthog-js";
 // constants
-import { GROUP_WORKSPACE_TRACKER_EVENT } from "@plane/constants";
+import { GROUP_WORKSPACE_TRACKER_EVENT } from "@planner/constants";
 // helpers
-import { getUserRole } from "@plane/utils";
+import { getUserRole } from "@planner/utils";
 // hooks
 import { captureClick, joinEventGroup } from "@/helpers/event-tracker.helper";
 import { useInstance } from "@/hooks/store/use-instance";

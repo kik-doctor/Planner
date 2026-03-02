@@ -2,12 +2,12 @@ import { useRef } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, useSearchParams } from "next/navigation";
-// plane types
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IIssueDisplayProperties } from "@plane/types";
-// plane ui
-// plane utils
-import { cn } from "@plane/utils";
+// planner types
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IIssueDisplayProperties } from "@planner/types";
+// planner ui
+// planner utils
+import { cn } from "@planner/utils";
 // helpers
 import { queryParamGenerator } from "@/helpers/query-param-generator";
 // hooks

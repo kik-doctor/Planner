@@ -1,10 +1,10 @@
-// plane imports
+// planner imports
 import type {
   TAllAvailableOperatorsForDisplay,
   TFilterExpression,
   TFilterProperty,
   TSupportedOperators,
-} from "@plane/types";
+} from "@planner/types";
 
 /**
  * Helper function to get the display operator for a condition.

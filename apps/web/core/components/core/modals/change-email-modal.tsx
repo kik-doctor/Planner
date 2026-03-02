@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Transition, Dialog } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Input } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Input } from "@planner/ui";
+import { cn } from "@planner/utils";
 // helpers
 import { authErrorHandler } from "@/helpers/authentication.helper";
 import type { EAuthenticationErrorCodes } from "@/helpers/authentication.helper";

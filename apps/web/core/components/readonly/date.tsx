@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
 import { Calendar } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { cn, renderFormattedDate, getDate } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { cn, renderFormattedDate, getDate } from "@planner/utils";
 
 export type TReadonlyDateProps = {
   className?: string;

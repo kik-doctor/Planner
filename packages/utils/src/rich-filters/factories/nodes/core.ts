@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-// plane imports
+// planner imports
 import type {
   TFilterAndGroupNode,
   TFilterConditionNode,
@@ -7,8 +7,8 @@ import type {
   TFilterExpression,
   TFilterProperty,
   TFilterValue,
-} from "@plane/types";
-import { FILTER_NODE_TYPE, LOGICAL_OPERATOR } from "@plane/types";
+} from "@planner/types";
+import { FILTER_NODE_TYPE, LOGICAL_OPERATOR } from "@planner/types";
 
 /**
  * Creates a condition node with a unique ID.

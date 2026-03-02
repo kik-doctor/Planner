@@ -1,14 +1,14 @@
 import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { ISearchIssueResponse, TIssue, TIssueServiceType, TWorkItemWidgets } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { ISearchIssueResponse, TIssue, TIssueServiceType, TWorkItemWidgets } from "@planner/types";
 // components
 import { ExistingIssuesListModal } from "@/components/core/modals/existing-issues-list-modal";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web imports
-import { WorkItemAdditionalWidgetModals } from "@/plane-web/components/issues/issue-detail-widgets/modals";
+// planner web imports
+import { WorkItemAdditionalWidgetModals } from "@/planner-web/components/issues/issue-detail-widgets/modals";
 // local imports
 import { IssueLinkCreateUpdateModal } from "../issue-detail/links/create-update-link-modal";
 // helpers

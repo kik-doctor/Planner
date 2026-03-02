@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-// plane imports
-import { ROLE, MEMBER_TRACKER_EVENTS, MEMBER_TRACKER_ELEMENTS } from "@plane/constants";
+// planner imports
+import { ROLE, MEMBER_TRACKER_EVENTS, MEMBER_TRACKER_ELEMENTS } from "@planner/constants";
 // types
-import { Button } from "@plane/propel/button";
-import type { IWorkspaceMemberInvitation } from "@plane/types";
+import { Button } from "@planner/propel/button";
+import type { IWorkspaceMemberInvitation } from "@planner/types";
 // ui
-import { Checkbox, Spinner } from "@plane/ui";
-import { truncateText } from "@plane/utils";
+import { Checkbox, Spinner } from "@planner/ui";
+import { truncateText } from "@planner/utils";
 // constants
 // helpers
 import { WorkspaceLogo } from "@/components/workspace/logo";
@@ -15,7 +15,7 @@ import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserSettings } from "@/hooks/store/user";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 
 type Props = {
   invitations: IWorkspaceMemberInvitation[];

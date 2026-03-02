@@ -1,11 +1,11 @@
-// plane imports
+// planner imports
 import type { SyntheticEvent } from "react";
 import { useMemo } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import { StartDatePropertyIcon, DueDatePropertyIcon } from "@plane/propel/icons";
-import type { IIssueDisplayProperties, TIssue } from "@plane/types";
-import { getDate, renderFormattedPayloadDate, shouldHighlightIssueDueDate } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { StartDatePropertyIcon, DueDatePropertyIcon } from "@planner/propel/icons";
+import type { IIssueDisplayProperties, TIssue } from "@planner/types";
+import { getDate, renderFormattedPayloadDate, shouldHighlightIssueDueDate } from "@planner/utils";
 // components
 import { DateDropdown } from "@/components/dropdowns/date";
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";

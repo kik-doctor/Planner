@@ -2,11 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { observer } from "mobx-react";
 import { useForm } from "react-hook-form";
 import { Check } from "lucide-react";
-import type { EditorRefApi } from "@plane/editor";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
-import type { TCommentsOperations, TIssueComment } from "@plane/types";
-import { isCommentEmpty } from "@plane/utils";
+import type { EditorRefApi } from "@planner/editor";
+import { CloseIcon } from "@planner/propel/icons";
+// planner imports
+import type { TCommentsOperations, TIssueComment } from "@planner/types";
+import { isCommentEmpty } from "@planner/utils";
 // components
 import { LiteTextEditor } from "@/components/editor/lite-text";
 

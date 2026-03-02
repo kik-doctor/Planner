@@ -1,16 +1,16 @@
 import { LayoutGrid } from "lucide-react";
-// plane imports
-import { CycleIcon, ModuleIcon, PageIcon, ProjectIcon, ViewsIcon } from "@plane/propel/icons";
+// planner imports
+import { CycleIcon, ModuleIcon, PageIcon, ProjectIcon, ViewsIcon } from "@planner/propel/icons";
 import type {
   IWorkspaceDefaultSearchResult,
   IWorkspaceIssueSearchResult,
   IWorkspacePageSearchResult,
   IWorkspaceProjectSearchResult,
   IWorkspaceSearchResult,
-} from "@plane/types";
-import { generateWorkItemLink } from "@plane/utils";
-// plane web components
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+} from "@planner/types";
+import { generateWorkItemLink } from "@planner/utils";
+// planner web components
+import { IssueIdentifier } from "@/planner-web/components/issues/issue-details/issue-identifier";
 
 export type TCommandGroups = {
   [key: string]: {

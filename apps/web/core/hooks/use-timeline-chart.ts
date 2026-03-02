@@ -1,11 +1,11 @@
 import { useContext } from "react";
 // types
-import type { TTimelineType } from "@plane/types";
+import type { TTimelineType } from "@planner/types";
 // lib
 import { StoreContext } from "@/lib/store-context";
-// Plane-web
-import { getTimelineStore } from "@/plane-web/hooks/use-timeline-chart";
-import type { IBaseTimelineStore } from "@/plane-web/store/timeline/base-timeline.store";
+// planner-web
+import { getTimelineStore } from "@/planner-web/hooks/use-timeline-chart";
+import type { IBaseTimelineStore } from "@/planner-web/store/timeline/base-timeline.store";
 import { useTimeLineType } from "../components/gantt-chart/contexts";
 
 export const useTimeLineChart = (timelineType: TTimelineType): IBaseTimelineStore => {

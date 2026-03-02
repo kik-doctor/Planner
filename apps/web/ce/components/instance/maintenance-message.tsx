@@ -3,7 +3,7 @@ export function MaintenanceMessage() {
     {
       key: "mail_to",
       label: "Contact Support",
-      value: "mailto:support@plane.so",
+      value: "mailto:hello@oneworkspacex.com",
     },
   ];
 
@@ -11,7 +11,7 @@ export function MaintenanceMessage() {
     <>
       <div className="flex flex-col gap-2.5">
         <h1 className="text-xl font-semibold text-custom-text-100 text-left">
-          &#x1F6A7; Looks like Plane didn&apos;t start up correctly!
+          &#x1F6A7; Looks like Planner didn&apos;t start up correctly!
         </h1>
         <span className="text-base font-medium text-custom-text-200 text-left">
           Some services might have failed to start. Please check your container logs to identify and resolve the issue.

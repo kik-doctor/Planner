@@ -1,15 +1,15 @@
 import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
 import { Check, SettingsIcon } from "lucide-react";
-import { ContextMenu } from "@plane/propel/context-menu";
-import { cn } from "@plane/utils";
+import { ContextMenu } from "@planner/propel/context-menu";
+import { cn } from "@planner/utils";
 // components
 import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
 // hooks
 import { useAppRailPreferences } from "@/hooks/use-navigation-preferences";
 import { useAppRailVisibility } from "@/lib/app-rail/context";
-// plane web imports
-import { DesktopSidebarWorkspaceMenu } from "@/plane-web/components/desktop";
+// planner web imports
+import { DesktopSidebarWorkspaceMenu } from "@/planner-web/components/desktop";
 // local imports
 import { AppSidebarItemsRoot } from "./items-root";
 

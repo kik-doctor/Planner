@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Eye, EyeOff } from "lucide-react";
-// plane internal packages
-import type { EAdminAuthErrorCodes, TAdminAuthErrorInfo } from "@plane/constants";
-import { API_BASE_URL } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { AuthService } from "@plane/services";
-import { Input, Spinner } from "@plane/ui";
+// planner internal packages
+import type { EAdminAuthErrorCodes, TAdminAuthErrorInfo } from "@planner/constants";
+import { API_BASE_URL } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { AuthService } from "@planner/services";
+import { Input, Spinner } from "@planner/ui";
 // components
 import { Banner } from "@/components/common/banner";
 // local components
@@ -108,7 +108,7 @@ export function InstanceSignInForm() {
       <div className="flex flex-col justify-center items-center flex-grow w-full py-6 mt-10">
         <div className="relative flex flex-col gap-6 max-w-[22.5rem] w-full">
           <FormHeader
-            heading="Manage your Plane instance"
+            heading="Manage your Planner instance"
             subHeading="Configure instance-wide settings to secure your instance"
           />
           <form

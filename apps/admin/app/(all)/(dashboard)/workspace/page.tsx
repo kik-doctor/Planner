@@ -4,12 +4,12 @@ import Link from "next/link";
 import useSWR from "swr";
 import { Loader as LoaderIcon } from "lucide-react";
 // types
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { setPromiseToast } from "@plane/propel/toast";
-import type { TInstanceConfigurationKeys } from "@plane/types";
-import { Loader, ToggleSwitch } from "@plane/ui";
+import { Button, getButtonStyling } from "@planner/propel/button";
+import { setPromiseToast } from "@planner/propel/toast";
+import type { TInstanceConfigurationKeys } from "@planner/types";
+import { Loader, ToggleSwitch } from "@planner/ui";
 
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // components
 import { WorkspaceListItem } from "@/components/workspace/list-item";
 // hooks

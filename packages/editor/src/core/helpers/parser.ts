@@ -1,10 +1,10 @@
-// plane imports
-import type { TDocumentPayload, TDuplicateAssetData, TDuplicateAssetResponse, TEditorAssetType } from "@plane/types";
-// plane web imports
+// planner imports
+import type { TDocumentPayload, TDuplicateAssetData, TDuplicateAssetResponse, TEditorAssetType } from "@planner/types";
+// planner web imports
 import {
   extractAdditionalAssetsFromHTMLContent,
   replaceAdditionalAssetsInHTMLContent,
-} from "@/plane-editor/helpers/parser";
+} from "@/planner-editor/helpers/parser";
 // local imports
 import { convertHTMLDocumentToAllFormats } from "./yjs-utils";
 

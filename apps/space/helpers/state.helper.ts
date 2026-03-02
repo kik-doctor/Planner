@@ -1,5 +1,5 @@
-import { STATE_GROUPS } from "@plane/constants";
-import type { IState } from "@plane/types";
+import { STATE_GROUPS } from "@planner/constants";
+import type { IState } from "@planner/types";
 
 export const sortStates = (states: IState[]) => {
   if (!states || states.length === 0) return;

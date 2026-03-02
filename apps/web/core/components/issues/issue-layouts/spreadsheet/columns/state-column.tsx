@@ -1,7 +1,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 // types
-import type { TIssue } from "@plane/types";
+import type { TIssue } from "@planner/types";
 // components
 import { StateDropdown } from "@/components/dropdowns/state/dropdown";
 

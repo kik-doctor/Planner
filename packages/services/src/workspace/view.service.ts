@@ -1,5 +1,5 @@
-import { API_BASE_URL } from "@plane/constants";
-import type { IWorkspaceView, TIssuesResponse } from "@plane/types";
+import { API_BASE_URL } from "@planner/constants";
+import type { IWorkspaceView, TIssuesResponse } from "@planner/types";
 import { APIService } from "../api.service";
 
 export class WorkspaceViewService extends APIService {

@@ -1,13 +1,13 @@
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { Search } from "lucide-react";
-// plane hooks
-import { useOutsideClickDetector } from "@plane/hooks";
+// planner hooks
+import { useOutsideClickDetector } from "@planner/hooks";
 // i18n
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // hooks
 import { useProjectFilter } from "@/hooks/store/use-project-filter";
 

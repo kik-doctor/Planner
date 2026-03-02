@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import type { TNameDescriptionLoader } from "@plane/types";
-import { EFileAssetType, EIssueServiceType } from "@plane/types";
-import { getTextContent } from "@plane/utils";
+// planner imports
+import type { EditorRefApi } from "@planner/editor";
+import type { TNameDescriptionLoader } from "@planner/types";
+import { EFileAssetType, EIssueServiceType } from "@planner/types";
+import { getTextContent } from "@planner/utils";
 // components
 import { DescriptionVersionsRoot } from "@/components/core/description-versions";
 import { DescriptionInput } from "@/components/editor/rich-text/description-input";
@@ -15,10 +15,10 @@ import { useProject } from "@/hooks/store/use-project";
 import { useUser } from "@/hooks/store/user";
 import useReloadConfirmations from "@/hooks/use-reload-confirmation";
 import useSize from "@/hooks/use-window-size";
-// plane web components
-import { DeDupeIssuePopoverRoot } from "@/plane-web/components/de-dupe/duplicate-popover";
-import { IssueTypeSwitcher } from "@/plane-web/components/issues/issue-details/issue-type-switcher";
-import { useDebouncedDuplicateIssues } from "@/plane-web/hooks/use-debounced-duplicate-issues";
+// planner web components
+import { DeDupeIssuePopoverRoot } from "@/planner-web/components/de-dupe/duplicate-popover";
+import { IssueTypeSwitcher } from "@/planner-web/components/issues/issue-details/issue-type-switcher";
+import { useDebouncedDuplicateIssues } from "@/planner-web/hooks/use-debounced-duplicate-issues";
 // services
 import { WorkItemVersionService } from "@/services/issue";
 // local imports

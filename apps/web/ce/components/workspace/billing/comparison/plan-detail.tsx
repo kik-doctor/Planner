@@ -1,19 +1,19 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// planner imports
 import {
   SUBSCRIPTION_REDIRECTION_URLS,
   SUBSCRIPTION_WITH_BILLING_FREQUENCY,
   TALK_TO_SALES_URL,
   WORKSPACE_SETTINGS_TRACKER_ELEMENTS,
   WORKSPACE_SETTINGS_TRACKER_EVENTS,
-} from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { getButtonStyling } from "@plane/propel/button";
-import type { TBillingFrequency } from "@plane/types";
-import { EProductSubscriptionEnum } from "@plane/types";
-import { getUpgradeButtonStyle } from "@plane/ui";
-import { cn, getSubscriptionName } from "@plane/utils";
+} from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { getButtonStyling } from "@planner/propel/button";
+import type { TBillingFrequency } from "@planner/types";
+import { EProductSubscriptionEnum } from "@planner/types";
+import { getUpgradeButtonStyle } from "@planner/ui";
+import { cn, getSubscriptionName } from "@planner/utils";
 // components
 import { DiscountInfo } from "@/components/license/modal/card/discount-info";
 import type { TPlanDetail } from "@/constants/plans";
@@ -33,7 +33,7 @@ const COMMON_BUTTON_STYLE =
 
 export const PlanDetail = observer(function PlanDetail(props: TPlanDetailProps) {
   const { subscriptionType, planDetail, billingFrequency, setBillingFrequency } = props;
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
   // subscription details
   const subscriptionName = getSubscriptionName(subscriptionType);

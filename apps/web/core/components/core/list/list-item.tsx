@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import React from "react";
 // ui
-import { Tooltip } from "@plane/propel/tooltip";
-import { ControlLink, Row } from "@plane/ui";
+import { Tooltip } from "@planner/propel/tooltip";
+import { ControlLink, Row } from "@planner/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // hooks
 import { useAppRouter } from "@/hooks/use-app-router";
 

@@ -2,13 +2,13 @@ import type { FC } from "react";
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { GripVertical, Pencil, Trash2 } from "lucide-react";
-// plane imports
-import { EEstimateSystem, estimateCount } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@plane/types";
-import { convertMinutesToHoursMinutesString } from "@plane/utils";
-// plane web imports
-import { EstimatePointDelete } from "@/plane-web/components/estimates";
+// planner imports
+import { EEstimateSystem, estimateCount } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@planner/types";
+import { convertMinutesToHoursMinutesString } from "@planner/utils";
+// planner web imports
+import { EstimatePointDelete } from "@/planner-web/components/estimates";
 // local imports
 import { EstimatePointUpdate } from "./update";
 

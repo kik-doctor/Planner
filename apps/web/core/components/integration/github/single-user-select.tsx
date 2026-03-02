@@ -1,15 +1,15 @@
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane types
-import type { IGithubRepoCollaborator } from "@plane/types";
-// plane ui
-import { Avatar, CustomSelect, CustomSearchSelect, Input } from "@plane/ui";
+// planner types
+import type { IGithubRepoCollaborator } from "@planner/types";
+// planner ui
+import { Avatar, CustomSelect, CustomSearchSelect, Input } from "@planner/ui";
 // constants
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@planner/utils";
 import { WORKSPACE_MEMBERS } from "@/constants/fetch-keys";
 // helpers
-// plane web services
-import { WorkspaceService } from "@/plane-web/services";
+// planner web services
+import { WorkspaceService } from "@/planner-web/services";
 // types
 import type { IUserDetails } from "./root";
 

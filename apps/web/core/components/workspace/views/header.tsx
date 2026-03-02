@@ -2,16 +2,16 @@ import React, { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Plus } from "lucide-react";
-// plane imports
+// planner imports
 import {
   DEFAULT_GLOBAL_VIEWS_LIST,
   EUserPermissions,
   EUserPermissionsLevel,
   GLOBAL_VIEW_TRACKER_ELEMENTS,
   GLOBAL_VIEW_TRACKER_EVENTS,
-} from "@plane/constants";
-import type { TStaticViewTypes } from "@plane/types";
-import { Header, EHeaderVariant } from "@plane/ui";
+} from "@planner/constants";
+import type { TStaticViewTypes } from "@planner/types";
+import { Header, EHeaderVariant } from "@planner/ui";
 // helpers
 import { captureSuccess } from "@/helpers/event-tracker.helper";
 // hooks

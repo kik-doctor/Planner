@@ -2,12 +2,12 @@ import { useState } from "react";
 import { isEmpty } from "lodash-es";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
-// plane internal packages
-import { API_BASE_URL } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IFormattedInstanceConfiguration, TInstanceGiteaAuthenticationConfigurationKeys } from "@plane/types";
-import { Button, getButtonStyling } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner internal packages
+import { API_BASE_URL } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IFormattedInstanceConfiguration, TInstanceGiteaAuthenticationConfigurationKeys } from "@planner/types";
+import { Button, getButtonStyling } from "@planner/ui";
+import { cn } from "@planner/utils";
 // components
 import { CodeBlock } from "@/components/common/code-block";
 import { ConfirmDiscardModal } from "@/components/common/confirm-discard-modal";
@@ -163,7 +163,7 @@ export function InstanceGiteaConfigForm(props: Props) {
       <div className="flex flex-col gap-8">
         <div className="grid grid-cols-2 gap-x-12 gap-y-8 w-full">
           <div className="flex flex-col gap-y-4 col-span-2 md:col-span-1 pt-1">
-            <div className="pt-2.5 text-xl font-medium">Gitea-provided details for Plane</div>
+            <div className="pt-2.5 text-xl font-medium">Gitea-provided details for planner</div>
             {GITEA_FORM_FIELDS.map((field) => (
               <ControllerInput
                 key={field.key}
@@ -194,7 +194,7 @@ export function InstanceGiteaConfigForm(props: Props) {
           </div>
           <div className="col-span-2 md:col-span-1">
             <div className="flex flex-col gap-y-4 px-6 pt-1.5 pb-4 bg-custom-background-80/60 rounded-lg">
-              <div className="pt-2 text-xl font-medium">Plane-provided details for Gitea</div>
+              <div className="pt-2 text-xl font-medium">Planner-provided details for Gitea</div>
               {GITEA_SERVICE_FIELD.map((field) => (
                 <CopyField key={field.key} label={field.label} url={field.url} description={field.description} />
               ))}

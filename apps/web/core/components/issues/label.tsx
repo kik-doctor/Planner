@@ -1,6 +1,6 @@
 import React from "react";
 // components
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@planner/propel/tooltip";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 type Props = {
   labelDetails: any[];

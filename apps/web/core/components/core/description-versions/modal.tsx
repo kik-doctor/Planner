@@ -1,16 +1,16 @@
 import { useCallback, useRef } from "react";
 import { observer } from "mobx-react";
 import { Copy } from "lucide-react";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { ChevronLeftIcon, ChevronRightIcon } from "@plane/propel/icons";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TDescriptionVersion } from "@plane/types";
-import { Avatar, EModalPosition, EModalWidth, Loader, ModalCore } from "@plane/ui";
-import { calculateTimeAgo, cn, copyTextToClipboard, getFileURL } from "@plane/utils";
+// planner imports
+import type { EditorRefApi } from "@planner/editor";
+import { useTranslation } from "@planner/i18n";
+import { Button, getButtonStyling } from "@planner/propel/button";
+import { ChevronLeftIcon, ChevronRightIcon } from "@planner/propel/icons";
+import { setToast, TOAST_TYPE } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TDescriptionVersion } from "@planner/types";
+import { Avatar, EModalPosition, EModalWidth, Loader, ModalCore } from "@planner/ui";
+import { calculateTimeAgo, cn, copyTextToClipboard, getFileURL } from "@planner/utils";
 // components
 import { RichTextEditor } from "@/components/editor/rich-text";
 // hooks

@@ -1,15 +1,15 @@
 import React from "react";
-// plane imports
-import { LiteTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@plane/editor";
-import type { MakeOptional } from "@plane/types";
-import { cn, isCommentEmpty } from "@plane/utils";
+// planner imports
+import { LiteTextEditorWithRef } from "@planner/editor";
+import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@planner/editor";
+import type { MakeOptional } from "@planner/types";
+import { cn, isCommentEmpty } from "@planner/utils";
 // helpers
 import { getEditorFileHandlers } from "@/helpers/editor.helper";
 // hooks
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web imports
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
+// planner web imports
+import { useEditorFlagging } from "@/planner-web/hooks/use-editor-flagging";
 // local imports
 import { EditorMentionsRoot } from "./embeds/mentions";
 import { IssueCommentToolbar } from "./toolbar";

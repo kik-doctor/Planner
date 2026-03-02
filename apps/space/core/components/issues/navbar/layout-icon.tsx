@@ -1,6 +1,6 @@
-import type { TIssueLayout } from "@plane/constants";
-import { ListLayoutIcon, BoardLayoutIcon } from "@plane/propel/icons";
-import type { ISvgIcons } from "@plane/propel/icons";
+import type { TIssueLayout } from "@planner/constants";
+import { ListLayoutIcon, BoardLayoutIcon } from "@planner/propel/icons";
+import type { ISvgIcons } from "@planner/propel/icons";
 
 export function IssueLayoutIcon({
   layout,

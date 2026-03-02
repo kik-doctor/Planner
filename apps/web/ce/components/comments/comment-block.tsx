@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
 import { useRef } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TIssueComment } from "@plane/types";
-import { Avatar, Tooltip } from "@plane/ui";
-import { calculateTimeAgo, cn, getFileURL, renderFormattedDate, renderFormattedTime } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import type { TIssueComment } from "@planner/types";
+import { Avatar, Tooltip } from "@planner/ui";
+import { calculateTimeAgo, cn, getFileURL, renderFormattedDate, renderFormattedTime } from "@planner/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 

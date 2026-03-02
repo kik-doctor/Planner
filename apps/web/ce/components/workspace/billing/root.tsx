@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { DEFAULT_PRODUCT_BILLING_FREQUENCY, SUBSCRIPTION_WITH_BILLING_FREQUENCY } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TBillingFrequency, TProductBillingFrequency } from "@plane/types";
-import { EProductSubscriptionEnum } from "@plane/types";
-import { getSubscriptionTextColor } from "@plane/ui";
-import { cn } from "@plane/utils";
+// planner imports
+import { DEFAULT_PRODUCT_BILLING_FREQUENCY, SUBSCRIPTION_WITH_BILLING_FREQUENCY } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import type { TBillingFrequency, TProductBillingFrequency } from "@planner/types";
+import { EProductSubscriptionEnum } from "@planner/types";
+import { getSubscriptionTextColor } from "@planner/ui";
+import { cn } from "@planner/utils";
 // components
 import { SettingsHeading } from "@/components/settings/heading";
 // local imports

@@ -1,6 +1,6 @@
 import React from "react";
 // icons
-import { ChevronDownIcon, ChevronUpIcon } from "@plane/propel/icons";
+import { ChevronDownIcon, ChevronUpIcon } from "@planner/propel/icons";
 
 interface IFilterHeader {
   title: string;

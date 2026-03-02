@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 // types
-import { useTranslation } from "@plane/i18n";
-import type { TIssue } from "@plane/types";
+import { useTranslation } from "@planner/i18n";
+import type { TIssue } from "@planner/types";
 // ui
-import { AlertModalCore } from "@plane/ui";
+import { AlertModalCore } from "@planner/ui";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { CircleCheck, XCircle } from "lucide-react";
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { AuthService } from "@plane/services";
-import { Input, Spinner } from "@plane/ui";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
+import { Button } from "@planner/propel/button";
+import { AuthService } from "@planner/services";
+import { Input, Spinner } from "@planner/ui";
 // hooks
 import useTimer from "@/hooks/use-timer";
 // types

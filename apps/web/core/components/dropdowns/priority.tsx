@@ -4,16 +4,16 @@ import { useTheme } from "next-themes";
 import { usePopper } from "react-popper";
 import { Check, Search, SignalHigh } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-import { ISSUE_PRIORITIES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { ISSUE_PRIORITIES } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
 // types
-import { PriorityIcon, ChevronDownIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIssuePriorities } from "@plane/types";
+import { PriorityIcon, ChevronDownIcon } from "@planner/propel/icons";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TIssuePriorities } from "@planner/types";
 // ui
-import { ComboDropDown } from "@plane/ui";
+import { ComboDropDown } from "@planner/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // hooks
 import { useDropdown } from "@/hooks/use-dropdown";
 import { usePlatformOS } from "@/hooks/use-platform-os";

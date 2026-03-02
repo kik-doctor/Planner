@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronDownIcon, ChevronUpIcon } from "@plane/propel/icons";
+import { ChevronDownIcon, ChevronUpIcon } from "@planner/propel/icons";
 // lucide icons
 
 interface IFilterHeader {

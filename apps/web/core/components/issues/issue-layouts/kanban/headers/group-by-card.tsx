@@ -4,21 +4,21 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // lucide icons
 import { Minimize2, Maximize2, Circle, Plus } from "lucide-react";
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue, ISearchIssueResponse, TIssueKanbanFilters, TIssueGroupByOptions } from "@plane/types";
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { TIssue, ISearchIssueResponse, TIssueKanbanFilters, TIssueGroupByOptions } from "@planner/types";
 // ui
-import { CustomMenu } from "@plane/ui";
+import { CustomMenu } from "@planner/ui";
 // components
 import { ExistingIssuesListModal } from "@/components/core/modals/existing-issues-list-modal";
 import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
 // constants
 import { captureClick } from "@/helpers/event-tracker.helper";
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
-import { CreateUpdateEpicModal } from "@/plane-web/components/epics/epic-modal";
+import { CreateUpdateEpicModal } from "@/planner-web/components/epics/epic-modal";
 // types
-// Plane-web
-import { WorkFlowGroupTree } from "@/plane-web/components/workflow";
+// planner-web
+import { WorkFlowGroupTree } from "@/planner-web/components/workflow";
 
 interface IHeaderGroupByCard {
   sub_group_by: TIssueGroupByOptions | undefined;

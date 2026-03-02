@@ -1,10 +1,10 @@
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@plane/types";
-import { EHeaderVariant, Header, Tag } from "@plane/ui";
-import { replaceUnderscoreIfSnakeCase } from "@plane/utils";
+import { useTranslation } from "@planner/i18n";
+import { CloseIcon } from "@planner/propel/icons";
+// planner imports
+import { Tooltip } from "@planner/propel/tooltip";
+import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@planner/types";
+import { EHeaderVariant, Header, Tag } from "@planner/ui";
+import { replaceUnderscoreIfSnakeCase } from "@planner/utils";
 // local imports
 import { AppliedAccessFilters } from "./access";
 import { AppliedDateFilters } from "./date";

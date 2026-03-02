@@ -1,5 +1,5 @@
 import type { Copy } from "lucide-react";
-import type { TContextMenuItem } from "@plane/ui";
+import type { TContextMenuItem } from "@planner/ui";
 
 export interface CopyMenuHelperProps {
   baseItem: {

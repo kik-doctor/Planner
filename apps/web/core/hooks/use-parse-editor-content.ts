@@ -1,13 +1,13 @@
 import { useCallback } from "react";
-// plane types
-import type { TSearchEntities } from "@plane/types";
+// planner types
+import type { TSearchEntities } from "@planner/types";
 // helpers
-import { getBase64Image, getEditorAssetSrc } from "@plane/utils";
-import type { TCustomComponentsMetaData } from "@plane/utils";
+import { getBase64Image, getEditorAssetSrc } from "@planner/utils";
+import type { TCustomComponentsMetaData } from "@planner/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
-// plane web hooks
-import { useAdditionalEditorMention } from "@/plane-web/hooks/use-additional-editor-mention";
+// planner web hooks
+import { useAdditionalEditorMention } from "@/planner-web/hooks/use-additional-editor-mention";
 
 type TArgs = {
   projectId?: string;

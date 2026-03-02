@@ -2,11 +2,11 @@ import type { FC } from "react";
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { createPortal } from "react-dom";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import type { TNameDescriptionLoader } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { cn } from "@plane/utils";
+// planner imports
+import type { EditorRefApi } from "@planner/editor";
+import type { TNameDescriptionLoader } from "@planner/types";
+import { EIssueServiceType } from "@planner/types";
+import { cn } from "@planner/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import useKeypress from "@/hooks/use-keypress";

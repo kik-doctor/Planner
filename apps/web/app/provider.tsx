@@ -1,12 +1,12 @@
 import { lazy, Suspense } from "react";
 import { useTheme, ThemeProvider } from "next-themes";
 import { SWRConfig } from "swr";
-// Plane Imports
-import { WEB_SWR_CONFIG } from "@plane/constants";
-import { TranslationProvider } from "@plane/i18n";
-import { Toast } from "@plane/propel/toast";
+// planner Imports
+import { WEB_SWR_CONFIG } from "@planner/constants";
+import { TranslationProvider } from "@planner/i18n";
+import { Toast } from "@planner/propel/toast";
 // helpers
-import { resolveGeneralTheme } from "@plane/utils";
+import { resolveGeneralTheme } from "@planner/utils";
 // polyfills
 import "@/lib/polyfills";
 // progress bar

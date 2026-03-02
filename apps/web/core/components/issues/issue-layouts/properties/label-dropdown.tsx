@@ -4,16 +4,16 @@ import { useParams } from "next/navigation";
 import { usePopper } from "react-popper";
 import { Check, Loader, Search } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane imports
-import { EUserPermissionsLevel, getRandomLabelColor } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { ChevronDownIcon } from "@plane/propel/icons";
+// planner imports
+import { EUserPermissionsLevel, getRandomLabelColor } from "@planner/constants";
+import { useOutsideClickDetector } from "@planner/hooks";
+import { useTranslation } from "@planner/i18n";
+import { ChevronDownIcon } from "@planner/propel/icons";
 // types
-import type { IIssueLabel } from "@plane/types";
-import { EUserProjectRoles } from "@plane/types";
+import type { IIssueLabel } from "@planner/types";
+import { EUserProjectRoles } from "@planner/types";
 // components
-import { ComboDropDown } from "@plane/ui";
+import { ComboDropDown } from "@planner/ui";
 // hooks
 import { useLabel } from "@/hooks/store/use-label";
 import { useUserPermissions } from "@/hooks/store/user";

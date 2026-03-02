@@ -3,12 +3,12 @@ import { observer } from "mobx-react";
 import { useParams, useRouter } from "next/navigation";
 // icons
 import { LogOut, Settings, Settings2 } from "lucide-react";
-// plane imports
-import { GOD_MODE_URL } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Avatar, CustomMenu } from "@plane/ui";
-import { getFileURL } from "@plane/utils";
+// planner imports
+import { GOD_MODE_URL } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Avatar, CustomMenu } from "@planner/ui";
+import { getFileURL } from "@planner/utils";
 // hooks
 import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
 import { useAppTheme } from "@/hooks/store/use-app-theme";

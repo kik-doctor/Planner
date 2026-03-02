@@ -1,14 +1,14 @@
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
+// planner imports
 import {
   PROFILE_SETTINGS_TRACKER_ELEMENTS,
   PROFILE_SETTINGS_TRACKER_EVENTS,
   START_OF_THE_WEEK_OPTIONS,
-} from "@plane/constants";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { EStartOfTheWeek } from "@plane/types";
-import { CustomSelect } from "@plane/ui";
+} from "@planner/constants";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { EStartOfTheWeek } from "@planner/types";
+import { CustomSelect } from "@planner/ui";
 // hooks
 import { captureElementAndEvent } from "@/helpers/event-tracker.helper";
 import { useUserProfile } from "@/hooks/store/user";

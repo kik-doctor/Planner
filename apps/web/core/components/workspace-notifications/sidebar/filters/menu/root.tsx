@@ -1,11 +1,11 @@
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
-// plane imports
-import type { ENotificationFilterType } from "@plane/constants";
-import { FILTER_TYPE_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import { PopoverMenu } from "@plane/ui";
+// planner imports
+import type { ENotificationFilterType } from "@planner/constants";
+import { FILTER_TYPE_OPTIONS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Tooltip } from "@planner/propel/tooltip";
+import { PopoverMenu } from "@planner/ui";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // local imports

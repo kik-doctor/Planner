@@ -1,8 +1,8 @@
 import React from "react";
 import { Command } from "cmdk";
-// plane imports
-import { START_OF_THE_WEEK_OPTIONS } from "@plane/constants";
-import type { EStartOfTheWeek } from "@plane/types";
+// planner imports
+import { START_OF_THE_WEEK_OPTIONS } from "@planner/constants";
+import type { EStartOfTheWeek } from "@planner/types";
 // local imports
 import { PowerKModalCommandItem } from "../../modal/command-item";
 

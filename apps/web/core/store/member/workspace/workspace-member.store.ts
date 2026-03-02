@@ -2,11 +2,11 @@ import { set, sortBy } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import type { EUserPermissions } from "@plane/constants";
-import type { IWorkspaceBulkInviteFormData, IWorkspaceMember, IWorkspaceMemberInvitation } from "@plane/types";
-// plane-web constants
+import type { EUserPermissions } from "@planner/constants";
+import type { IWorkspaceBulkInviteFormData, IWorkspaceMember, IWorkspaceMemberInvitation } from "@planner/types";
+// planner-web constants
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/planner-web/services";
 // types
 import type { IRouterStore } from "@/store/router.store";
 import type { IUserStore } from "@/store/user";

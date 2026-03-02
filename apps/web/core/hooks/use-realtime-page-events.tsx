@@ -1,16 +1,16 @@
 import { useCallback, useMemo } from "react";
-// plane imports
-import type { EventToPayloadMap } from "@plane/editor";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
+// planner imports
+import type { EventToPayloadMap } from "@planner/editor";
+import { setToast, TOAST_TYPE } from "@planner/propel/toast";
 // types
-import type { IUserLite } from "@plane/types";
+import type { IUserLite } from "@planner/types";
 // components
 import type { TEditorBodyHandlers } from "@/components/pages/editor/editor-body";
 // hooks
 import { useUser } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-import type { EPageStoreType } from "@/plane-web/hooks/store";
-import { usePageStore } from "@/plane-web/hooks/store";
+import type { EPageStoreType } from "@/planner-web/hooks/store";
+import { usePageStore } from "@/planner-web/hooks/store";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 

@@ -2,11 +2,11 @@ import type { CSSProperties, FC } from "react";
 import { extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import { clone, isNil, pull, uniq, concat } from "lodash-es";
 import scrollIntoView from "smooth-scroll-into-view-if-needed";
-// plane types
-import { EIconSize, ISSUE_PRIORITIES, STATE_GROUPS } from "@plane/constants";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import type { ISvgIcons } from "@plane/propel/icons";
-import { CycleGroupIcon, CycleIcon, ModuleIcon, PriorityIcon, StateGroupIcon } from "@plane/propel/icons";
+// planner types
+import { EIconSize, ISSUE_PRIORITIES, STATE_GROUPS } from "@planner/constants";
+import { Logo } from "@planner/propel/emoji-icon-picker";
+import type { ISvgIcons } from "@planner/propel/icons";
+import { CycleGroupIcon, CycleIcon, ModuleIcon, PriorityIcon, StateGroupIcon } from "@planner/propel/icons";
 import type {
   GroupByColumnTypes,
   IGroupByColumn,
@@ -20,20 +20,20 @@ import type {
   TGroupedIssues,
   IIssueDisplayFilterOptions,
   TGetColumns,
-} from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-// plane ui
-import { Avatar } from "@plane/ui";
-import { renderFormattedDate, getFileURL } from "@plane/utils";
+} from "@planner/types";
+import { EIssuesStoreType } from "@planner/types";
+// planner ui
+import { Avatar } from "@planner/ui";
+import { renderFormattedDate, getFileURL } from "@planner/utils";
 // helpers
 // store
 import { store } from "@/lib/store-context";
-// plane web store
+// planner web store
 import {
   getScopeMemberIds,
   getTeamProjectColumns,
   SpreadSheetPropertyIconMap,
-} from "@/plane-web/components/issues/issue-layouts/utils";
+} from "@/planner-web/components/issues/issue-layouts/utils";
 // store
 import { ISSUE_FILTER_DEFAULT_DATA } from "@/store/issue/helpers/base-issues.store";
 import { DEFAULT_DISPLAY_PROPERTIES } from "@/store/issue/issue-details/sub_issues_filter.store";

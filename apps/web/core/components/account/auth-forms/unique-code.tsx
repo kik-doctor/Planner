@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { CircleCheck, XCircle } from "lucide-react";
-import { API_BASE_URL, AUTH_TRACKER_ELEMENTS, AUTH_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { Input, Spinner } from "@plane/ui";
+import { API_BASE_URL, AUTH_TRACKER_ELEMENTS, AUTH_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { Input, Spinner } from "@planner/ui";
 // constants
 // helpers
 import { EAuthModes } from "@/helpers/authentication.helper";
@@ -46,7 +46,7 @@ export function AuthUniqueCodeForm(props: TAuthUniqueCodeForm) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   // timer
   const { timer: resendTimerCode, setTimer: setResendCodeTimer } = useTimer(0);
-  // plane hooks
+  // planner hooks
   const { t } = useTranslation();
 
   const handleFormChange = (key: keyof TUniqueCodeFormValues, value: string) =>

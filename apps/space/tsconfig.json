@@ -1,5 +1,5 @@
 {
-  "extends": "@plane/typescript-config/react-router.json",
+  "extends": "@planner/typescript-config/react-router.json",
   "compilerOptions": {
     "rootDirs": [".", "./.react-router/types"],
     "types": ["vite/client"],
@@ -8,7 +8,7 @@
       "@/*": ["./core/*"],
       "@/helpers/*": ["./helpers/*"],
       "@/styles/*": ["./styles/*"],
-      "@/plane-web/*": ["./ce/*"],
+      "@/planner-web/*": ["./ce/*"],
       "ce/*": ["./ce/*"]
     },
     "strictNullChecks": true,

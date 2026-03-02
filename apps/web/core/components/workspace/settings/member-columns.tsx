@@ -3,20 +3,20 @@ import Link from "next/link";
 import { Controller, useForm } from "react-hook-form";
 import { Trash2 } from "lucide-react";
 import { Disclosure } from "@headlessui/react";
-// plane imports
-import { ROLE, EUserPermissions, EUserPermissionsLevel, MEMBER_TRACKER_ELEMENTS } from "@plane/constants";
-import { SuspendedUserIcon } from "@plane/propel/icons";
-import { Pill, EPillVariant, EPillSize } from "@plane/propel/pill";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IWorkspaceMember } from "@plane/types";
-// plane ui
-import { CustomSelect, PopoverMenu } from "@plane/ui";
+// planner imports
+import { ROLE, EUserPermissions, EUserPermissionsLevel, MEMBER_TRACKER_ELEMENTS } from "@planner/constants";
+import { SuspendedUserIcon } from "@planner/propel/icons";
+import { Pill, EPillVariant, EPillSize } from "@planner/propel/pill";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import type { IUser, IWorkspaceMember } from "@planner/types";
+// planner ui
+import { CustomSelect, PopoverMenu } from "@planner/ui";
 // helpers
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@planner/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useUser, useUserPermissions } from "@/hooks/store/user";
-// plane web constants
+// planner web constants
 
 export interface RowData {
   member: IWorkspaceMember;

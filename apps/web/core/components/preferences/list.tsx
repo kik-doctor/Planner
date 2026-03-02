@@ -1,5 +1,5 @@
-import { PREFERENCE_OPTIONS } from "@plane/constants";
-import { PREFERENCE_COMPONENTS } from "@/plane-web/components/preferences/config";
+import { PREFERENCE_OPTIONS } from "@planner/constants";
+import { PREFERENCE_COMPONENTS } from "@/planner-web/components/preferences/config";
 
 export function PreferencesList() {
   return (

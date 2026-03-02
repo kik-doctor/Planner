@@ -11,21 +11,21 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { FolderPlus } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-import { IS_FAVORITE_MENU_OPEN } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { IS_FAVORITE_MENU_OPEN } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { ChevronRightIcon } from "@planner/propel/icons";
 // ui
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IFavorite } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import type { IFavorite } from "@planner/types";
 // constants
 
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 // hooks
 import { useFavorite } from "@/hooks/store/use-favorite";
 import useLocalStorage from "@/hooks/use-local-storage";
-// plane web components
+// planner web components
 import { FavoriteFolder } from "./favorite-folder";
 import { FavoriteRoot } from "./favorite-items";
 import type { TargetData } from "./favorites.helpers";

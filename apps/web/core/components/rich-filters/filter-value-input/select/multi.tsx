@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// planner imports
 import type {
   SingleOrArray,
   IFilterOption,
   TFilterProperty,
   TMultiSelectFilterFieldConfig,
   TFilterConditionNodeForDisplay,
-} from "@plane/types";
-import { CustomSearchSelect } from "@plane/ui";
-import { toFilterArray, getFilterValueLength } from "@plane/utils";
+} from "@planner/types";
+import { CustomSearchSelect } from "@planner/ui";
+import { toFilterArray, getFilterValueLength } from "@planner/utils";
 // local imports
 import { SelectedOptionsDisplay } from "./selected-options-display";
 import { getCommonCustomSearchSelectProps, getFormattedOptions, loadOptions } from "./shared";

@@ -2,13 +2,13 @@ import type { FC } from "react";
 import React, { useRef } from "react";
 import { observer } from "mobx-react";
 import { LinkIcon } from "lucide-react";
-// plane imports
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import { EIssuesStoreType } from "@plane/types";
-import { generateWorkItemLink, copyTextToClipboard } from "@plane/utils";
+// planner imports
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { Tooltip } from "@planner/propel/tooltip";
+import { EIssuesStoreType } from "@planner/types";
+import { generateWorkItemLink, copyTextToClipboard } from "@planner/utils";
 // helpers
 import { captureError, captureSuccess } from "@/helpers/event-tracker.helper";
 // hooks

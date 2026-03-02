@@ -1,38 +1,38 @@
 import { observer } from "mobx-react";
 import { ArrowDown, ArrowUp } from "lucide-react";
-// plane imports
-import { Button } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+// planner imports
+import { Button } from "@planner/propel/button";
+import { cn } from "@planner/utils";
 // constants
-import type { TPlanePlans } from "@/constants/plans";
-import { ComingSoonBadge, PLANE_PLANS, PLANS_LIST } from "@/constants/plans";
+import type { TPlannerPlans } from "@/constants/plans";
+import { ComingSoonBadge, PLANNER_PLANS, PLANS_LIST } from "@/constants/plans";
 // local imports
 import { PlanFeatureDetail } from "./feature-detail";
 
 type TPlansComparisonBaseProps = {
-  planeDetails: React.ReactNode;
+  plannerDetails: React.ReactNode;
   isSelfManaged: boolean;
   isCompareAllFeaturesSectionOpen: boolean;
   setIsCompareAllFeaturesSectionOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export const shouldRenderPlanDetail = (planKey: TPlanePlans) => {
+export const shouldRenderPlanDetail = (planKey: TPlannerPlans) => {
   // Free plan is not required to be shown in the comparison
   if (planKey === "free") return false;
-  // Plane one plan is not longer available
+  // planner one plan is not longer available
   if (planKey === "one") return false;
   return true;
 };
 
 export const PlansComparisonBase = observer(function PlansComparisonBase(props: TPlansComparisonBaseProps) {
-  const { planeDetails, isSelfManaged, isCompareAllFeaturesSectionOpen, setIsCompareAllFeaturesSectionOpen } = props;
+  const { plannerDetails, isSelfManaged, isCompareAllFeaturesSectionOpen, setIsCompareAllFeaturesSectionOpen } = props;
   // plan details
-  const { planDetails, planHighlights, planComparison } = PLANE_PLANS;
+  const { planDetails, planHighlights, planComparison } = PLANNER_PLANS;
   const numberOfPlansToRender = Object.keys(planDetails).filter((planKey) =>
-    shouldRenderPlanDetail(planKey as TPlanePlans)
+    shouldRenderPlanDetail(planKey as TPlannerPlans)
   ).length;
 
-  const getSubscriptionType = (planKey: TPlanePlans) => planDetails[planKey].id;
+  const getSubscriptionType = (planKey: TPlannerPlans) => planDetails[planKey].id;
 
   return (
     <div
@@ -49,7 +49,7 @@ export const PlansComparisonBase = observer(function PlansComparisonBase(props: 
             }}
           >
             <div className="col-span-1 p-3 space-y-0.5 text-base font-medium" />
-            {planeDetails}
+            {plannerDetails}
           </div>
           {/* Plan Headers */}
           <section className="flex-shrink-0">
@@ -61,7 +61,7 @@ export const PlansComparisonBase = observer(function PlansComparisonBase(props: 
               <div className="col-span-1 p-3 text-base font-medium">Highlights</div>
               {Object.entries(planHighlights).map(
                 ([planKey, highlights]) =>
-                  shouldRenderPlanDetail(planKey as TPlanePlans) && (
+                  shouldRenderPlanDetail(planKey as TPlannerPlans) && (
                     <div key={planKey} className="col-span-1 p-3">
                       <ul className="list-disc space-y-1">
                         {highlights.map((highlight, index) => (

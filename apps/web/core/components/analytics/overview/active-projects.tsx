@@ -2,13 +2,13 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane package imports
-import { useTranslation } from "@plane/i18n";
-import { Loader } from "@plane/ui";
-// plane web hooks
+// planner package imports
+import { useTranslation } from "@planner/i18n";
+import { Loader } from "@planner/ui";
+// planner web hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 import { useProject } from "@/hooks/store/use-project";
-// plane web components
+// planner web components
 import AnalyticsSectionWrapper from "../analytics-section-wrapper";
 import ActiveProjectItem from "./active-project-item";
 

@@ -1,10 +1,10 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { StatePropertyIcon, StateGroupIcon, PriorityPropertyIcon, DueDatePropertyIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { cn, getIssuePriorityFilters } from "@plane/utils";
+// planner imports
+import { useTranslation } from "@planner/i18n";
+import { StatePropertyIcon, StateGroupIcon, PriorityPropertyIcon, DueDatePropertyIcon } from "@planner/propel/icons";
+import { TOAST_TYPE, setToast } from "@planner/propel/toast";
+import { cn, getIssuePriorityFilters } from "@planner/utils";
 // components
 import { Icon } from "@/components/ui";
 // helpers

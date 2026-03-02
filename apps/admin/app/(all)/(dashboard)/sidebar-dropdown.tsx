@@ -3,11 +3,11 @@ import { observer } from "mobx-react";
 import { useTheme as useNextTheme } from "next-themes";
 import { LogOut, UserCog2, Palette } from "lucide-react";
 import { Menu, Transition } from "@headlessui/react";
-// plane internal packages
-import { API_BASE_URL } from "@plane/constants";
-import { AuthService } from "@plane/services";
-import { Avatar } from "@plane/ui";
-import { getFileURL, cn } from "@plane/utils";
+// planner internal packages
+import { API_BASE_URL } from "@planner/constants";
+import { AuthService } from "@planner/services";
+import { Avatar } from "@planner/ui";
+import { getFileURL, cn } from "@planner/utils";
 // hooks
 import { useTheme, useUser } from "@/hooks/store";
 

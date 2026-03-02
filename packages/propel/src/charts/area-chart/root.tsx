@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from "react";
 import { Area, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis, Line, ComposedChart, CartesianGrid } from "recharts";
-// plane imports
-import { AXIS_LABEL_CLASSNAME } from "@plane/constants";
-import type { TAreaChartProps } from "@plane/types";
+// planner imports
+import { AXIS_LABEL_CLASSNAME } from "@planner/constants";
+import type { TAreaChartProps } from "@planner/types";
 // local components
 import { getLegendProps } from "../components/legend";
 import { CustomXAxisTick, CustomYAxisTick } from "../components/tick";

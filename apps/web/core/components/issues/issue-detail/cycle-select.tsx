@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@planner/i18n";
 // hooks
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@planner/utils";
 import { CycleDropdown } from "@/components/dropdowns/cycle";
 // ui
 // helpers

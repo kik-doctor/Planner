@@ -1,5 +1,5 @@
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
+// planner imports
+import { API_BASE_URL } from "@planner/constants";
 import type {
   IFormattedInstanceConfiguration,
   IInstance,
@@ -7,7 +7,7 @@ import type {
   IInstanceConfiguration,
   IInstanceInfo,
   TPage,
-} from "@plane/types";
+} from "@planner/types";
 // api service
 import { APIService } from "../api.service";
 

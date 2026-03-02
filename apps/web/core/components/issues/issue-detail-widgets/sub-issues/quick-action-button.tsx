@@ -2,12 +2,12 @@ import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
 import { Plus } from "lucide-react";
-// plane imports
-import { WORK_ITEM_TRACKER_EVENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { WorkItemsIcon } from "@plane/propel/icons";
-import type { TIssue, TIssueServiceType } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+// planner imports
+import { WORK_ITEM_TRACKER_EVENTS } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { WorkItemsIcon } from "@planner/propel/icons";
+import type { TIssue, TIssueServiceType } from "@planner/types";
+import { CustomMenu } from "@planner/ui";
 // hooks
 import { captureClick } from "@/helpers/event-tracker.helper";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";

@@ -1,5 +1,5 @@
-// plane imports
-import { RANDOM_EMOJI_CODES } from "@plane/constants";
+// planner imports
+import { RANDOM_EMOJI_CODES } from "@planner/constants";
 
 /**
  * Converts a hyphen-separated hexadecimal emoji code to its decimal representation

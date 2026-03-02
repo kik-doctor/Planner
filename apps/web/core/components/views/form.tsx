@@ -1,30 +1,30 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
-import { ETabIndices, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@plane/propel/emoji-icon-picker";
-import { ViewsIcon } from "@plane/propel/icons";
+// planner imports
+import { ETabIndices, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@planner/constants";
+import { useTranslation } from "@planner/i18n";
+import { Button } from "@planner/propel/button";
+import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@planner/propel/emoji-icon-picker";
+import { ViewsIcon } from "@planner/propel/icons";
 import type {
   IIssueDisplayFilterOptions,
   IIssueDisplayProperties,
   IProjectView,
   EIssueLayoutTypes,
   IIssueFilters,
-} from "@plane/types";
-import { EViewAccess, EIssuesStoreType } from "@plane/types";
-import { Input, TextArea } from "@plane/ui";
-import { getComputedDisplayFilters, getComputedDisplayProperties, getTabIndex } from "@plane/utils";
+} from "@planner/types";
+import { EViewAccess, EIssuesStoreType } from "@planner/types";
+import { Input, TextArea } from "@planner/ui";
+import { getComputedDisplayFilters, getComputedDisplayProperties, getTabIndex } from "@planner/utils";
 // components
 import { DisplayFiltersSelection, FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 import { WorkItemFiltersRow } from "@/components/work-item-filters/filters-row";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
-import { AccessController } from "@/plane-web/components/views/access-controller";
+// planner web imports
+import { AccessController } from "@/planner-web/components/views/access-controller";
 // local imports
 import { LayoutDropDown } from "../dropdowns/layout";
 import { ProjectLevelWorkItemFiltersHOC } from "../work-item-filters/filters-hoc/project-level";
