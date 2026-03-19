@@ -61,7 +61,7 @@ class WorkspaceDataSerializer(serializers.Serializer):
 
 
 # Workspace Management Event data serializer
-class PlannerWorkspaceEventDataSerializer(serializers.Serializer):
+class WorkspaceEventDataSerializer(serializers.Serializer):
     event = serializers.ChoiceField(
         choices=[event.value for event in WorkspaceManagementEvent]
     )
@@ -69,10 +69,16 @@ class PlannerWorkspaceEventDataSerializer(serializers.Serializer):
 
 
 # Workspace Subscription Plan Update webhook serializer
-class PlannerWorkspacePlanDataSerializer(serializers.Serializer):
+class WorkspacePlanDataSerializer(serializers.Serializer):
     slug = serializers.CharField(required=True)
     plan = serializers.ChoiceField(
         choices=[p.value for p in WorkspacePlan],
         required=False,
         default=WorkspacePlan.FREE.value,
     )
+
+
+# Workspace Name Update webhook serializer
+class WorkspaceNameDataSerializer(serializers.Serializer):
+    slug = serializers.CharField(required=True)
+    name = serializers.CharField(required=True)

@@ -11,27 +11,28 @@ from rest_framework.response import Response
 # Module imports
 from planner.db.models import Workspace
 from planner.db.models.workspace import WorkspacePlan
-from planner.orchestra.serializers.webhook import PlannerWorkspacePlanDataSerializer
-from planner.orchestra.views.base import BaseAPIView, PlannerWebhookAuthentication
+from planner.orchestra.serializers.webhook import WorkspacePlanDataSerializer
+from planner.orchestra.views.base import BaseAPIView, WebhookAuthentication
 
 logger = logging.getLogger(__name__)
 
 
 # ---- View ----
 
+
 class WorkspacePlanWebhookEndpoint(BaseAPIView):
     """
     Webhook to handle workspace-plan lifecycle:
     """
 
-    authentication_classes = [PlannerWebhookAuthentication]
+    authentication_classes = [WebhookAuthentication]
 
     def post(self, request):
-        logger.info(f"Workspace Management Webhook Req Data: {request.data}")
-        payload = PlannerWorkspacePlanDataSerializer(data=request.data)
+        logger.info(f"Workspace Plan Webhook Req Data: {request.data}")
+        payload = WorkspacePlanDataSerializer(data=request.data)
 
         payload.is_valid(raise_exception=True)
-        slug = payload.validated_data.get("slug", {})
+        slug = payload.validated_data.get("slug", "")
         plan = payload.validated_data.get("plan", WorkspacePlan.FREE.value)
         if not slug:
             raise ValidationError({"slug": "This field is required."})
