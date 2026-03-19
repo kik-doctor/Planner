@@ -3,6 +3,7 @@ from django.urls import path
 
 # Module imports
 from planner.orchestra.views import WorkspaceManagementWebhookEndpoint
+from planner.orchestra.views.webhook.workspace_name import WorkspaceNameWebhookEndpoint
 from planner.orchestra.views.webhook.workspace_plan import WorkspacePlanWebhookEndpoint
 
 urlpatterns = [
@@ -14,5 +15,10 @@ urlpatterns = [
     path(
         "webhooks/workspace-plan/",
         WorkspacePlanWebhookEndpoint.as_view(),
-    )
+        name="webhooks",
+    ),
+    path(
+        "webhooks/workspace-name/",
+        WorkspaceNameWebhookEndpoint.as_view(),
+    ),
 ]

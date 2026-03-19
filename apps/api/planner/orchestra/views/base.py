@@ -121,7 +121,7 @@ class BaseAPIView(TimezoneMixin, ReadReplicaControlMixin, APIView, BasePaginator
         return expand if expand else None
 
 
-class PlannerWebhookAuthentication(BaseAuthentication):
+class WebhookAuthentication(BaseAuthentication):
     def authenticate(self, request):
         incoming_key = request.headers.get("X-Planner-Webhook-Key")
         expected_key = getattr(settings, "PLANNER_WEBHOOK_KEY", None)

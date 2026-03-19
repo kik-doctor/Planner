@@ -10,6 +10,7 @@ from django.db.models import Count, Q
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
+
 # Third party imports
 from rest_framework import status
 from rest_framework.exceptions import ValidationError
@@ -33,11 +34,11 @@ from planner.db.models import (
 )
 from planner.db.models.orchestra import ProcessedWebhook
 from planner.orchestra.serializers.webhook import (
-    PlannerWorkspaceEventDataSerializer,
+    WorkspaceEventDataSerializer,
     WorkspaceManagementEvent,
 )
 from planner.orchestra.utils.webhook import _as_event, get_idempotency_key
-from planner.orchestra.views.base import BaseAPIView, PlannerWebhookAuthentication
+from planner.orchestra.views.base import BaseAPIView, WebhookAuthentication
 
 logger = logging.getLogger(__name__)
 
@@ -48,12 +49,12 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
     Webhook to handle workspace-related lifecycle:
     """
 
-    authentication_classes = [PlannerWebhookAuthentication]
+    authentication_classes = [WebhookAuthentication]
 
     # POST: WORKSPACE_CREATED / WORKSPACE_MEMBER_CREATED / WORKSPACE_MEMBER_ROLE_UPDATED / WORKSPACE_MEMBER_DELETED
     def post(self, request):
         logger.info(f"Workspace Management Webhook Req Data: {request.data}")
-        payload = PlannerWorkspaceEventDataSerializer(data=request.data)
+        payload = WorkspaceEventDataSerializer(data=request.data)
         payload.is_valid(raise_exception=True)
 
         event = _as_event(payload.validated_data["event"])
@@ -84,7 +85,7 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
 
             if event in [
                 WorkspaceManagementEvent.WORKSPACE_CREATED,
-                WorkspaceManagementEvent.WORKSPACE_MEMBER_CREATED
+                WorkspaceManagementEvent.WORKSPACE_MEMBER_CREATED,
             ]:
                 # Create new user if no existing user
                 user = User.objects.filter(email=email).first()
@@ -112,7 +113,9 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
                     )
                     profile_serializer.is_valid(raise_exception=True)
                     profile_serializer.save()
-                    logger.info(f"Profile created >>>>>>>>>>, {profile_serializer.data}")
+                    logger.info(
+                        f"Profile created >>>>>>>>>>, {profile_serializer.data}"
+                    )
 
                 # Creates a default workspace, workspace member for admin user
                 if event == WorkspaceManagementEvent.WORKSPACE_CREATED:
@@ -135,7 +138,9 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
                         member=user,
                         role=ROLE.ADMIN.value,
                     )
-                    logger.info(f"WORKSPACE_CREATED:Member Created>>>, {WorkspaceMember}")
+                    logger.info(
+                        f"WORKSPACE_CREATED:Member Created>>>, {WorkspaceMember}"
+                    )
 
                     # Seed asynchronously
                     workspace_seed.delay(ws.id)
@@ -151,7 +156,9 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
                         role=invitation_data["role"],
                     )
 
-                    logger.info(f"WORKSPACE_MEMBER_CREATED: member created >>>>>>, {user}")
+                    logger.info(
+                        f"WORKSPACE_MEMBER_CREATED: member created >>>>>>, {user}"
+                    )
 
             # Update workspace member role as well as project member role
             if event == WorkspaceManagementEvent.WORKSPACE_MEMBER_ROLE_UPDATED:
@@ -210,7 +217,7 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
                         filter=Q(
                             project_projectmember__member_id=workspace_member.id,
                             project_projectmember__role=ROLE.ADMIN.value,
-                            project_projectmember__is_active=True
+                            project_projectmember__is_active=True,
                         ),
                     ),
                 ).filter(
@@ -218,25 +225,31 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
                     member_with_role=1,
                     workspace__slug=slug,
                 )
-                logger.info(f"WORKSPACE_MEMBER_DELETED: only admin projects >>>>>>, {projects}")
+                logger.info(
+                    f"WORKSPACE_MEMBER_DELETED: only admin projects >>>>>>, {projects}"
+                )
 
                 # Assign the oldest workspace admin to project admin
                 # if user is the only ADMIN in any project of this workspace
                 only_admin_in_any_project = projects.exists()
-                logger.info(f"WORKSPACE_MEMBER_DELETED: only_admin_in_any_project >>>>>>, {only_admin_in_any_project}")
+                logger.info(
+                    f"WORKSPACE_MEMBER_DELETED: only_admin_in_any_project >>>>>>, {only_admin_in_any_project}"
+                )
                 if only_admin_in_any_project:
                     # get workspace by slug
                     workspace = get_object_or_404(Workspace, slug=slug)
-                    logger.info(f"WORKSPACE_MEMBER_DELETED: workspace >>>>>>, {workspace}")
-                    # get workspace admins
-                    admins_qs = (
-                        WorkspaceMember.objects
-                        .filter(workspace=workspace, role=ROLE.ADMIN.value, is_active=True)
-                        .order_by("created_at")
+                    logger.info(
+                        f"WORKSPACE_MEMBER_DELETED: workspace >>>>>>, {workspace}"
                     )
+                    # get workspace admins
+                    admins_qs = WorkspaceMember.objects.filter(
+                        workspace=workspace, role=ROLE.ADMIN.value, is_active=True
+                    ).order_by("created_at")
                     # Pick the oldest admin
                     oldest_admin = admins_qs.first()
-                    logger.info(f"WORKSPACE_MEMBER_DELETED: oldest_admin >>>>>>, {oldest_admin}")
+                    logger.info(
+                        f"WORKSPACE_MEMBER_DELETED: oldest_admin >>>>>>, {oldest_admin}"
+                    )
                     # assign the oldest workspace admin as project admin in those projects
                     if oldest_admin:
                         # Get the project you want to update
@@ -248,7 +261,9 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
                                 member=oldest_admin.member,
                                 defaults={"role": ROLE.ADMIN.value, "is_active": True},
                             )
-                        logger.info(f"WORKSPACE_MEMBER_DELETED: ProjectMember for only admin >>>>>>, {ProjectMember}")
+                        logger.info(
+                            f"WORKSPACE_MEMBER_DELETED: ProjectMember for only admin >>>>>>, {ProjectMember}"
+                        )
                 else:
                     with transaction.atomic():
                         # Deactivate in all projects in this workspace
@@ -261,8 +276,12 @@ class WorkspaceManagementWebhookEndpoint(BaseAPIView):
                 # Deactivate workspace membership
                 workspace_member.is_active = False
                 workspace_member.deleted_at = timezone.now()
-                workspace_member.save(update_fields=["is_active", "deleted_at", "updated_at"])
-                logger.info(f"WORKSPACE_MEMBER_DELETED: ProjectMember >>>>>>, {ProjectMember}, {workspace_member}")
+                workspace_member.save(
+                    update_fields=["is_active", "deleted_at", "updated_at"]
+                )
+                logger.info(
+                    f"WORKSPACE_MEMBER_DELETED: ProjectMember >>>>>>, {ProjectMember}, {workspace_member}"
+                )
 
             # Delete workspace by slug
             if event == WorkspaceManagementEvent.WORKSPACE_DELETED:
